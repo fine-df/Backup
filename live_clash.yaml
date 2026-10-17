@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070012 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070013 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,270 +10,221 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- client-fingerprint: edge
+- name: 🇭🇺 Hungary, Budapest | [BL] [b0fd783e]
+  servername: hu1.aiage.work
+  tls: true
+  client-fingerprint: edge
+  server: hu1.aiage.work
+  network: tcp
   type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  port: 443
   encryption: none
   flow: xtls-rprx-vision
-  port: 443
-  udp: true
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  server: hu1.aiage.work
-  servername: hu1.aiage.work
-  name: 🇭🇺 Hungary, Budapest | [BL] [b0fd783e]
-  network: tcp
   reality-opts:
     public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
     short-id: f8379ce795f2e5ed
+  udp: true
+- name: 🇭🇺 Hungary, Budapest | [BL] [fa6829c4]
+  servername: hu1.aiage.work
   tls: true
-- client-fingerprint: safari
+  client-fingerprint: safari
+  server: hu1.aiage.work
+  network: tcp
   type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  port: 443
   encryption: none
   flow: xtls-rprx-vision
-  port: 443
-  udp: true
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  server: hu1.aiage.work
-  servername: hu1.aiage.work
-  name: 🇭🇺 Hungary, Budapest | [BL] [fa6829c4]
-  network: tcp
   reality-opts:
     public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
     short-id: f8379ce795f2e5ed
-  tls: true
-- client-fingerprint: edge
-  type: vless
-  encryption: none
-  port: 443
   udp: true
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  server: cdn.topingr.ir
-  servername: cdn.topingr.ir
-  name: 🇩🇪 Germany | 🌐 | [BL] [28a8c97f]
-  network: ws
-  tls: true
-- client-fingerprint: randomized
-  type: vless
-  encryption: none
-  flow: xtls-rprx-vision
-  port: 443
-  udp: true
-  uuid: 05c8eabe-96af-4db2-bb2f-a24fa84344ba
-  server: 31.76.227.60
+- name: 🇫🇮 Finland, Helsinki | [BL]
   servername: assets-mi-29.spbstudentlife.com
-  name: 🇫🇮 Finland, Helsinki | [BL]
+  tls: true
+  client-fingerprint: randomized
+  server: 31.76.227.60
   network: tcp
+  type: vless
+  uuid: 05c8eabe-96af-4db2-bb2f-a24fa84344ba
+  port: 443
+  encryption: none
+  flow: xtls-rprx-vision
   reality-opts:
     public-key: CcMEJ-JOS4clB3gXbc6wXgzkiJQbyNpKY90I8B6AqyU
     short-id: 4c188683e2c14a3c
-  tls: true
-- client-fingerprint: qq
-  type: vless
-  encryption: none
-  flow: xtls-rprx-vision
-  port: 443
   udp: true
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+- name: 🇭🇺 Hungary, Budapest | [BL] [48f27c2d]
+  servername: hu1.aiage.work
+  tls: true
+  client-fingerprint: qq
   server: hu1.aiage.work
-  servername: hu1.aiage.work
-  name: 🇭🇺 Hungary, Budapest | [BL] [48f27c2d]
   network: tcp
-  reality-opts:
-    public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
-    short-id: f8379ce795f2e5ed
-  tls: true
-- client-fingerprint: firefox
   type: vless
-  encryption: none
-  flow: xtls-rprx-vision
-  port: 443
-  udp: true
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  server: 85.155.242.39
-  servername: hu1.aiage.work
-  name: 🇭🇺 Hungary, Budapest | [BL] [13160283]
-  network: tcp
+  port: 443
+  encryption: none
+  flow: xtls-rprx-vision
   reality-opts:
     public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
     short-id: f8379ce795f2e5ed
-  tls: true
-- client-fingerprint: firefox
-  type: vless
-  encryption: none
-  port: 443
   udp: true
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  server: cdn.topingr.ir
-  servername: cdn.topingr.ir
-  name: 🌐 Anycast-IP | 🇩🇪 🇳🇱 | [BL]
-  network: ws
+- name: 🇭🇺 Hungary, Budapest | [BL] [13160283]
+  servername: hu1.aiage.work
   tls: true
-- client-fingerprint: firefox
-  type: vless
-  encryption: none
-  port: 8443
-  udp: true
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  server: news.zoom.us
-  servername: u.srilankangrill.online
-  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [2537eee6]
-  network: ws
-  tls: true
-- client-fingerprint: random
-  type: vless
-  encryption: none
-  port: 443
-  udp: true
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  server: b58e68t.lt1.h1clayd.click
-  servername: b58e68t.lt1.h1clayd.click
-  name: 🇱🇹 Lithuania, Vilnius | [BL] [522a0357]
+  client-fingerprint: firefox
+  server: 85.155.242.39
   network: tcp
-  reality-opts:
-    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
-    short-id: 2301ac8aee8bf6d4
-  tls: true
-- client-fingerprint: firefox
   type: vless
-  encryption: none
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   port: 443
-  udp: true
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  server: b58e68t.lt1.h1clayd.click
-  servername: b58e68t.lt1.h1clayd.click
-  name: 🇱🇹 Lithuania, Vilnius | [BL] [8fc3e3d3]
-  network: tcp
-  reality-opts:
-    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
-    short-id: 2301ac8aee8bf6d4
-  tls: true
-- type: vless
-  name: 美国(yudou99.com 玉豆分享)
-  server: 3696b38bsg.murphyweb.sbs
-  port: 32134
-  udp: true
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
   encryption: none
-  tls: true
-  servername: buylite.music.apple.com
   flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
+    short-id: f8379ce795f2e5ed
+  udp: true
+- name: 🇱🇹 Lithuania, Vilnius | [BL] [522a0357]
+  servername: b58e68t.lt1.h1clayd.click
+  tls: true
+  client-fingerprint: random
+  server: b58e68t.lt1.h1clayd.click
+  network: tcp
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  port: 443
+  encryption: none
+  reality-opts:
+    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
+    short-id: 2301ac8aee8bf6d4
+  udp: true
+- name: 🇱🇹 Lithuania, Vilnius | [BL] [8fc3e3d3]
+  servername: b58e68t.lt1.h1clayd.click
+  tls: true
+  client-fingerprint: firefox
+  server: b58e68t.lt1.h1clayd.click
+  network: tcp
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  port: 443
+  encryption: none
+  reality-opts:
+    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
+    short-id: 2301ac8aee8bf6d4
+  udp: true
+- name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [31f454b7]
+  servername: poland.travel
+  tls: true
+  client-fingerprint: random
+  server: revers.bachidze.com
+  type: vless
+  uuid: 8a9c586c-4b2c-49e5-9e78-97408bf58500
+  port: 443
+  encryption: none
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s
+  udp: true
+- name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [96335ce7]
+  servername: poland.travel
+  tls: true
+  client-fingerprint: edge
+  server: revers.bachidze.com
+  type: vless
+  uuid: 8a9c586c-4b2c-49e5-9e78-97408bf58500
+  port: 443
+  encryption: none
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s
+  udp: true
+- name: 🇫🇷 France | [*CIDR]
+  servername: api.videolaguna.cc
+  tls: true
+  client-fingerprint: firefox
+  server: api.videolaguna.cc
+  network: tcp
+  type: vless
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  port: 443
+  encryption: none
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  udp: true
+- name: 🇦🇹 Austria | [*CIDR] [2ef7f304]
+  servername: api.mediakaskad.cc
+  tls: true
+  client-fingerprint: firefox
+  server: api.mediakaskad.cc
+  network: tcp
+  type: vless
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  port: 443
+  encryption: none
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  udp: true
+- name: 🇦🇹 Austria | [*CIDR] [0986170c]
+  servername: api.mediakaskad.cc
+  tls: true
+  client-fingerprint: ios
+  server: api.mediakaskad.cc
+  network: tcp
+  type: vless
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  port: 443
+  encryption: none
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  udp: true
+- type: vless
+  name: 🇱🇹 Lithuania, Vilnius | [BL] [2a8156c1]
+  server: b58e68t.lt1.h1clayd.click
+  port: 443
+  udp: true
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  encryption: none
+  tls: true
+  servername: b58e68t.lt1.h1clayd.click
   client-fingerprint: chrome
   reality-opts:
-    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-    short-id: 6c6c7c97
+    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
+    short-id: 2301ac8aee8bf6d4
   network: tcp
 - type: vless
-  name: 🇭🇰 Hong Kong, Hong Kong | [BL]
-  server: 3696b38bsg.murphyweb.sbs
-  port: 32134
+  name: 🇱🇹 Lithuania, Vilnius | [BL] [c69ef01e]
+  server: b58e68t.lt1.h1clayd.click
+  port: 443
   udp: true
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   encryption: none
   tls: true
-  servername: buylite.music.apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  servername: b58e68t.lt1.h1clayd.click
+  client-fingerprint: safari
   reality-opts:
-    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-    short-id: 6c6c7c97
+    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
+    short-id: 2301ac8aee8bf6d4
   network: tcp
 - type: vless
-  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [31f454b7]
-  server: revers.bachidze.com
-  port: 443
-  udp: true
-  uuid: 8a9c586c-4b2c-49e5-9e78-97408bf58500
-  encryption: none
-  tls: true
-  servername: poland.travel
-  flow: xtls-rprx-vision
-  client-fingerprint: random
-  reality-opts:
-    public-key: TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s
-- type: vless
-  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [96335ce7]
-  server: revers.bachidze.com
-  port: 443
-  udp: true
-  uuid: 8a9c586c-4b2c-49e5-9e78-97408bf58500
-  encryption: none
-  tls: true
-  servername: poland.travel
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s
-- type: vless
-  name: 🇫🇷 France | [*CIDR]
-  server: api.videolaguna.cc
+  name: 🇳🇱 The Netherlands [*CIDR]
+  server: api.mediaplav.cc
   port: 443
   udp: true
   uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
   encryption: none
   tls: true
-  servername: api.videolaguna.cc
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  network: tcp
-- type: vless
-  name: 🇦🇹 Austria | [*CIDR] [2ef7f304]
-  server: api.mediakaskad.cc
-  port: 443
-  udp: true
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  encryption: none
-  tls: true
-  servername: api.mediakaskad.cc
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  network: tcp
-- type: vless
-  name: 🇦🇹 Austria | [*CIDR] [0986170c]
-  server: api.mediakaskad.cc
-  port: 443
-  udp: true
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  encryption: none
-  tls: true
-  servername: api.mediakaskad.cc
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  network: tcp
-- type: vless
-  name: 🇵🇱 Poland [*CIDR] VK
-  server: 90.156.218.163
-  port: 443
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  encryption: none
-  tls: true
-  servername: eh.vk.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  network: tcp
+  servername: api.mediaplav.cc
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 3e99d50d5740985d
 proxy-groups:
 - name: Fine
   type: select
@@ -282,44 +233,38 @@ proxy-groups:
   - DIRECT
   - 🇭🇺 Hungary, Budapest | [BL] [b0fd783e]
   - 🇭🇺 Hungary, Budapest | [BL] [fa6829c4]
-  - 🇩🇪 Germany | 🌐 | [BL] [28a8c97f]
   - 🇫🇮 Finland, Helsinki | [BL]
   - 🇭🇺 Hungary, Budapest | [BL] [48f27c2d]
   - 🇭🇺 Hungary, Budapest | [BL] [13160283]
-  - 🌐 Anycast-IP | 🇩🇪 🇳🇱 | [BL]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [2537eee6]
   - 🇱🇹 Lithuania, Vilnius | [BL] [522a0357]
   - 🇱🇹 Lithuania, Vilnius | [BL] [8fc3e3d3]
-  - 美国(yudou99.com 玉豆分享)
-  - 🇭🇰 Hong Kong, Hong Kong | [BL]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [31f454b7]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [96335ce7]
   - 🇫🇷 France | [*CIDR]
   - 🇦🇹 Austria | [*CIDR] [2ef7f304]
   - 🇦🇹 Austria | [*CIDR] [0986170c]
-  - 🇵🇱 Poland [*CIDR] VK
+  - 🇱🇹 Lithuania, Vilnius | [BL] [2a8156c1]
+  - 🇱🇹 Lithuania, Vilnius | [BL] [c69ef01e]
+  - 🇳🇱 The Netherlands [*CIDR]
   default-selected: 🇭🇺 Hungary, Budapest | [BL] [b0fd783e]
 - name: AUTO
   type: url-test
   proxies:
   - 🇭🇺 Hungary, Budapest | [BL] [b0fd783e]
   - 🇭🇺 Hungary, Budapest | [BL] [fa6829c4]
-  - 🇩🇪 Germany | 🌐 | [BL] [28a8c97f]
   - 🇫🇮 Finland, Helsinki | [BL]
   - 🇭🇺 Hungary, Budapest | [BL] [48f27c2d]
   - 🇭🇺 Hungary, Budapest | [BL] [13160283]
-  - 🌐 Anycast-IP | 🇩🇪 🇳🇱 | [BL]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [2537eee6]
   - 🇱🇹 Lithuania, Vilnius | [BL] [522a0357]
   - 🇱🇹 Lithuania, Vilnius | [BL] [8fc3e3d3]
-  - 美国(yudou99.com 玉豆分享)
-  - 🇭🇰 Hong Kong, Hong Kong | [BL]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [31f454b7]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [96335ce7]
   - 🇫🇷 France | [*CIDR]
   - 🇦🇹 Austria | [*CIDR] [2ef7f304]
   - 🇦🇹 Austria | [*CIDR] [0986170c]
-  - 🇵🇱 Poland [*CIDR] VK
+  - 🇱🇹 Lithuania, Vilnius | [BL] [2a8156c1]
+  - 🇱🇹 Lithuania, Vilnius | [BL] [c69ef01e]
+  - 🇳🇱 The Netherlands [*CIDR]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
