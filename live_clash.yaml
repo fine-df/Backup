@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070023 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070024 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,92 +10,147 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- server: 45.145.12.148
-  grpc-opts:
-    grpc-service-name: grpc
-  servername: max.ru
-  type: vless
-  network: grpc
-  uuid: b869a8d0-0733-4346-8d1c-c1230a78651c
+- tls: true
+  server: 104.225.239.122
   udp: true
-  encryption: none
-  name: 🇸🇪 Sweden [SNI-RU] max.ru
-  reality-opts:
-    public-key: OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM
-    short-id: 35debf0dc757d053
-  port: 443
-  tls: true
-  client-fingerprint: qq
-- server: 45.145.12.148
-  grpc-opts:
-    grpc-service-name: grpc
-  servername: max.ru
-  type: vless
-  network: grpc
-  uuid: b869a8d0-0733-4346-8d1c-c1230a78651c
-  udp: true
-  encryption: none
-  name: 🇸🇪 Sweden | [SNI-RU] max.ru
-  reality-opts:
-    public-key: OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM
-    short-id: 35debf0dc757d053
-  port: 443
-  tls: true
-  client-fingerprint: firefox
-- server: 104.225.239.122
   servername: www.amazon.com
   type: vless
-  network: tcp
-  uuid: 5c68cb0a-0c11-4c61-9458-66f63387adc5
-  udp: true
-  encryption: none
   name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [5cff3a6a]
+  client-fingerprint: firefox
+  port: 443
+  uuid: 5c68cb0a-0c11-4c61-9458-66f63387adc5
   reality-opts:
     public-key: yzpUjsMEI7c7nBB5A3M_VVnROlrZdIR50XEhUQfXnC0
-  port: 443
-  tls: true
-  client-fingerprint: firefox
+  encryption: none
+  network: tcp
   flow: xtls-rprx-vision
-- server: 104.225.239.122
+- tls: true
+  server: 104.225.239.122
+  udp: true
   servername: www.amazon.com
   type: vless
-  network: tcp
-  uuid: 5c68cb0a-0c11-4c61-9458-66f63387adc5
-  udp: true
-  encryption: none
   name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [41e1f4e8]
+  client-fingerprint: ios
+  port: 443
+  uuid: 5c68cb0a-0c11-4c61-9458-66f63387adc5
   reality-opts:
     public-key: yzpUjsMEI7c7nBB5A3M_VVnROlrZdIR50XEhUQfXnC0
-  port: 443
-  tls: true
-  client-fingerprint: ios
+  encryption: none
+  network: tcp
   flow: xtls-rprx-vision
-- type: vless
+- tls: true
+  server: 200.165.231.138
+  udp: true
+  servername: github.com
+  type: vless
+  grpc-opts:
+    grpc-service-name: GunService
   name: 🇳🇱 The Netherlands | [*CIDR] [17ab9169]
-  server: 200.165.231.138
-  port: 8444
-  udp: true
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  encryption: none
-  tls: true
-  servername: github.com
   client-fingerprint: firefox
+  port: 8444
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
+  encryption: none
   network: grpc
+- tls: true
+  server: 200.165.231.138
+  udp: true
+  servername: github.com
+  type: vless
   grpc-opts:
     grpc-service-name: GunService
-- type: vless
   name: 🇳🇱 The Netherlands | [*CIDR] [c3195598]
-  server: 200.165.231.138
+  client-fingerprint: qq
+  port: 8444
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  encryption: none
+  network: grpc
+- tls: true
+  server: 81.90.31.80
+  udp: true
+  servername: github.com
+  type: vless
+  grpc-opts:
+    grpc-service-name: GunService
+  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]
+  client-fingerprint: firefox
+  port: 8454
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  encryption: none
+  network: grpc
+- tls: true
+  server: 89.221.203.210
+  udp: true
+  servername: github.com
+  type: vless
+  grpc-opts:
+    grpc-service-name: GunService
+  name: 🇫🇮 Finland | [*CIDR]
+  client-fingerprint: qq
+  port: 8453
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  encryption: none
+  network: grpc
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]
+  server: almaim.g44mozgh.ir
+  port: 8880
+  udp: true
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
+  encryption: none
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nPiL5I1a2l6UMXTrPQ11uZkMjuCtX9LcK3Qpl0zarBo
+    short-id: 67c9e81d9769d3c3
+  network: tcp
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
+  server: de3.brightmetric.trade
+  port: 443
+  udp: true
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  encryption: none
+  tls: true
+  servername: de3.brightmetric.trade
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  network: tcp
+- type: vless
+  name: 🇷🇺 Russia [*CIDR] [1994a1f5]
+  server: 77.110.113.206
   port: 8444
   udp: true
   uuid: a346c521-7a7f-452b-9356-a4893feb5982
   encryption: none
   tls: true
   servername: github.com
-  client-fingerprint: qq
+  client-fingerprint: ios
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- type: vless
+  name: 🇷🇺 Russia [*CIDR] [34c4600a]
+  server: 77.110.113.206
+  port: 8444
+  udp: true
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  encryption: none
+  tls: true
+  servername: github.com
+  client-fingerprint: firefox
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
@@ -103,112 +158,69 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - type: vless
-  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]
-  server: 81.90.31.80
-  port: 8454
+  name: 🇨🇿 Czechia, Prague | [BL] [bac00134]
+  server: app-ss-64.ecom-ai-search.com
+  port: 443
   udp: true
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  uuid: 074690f9-cb30-44f5-84e5-f3ce8fc6cf29
   encryption: none
   tls: true
-  servername: github.com
+  servername: assets-ss-64.ecom-ai-search.com
+  flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
+    public-key: xXMV-UbVMpP75hZoXS_QSaj_DK1O58mrPIrreudQ71o
+    short-id: 294cd0660fde9027
+  network: tcp
 - type: vless
-  name: 🇫🇮 Finland | [*CIDR]
-  server: 89.221.203.210
-  port: 8453
+  name: 🇨🇿 Czechia, Prague | [BL] [85ae29ec]
+  server: app-ss-64.ecom-ai-search.com
+  port: 443
   udp: true
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  uuid: 074690f9-cb30-44f5-84e5-f3ce8fc6cf29
   encryption: none
   tls: true
-  servername: github.com
-  client-fingerprint: qq
+  servername: assets-ss-64.ecom-ai-search.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
   reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- type: vless
-  name: 🇫🇷 France | [*CIDR] [4a2f8545]
-  server: 37.143.15.175
-  port: 443
-  udp: true
-  uuid: aca886aa-9b51-4eb2-8d7a-12d6b89caf4d
-  encryption: none
-  tls: true
-  servername: funvideos.video
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /api/53d53ac3/a7fa61/096357bebc62
-    headers:
-      Host: funvideos.video
-- type: vless
-  name: 🇫🇷 France [*CIDR]
-  server: 37.143.15.175
-  port: 443
-  udp: true
-  uuid: aca886aa-9b51-4eb2-8d7a-12d6b89caf4d
-  encryption: none
-  tls: true
-  servername: funvideos.video
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/53d53ac3/a7fa61/096357bebc62
-    headers:
-      Host: funvideos.video
-- type: vless
-  name: 🇫🇷 France | [*CIDR] [f2fd2104]
-  server: funvideos.video
-  port: 443
-  udp: true
-  uuid: aca886aa-9b51-4eb2-8d7a-12d6b89caf4d
-  encryption: none
-  tls: true
-  servername: funvideos.video
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /api/53d53ac3/a7fa61/096357bebc62
-    headers:
-      Host: funvideos.video
+    public-key: xXMV-UbVMpP75hZoXS_QSaj_DK1O58mrPIrreudQ71o
+    short-id: 294cd0660fde9027
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇸🇪 Sweden [SNI-RU] max.ru
-  - 🇸🇪 Sweden | [SNI-RU] max.ru
   - 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [5cff3a6a]
   - 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [41e1f4e8]
   - 🇳🇱 The Netherlands | [*CIDR] [17ab9169]
   - 🇳🇱 The Netherlands | [*CIDR] [c3195598]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]
   - 🇫🇮 Finland | [*CIDR]
-  - 🇫🇷 France | [*CIDR] [4a2f8545]
-  - 🇫🇷 France [*CIDR]
-  - 🇫🇷 France | [*CIDR] [f2fd2104]
-  default-selected: 🇸🇪 Sweden [SNI-RU] max.ru
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🇷🇺 Russia [*CIDR] [1994a1f5]
+  - 🇷🇺 Russia [*CIDR] [34c4600a]
+  - 🇨🇿 Czechia, Prague | [BL] [bac00134]
+  - 🇨🇿 Czechia, Prague | [BL] [85ae29ec]
+  default-selected: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [5cff3a6a]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇸🇪 Sweden [SNI-RU] max.ru
-  - 🇸🇪 Sweden | [SNI-RU] max.ru
   - 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [5cff3a6a]
   - 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [41e1f4e8]
   - 🇳🇱 The Netherlands | [*CIDR] [17ab9169]
   - 🇳🇱 The Netherlands | [*CIDR] [c3195598]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]
   - 🇫🇮 Finland | [*CIDR]
-  - 🇫🇷 France | [*CIDR] [4a2f8545]
-  - 🇫🇷 France [*CIDR]
-  - 🇫🇷 France | [*CIDR] [f2fd2104]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🇷🇺 Russia [*CIDR] [1994a1f5]
+  - 🇷🇺 Russia [*CIDR] [34c4600a]
+  - 🇨🇿 Czechia, Prague | [BL] [bac00134]
+  - 🇨🇿 Czechia, Prague | [BL] [85ae29ec]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
