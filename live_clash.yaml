@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070021 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070022 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,111 +10,168 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- udp: true
-  grpc-opts:
+- grpc-opts:
     grpc-service-name: grpc
-  type: vless
-  server: 45.145.12.148
   servername: max.ru
-  network: grpc
-  encryption: none
-  reality-opts:
-    public-key: OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM
-    short-id: 35debf0dc757d053
-  tls: true
-  client-fingerprint: qq
   uuid: b869a8d0-0733-4346-8d1c-c1230a78651c
+  udp: true
+  port: 443
   name: 🇸🇪 Sweden [SNI-RU] max.ru
-  port: 443
-- udp: true
-  grpc-opts:
-    grpc-service-name: grpc
-  type: vless
+  client-fingerprint: qq
   server: 45.145.12.148
-  servername: max.ru
   network: grpc
   encryption: none
+  tls: true
+  type: vless
   reality-opts:
     public-key: OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM
     short-id: 35debf0dc757d053
-  tls: true
-  client-fingerprint: firefox
+- grpc-opts:
+    grpc-service-name: grpc
+  servername: max.ru
   uuid: b869a8d0-0733-4346-8d1c-c1230a78651c
+  udp: true
+  port: 443
   name: 🇸🇪 Sweden | [SNI-RU] max.ru
+  client-fingerprint: firefox
+  server: 45.145.12.148
+  network: grpc
+  encryption: none
+  tls: true
+  type: vless
+  reality-opts:
+    public-key: OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM
+    short-id: 35debf0dc757d053
+- servername: www.amazon.com
+  uuid: 5c68cb0a-0c11-4c61-9458-66f63387adc5
+  udp: true
   port: 443
-- type: vless
   name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [5cff3a6a]
+  client-fingerprint: firefox
   server: 104.225.239.122
-  port: 443
-  udp: true
-  uuid: 5c68cb0a-0c11-4c61-9458-66f63387adc5
+  network: tcp
   encryption: none
   tls: true
-  servername: www.amazon.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  type: vless
   reality-opts:
     public-key: yzpUjsMEI7c7nBB5A3M_VVnROlrZdIR50XEhUQfXnC0
-  network: tcp
-- type: vless
+  flow: xtls-rprx-vision
+- servername: www.amazon.com
+  uuid: 5c68cb0a-0c11-4c61-9458-66f63387adc5
+  udp: true
+  port: 443
   name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [41e1f4e8]
+  client-fingerprint: ios
   server: 104.225.239.122
-  port: 443
-  udp: true
-  uuid: 5c68cb0a-0c11-4c61-9458-66f63387adc5
+  network: tcp
   encryption: none
   tls: true
-  servername: www.amazon.com
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
+  type: vless
   reality-opts:
     public-key: yzpUjsMEI7c7nBB5A3M_VVnROlrZdIR50XEhUQfXnC0
-  network: tcp
-- type: vless
+  flow: xtls-rprx-vision
+- servername: ads.x5.ru
+  uuid: 258b51dc-c470-408f-a14a-160ebfdaf509
+  udp: true
+  port: 443
   name: 🇭🇰 Hong Kong | [SNI-RU] ads.x5.ru [9357c821]
-  server: 103.195.5.246
-  port: 443
-  udp: true
-  uuid: 258b51dc-c470-408f-a14a-160ebfdaf509
-  encryption: none
-  tls: true
-  servername: ads.x5.ru
-  flow: xtls-rprx-vision
   client-fingerprint: firefox
-  reality-opts:
-    public-key: i0wksYtLLRc3oNqlZ1DYQCc77hcCU6wgGUp1OJIXMAI
-    short-id: 985b
-  network: tcp
-- type: vless
-  name: 🇭🇰 Hong Kong | [SNI-RU] ads.x5.ru [c0509c89]
   server: 103.195.5.246
-  port: 443
-  udp: true
-  uuid: 258b51dc-c470-408f-a14a-160ebfdaf509
+  network: tcp
   encryption: none
   tls: true
-  servername: ads.x5.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
+  type: vless
   reality-opts:
     public-key: i0wksYtLLRc3oNqlZ1DYQCc77hcCU6wgGUp1OJIXMAI
     short-id: 985b
-  network: tcp
-- type: vless
-  name: 🇫🇷 France | [*CIDR]
-  server: cdn-01.funvideos.video
-  port: 443
+  flow: xtls-rprx-vision
+- servername: ads.x5.ru
+  uuid: 258b51dc-c470-408f-a14a-160ebfdaf509
   udp: true
-  uuid: aca886aa-9b51-4eb2-8d7a-12d6b89caf4d
+  port: 443
+  name: 🇭🇰 Hong Kong | [SNI-RU] ads.x5.ru [c0509c89]
+  client-fingerprint: safari
+  server: 103.195.5.246
+  network: tcp
   encryption: none
   tls: true
-  servername: cdn-01.funvideos.video
-  client-fingerprint: qq
-  network: ws
+  type: vless
+  reality-opts:
+    public-key: i0wksYtLLRc3oNqlZ1DYQCc77hcCU6wgGUp1OJIXMAI
+    short-id: 985b
+  flow: xtls-rprx-vision
+- servername: cdn-01.funvideos.video
   ws-opts:
     path: /api/53d53ac3/a7fa61/096357bebc62
     headers:
       Host: cdn-01.funvideos.video
+  uuid: aca886aa-9b51-4eb2-8d7a-12d6b89caf4d
+  udp: true
+  port: 443
+  name: 🇫🇷 France | [*CIDR]
+  client-fingerprint: qq
+  server: cdn-01.funvideos.video
+  network: ws
+  encryption: none
+  tls: true
+  type: vless
+- type: vless
+  name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]
+  server: 104.36.71.38
+  port: 443
+  udp: true
+  uuid: 911f864b-a901-4589-8139-e7e9631dadc4
+  encryption: none
+  tls: true
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Uz2xnYyvHKZfpqdnn9B12BavnRCU6Pxem36vd34ajTE
+    short-id: c7129d3a
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [05fa6f47]
+  server: almaim.g44mozgh.ir
+  port: 8880
+  udp: true
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
+  encryption: none
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nPiL5I1a2l6UMXTrPQ11uZkMjuCtX9LcK3Qpl0zarBo
+    short-id: 67c9e81d9769d3c3
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [7a52d46b]
+  server: irnamh.g44mozgh.ir
+  port: 2036
+  udp: true
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
+  encryption: none
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mY1BGVQvsiNuL-HapTXnZNl33_hlazz25R7tEd_aLgg
+    short-id: 91cb7127d2e97ece
+  network: tcp
+- type: vless
+  name: 🌐 Anycast-IP | 🇭🇰 🇳🇱 | [BL]
+  server: ksbemdmd.color-shop.ir
+  port: 443
+  udp: true
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
+  encryption: none
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI
+    short-id: 61a0eb582ed4f2b5
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
@@ -128,6 +185,10 @@ proxy-groups:
   - 🇭🇰 Hong Kong | [SNI-RU] ads.x5.ru [9357c821]
   - 🇭🇰 Hong Kong | [SNI-RU] ads.x5.ru [c0509c89]
   - 🇫🇷 France | [*CIDR]
+  - 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [05fa6f47]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [7a52d46b]
+  - 🌐 Anycast-IP | 🇭🇰 🇳🇱 | [BL]
   default-selected: 🇸🇪 Sweden [SNI-RU] max.ru
 - name: AUTO
   type: url-test
@@ -139,6 +200,10 @@ proxy-groups:
   - 🇭🇰 Hong Kong | [SNI-RU] ads.x5.ru [9357c821]
   - 🇭🇰 Hong Kong | [SNI-RU] ads.x5.ru [c0509c89]
   - 🇫🇷 France | [*CIDR]
+  - 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [05fa6f47]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [7a52d46b]
+  - 🌐 Anycast-IP | 🇭🇰 🇳🇱 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
