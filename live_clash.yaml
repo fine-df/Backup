@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070027 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070028 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -11,160 +11,47 @@ profile:
   store-selected: true
 proxies:
 - encryption: none
-  client-fingerprint: edge
-  udp: true
-  type: vless
-  servername: de3.brightmetric.trade
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
-  port: 443
-  server: de3.brightmetric.trade
-- encryption: none
-  client-fingerprint: ios
-  reality-opts:
-    public-key: Kb511WMVMJe1nImN8kCi9PdPQSGu3aZCrffMOvzv43A
-    short-id: f9ca9286d0ff8920
-  udp: true
-  type: vless
-  servername: www.cloudflare.com
-  uuid: b47cc98c-54f4-4ab2-acb9-b493a04ccc6b
-  tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  name: 🇯🇵 Japan | 🌐 | [BL]
-  port: 443
-  server: 141.11.138.132
-- encryption: none
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-    short-id: 257420d9d430152a
-  udp: true
-  type: vless
-  servername: a0688bt.us4.h1clayd.click
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  network: tcp
-  name: 🇺🇸 United States, Secaucus | [BL] [0a134e8e]
-  port: 443
-  server: a0688bt.us4.h1clayd.click
-- encryption: none
-  client-fingerprint: edge
-  reality-opts:
-    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-    short-id: 257420d9d430152a
-  udp: true
-  type: vless
-  servername: a0688bt.us4.h1clayd.click
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  network: tcp
-  name: 🇺🇸 United States, Secaucus | [BL] [39a215ac]
-  port: 443
-  server: a0688bt.us4.h1clayd.click
-- type: vless
-  name: 🇺🇸 United States, Dallas | [BL] [66fdd547]
-  server: 27.50.48.211
-  port: 8443
-  udp: true
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  encryption: none
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /usa1019
-    headers:
-      Host: usa.frnhk.xyz
-- type: vless
-  name: 🇺🇸 United States, Dallas | [BL] [afc26eca]
-  server: 27.50.48.211
-  port: 8443
-  udp: true
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  encryption: none
-  tls: true
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /usa1019
-    headers:
-      Host: usa.frnhk.xyz
-- type: vless
-  name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru
-  server: 9.247.34.134
-  port: 8443
-  udp: true
-  uuid: 381f7080-8f2c-49db-8321-dae85bee2115
-  encryption: none
-  tls: true
-  servername: www.rutube.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: KXrPtOUvDVBzcpniQ5Q9hLbuo99B0g5pz97oVJn0LGk
-    short-id: 50c503221adcb931
-  network: grpc
-  grpc-opts:
-    grpc-service-name: api.v1.Sync
-- type: vless
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
   name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [dc9f70bf]
+  udp: true
   server: 9.247.34.118
   port: 2053
-  udp: true
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  encryption: none
+  type: vless
   tls: true
-  servername: www.rutube.ru
-  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
+    short-id: c46d735d6444850f
   client-fingerprint: ios
-  reality-opts:
-    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
-    short-id: c46d735d6444850f
+  servername: www.rutube.ru
   network: tcp
-- type: vless
+  flow: xtls-rprx-vision
+- encryption: none
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
   name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
+  udp: true
   server: 9.247.34.118
   port: 2053
-  udp: true
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  encryption: none
+  type: vless
   tls: true
-  servername: www.rutube.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
   reality-opts:
     public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
     short-id: c46d735d6444850f
+  client-fingerprint: edge
+  servername: www.rutube.ru
   network: tcp
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇯🇵 Japan | 🌐 | [BL]
-  - 🇺🇸 United States, Secaucus | [BL] [0a134e8e]
-  - 🇺🇸 United States, Secaucus | [BL] [39a215ac]
-  - 🇺🇸 United States, Dallas | [BL] [66fdd547]
-  - 🇺🇸 United States, Dallas | [BL] [afc26eca]
-  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [dc9f70bf]
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
-  default-selected: 🇳🇱 The Netherlands, Amsterdam | [BL]
+  default-selected: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [dc9f70bf]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇯🇵 Japan | 🌐 | [BL]
-  - 🇺🇸 United States, Secaucus | [BL] [0a134e8e]
-  - 🇺🇸 United States, Secaucus | [BL] [39a215ac]
-  - 🇺🇸 United States, Dallas | [BL] [66fdd547]
-  - 🇺🇸 United States, Dallas | [BL] [afc26eca]
-  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [dc9f70bf]
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
   url: https://play.google.com/store
