@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070028 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070029 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,50 +10,31 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- encryption: none
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [dc9f70bf]
+- type: vless
+  name: 🇩🇪 Germany | [*CIDR]
+  server: 72.56.235.75
+  port: 443
   udp: true
-  server: 9.247.34.118
-  port: 2053
-  type: vless
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  encryption: none
   tls: true
-  reality-opts:
-    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
-    short-id: c46d735d6444850f
+  servername: renderer-bridge-2-121.mirra.now
   client-fingerprint: ios
-  servername: www.rutube.ru
-  network: tcp
-  flow: xtls-rprx-vision
-- encryption: none
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
-  udp: true
-  server: 9.247.34.118
-  port: 2053
-  type: vless
-  tls: true
-  reality-opts:
-    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
-    short-id: c46d735d6444850f
-  client-fingerprint: edge
-  servername: www.rutube.ru
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
+  grpc-opts:
+    grpc-service-name: VideoRenderer
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [dc9f70bf]
-  - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
-  default-selected: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [dc9f70bf]
+  - 🇩🇪 Germany | [*CIDR]
+  default-selected: 🇩🇪 Germany | [*CIDR]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [dc9f70bf]
-  - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
+  - 🇩🇪 Germany | [*CIDR]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
