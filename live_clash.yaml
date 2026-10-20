@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070025 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070026 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,93 +10,161 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- type: vless
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: nPiL5I1a2l6UMXTrPQ11uZkMjuCtX9LcK3Qpl0zarBo
-    short-id: 67c9e81d9769d3c3
-  udp: true
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
-  servername: play.google.com
-  encryption: none
-  server: almaim.g44mozgh.ir
-  port: 8880
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]
-  tls: true
-  network: tcp
-- type: vless
-  client-fingerprint: edge
-  udp: true
+- udp: true
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  servername: de3.brightmetric.trade
   encryption: none
   server: de3.brightmetric.trade
-  port: 443
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
-  tls: true
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+  servername: de3.brightmetric.trade
+  type: vless
   network: tcp
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
+  port: 443
+  tls: true
 - type: vless
-  name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [5ea81d73]
-  server: 9.247.34.134
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [2537eee6]
+  server: news.zoom.us
   port: 8443
   udp: true
-  uuid: 381f7080-8f2c-49db-8321-dae85bee2115
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   encryption: none
   tls: true
-  servername: www.rutube.ru
-  client-fingerprint: safari
-  reality-opts:
-    public-key: KXrPtOUvDVBzcpniQ5Q9hLbuo99B0g5pz97oVJn0LGk
-    short-id: 50c503221adcb931
-  network: grpc
-  grpc-opts:
-    grpc-service-name: api.v1.Sync
+  servername: u.srilankangrill.online
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
 - type: vless
-  name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [4660cde4]
-  server: 9.247.34.134
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [3eeb2983]
+  server: news.zoom.us
   port: 8443
   udp: true
-  uuid: 381f7080-8f2c-49db-8321-dae85bee2115
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   encryption: none
   tls: true
-  servername: www.rutube.ru
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a146a8fa]
+  server: 141.193.213.21
+  port: 8443
+  udp: true
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  encryption: none
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- type: vless
+  name: 🇯🇵 Japan | 🌐 | [BL]
+  server: 141.11.138.132
+  port: 443
+  udp: true
+  uuid: b47cc98c-54f4-4ab2-acb9-b493a04ccc6b
+  encryption: none
+  tls: true
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
   client-fingerprint: ios
   reality-opts:
-    public-key: KXrPtOUvDVBzcpniQ5Q9hLbuo99B0g5pz97oVJn0LGk
-    short-id: 50c503221adcb931
-  network: grpc
-  grpc-opts:
-    grpc-service-name: api.v1.Sync
-- type: vless
-  name: 🇵🇱 Poland, Warsaw (Śródmieście) | 🌐 | [BL] [dc82b7bc]
-  server: 191.217.255.119
-  port: 8443
-  udp: true
-  uuid: 7710373d-abbb-4d6e-88cc-12702fb70aee
-  encryption: none
-  tls: true
-  servername: pl.ataloqe.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: anm0nJRSsOuFmfB8nWZrKsA0bHIF1ZEasIwuQ7_rkxM
-    short-id: 9f3a7c2d4e1b8a6c
+    public-key: Kb511WMVMJe1nImN8kCi9PdPQSGu3aZCrffMOvzv43A
+    short-id: f9ca9286d0ff8920
   network: tcp
 - type: vless
-  name: 🇵🇱 Poland, Warsaw (Śródmieście) | 🌐 | [BL] [40d0d371]
-  server: 191.217.255.119
-  port: 8443
+  name: 🌐 Anycast-IP | 🇮🇳 🇷🇺 | [*CIDR] [cf196560]
+  server: 176.53.162.32
+  port: 443
   udp: true
-  uuid: 7710373d-abbb-4d6e-88cc-12702fb70aee
+  uuid: d86e6fda-e519-03e8-98eb-9ff9a9da5984
   encryption: none
   tls: true
-  servername: pl.ataloqe.com
+  servername: trust-shell-qe1.cdn.cachefleet.com
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 3d7f80c943d676f3
+- type: vless
+  name: 🌐 Anycast-IP | 🇮🇳 🇷🇺 | [*CIDR] [4adcd27f]
+  server: 176.53.162.32
+  port: 443
+  udp: true
+  uuid: d86e6fda-e519-03e8-98eb-9ff9a9da5984
+  encryption: none
+  tls: true
+  servername: trust-shell-qe1.cdn.cachefleet.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 3d7f80c943d676f3
+- type: vless
+  name: 🇺🇸 United States, Secaucus | [BL] [0a134e8e]
+  server: a0688bt.us4.h1clayd.click
+  port: 443
+  udp: true
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  encryption: none
+  tls: true
+  servername: a0688bt.us4.h1clayd.click
+  client-fingerprint: ios
+  reality-opts:
+    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
+    short-id: 257420d9d430152a
+  network: tcp
+- type: vless
+  name: 🇺🇸 United States, Secaucus | [BL] [39a215ac]
+  server: a0688bt.us4.h1clayd.click
+  port: 443
+  udp: true
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  encryption: none
+  tls: true
+  servername: a0688bt.us4.h1clayd.click
+  client-fingerprint: edge
+  reality-opts:
+    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
+    short-id: 257420d9d430152a
+  network: tcp
+- type: vless
+  name: 🇪🇪 Estonia | 🌐 | [*CIDR] [073d2720]
+  server: 45.139.27.9
+  port: 443
+  udp: true
+  uuid: 6eca8bc3-c4e1-48d1-bf15-1eb016dd6272
+  encryption: none
+  tls: true
+  servername: www.spbu.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 2LWgemfg0df7tGt4icLbRG-Cz7QNPVr3g7xIdwbTTHQ
+    short-id: caa05b44ba5b7b3d
+  network: tcp
+- type: vless
+  name: 🇪🇪 Estonia | 🌐 | [*CIDR] [30fd31ec]
+  server: 45.139.27.9
+  port: 443
+  udp: true
+  uuid: 6eca8bc3-c4e1-48d1-bf15-1eb016dd6272
+  encryption: none
+  tls: true
+  servername: www.spbu.ru
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: anm0nJRSsOuFmfB8nWZrKsA0bHIF1ZEasIwuQ7_rkxM
-    short-id: 9f3a7c2d4e1b8a6c
+    public-key: 2LWgemfg0df7tGt4icLbRG-Cz7QNPVr3g7xIdwbTTHQ
+    short-id: caa05b44ba5b7b3d
   network: tcp
 proxy-groups:
 - name: Fine
@@ -104,22 +172,32 @@ proxy-groups:
   proxies:
   - AUTO
   - DIRECT
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]
   - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [5ea81d73]
-  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [4660cde4]
-  - 🇵🇱 Poland, Warsaw (Śródmieście) | 🌐 | [BL] [dc82b7bc]
-  - 🇵🇱 Poland, Warsaw (Śródmieście) | 🌐 | [BL] [40d0d371]
-  default-selected: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [2537eee6]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [3eeb2983]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a146a8fa]
+  - 🇯🇵 Japan | 🌐 | [BL]
+  - 🌐 Anycast-IP | 🇮🇳 🇷🇺 | [*CIDR] [cf196560]
+  - 🌐 Anycast-IP | 🇮🇳 🇷🇺 | [*CIDR] [4adcd27f]
+  - 🇺🇸 United States, Secaucus | [BL] [0a134e8e]
+  - 🇺🇸 United States, Secaucus | [BL] [39a215ac]
+  - 🇪🇪 Estonia | 🌐 | [*CIDR] [073d2720]
+  - 🇪🇪 Estonia | 🌐 | [*CIDR] [30fd31ec]
+  default-selected: 🇳🇱 The Netherlands, Amsterdam | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]
   - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [5ea81d73]
-  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [4660cde4]
-  - 🇵🇱 Poland, Warsaw (Śródmieście) | 🌐 | [BL] [dc82b7bc]
-  - 🇵🇱 Poland, Warsaw (Śródmieście) | 🌐 | [BL] [40d0d371]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [2537eee6]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [3eeb2983]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a146a8fa]
+  - 🇯🇵 Japan | 🌐 | [BL]
+  - 🌐 Anycast-IP | 🇮🇳 🇷🇺 | [*CIDR] [cf196560]
+  - 🌐 Anycast-IP | 🇮🇳 🇷🇺 | [*CIDR] [4adcd27f]
+  - 🇺🇸 United States, Secaucus | [BL] [0a134e8e]
+  - 🇺🇸 United States, Secaucus | [BL] [39a215ac]
+  - 🇪🇪 Estonia | 🌐 | [*CIDR] [073d2720]
+  - 🇪🇪 Estonia | 🌐 | [*CIDR] [30fd31ec]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
