@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070033 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070034 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,168 +10,195 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
-    short-id: c46d735d6444850f
+- port: 2053
+  client-fingerprint: firefox
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
   servername: www.rutube.ru
-  port: 2053
-  udp: true
-  encryption: none
   server: 9.247.34.118
+  udp: true
   name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [ce2df542]
   tls: true
-  type: vless
-  network: tcp
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  port: 8443
-  udp: true
-  encryption: none
-  server: 113.30.154.239
-  name: 🇷🇺 Russia | [*CIDR] [28b317b1]
-  tls: true
-  type: vless
-  network: tcp
-  uuid: dc4512bd-44d8-4211-9559-f2e165bb34b0
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  port: 8443
-  udp: true
-  encryption: none
-  server: 113.30.154.239
-  name: 🇷🇺 Russia | [*CIDR] [55d81eef]
-  tls: true
-  type: vless
-  network: tcp
-  uuid: dc4512bd-44d8-4211-9559-f2e165bb34b0
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
   reality-opts:
     public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
     short-id: c46d735d6444850f
-  servername: www.rutube.ru
-  port: 2053
-  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
   encryption: none
+  type: vless
+- port: 2053
+  client-fingerprint: qq
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
+  servername: www.rutube.ru
   server: 9.247.34.118
+  udp: true
   name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
   tls: true
-  type: vless
-  network: tcp
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  servername: ya.ru
-  port: 21443
-  udp: true
+    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
+    short-id: c46d735d6444850f
+  network: tcp
+  flow: xtls-rprx-vision
   encryption: none
+  type: vless
+- port: 21443
+  client-fingerprint: safari
+  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
+  servername: ya.ru
   server: e1-us.edgemedia.lol
+  udp: true
   name: 🇺🇸 United States [*CIDR] [f7fad3f8]
   tls: true
-  type: vless
-  network: tcp
-  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   reality-opts:
     public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
     short-id: d2061bb1
-  servername: ya.ru
-  port: 21443
-  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
   encryption: none
+  type: vless
+- port: 21443
+  client-fingerprint: chrome
+  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
+  servername: ya.ru
   server: e1-us.edgemedia.lol
+  udp: true
   name: 🇺🇸 United States [*CIDR] [a2a8a070]
   tls: true
-  type: vless
-  network: tcp
-  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
-    short-id: c46d735d6444850f
-  servername: www.rutube.ru
-  port: 2053
-  udp: true
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
+  network: tcp
+  flow: xtls-rprx-vision
   encryption: none
+  type: vless
+- port: 2053
+  client-fingerprint: edge
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
+  servername: www.rutube.ru
   server: 9.247.34.118
+  udp: true
   name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
   tls: true
-  type: vless
-  network: tcp
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-- type: vless
-  name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
-  server: 9.247.34.118
-  port: 2053
-  udp: true
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  encryption: none
-  tls: true
-  servername: www.rutube.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
   reality-opts:
     public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
     short-id: c46d735d6444850f
   network: tcp
-- type: vless
-  name: 🇪🇸 Spain [*CIDR]
-  server: 185.76.241.87
-  port: 443
-  udp: true
-  uuid: 5c8950a3-2142-42c9-b414-fa34526ff25f
-  encryption: none
-  tls: true
-  servername: ru-in-es-4vp.movietop24.site
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM
-    short-id: 861215e33e8dba4f
-  network: tcp
-- type: vless
-  name: 🇹🇷 Turkey, Istanbul | [BL] [543edb8c]
-  server: 177.202.96.106
-  port: 443
+  encryption: none
+  type: vless
+- port: 2053
+  client-fingerprint: safari
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
+  servername: www.rutube.ru
+  server: 9.247.34.118
   udp: true
-  uuid: e53b3d8c-2782-456b-97bc-6bc232bdbaa8
+  name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
+  tls: true
+  reality-opts:
+    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
+    short-id: c46d735d6444850f
+  network: tcp
+  flow: xtls-rprx-vision
+  encryption: none
+  type: vless
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [ba24ea67]
+  server: 141.193.213.20
+  port: 8443
+  udp: true
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   encryption: none
   tls: true
-  servername: pl2.spidermanshopping.com
+  servername: speed.dulacloud.store
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /dula
+    headers:
+      Host: speed.dulacloud.store
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [8293d67d]
+  server: 141.193.213.20
+  port: 8443
+  udp: true
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  encryption: none
+  tls: true
+  servername: speed.dulacloud.store
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /dula
+    headers:
+      Host: speed.dulacloud.store
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [*CIDR]
+  server: 113.30.154.228
+  port: 443
+  udp: true
+  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
+  encryption: none
+  tls: true
+  servername: ai.ozon.ru
   flow: xtls-rprx-vision
   client-fingerprint: qq
   reality-opts:
-    public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-    short-id: 8718c58d3d51db59
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   network: tcp
 - type: vless
-  name: 🇹🇷 Turkey, Istanbul | [BL] [aa7d25cb]
-  server: 177.202.96.106
+  name: 🇩🇪 Germany [SNI-RU] ozon.ru
+  server: 45.128.78.171
   port: 443
   udp: true
-  uuid: e53b3d8c-2782-456b-97bc-6bc232bdbaa8
+  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
   encryption: none
   tls: true
-  servername: pl2.spidermanshopping.com
+  servername: ozon.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany | [SNI-RU] ozon.ru [cdac630b]
+  server: 45.128.78.178
+  port: 443
+  udp: true
+  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
+  encryption: none
+  tls: true
+  servername: ozon.ru
   flow: xtls-rprx-vision
   client-fingerprint: ios
   reality-opts:
-    public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-    short-id: 8718c58d3d51db59
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany | 🌐 [*CIDR]
+  server: 113.30.154.228
+  port: 443
+  udp: true
+  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
+  encryption: none
+  tls: true
+  servername: ai.ozon.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany | [SNI-RU] ozon.ru [83c16fb7]
+  server: 45.128.78.171
+  port: 443
+  udp: true
+  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
+  encryption: none
+  tls: true
+  servername: ozon.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   network: tcp
 proxy-groups:
 - name: Fine
@@ -180,31 +207,35 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [ce2df542]
-  - 🇷🇺 Russia | [*CIDR] [28b317b1]
-  - 🇷🇺 Russia | [*CIDR] [55d81eef]
   - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
   - 🇺🇸 United States [*CIDR] [f7fad3f8]
   - 🇺🇸 United States [*CIDR] [a2a8a070]
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
-  - 🇪🇸 Spain [*CIDR]
-  - 🇹🇷 Turkey, Istanbul | [BL] [543edb8c]
-  - 🇹🇷 Turkey, Istanbul | [BL] [aa7d25cb]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [ba24ea67]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [8293d67d]
+  - 🇩🇪 Germany | 🌐 | [*CIDR]
+  - 🇩🇪 Germany [SNI-RU] ozon.ru
+  - 🇩🇪 Germany | [SNI-RU] ozon.ru [cdac630b]
+  - 🇩🇪 Germany | 🌐 [*CIDR]
+  - 🇩🇪 Germany | [SNI-RU] ozon.ru [83c16fb7]
   default-selected: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [ce2df542]
 - name: AUTO
   type: url-test
   proxies:
   - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [ce2df542]
-  - 🇷🇺 Russia | [*CIDR] [28b317b1]
-  - 🇷🇺 Russia | [*CIDR] [55d81eef]
   - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
   - 🇺🇸 United States [*CIDR] [f7fad3f8]
   - 🇺🇸 United States [*CIDR] [a2a8a070]
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
-  - 🇪🇸 Spain [*CIDR]
-  - 🇹🇷 Turkey, Istanbul | [BL] [543edb8c]
-  - 🇹🇷 Turkey, Istanbul | [BL] [aa7d25cb]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [ba24ea67]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [8293d67d]
+  - 🇩🇪 Germany | 🌐 | [*CIDR]
+  - 🇩🇪 Germany [SNI-RU] ozon.ru
+  - 🇩🇪 Germany | [SNI-RU] ozon.ru [cdac630b]
+  - 🇩🇪 Germany | 🌐 [*CIDR]
+  - 🇩🇪 Germany | [SNI-RU] ozon.ru [83c16fb7]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
