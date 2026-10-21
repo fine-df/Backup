@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070030 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070031 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,35 +10,79 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- server: 72.56.235.75
-  encryption: none
-  client-fingerprint: ios
+- reality-opts:
+    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
+    short-id: c46d735d6444850f
+  network: tcp
   tls: true
+  name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [ce2df542]
+  type: vless
+  encryption: none
+  udp: true
+  flow: xtls-rprx-vision
+  port: 2053
+  client-fingerprint: firefox
+  server: 9.247.34.118
+  servername: www.rutube.ru
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
+- network: grpc
+  tls: true
+  name: 🇩🇪 Germany [*CIDR] [30b82bd8]
+  type: vless
+  encryption: none
+  udp: true
   grpc-opts:
     grpc-service-name: VideoRenderer
+  port: 443
+  client-fingerprint: safari
+  server: 72.56.235.75
   servername: renderer-bridge-2-121.mirra.now
-  udp: true
-  name: 🇩🇪 Germany | [*CIDR]
-  port: 443
-  type: vless
-  network: grpc
   uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-- type: trojan
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
-  server: szadi-production.up.railway.app
+- reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+  tls: true
+  name: 🇷🇺 Russia | [*CIDR] [28b317b1]
+  type: vless
+  encryption: none
+  udp: true
+  flow: xtls-rprx-vision
+  port: 8443
+  client-fingerprint: firefox
+  server: 113.30.154.239
+  servername: apple.com
+  uuid: dc4512bd-44d8-4211-9559-f2e165bb34b0
+- reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+  tls: true
+  name: 🇷🇺 Russia | [*CIDR] [55d81eef]
+  type: vless
+  encryption: none
+  udp: true
+  flow: xtls-rprx-vision
+  port: 8443
+  client-fingerprint: qq
+  server: 113.30.154.239
+  servername: apple.com
+  uuid: dc4512bd-44d8-4211-9559-f2e165bb34b0
+- type: vless
+  name: 🇫🇷 France | 🌐 | [BL]
+  server: 8.6.112.0
   port: 443
   udp: true
-  password: 1f724219-b3d
+  uuid: ab4f3e97-27ba-496a-8133-9d7ca285fcba
+  encryption: none
   tls: true
-  servername: szadi-production.up.railway.app
-  client-fingerprint: firefox
+  servername: polshaov.ochmaybrooooo.online
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /milijon-tr
+    path: /
     headers:
-      Host: szadi-production.up.railway.app
+      Host: polshaov.ochmaybrooooo.online
 - type: vless
-  name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru
+  name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
   server: 9.247.34.118
   port: 2053
   udp: true
@@ -47,64 +91,25 @@ proxies:
   tls: true
   servername: www.rutube.ru
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: qq
   reality-opts:
     public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
     short-id: c46d735d6444850f
   network: tcp
 - type: vless
-  name: 🇩🇪 Germany [*CIDR] [2ab71465]
-  server: 72.56.235.75
+  name: 🇪🇪 Estonia, Tallinn | [BL]
+  server: 176.112.152.147
   port: 443
   udp: true
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  uuid: a11213e8-a42f-4492-beaa-14084f6ae28a
   encryption: none
   tls: true
-  servername: renderer-bridge-2-121.mirra.now
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: VideoRenderer
-- type: vless
-  name: 🇩🇪 Germany [*CIDR] [30b82bd8]
-  server: 72.56.235.75
-  port: 443
-  udp: true
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  encryption: none
-  tls: true
-  servername: renderer-bridge-2-121.mirra.now
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: VideoRenderer
-- type: vless
-  name: 🇷🇺 Russia | [*CIDR] [28b317b1]
-  server: 113.30.154.239
-  port: 8443
-  udp: true
-  uuid: dc4512bd-44d8-4211-9559-f2e165bb34b0
-  encryption: none
-  tls: true
-  servername: apple.com
+  servername: www.coop.ee
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
-- type: vless
-  name: 🇷🇺 Russia | [*CIDR] [55d81eef]
-  server: 113.30.154.239
-  port: 8443
-  udp: true
-  uuid: dc4512bd-44d8-4211-9559-f2e165bb34b0
-  encryption: none
-  tls: true
-  servername: apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    public-key: 805vJbnw_12vyuxa9pW46ObJ1cOub-75pGJYTfMJYHM
+    short-id: 74e50da3c1769379
   network: tcp
 proxy-groups:
 - name: Fine
@@ -112,24 +117,24 @@ proxy-groups:
   proxies:
   - AUTO
   - DIRECT
-  - 🇩🇪 Germany | [*CIDR]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru
-  - 🇩🇪 Germany [*CIDR] [2ab71465]
+  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [ce2df542]
   - 🇩🇪 Germany [*CIDR] [30b82bd8]
   - 🇷🇺 Russia | [*CIDR] [28b317b1]
   - 🇷🇺 Russia | [*CIDR] [55d81eef]
-  default-selected: 🇩🇪 Germany | [*CIDR]
+  - 🇫🇷 France | 🌐 | [BL]
+  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
+  - 🇪🇪 Estonia, Tallinn | [BL]
+  default-selected: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [ce2df542]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 Germany | [*CIDR]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru
-  - 🇩🇪 Germany [*CIDR] [2ab71465]
+  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [ce2df542]
   - 🇩🇪 Germany [*CIDR] [30b82bd8]
   - 🇷🇺 Russia | [*CIDR] [28b317b1]
   - 🇷🇺 Russia | [*CIDR] [55d81eef]
+  - 🇫🇷 France | 🌐 | [BL]
+  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
+  - 🇪🇪 Estonia, Tallinn | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
