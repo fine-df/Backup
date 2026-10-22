@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070035 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070036 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,349 +10,268 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- servername: www.rutube.ru
-  name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
-  encryption: none
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
+- server: 9.247.34.118
   flow: xtls-rprx-vision
-  type: vless
-  udp: true
-  client-fingerprint: qq
-  tls: true
-  server: 9.247.34.118
-  network: tcp
-  reality-opts:
-    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
-    short-id: c46d735d6444850f
-  port: 2053
-- servername: ya.ru
-  name: 🇺🇸 United States [*CIDR] [f7fad3f8]
-  encryption: none
-  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-  flow: xtls-rprx-vision
-  type: vless
-  udp: true
+  servername: www.rutube.ru
   client-fingerprint: safari
-  tls: true
-  server: e1-us.edgemedia.lol
-  network: tcp
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  port: 21443
-- servername: ya.ru
-  name: 🇺🇸 United States [*CIDR] [a2a8a070]
-  encryption: none
-  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-  flow: xtls-rprx-vision
-  type: vless
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  server: e1-us.edgemedia.lol
-  network: tcp
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  port: 21443
-- servername: www.rutube.ru
-  name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
-  encryption: none
   uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  flow: xtls-rprx-vision
-  type: vless
-  udp: true
-  client-fingerprint: edge
-  tls: true
-  server: 9.247.34.118
   network: tcp
-  reality-opts:
-    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
-    short-id: c46d735d6444850f
-  port: 2053
-- servername: www.rutube.ru
+  udp: true
   name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
-  encryption: none
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  flow: xtls-rprx-vision
   type: vless
-  udp: true
-  client-fingerprint: safari
-  tls: true
-  server: 9.247.34.118
-  network: tcp
   reality-opts:
     public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
     short-id: c46d735d6444850f
+  encryption: none
   port: 2053
-- servername: speed.dulacloud.store
+  tls: true
+- server: 9.247.34.118
+  flow: xtls-rprx-vision
+  servername: www.rutube.ru
+  client-fingerprint: qq
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
+  network: tcp
+  udp: true
+  name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
+  type: vless
+  reality-opts:
+    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
+    short-id: c46d735d6444850f
+  encryption: none
+  port: 2053
+  tls: true
+- server: 141.193.213.20
+  servername: speed.dulacloud.store
+  client-fingerprint: chrome
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  network: ws
+  udp: true
+  ws-opts:
+    path: /dula
+    headers:
+      Host: speed.dulacloud.store
   name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [ba24ea67]
+  type: vless
   encryption: none
+  port: 8443
+  tls: true
+- server: 141.193.213.20
+  servername: speed.dulacloud.store
+  client-fingerprint: ios
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  network: ws
+  udp: true
   ws-opts:
     path: /dula
     headers:
       Host: speed.dulacloud.store
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  type: vless
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  server: 141.193.213.20
-  network: ws
-  port: 8443
-- servername: speed.dulacloud.store
   name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [8293d67d]
-  encryption: none
-  ws-opts:
-    path: /dula
-    headers:
-      Host: speed.dulacloud.store
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   type: vless
-  udp: true
-  client-fingerprint: ios
-  tls: true
-  server: 141.193.213.20
-  network: ws
+  encryption: none
   port: 8443
-- servername: ozon.ru
-  name: 🇩🇪 Germany [SNI-RU] ozon.ru
-  encryption: none
-  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
-  flow: xtls-rprx-vision
-  type: vless
-  udp: true
-  client-fingerprint: firefox
   tls: true
-  server: 45.128.78.171
+- server: 45.128.78.178
+  flow: xtls-rprx-vision
+  servername: ozon.ru
+  client-fingerprint: ios
+  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
   network: tcp
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  port: 443
-- servername: ozon.ru
+  udp: true
   name: 🇩🇪 Germany | [SNI-RU] ozon.ru [cdac630b]
-  encryption: none
-  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
-  flow: xtls-rprx-vision
   type: vless
-  udp: true
-  client-fingerprint: ios
-  tls: true
-  server: 45.128.78.178
-  network: tcp
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  port: 443
-- servername: ozon.ru
-  name: 🇩🇪 Germany | [SNI-RU] ozon.ru [83c16fb7]
   encryption: none
-  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
-  flow: xtls-rprx-vision
-  type: vless
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  server: 45.128.78.171
-  network: tcp
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   port: 443
-- type: vless
-  name: 🇺🇸 United States [SNI-RU] ya.ru
-  server: e1-us.edgemedia.lol
-  port: 21443
-  udp: true
-  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-  encryption: none
   tls: true
-  servername: ya.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  network: tcp
-- type: vless
+- server: 141.193.213.20
+  servername: speed.dulacloud.store
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  network: ws
+  udp: true
+  ws-opts:
+    path: /dula
+    headers:
+      Host: speed.dulacloud.store
   name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [c346ddc2]
-  server: 141.193.213.20
-  port: 8443
-  udp: true
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  type: vless
   encryption: none
+  port: 8443
   tls: true
+- server: 141.193.213.20
   servername: speed.dulacloud.store
+  client-fingerprint: firefox
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   network: ws
+  udp: true
   ws-opts:
     path: /dula
     headers:
       Host: speed.dulacloud.store
-- type: vless
   name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [dfcc696c]
-  server: 141.193.213.20
+  type: vless
+  encryption: none
   port: 8443
-  udp: true
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  encryption: none
   tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /dula
-    headers:
-      Host: speed.dulacloud.store
-- type: vless
-  name: 🇫🇮 Finland [*CIDR]
-  server: 45.9.12.7
-  port: 443
-  udp: true
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  encryption: none
-  tls: true
-  servername: peskov.russiavibory.online
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  network: tcp
-- type: vless
-  name: 🌐 Anycast-IP | 🇫🇷 | [BL]
-  server: 8.6.112.0
-  port: 443
-  udp: true
-  uuid: 55d6b5ed-359b-4e4f-b568-e5affed702c9
-  encryption: none
-  tls: true
-  servername: polshaov.ochmaybrooooo.online
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: polshaov.ochmaybrooooo.online
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
-  server: 193.23.221.253
-  port: 443
-  udp: true
-  uuid: 3f3c253c-2c6e-4f17-abbc-ddb308002ca0
-  encryption: none
-  tls: true
-  servername: ru.tradingview.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: lxr4MVJlo5M-S_dS-jfYjgcYKq29yi0DR39urpcylDI
-  network: tcp
-- type: vless
-  name: 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]
-  server: 8.6.112.0
-  port: 443
-  udp: true
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  encryption: none
-  tls: true
+- server: 8.6.112.0
   servername: fi1.merky.one
   client-fingerprint: edge
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   network: ws
+  udp: true
   ws-opts:
     path: /mky-ws-4f19c8a7
     headers:
       Host: fi1.merky.one
-- type: vless
-  name: 🇬🇧 United Kingdom, London | [BL]
-  server: 196.247.163.9
-  port: 65012
-  udp: true
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  name: 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]
+  type: vless
   encryption: none
+  port: 443
   tls: true
-  servername: www.icloud.com
+- server: 196.247.163.9
   flow: xtls-rprx-vision
+  servername: www.icloud.com
   client-fingerprint: firefox
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  network: tcp
+  udp: true
+  name: 🇬🇧 United Kingdom, London | [BL]
+  type: vless
   reality-opts:
     public-key: c7GoRlKYJrh9j0xSRrdmPq3HRkrR2YK9oy67YrC7Dk4
     short-id: da9b3a6df9a99e
-  network: tcp
-- type: vless
-  name: 🇺🇸 United States, Washington D.C. | [BL]
-  server: 46.29.255.123
-  port: 59539
-  udp: true
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   encryption: none
+  port: 65012
   tls: true
-  servername: cloudflare-dns.com
+- server: 46.29.255.123
   flow: xtls-rprx-vision
+  servername: cloudflare-dns.com
   client-fingerprint: firefox
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  network: tcp
+  udp: true
+  name: 🇺🇸 United States, Washington D.C. | [BL]
+  type: vless
   reality-opts:
     public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
-  network: tcp
-- type: vless
-  name: 🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL]
-  server: media.vik.lalibobi.online
-  port: 443
-  udp: true
-  uuid: 21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad
   encryption: none
+  port: 59539
   tls: true
+- server: media.vik.lalibobi.online
   servername: media.vik.lalibobi.online
   client-fingerprint: firefox
+  uuid: 21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad
   network: ws
+  udp: true
   ws-opts:
     path: /live/showroom
     headers:
       Host: media.vik.lalibobi.online
+  name: 🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL]
+  type: vless
+  encryption: none
+  port: 443
+  tls: true
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [1c2a01f2]
+  server: 141.193.213.20
+  port: 8443
+  udp: true
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  encryption: none
+  tls: true
+  servername: speed.dulacloud.store
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /dula
+    headers:
+      Host: speed.dulacloud.store
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a2cf30c3]
+  server: 141.193.213.20
+  port: 8443
+  udp: true
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  encryption: none
+  tls: true
+  servername: speed.dulacloud.store
+  client-fingerprint: android
+  network: ws
+  ws-opts:
+    path: /dula
+    headers:
+      Host: speed.dulacloud.store
+- type: vless
+  name: 🇨🇿 Czechia, Prague | 🌐 | [BL]
+  server: 178.208.78.209
+  port: 443
+  udp: true
+  uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
+  encryption: none
+  tls: true
+  servername: www.google.co.uk
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: XjdhbKkou-RV3ZyRrycpH-l0QrlhClkcfaMVlQ-Vtz8
+    short-id: ef
+  network: tcp
+- type: vless
+  name: 🌐 Anycast-IP | 🇫🇷 | [BL]
+  server: 199.232.78.160
+  port: 443
+  udp: true
+  uuid: XpnTeam-34
+  encryption: none
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
-  - 🇺🇸 United States [*CIDR] [f7fad3f8]
-  - 🇺🇸 United States [*CIDR] [a2a8a070]
-  - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
+  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
   - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [ba24ea67]
   - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [8293d67d]
-  - 🇩🇪 Germany [SNI-RU] ozon.ru
   - 🇩🇪 Germany | [SNI-RU] ozon.ru [cdac630b]
-  - 🇩🇪 Germany | [SNI-RU] ozon.ru [83c16fb7]
-  - 🇺🇸 United States [SNI-RU] ya.ru
   - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [c346ddc2]
   - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [dfcc696c]
-  - 🇫🇮 Finland [*CIDR]
-  - 🌐 Anycast-IP | 🇫🇷 | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]
   - 🇬🇧 United Kingdom, London | [BL]
   - 🇺🇸 United States, Washington D.C. | [BL]
   - 🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL]
-  default-selected: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [1c2a01f2]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a2cf30c3]
+  - 🇨🇿 Czechia, Prague | 🌐 | [BL]
+  - 🌐 Anycast-IP | 🇫🇷 | [BL]
+  default-selected: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
 - name: AUTO
   type: url-test
   proxies:
-  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
-  - 🇺🇸 United States [*CIDR] [f7fad3f8]
-  - 🇺🇸 United States [*CIDR] [a2a8a070]
-  - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru [efe9eba1]
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
+  - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
   - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [ba24ea67]
   - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [8293d67d]
-  - 🇩🇪 Germany [SNI-RU] ozon.ru
   - 🇩🇪 Germany | [SNI-RU] ozon.ru [cdac630b]
-  - 🇩🇪 Germany | [SNI-RU] ozon.ru [83c16fb7]
-  - 🇺🇸 United States [SNI-RU] ya.ru
   - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [c346ddc2]
   - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [dfcc696c]
-  - 🇫🇮 Finland [*CIDR]
-  - 🌐 Anycast-IP | 🇫🇷 | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
   - 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]
   - 🇬🇧 United Kingdom, London | [BL]
   - 🇺🇸 United States, Washington D.C. | [BL]
   - 🇸🇪 Sweden, Hudiksvall (Östra Hudiksvall) | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [1c2a01f2]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a2cf30c3]
+  - 🇨🇿 Czechia, Prague | 🌐 | [BL]
+  - 🌐 Anycast-IP | 🇫🇷 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
