@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070039 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070040 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -11,199 +11,154 @@ profile:
   store-selected: true
 proxies:
 - server: 9.247.34.118
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  encryption: none
-  port: 2053
   network: tcp
-  tls: true
-  name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
   type: vless
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  servername: www.rutube.ru
-  udp: true
+  name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
   reality-opts:
     public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
     short-id: c46d735d6444850f
-- server: 9.247.34.118
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  encryption: none
   port: 2053
-  network: tcp
   tls: true
-  name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
-  type: vless
+  encryption: none
+  client-fingerprint: safari
+  servername: www.rutube.ru
   flow: xtls-rprx-vision
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
+  udp: true
+- server: 9.247.34.118
+  network: tcp
+  type: vless
+  name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
+  reality-opts:
+    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
+    short-id: c46d735d6444850f
+  port: 2053
+  tls: true
+  encryption: none
   client-fingerprint: qq
   servername: www.rutube.ru
-  udp: true
-  reality-opts:
-    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
-    short-id: c46d735d6444850f
-- server: 45.128.78.178
-  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
-  encryption: none
-  port: 443
-  network: tcp
-  tls: true
-  name: 🇩🇪 Germany | [SNI-RU] ozon.ru [cdac630b]
-  type: vless
   flow: xtls-rprx-vision
-  client-fingerprint: ios
-  servername: ozon.ru
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
   udp: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- server: 46.29.255.123
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  encryption: none
-  port: 59539
-  network: tcp
-  tls: true
-  name: 🇺🇸 United States, Washington D.C. | [BL]
-  type: vless
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  servername: cloudflare-dns.com
-  udp: true
-  reality-opts:
-    public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
 - server: funagfrdfs.alixxplay.com
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  encryption: none
-  port: 46105
   network: tcp
-  tls: true
-  name: 日本(yudou99.com 玉豆分享)
   type: vless
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  servername: www.lamer.com.sg
-  udp: true
+  name: 日本(yudou99.com 玉豆分享)
   reality-opts:
     public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
     short-id: 28f5c1f8f98a
+  port: 46105
+  tls: true
+  encryption: none
+  client-fingerprint: safari
+  servername: www.lamer.com.sg
+  flow: xtls-rprx-vision
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
 - server: sg-transit-3.nebulacloud.win
+  alterId: 0
+  network: ws
+  type: vmess
   ws-opts:
     headers:
       Host: sg-transit-3.nebulacloud.win
     path: /ca/getData
-  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
-  alterId: 0
+  name: 🇸🇬_SG_新加坡->🇨🇦_CA_加拿大
   cipher: auto
   port: 30330
-  network: ws
   tls: true
-  name: 🇸🇬_SG_新加坡->🇨🇦_CA_加拿大
-  type: vmess
   servername: sg-transit-3.nebulacloud.win
+  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
   udp: true
 - server: 45.85.117.174
-  uuid: 92a4056a-38d6-49d0-8bd2-600e55af1e9f
-  encryption: none
-  port: 443
   network: tcp
-  tls: true
-  name: 🇳🇱 The Netherlands, Meppel | [BL] [550b9ef7]
   type: vless
-  flow: xtls-rprx-vision
+  name: 🇳🇱 The Netherlands, Meppel | [BL] [550b9ef7]
+  reality-opts:
+    public-key: rF4J_igTFQRUXEaY351LiZG0Ea4OuNpOakuAbqT0bAw
+    short-id: 088faf47
+  port: 443
+  tls: true
+  encryption: none
   client-fingerprint: ios
   servername: addons.mozilla.org
+  flow: xtls-rprx-vision
+  uuid: 92a4056a-38d6-49d0-8bd2-600e55af1e9f
   udp: true
+- server: 45.85.117.174
+  network: tcp
+  type: vless
+  name: 🇳🇱 The Netherlands, Meppel | [BL] [2fbf0453]
   reality-opts:
     public-key: rF4J_igTFQRUXEaY351LiZG0Ea4OuNpOakuAbqT0bAw
     short-id: 088faf47
-- server: 45.85.117.174
-  uuid: 92a4056a-38d6-49d0-8bd2-600e55af1e9f
-  encryption: none
   port: 443
-  network: tcp
   tls: true
-  name: 🇳🇱 The Netherlands, Meppel | [BL] [2fbf0453]
-  type: vless
-  flow: xtls-rprx-vision
+  encryption: none
   client-fingerprint: firefox
   servername: addons.mozilla.org
+  flow: xtls-rprx-vision
+  uuid: 92a4056a-38d6-49d0-8bd2-600e55af1e9f
   udp: true
-  reality-opts:
-    public-key: rF4J_igTFQRUXEaY351LiZG0Ea4OuNpOakuAbqT0bAw
-    short-id: 088faf47
-- server: 140.248.186.45
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-  uuid: XpnTeam-36
-  encryption: none
-  port: 443
+- server: vpn.cintaku.qzz.io
   network: ws
-  tls: true
-  name: 🇫🇷 France, Paris | [BL]
   type: vless
-  client-fingerprint: edge
-  servername: ssl.fastly.com
-  udp: true
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [ba24ea67]
-  server: 141.193.213.20
-  port: 8443
-  udp: true
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  encryption: none
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /dula
-    headers:
-      Host: speed.dulacloud.store
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [c346ddc2]
-  server: 141.193.213.20
-  port: 8443
-  udp: true
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  encryption: none
-  tls: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula
-    headers:
-      Host: speed.dulacloud.store
-- type: vless
-  name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
-  server: vpn.cintaku.qzz.io
-  port: 443
-  udp: true
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  encryption: none
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  network: ws
   ws-opts:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
-- type: vless
+  name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  port: 443
+  tls: true
+  encryption: none
+  client-fingerprint: unsafe
+  servername: vpn.cintaku.qzz.io
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+- server: 8.6.112.0
+  network: ws
+  type: vless
+  ws-opts:
+    path: /mky-ws-4f19c8a7
+    headers:
+      Host: fi1.merky.one
   name: 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL] [a8416ccf]
-  server: 8.6.112.0
   port: 443
-  udp: true
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  encryption: none
   tls: true
-  servername: fi1.merky.one
+  encryption: none
   client-fingerprint: edge
+  servername: fi1.merky.one
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+- server: 8.6.112.0
   network: ws
+  type: vless
   ws-opts:
     path: /mky-ws-4f19c8a7
     headers:
       Host: fi1.merky.one
-- type: vless
   name: 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL] [e43778af]
+  port: 443
+  tls: true
+  encryption: none
+  client-fingerprint: chrome
+  servername: fi1.merky.one
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+- type: vmess
+  name: 🇸🇬_SG_新加坡->🇺🇸_US_美国
+  server: sg-transit-3.nebulacloud.win
+  port: 31414
+  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /getData/us
+- type: vless
+  name: 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]
   server: 8.6.112.0
   port: 443
   udp: true
@@ -211,29 +166,29 @@ proxies:
   encryption: none
   tls: true
   servername: fi1.merky.one
-  client-fingerprint: chrome
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /mky-ws-4f19c8a7
     headers:
       Host: fi1.merky.one
 - type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [dcae8cbb]
-  server: 140.248.186.45
+  name: 🇫🇮 Finland, Helsinki | [BL]
+  server: 8.6.112.0
   port: 443
   udp: true
-  uuid: XpnTeam-36
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   encryption: none
   tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: ios
+  servername: fi1.merky.one
+  client-fingerprint: android
   network: ws
   ws-opts:
-    path: /
+    path: /mky-ws-4f19c8a7
     headers:
-      Host: Appxdn.global.ssl.fastly.net
+      Host: fi1.merky.one
 - type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [9bea7c0c]
+  name: 🇫🇷 France, Paris | 🌐 | [BL] [6b734e27]
   server: 199.232.78.160
   port: 443
   udp: true
@@ -241,14 +196,14 @@ proxies:
   encryption: none
   tls: true
   servername: ssl.fastly.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /
     headers:
       Host: Appxdn.global.ssl.fastly.net
 - type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [97c60335]
+  name: 🇫🇷 France, Paris | 🌐 | [BL] [1fab2cf4]
   server: 140.248.186.45
   port: 443
   udp: true
@@ -256,7 +211,22 @@ proxies:
   encryption: none
   tls: true
   servername: ssl.fastly.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- type: vless
+  name: 🇫🇷 France, Paris | [BL]
+  server: 140.248.186.45
+  port: 443
+  udp: true
+  uuid: XpnTeam-38
+  encryption: none
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /
@@ -270,42 +240,38 @@ proxy-groups:
   - DIRECT
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
   - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
-  - 🇩🇪 Germany | [SNI-RU] ozon.ru [cdac630b]
-  - 🇺🇸 United States, Washington D.C. | [BL]
   - 日本(yudou99.com 玉豆分享)
   - 🇸🇬_SG_新加坡->🇨🇦_CA_加拿大
   - 🇳🇱 The Netherlands, Meppel | [BL] [550b9ef7]
   - 🇳🇱 The Netherlands, Meppel | [BL] [2fbf0453]
-  - 🇫🇷 France, Paris | [BL]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [ba24ea67]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [c346ddc2]
   - 🇺🇸_US_美国->🇸🇬_SG_新加坡
   - 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL] [a8416ccf]
   - 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL] [e43778af]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [dcae8cbb]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [9bea7c0c]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [97c60335]
+  - 🇸🇬_SG_新加坡->🇺🇸_US_美国
+  - 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]
+  - 🇫🇮 Finland, Helsinki | [BL]
+  - 🇫🇷 France, Paris | 🌐 | [BL] [6b734e27]
+  - 🇫🇷 France, Paris | 🌐 | [BL] [1fab2cf4]
+  - 🇫🇷 France, Paris | [BL]
   default-selected: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
 - name: AUTO
   type: url-test
   proxies:
   - 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
   - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
-  - 🇩🇪 Germany | [SNI-RU] ozon.ru [cdac630b]
-  - 🇺🇸 United States, Washington D.C. | [BL]
   - 日本(yudou99.com 玉豆分享)
   - 🇸🇬_SG_新加坡->🇨🇦_CA_加拿大
   - 🇳🇱 The Netherlands, Meppel | [BL] [550b9ef7]
   - 🇳🇱 The Netherlands, Meppel | [BL] [2fbf0453]
-  - 🇫🇷 France, Paris | [BL]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [ba24ea67]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [c346ddc2]
   - 🇺🇸_US_美国->🇸🇬_SG_新加坡
   - 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL] [a8416ccf]
   - 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL] [e43778af]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [dcae8cbb]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [9bea7c0c]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [97c60335]
+  - 🇸🇬_SG_新加坡->🇺🇸_US_美国
+  - 🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]
+  - 🇫🇮 Finland, Helsinki | [BL]
+  - 🇫🇷 France, Paris | 🌐 | [BL] [6b734e27]
+  - 🇫🇷 France, Paris | 🌐 | [BL] [1fab2cf4]
+  - 🇫🇷 France, Paris | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
