@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070043 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070044 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,271 +10,274 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- tls: true
-  server: 9.247.34.118
-  reality-opts:
+- reality-opts:
     public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
     short-id: c46d735d6444850f
-  flow: xtls-rprx-vision
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  network: tcp
-  udp: true
-  port: 2053
-  encryption: none
-  servername: www.rutube.ru
+  server: 9.247.34.118
+  tls: true
   name: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
   client-fingerprint: safari
+  udp: true
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
+  servername: www.rutube.ru
+  encryption: none
+  port: 2053
+  flow: xtls-rprx-vision
   type: vless
-- tls: true
-  server: 9.247.34.118
-  reality-opts:
+  network: tcp
+- reality-opts:
     public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
     short-id: c46d735d6444850f
-  flow: xtls-rprx-vision
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  network: tcp
-  udp: true
-  port: 2053
-  encryption: none
-  servername: www.rutube.ru
+  server: 9.247.34.118
+  tls: true
   name: 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
   client-fingerprint: qq
+  udp: true
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
+  servername: www.rutube.ru
+  encryption: none
+  port: 2053
+  flow: xtls-rprx-vision
   type: vless
-- tls: true
-  server: sg-transit-3.nebulacloud.win
+  network: tcp
+- server: sg-transit-3.nebulacloud.win
   ws-opts:
     headers:
       Host: sg-transit-3.nebulacloud.win
     path: /ca/getData
-  cipher: auto
-  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
-  network: ws
-  udp: true
-  port: 30330
-  servername: sg-transit-3.nebulacloud.win
-  alterId: 0
+  tls: true
   name: 🇸🇬_SG_新加坡->🇨🇦_CA_加拿大
+  udp: true
+  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
+  servername: sg-transit-3.nebulacloud.win
+  port: 30330
+  network: ws
   type: vmess
-- tls: true
+  cipher: auto
+  alterId: 0
+- password: 6ab93ec68bd94b76
   server: ui108.pacemakere.com
-  udp: true
-  network: tcp
-  port: 20008
+  tls: true
   name: 🇺🇸 United States, Los Angeles | [BL] [88ba1daa]
-  password: 6ab93ec68bd94b76
-  type: trojan
-- tls: true
-  server: iwt196.zxom.eu.org
   udp: true
-  network: tcp
-  port: 20015
-  name: 🇹🇼 Taiwan, Taipei | [BL]
-  password: 82f1c096fc0d4b1a
+  port: 20008
   type: trojan
-- tls: true
-  server: 77.91.69.169
-  reality-opts:
+  network: tcp
+- reality-opts:
     public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
     short-id: 7c
-  flow: xtls-rprx-vision
-  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
-  network: tcp
-  udp: true
-  port: 19226
-  encryption: none
-  servername: yahoo.com
+  server: 77.91.69.169
+  tls: true
   name: 🇮🇱 Israel, Tel Aviv | [BL] [725e25b5]
   client-fingerprint: firefox
+  udp: true
+  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
+  servername: yahoo.com
+  encryption: none
+  port: 19226
+  flow: xtls-rprx-vision
   type: vless
-- tls: true
-  server: 77.91.69.169
-  reality-opts:
+  network: tcp
+- reality-opts:
     public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
     short-id: 7c
-  flow: xtls-rprx-vision
-  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
-  network: tcp
-  udp: true
-  port: 19226
-  encryption: none
-  servername: yahoo.com
+  server: 77.91.69.169
+  tls: true
   name: 🇮🇱 Israel, Tel Aviv | [BL] [02488ef3]
   client-fingerprint: ios
+  udp: true
+  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
+  servername: yahoo.com
+  encryption: none
+  port: 19226
+  flow: xtls-rprx-vision
   type: vless
-- tls: true
-  server: funagfrdfs.alixxplay.com
-  reality-opts:
+  network: tcp
+- reality-opts:
     public-key: YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4
     short-id: 3d31326f95
-  flow: xtls-rprx-vision
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  network: tcp
-  udp: true
-  port: 30892
-  encryption: none
-  servername: us1p1.xn--ghq880n3na965a.com
+  server: funagfrdfs.alixxplay.com
+  tls: true
   name: 日本+V2CROSS.COM
   client-fingerprint: chrome
-  type: vless
-- tls: true
-  server: 45.128.78.183
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  flow: xtls-rprx-vision
-  uuid: 0bfad5f5-d45b-49ef-b9e3-fdcdfb47ad0b
-  network: tcp
   udp: true
-  port: 8443
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  servername: us1p1.xn--ghq880n3na965a.com
   encryption: none
-  servername: apple.com
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [2974cb27]
-  client-fingerprint: ios
+  port: 30892
+  flow: xtls-rprx-vision
   type: vless
-- tls: true
+  network: tcp
+- reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   server: 193.160.141.2
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  flow: xtls-rprx-vision
-  uuid: d24e0961-dd20-4528-8796-2a974e79348e
-  network: tcp
-  udp: true
-  port: 8443
-  encryption: none
-  servername: apple.com
+  tls: true
   name: 🇷🇺 Russia | [*CIDR] [3d694c9b]
   client-fingerprint: ios
-  type: vless
-- tls: true
-  server: 193.160.141.2
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  flow: xtls-rprx-vision
-  uuid: d24e0961-dd20-4528-8796-2a974e79348e
-  network: tcp
   udp: true
-  port: 8443
-  encryption: none
+  uuid: d24e0961-dd20-4528-8796-2a974e79348e
   servername: apple.com
+  encryption: none
+  port: 8443
+  flow: xtls-rprx-vision
+  type: vless
+  network: tcp
+- reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 193.160.141.2
+  tls: true
   name: 🇷🇺 Russia | [*CIDR] [5fd81ea6]
   client-fingerprint: chrome
-  type: vless
-- tls: true
-  server: 45.128.78.183
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  flow: xtls-rprx-vision
-  uuid: 0bfad5f5-d45b-49ef-b9e3-fdcdfb47ad0b
-  network: tcp
   udp: true
-  port: 8443
-  encryption: none
+  uuid: d24e0961-dd20-4528-8796-2a974e79348e
   servername: apple.com
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [3368d96b]
-  client-fingerprint: firefox
+  encryption: none
+  port: 8443
+  flow: xtls-rprx-vision
   type: vless
-- tls: true
-  server: netherlands02.azotvpn.xyz
-  reality-opts:
+  network: tcp
+- reality-opts:
     public-key: ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE
     short-id: fc70174007a393b4
-  flow: xtls-rprx-vision
-  uuid: a500be68-4ff6-433b-9968-472be69fab14
-  network: tcp
-  udp: true
-  port: 443
-  encryption: none
-  servername: netherlands02.azotvpn.xyz
+  server: netherlands02.azotvpn.xyz
+  tls: true
   name: 🇳🇱 The Netherlands, Amsterdam | [BL] [e9ca9177]
   client-fingerprint: chrome
+  udp: true
+  uuid: a500be68-4ff6-433b-9968-472be69fab14
+  servername: netherlands02.azotvpn.xyz
+  encryption: none
+  port: 443
+  flow: xtls-rprx-vision
   type: vless
-- tls: true
+  network: tcp
+- reality-opts:
+    public-key: ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE
+    short-id: fc70174007a393b4
   server: netherlands02.azotvpn.xyz
+  tls: true
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [d42797a2]
+  client-fingerprint: qq
+  udp: true
+  uuid: a500be68-4ff6-433b-9968-472be69fab14
+  servername: netherlands02.azotvpn.xyz
+  encryption: none
+  port: 443
+  flow: xtls-rprx-vision
+  type: vless
+  network: tcp
+- reality-opts:
+    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
+  server: nl-central.v8x2b.lol
+  tls: true
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [24eab7e4]
+  client-fingerprint: edge
+  udp: true
+  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
+  servername: nl-central.v8x2b.lol
+  encryption: none
+  port: 443
+  type: vless
+  network: tcp
+- reality-opts:
+    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
+  server: nl-central.v8x2b.lol
+  tls: true
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [c5ad30a6]
+  client-fingerprint: firefox
+  udp: true
+  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
+  servername: nl-central.v8x2b.lol
+  encryption: none
+  port: 443
+  type: vless
+  network: tcp
+- reality-opts:
+    public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
+    short-id: 6a29a03b21
+  server: vd2.outlinevpn.cc
+  tls: true
+  name: 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru
+  client-fingerprint: firefox
+  udp: true
+  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
+  servername: music.yandex.ru
+  encryption: none
+  port: 12213
+  flow: xtls-rprx-vision
+  type: vless
+  network: tcp
+- reality-opts:
+    public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
+    short-id: 6a29a03b21
+  server: vd2.outlinevpn.cc
+  tls: true
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [390d0e00]
+  client-fingerprint: safari
+  udp: true
+  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
+  servername: music.yandex.ru
+  encryption: none
+  port: 12213
+  flow: xtls-rprx-vision
+  type: vless
+  network: tcp
+- type: trojan
+  name: 🇺🇸 United States, Los Angeles | [BL] [aa3bbf60]
+  server: su106.izzzzzi.com
+  port: 20008
+  udp: true
+  password: 4fd2b10b6a754019
+  tls: true
+  client-fingerprint: chrome
+  network: tcp
+- type: trojan
+  name: 🇺🇸 United States, Los Angeles | [BL] [ede7a813]
+  server: su106.izzzzzi.com
+  port: 20008
+  udp: true
+  password: 4fd2b10b6a754019
+  tls: true
+  client-fingerprint: ios
+  network: tcp
+- type: trojan
+  name: 🇺🇸 United States, Los Angeles | [BL] [90213ac2]
+  server: ui108.pacemakere.com
+  port: 20008
+  udp: true
+  password: 6ab93ec68bd94b76
+  tls: true
+  client-fingerprint: qq
+  network: tcp
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [2be14880]
+  server: netherlands02.azotvpn.xyz
+  port: 443
+  udp: true
+  uuid: a500be68-4ff6-433b-9968-472be69fab14
+  encryption: none
+  tls: true
+  servername: netherlands02.azotvpn.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
   reality-opts:
     public-key: ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE
     short-id: fc70174007a393b4
-  flow: xtls-rprx-vision
+  network: tcp
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [60eda4fb]
+  server: netherlands02.azotvpn.xyz
+  port: 443
+  udp: true
   uuid: a500be68-4ff6-433b-9968-472be69fab14
-  network: tcp
-  udp: true
-  port: 443
   encryption: none
+  tls: true
   servername: netherlands02.azotvpn.xyz
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [d42797a2]
-  client-fingerprint: qq
-  type: vless
-- tls: true
-  server: nl-central.v8x2b.lol
-  reality-opts:
-    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
-  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
-  network: tcp
-  udp: true
-  port: 443
-  encryption: none
-  servername: nl-central.v8x2b.lol
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [24eab7e4]
-  client-fingerprint: edge
-  type: vless
-- tls: true
-  server: nl-central.v8x2b.lol
-  reality-opts:
-    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
-  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
-  network: tcp
-  udp: true
-  port: 443
-  encryption: none
-  servername: nl-central.v8x2b.lol
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [c5ad30a6]
-  client-fingerprint: firefox
-  type: vless
-- tls: true
-  server: vd2.outlinevpn.cc
-  reality-opts:
-    public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
-    short-id: 6a29a03b21
   flow: xtls-rprx-vision
-  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
-  network: tcp
-  udp: true
-  port: 12213
-  encryption: none
-  servername: music.yandex.ru
-  name: 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru
   client-fingerprint: firefox
-  type: vless
-- tls: true
-  server: vd2.outlinevpn.cc
   reality-opts:
-    public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
-    short-id: 6a29a03b21
-  flow: xtls-rprx-vision
-  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
-  network: tcp
-  udp: true
-  port: 12213
-  encryption: none
-  servername: music.yandex.ru
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [390d0e00]
-  client-fingerprint: safari
-  type: vless
-- type: trojan
-  name: 🇺🇸 United States, Los Angeles | [BL] [88ba1daadc2c]
-  server: ui108.pacemakere.com
-  port: 20008
-  udp: true
-  password: 6ab93ec68bd94b76
-  tls: true
-  client-fingerprint: safari
-  network: tcp
-- type: trojan
-  name: 🇺🇸 United States, Los Angeles | [BL] [e3d715ee]
-  server: ui108.pacemakere.com
-  port: 20008
-  udp: true
-  password: 6ab93ec68bd94b76
-  tls: true
-  client-fingerprint: ios
+    public-key: ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE
+    short-id: fc70174007a393b4
   network: tcp
 proxy-groups:
 - name: Fine
@@ -286,22 +289,22 @@ proxy-groups:
   - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
   - 🇸🇬_SG_新加坡->🇨🇦_CA_加拿大
   - 🇺🇸 United States, Los Angeles | [BL] [88ba1daa]
-  - 🇹🇼 Taiwan, Taipei | [BL]
   - 🇮🇱 Israel, Tel Aviv | [BL] [725e25b5]
   - 🇮🇱 Israel, Tel Aviv | [BL] [02488ef3]
   - 日本+V2CROSS.COM
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [2974cb27]
   - 🇷🇺 Russia | [*CIDR] [3d694c9b]
   - 🇷🇺 Russia | [*CIDR] [5fd81ea6]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [3368d96b]
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [e9ca9177]
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [d42797a2]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [24eab7e4]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [c5ad30a6]
   - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [390d0e00]
-  - 🇺🇸 United States, Los Angeles | [BL] [88ba1daadc2c]
-  - 🇺🇸 United States, Los Angeles | [BL] [e3d715ee]
+  - 🇺🇸 United States, Los Angeles | [BL] [aa3bbf60]
+  - 🇺🇸 United States, Los Angeles | [BL] [ede7a813]
+  - 🇺🇸 United States, Los Angeles | [BL] [90213ac2]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [2be14880]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [60eda4fb]
   default-selected: 🇳🇱 The Netherlands [SNI-RU] www.rutube.ru
 - name: AUTO
   type: url-test
@@ -310,22 +313,22 @@ proxy-groups:
   - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru [197175e6]
   - 🇸🇬_SG_新加坡->🇨🇦_CA_加拿大
   - 🇺🇸 United States, Los Angeles | [BL] [88ba1daa]
-  - 🇹🇼 Taiwan, Taipei | [BL]
   - 🇮🇱 Israel, Tel Aviv | [BL] [725e25b5]
   - 🇮🇱 Israel, Tel Aviv | [BL] [02488ef3]
   - 日本+V2CROSS.COM
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [2974cb27]
   - 🇷🇺 Russia | [*CIDR] [3d694c9b]
   - 🇷🇺 Russia | [*CIDR] [5fd81ea6]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [3368d96b]
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [e9ca9177]
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [d42797a2]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [24eab7e4]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [c5ad30a6]
   - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [390d0e00]
-  - 🇺🇸 United States, Los Angeles | [BL] [88ba1daadc2c]
-  - 🇺🇸 United States, Los Angeles | [BL] [e3d715ee]
+  - 🇺🇸 United States, Los Angeles | [BL] [aa3bbf60]
+  - 🇺🇸 United States, Los Angeles | [BL] [ede7a813]
+  - 🇺🇸 United States, Los Angeles | [BL] [90213ac2]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [2be14880]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [60eda4fb]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
