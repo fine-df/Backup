@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070046 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070047 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,292 +10,295 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- servername: yahoo.com
-  udp: true
-  name: 🇮🇱 Israel, Tel Aviv | [BL] [725e25b5]
-  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
-  encryption: none
-  network: tcp
-  tls: true
-  reality-opts:
-    public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
-    short-id: 7c
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  server: 77.91.69.169
-  type: vless
-  port: 19226
-- servername: yahoo.com
-  udp: true
-  name: 🇮🇱 Israel, Tel Aviv | [BL] [02488ef3]
-  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
-  encryption: none
-  network: tcp
-  tls: true
-  reality-opts:
-    public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
-    short-id: 7c
+- name: 🇷🇺 Russia | [*CIDR] [3d694c9b]
   client-fingerprint: ios
-  flow: xtls-rprx-vision
-  server: 77.91.69.169
   type: vless
-  port: 19226
-- servername: apple.com
-  udp: true
-  name: 🇷🇺 Russia | [*CIDR] [3d694c9b]
+  servername: apple.com
   uuid: d24e0961-dd20-4528-8796-2a974e79348e
-  encryption: none
-  network: tcp
-  tls: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  client-fingerprint: ios
   flow: xtls-rprx-vision
-  server: 193.160.141.2
-  type: vless
+  encryption: none
   port: 8443
-- servername: apple.com
-  udp: true
-  name: 🇷🇺 Russia | [*CIDR] [5fd81ea6]
-  uuid: d24e0961-dd20-4528-8796-2a974e79348e
-  encryption: none
   network: tcp
+  udp: true
+  server: 193.160.141.2
   tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: 🇷🇺 Russia | [*CIDR] [5fd81ea6]
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  server: 193.160.141.2
   type: vless
-  port: 8443
-- servername: music.yandex.ru
-  udp: true
-  name: 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [70290e68]
-  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
+  servername: apple.com
+  uuid: d24e0961-dd20-4528-8796-2a974e79348e
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  flow: xtls-rprx-vision
   encryption: none
+  port: 8443
   network: tcp
+  udp: true
+  server: 193.160.141.2
   tls: true
+- name: 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [70290e68]
+  client-fingerprint: firefox
+  type: vless
+  servername: music.yandex.ru
+  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
   reality-opts:
     public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
     short-id: 6a29a03b21
-  client-fingerprint: firefox
   flow: xtls-rprx-vision
-  server: vd2.outlinevpn.cc
-  type: vless
-  port: 12213
-- servername: music.yandex.ru
-  udp: true
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [390d0e00]
-  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
   encryption: none
+  port: 12213
   network: tcp
+  udp: true
+  server: vd2.outlinevpn.cc
   tls: true
+- name: 🇳🇱 The Netherlands, Amsterdam | [BL] [390d0e00]
+  client-fingerprint: safari
+  type: vless
+  servername: music.yandex.ru
+  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
   reality-opts:
     public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
     short-id: 6a29a03b21
-  client-fingerprint: safari
   flow: xtls-rprx-vision
-  server: vd2.outlinevpn.cc
-  type: vless
+  encryption: none
   port: 12213
-- servername: gr1.originmesh.online
-  udp: true
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
-  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
-  encryption: none
   network: tcp
+  udp: true
+  server: vd2.outlinevpn.cc
   tls: true
-  reality-opts:
-    public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
-    short-id: eecfe76af97a6132
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
   client-fingerprint: safari
-  flow: xtls-rprx-vision
-  server: gr1.originmesh.online
   type: vless
-  port: 443
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [5d7b0d74]
-  server: nl-central.v8x2b.lol
-  port: 443
-  udp: true
-  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
-  encryption: none
-  tls: true
-  servername: nl-central.v8x2b.lol
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
-  network: tcp
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [7a7957ea]
-  server: gr1.originmesh.online
-  port: 443
-  udp: true
-  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
-  encryption: none
-  tls: true
   servername: gr1.originmesh.online
+  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
+  reality-opts:
+    public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
+    short-id: eecfe76af97a6132
   flow: xtls-rprx-vision
+  encryption: none
+  port: 443
+  network: tcp
+  udp: true
+  server: gr1.originmesh.online
+  tls: true
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] [7a7957ea]
   client-fingerprint: ios
-  reality-opts:
-    public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
-    short-id: eecfe76af97a6132
-  network: tcp
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [ad3b6f38]
-  server: gr1.originmesh.online
-  port: 443
-  udp: true
-  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
-  encryption: none
-  tls: true
+  type: vless
   servername: gr1.originmesh.online
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
   reality-opts:
     public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
     short-id: eecfe76af97a6132
-  network: tcp
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [3d0f1bad]
-  server: support.zoom.us
-  port: 443
-  udp: true
-  uuid: b054e267-e2d8-4ca2-b95e-79ca5cb7cf9a
+  flow: xtls-rprx-vision
   encryption: none
+  port: 443
+  network: tcp
+  udp: true
+  server: gr1.originmesh.online
   tls: true
-  servername: cloud.ghostdev.lk
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL] [ad3b6f38]
+  client-fingerprint: firefox
+  type: vless
+  servername: gr1.originmesh.online
+  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
+  reality-opts:
+    public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
+    short-id: eecfe76af97a6132
+  flow: xtls-rprx-vision
+  encryption: none
+  port: 443
+  network: tcp
+  udp: true
+  server: gr1.originmesh.online
+  tls: true
+- name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [3d0f1bad]
   client-fingerprint: qq
-  network: ws
+  type: vless
+  servername: cloud.ghostdev.lk
   ws-opts:
     path: /
     headers:
       Host: cloud.ghostdev.lk
-- type: vless
-  name: 🇮🇹 Italy, Rome | [BL]
-  server: itly.yandex-api.store
-  port: 8443
-  udp: true
-  uuid: 78559873-84ef-4cab-a0b2-46d4cd20de4a
+  uuid: b054e267-e2d8-4ca2-b95e-79ca5cb7cf9a
   encryption: none
-  tls: true
-  servername: itly.yandex-api.store
-  client-fingerprint: firefox
+  port: 443
   network: ws
-  ws-opts:
-    path: /assets
-- type: vless
-  name: 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [aa38b448]
-  server: vd2.outlinevpn.cc
-  port: 12213
   udp: true
-  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
-  encryption: none
+  server: support.zoom.us
   tls: true
-  servername: music.yandex.ru
-  flow: xtls-rprx-vision
+- name: 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [aa38b448]
   client-fingerprint: ios
+  type: vless
+  servername: music.yandex.ru
+  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
   reality-opts:
     public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
     short-id: 6a29a03b21
-  network: tcp
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [7c304e8c]
-  server: support.zoom.us
-  port: 443
-  udp: true
-  uuid: b054e267-e2d8-4ca2-b95e-79ca5cb7cf9a
+  flow: xtls-rprx-vision
   encryption: none
+  port: 12213
+  network: tcp
+  udp: true
+  server: vd2.outlinevpn.cc
   tls: true
-  servername: cloud.ghostdev.lk
+- name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [7c304e8c]
   client-fingerprint: chrome
-  network: ws
+  type: vless
+  servername: cloud.ghostdev.lk
   ws-opts:
     path: /
     headers:
       Host: cloud.ghostdev.lk
-- type: vless
-  name: 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [37370b22]
-  server: vd2.outlinevpn.cc
-  port: 12213
-  udp: true
-  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
+  uuid: b054e267-e2d8-4ca2-b95e-79ca5cb7cf9a
   encryption: none
+  port: 443
+  network: ws
+  udp: true
+  server: support.zoom.us
   tls: true
-  servername: music.yandex.ru
-  flow: xtls-rprx-vision
+- name: 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [37370b22]
   client-fingerprint: chrome
+  type: vless
+  servername: music.yandex.ru
+  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
   reality-opts:
     public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
     short-id: 6a29a03b21
-  network: tcp
-- type: vless
-  name: 🇩🇪 Germany | [*CIDR]
-  server: 147.45.46.166
-  port: 443
-  udp: true
-  uuid: 0b6a937e-5b0e-49ca-b31e-f03f290e97cf
-  encryption: none
-  tls: true
-  servername: ai.ozon.ru
   flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
-- type: vless
-  name: 🇫🇷 France | [SNI-RU] ozon.ru
-  server: 103.91.147.240
-  port: 443
-  udp: true
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
   encryption: none
+  port: 12213
+  network: tcp
+  udp: true
+  server: vd2.outlinevpn.cc
   tls: true
-  servername: ozon.ru
-  flow: xtls-rprx-vision
+- name: 🇫🇷 France | [SNI-RU] ozon.ru
   client-fingerprint: qq
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
-- type: vless
-  name: 🇫🇷 France [SNI-RU] ozon.ru
-  server: 103.91.147.240
-  port: 443
-  udp: true
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-  encryption: none
-  tls: true
+  type: vless
   servername: ozon.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  flow: xtls-rprx-vision
+  encryption: none
+  port: 443
   network: tcp
-- type: vless
-  name: 🇷🇺 Russia | [*CIDR]
+  udp: true
+  server: 103.91.147.240
+  tls: true
+- name: 🇫🇷 France [SNI-RU] ozon.ru [611b0dee]
+  client-fingerprint: firefox
+  type: vless
+  servername: ozon.ru
+  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  flow: xtls-rprx-vision
+  encryption: none
+  port: 443
+  network: tcp
+  udp: true
+  server: 103.91.147.240
+  tls: true
+- name: 🇷🇺 Russia | [*CIDR]
+  client-fingerprint: chrome
+  type: vless
+  servername: ozon.ru
+  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  flow: xtls-rprx-vision
+  encryption: none
+  port: 443
+  network: tcp
+  udp: true
   server: 193.223.104.120
+  tls: true
+- type: vmess
+  name: 🇺🇸 United States, Los Angeles | [BL] [8ca22cce]
+  server: 23.254.194.215
+  port: 8080
+  uuid: 3c75a551-81d6-46d0-876d-79519719bb22
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /3c75a551-81d6-46d0-876d-79519719bb22-vm
+- type: vmess
+  name: 🇺🇸 United States, Los Angeles | [BL] [38d4b836]
+  server: 23.254.194.215
+  port: 8080
+  uuid: 3c75a551-81d6-46d0-876d-79519719bb22
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  servername: www.bing.com
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: 3c75a551-81d6-46d0-876d-79519719bb22-vm
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
+  server: support.zoom.us
   port: 443
   udp: true
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
+  uuid: b054e267-e2d8-4ca2-b95e-79ca5cb7cf9a
   encryption: none
   tls: true
-  servername: ozon.ru
-  flow: xtls-rprx-vision
+  servername: cloud.ghostdev.lk
   client-fingerprint: chrome
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
+  network: ws
+  ws-opts:
+    headers:
+      Host: cloud.ghostdev.lk
 - type: vless
-  name: 🇩🇪 Germany, Kirchberg | [BL]
-  server: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
-  port: 20065
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [039abfca]
+  server: gr1.originmesh.online
+  port: 443
   udp: true
-  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
   encryption: none
   tls: true
-  servername: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
+  servername: gr1.originmesh.online
   flow: xtls-rprx-vision
   client-fingerprint: edge
+  reality-opts:
+    public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
+    short-id: eecfe76af97a6132
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [d4ee46bc]
+  server: gr1.originmesh.online
+  port: 443
+  udp: true
+  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
+  encryption: none
+  tls: true
+  servername: gr1.originmesh.online
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
+    short-id: eecfe76af97a6132
+  network: tcp
+- type: vless
+  name: 🇫🇷 France [SNI-RU] ozon.ru [8f4c93e3]
+  server: 103.91.147.239
+  port: 443
+  udp: true
+  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
+  encryption: none
+  tls: true
+  servername: ozon.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   network: tcp
 proxy-groups:
 - name: Fine
@@ -303,50 +306,50 @@ proxy-groups:
   proxies:
   - AUTO
   - DIRECT
-  - 🇮🇱 Israel, Tel Aviv | [BL] [725e25b5]
-  - 🇮🇱 Israel, Tel Aviv | [BL] [02488ef3]
   - 🇷🇺 Russia | [*CIDR] [3d694c9b]
   - 🇷🇺 Russia | [*CIDR] [5fd81ea6]
   - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [70290e68]
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [390d0e00]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [5d7b0d74]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [7a7957ea]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [ad3b6f38]
   - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [3d0f1bad]
-  - 🇮🇹 Italy, Rome | [BL]
   - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [aa38b448]
   - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [7c304e8c]
   - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [37370b22]
-  - 🇩🇪 Germany | [*CIDR]
   - 🇫🇷 France | [SNI-RU] ozon.ru
-  - 🇫🇷 France [SNI-RU] ozon.ru
+  - 🇫🇷 France [SNI-RU] ozon.ru [611b0dee]
   - 🇷🇺 Russia | [*CIDR]
-  - 🇩🇪 Germany, Kirchberg | [BL]
-  default-selected: 🇮🇱 Israel, Tel Aviv | [BL] [725e25b5]
+  - 🇺🇸 United States, Los Angeles | [BL] [8ca22cce]
+  - 🇺🇸 United States, Los Angeles | [BL] [38d4b836]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [039abfca]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [d4ee46bc]
+  - 🇫🇷 France [SNI-RU] ozon.ru [8f4c93e3]
+  default-selected: 🇷🇺 Russia | [*CIDR] [3d694c9b]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇮🇱 Israel, Tel Aviv | [BL] [725e25b5]
-  - 🇮🇱 Israel, Tel Aviv | [BL] [02488ef3]
   - 🇷🇺 Russia | [*CIDR] [3d694c9b]
   - 🇷🇺 Russia | [*CIDR] [5fd81ea6]
   - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [70290e68]
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [390d0e00]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [5d7b0d74]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [7a7957ea]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [ad3b6f38]
   - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [3d0f1bad]
-  - 🇮🇹 Italy, Rome | [BL]
   - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [aa38b448]
   - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [7c304e8c]
   - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru [37370b22]
-  - 🇩🇪 Germany | [*CIDR]
   - 🇫🇷 France | [SNI-RU] ozon.ru
-  - 🇫🇷 France [SNI-RU] ozon.ru
+  - 🇫🇷 France [SNI-RU] ozon.ru [611b0dee]
   - 🇷🇺 Russia | [*CIDR]
-  - 🇩🇪 Germany, Kirchberg | [BL]
+  - 🇺🇸 United States, Los Angeles | [BL] [8ca22cce]
+  - 🇺🇸 United States, Los Angeles | [BL] [38d4b836]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [039abfca]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [d4ee46bc]
+  - 🇫🇷 France [SNI-RU] ozon.ru [8f4c93e3]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
