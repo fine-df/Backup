@@ -62,6 +62,19 @@
     "play_pass_count": 1,
     "seen_count": 1
   },
+  "00162b5dfcdeaad24355": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425329+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 201.7,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
+  },
   "0023caa3fd62e4a1fca9": {
     "first_seen": "2026-10-13",
     "gemini_pass_count": 3,
@@ -2261,10 +2274,31 @@
     "shenzhen_probe_city": "Shenzhen",
     "shenzhen_status": "ok"
   },
+  "07e15b64bc815cd431d5": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425294+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 213.8,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
+  },
   "07edfdd22ff422554335": {
     "first_seen": "2026-10-04",
     "gemini_pass_count": 1,
     "last_seen": "2026-10-04",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
+  },
+  "07f5c01e9b780a84f86e": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1
@@ -2547,6 +2581,19 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 2
+  },
+  "08dc4c6fef0319728ad3": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425286+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "08e5675687625dbc7749": {
     "first_seen": "2026-10-04",
@@ -3140,11 +3187,11 @@
     "pass_count": 1,
     "play_pass_count": 1,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T18:27:37.817512+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425245+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
-    "shenzhen_status": "timeout"
+    "shenzhen_status": "no-stats"
   },
   "0adf32894737b477d032": {
     "first_seen": "2026-10-13",
@@ -3277,6 +3324,19 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1
+  },
+  "0b4692df1f234c420a94": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425401+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 300.4,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
   },
   "0b46a525b64d8b413885": {
     "first_seen": "2026-10-16",
@@ -4477,6 +4537,19 @@
     "shenzhen_probe_city": "Shenzhen",
     "shenzhen_status": "ok"
   },
+  "0f5f8a7221b3a31c2f6f": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425421+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 212.7,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
+  },
   "0f712d885cac4b1fa213": {
     "first_seen": "2026-10-16",
     "gemini_pass_count": 3,
@@ -4540,7 +4613,7 @@
     "pass_count": 0,
     "play_pass_count": 1,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T18:27:37.817597+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425409+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
@@ -5687,6 +5760,14 @@
     "shenzhen_probe_city": null,
     "shenzhen_status": "timeout"
   },
+  "1453630fb9c9bd97fd3b": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 1,
+    "seen_count": 1
+  },
   "1460a4f8ac86273e12a6": {
     "first_seen": "2026-10-15",
     "gemini_pass_count": 0,
@@ -5850,6 +5931,19 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1
+  },
+  "150f03621a37ac81604f": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425215+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 199.0,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
   },
   "152c76e8272027ff465f": {
     "first_seen": "2026-10-20",
@@ -6252,7 +6346,7 @@
     "pass_count": 0,
     "play_pass_count": 1,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T18:27:37.817654+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425388+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
@@ -6291,6 +6385,14 @@
     "first_seen": "2026-10-04",
     "gemini_pass_count": 0,
     "last_seen": "2026-10-04",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
+  },
+  "16755d680129e3b18915": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1
@@ -6524,7 +6626,7 @@
     "pass_count": 1,
     "play_pass_count": 1,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T18:27:37.817388+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425378+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
@@ -7450,7 +7552,7 @@
     "pass_count": 1,
     "play_pass_count": 1,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T18:27:37.817697+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425345+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
@@ -8139,6 +8241,22 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 4
+  },
+  "1c87bd6f7cf6bdce39c2": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
+  },
+  "1ca609f86c20710db258": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1
   },
   "1cb00e0d2d917a190818": {
     "first_seen": "2026-10-04",
@@ -9230,6 +9348,19 @@
     "pass_count": 2,
     "play_pass_count": 2,
     "seen_count": 2
+  },
+  "20861a29f6ef07213ace": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425237+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "20a937f0126e61c2e1df": {
     "first_seen": "2026-10-15",
@@ -10443,11 +10574,11 @@
     "pass_count": 1,
     "play_pass_count": 2,
     "seen_count": 2,
-    "shenzhen_checked_at": "2026-10-23T19:43:26.532234+00:00",
-    "shenzhen_loss_pct": 0.0,
-    "shenzhen_ping_ms": 209.7,
-    "shenzhen_probe_city": "Shenzhen",
-    "shenzhen_status": "ok"
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425290+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "24f388c6cb18a2a30066": {
     "first_seen": "2026-10-15",
@@ -12541,10 +12672,10 @@
   "2c63e8342730ab82af80": {
     "first_seen": "2026-10-23",
     "gemini_pass_count": 0,
-    "last_seen": "2026-10-23",
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
-    "seen_count": 1,
+    "seen_count": 2,
     "shenzhen_checked_at": "2026-10-23T19:43:26.532297+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
@@ -13031,6 +13162,19 @@
     "shenzhen_probe_city": "Shenzhen",
     "shenzhen_status": "ok"
   },
+  "2e3f1247a2527cfdc6d3": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425261+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 210.4,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
+  },
   "2e4293b2eed0e3f61aa2": {
     "first_seen": "2026-10-04",
     "gemini_pass_count": 0,
@@ -13502,7 +13646,7 @@
     "pass_count": 0,
     "play_pass_count": 1,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T14:59:19.984350+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425374+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
@@ -15276,11 +15420,11 @@
     "pass_count": 2,
     "play_pass_count": 2,
     "seen_count": 2,
-    "shenzhen_checked_at": "2026-10-23T19:43:26.532268+00:00",
-    "shenzhen_loss_pct": 0.0,
-    "shenzhen_ping_ms": 272.2,
-    "shenzhen_probe_city": "Shenzhen",
-    "shenzhen_status": "ok"
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425272+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "timeout"
   },
   "373d9209b6b29126e1c4": {
     "first_seen": "2026-10-21",
@@ -15730,6 +15874,19 @@
     "play_pass_count": 0,
     "seen_count": 1
   },
+  "38e52915410b335bb1d3": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425225+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 185.4,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
+  },
   "38f393b1373c0f073419": {
     "first_seen": "2026-10-24",
     "gemini_pass_count": 1,
@@ -15737,7 +15894,7 @@
     "pass_count": 1,
     "play_pass_count": 1,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T18:27:37.817646+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425241+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
@@ -15784,11 +15941,11 @@
     "pass_count": 2,
     "play_pass_count": 2,
     "seen_count": 2,
-    "shenzhen_checked_at": "2026-10-23T19:43:26.532167+00:00",
-    "shenzhen_loss_pct": 0.0,
-    "shenzhen_ping_ms": 266.4,
-    "shenzhen_probe_city": "Shenzhen",
-    "shenzhen_status": "ok"
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425302+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "39108dd310fe3a592590": {
     "first_seen": "2026-10-04",
@@ -16142,7 +16299,7 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T14:59:19.984472+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425210+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
@@ -16423,6 +16580,19 @@
     "pass_count": 1,
     "play_pass_count": 1,
     "seen_count": 1
+  },
+  "3becec24d4410e2397dd": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425430+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 207.8,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
   },
   "3bf717c6e7c5900324d3": {
     "first_seen": "2026-10-10",
@@ -17540,10 +17710,10 @@
   "403ef034045178dab983": {
     "first_seen": "2026-10-23",
     "gemini_pass_count": 0,
-    "last_seen": "2026-10-23",
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
-    "seen_count": 1,
+    "seen_count": 2,
     "shenzhen_checked_at": "2026-10-23T19:43:26.532196+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
@@ -18743,6 +18913,14 @@
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
     "shenzhen_status": "no-stats"
+  },
+  "44415192817e50c726f6": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
   },
   "444b020a9132d873541f": {
     "first_seen": "2026-10-08",
@@ -20941,6 +21119,19 @@
     "play_pass_count": 0,
     "seen_count": 1
   },
+  "4c214ce7e420ea9860d4": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425426+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 224.3,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
+  },
   "4c258afac69cca9a6de3": {
     "first_seen": "2026-10-05",
     "gemini_pass_count": 0,
@@ -21605,6 +21796,14 @@
     "last_seen": "2026-10-02",
     "pass_count": 0,
     "play_pass_count": 0,
+    "seen_count": 1
+  },
+  "4efad385a34611bd0b3a": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
     "seen_count": 1
   },
   "4f4cd2ce141e01c48952": {
@@ -23088,6 +23287,14 @@
     "play_pass_count": 0,
     "seen_count": 1
   },
+  "551d8fe7121bb30f82bb": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
+  },
   "552345e18eef19e97f15": {
     "first_seen": "2026-10-14",
     "gemini_pass_count": 1,
@@ -23700,6 +23907,14 @@
     "play_pass_count": 0,
     "seen_count": 2
   },
+  "573fe75a6f3274ff8e53": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1
+  },
   "573febc1a4b8a752006a": {
     "first_seen": "2026-10-07",
     "gemini_pass_count": 0,
@@ -24212,6 +24427,14 @@
     "first_seen": "2026-10-22",
     "gemini_pass_count": 1,
     "last_seen": "2026-10-22",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
+  },
+  "58c84f53ad978c07fa94": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1
@@ -25671,6 +25894,14 @@
     "last_seen": "2026-10-23",
     "pass_count": 0,
     "play_pass_count": 0,
+    "seen_count": 1
+  },
+  "5e239101db80fb8588e0": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
     "seen_count": 1
   },
   "5e34d2c563a3b1e69632": {
@@ -28293,6 +28524,14 @@
     "shenzhen_probe_city": null,
     "shenzhen_status": "timeout"
   },
+  "67a6eec1813957df67c9": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1
+  },
   "67b068a6f85c20edd78a": {
     "first_seen": "2026-10-12",
     "gemini_pass_count": 2,
@@ -28467,10 +28706,10 @@
   "68547671606e1852adb6": {
     "first_seen": "2026-10-04",
     "gemini_pass_count": 2,
-    "last_seen": "2026-10-23",
+    "last_seen": "2026-10-24",
     "pass_count": 2,
     "play_pass_count": 3,
-    "seen_count": 9,
+    "seen_count": 10,
     "shenzhen_checked_at": "2026-10-23T22:44:54.405272+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
@@ -29766,6 +30005,14 @@
     "play_pass_count": 0,
     "seen_count": 2
   },
+  "6d419cbdae531a304d29": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
+  },
   "6d43ade481644aaf9ea7": {
     "first_seen": "2026-10-20",
     "gemini_pass_count": 0,
@@ -30479,11 +30726,11 @@
     "pass_count": 2,
     "play_pass_count": 2,
     "seen_count": 2,
-    "shenzhen_checked_at": "2026-10-23T19:43:26.532120+00:00",
-    "shenzhen_loss_pct": 0.0,
-    "shenzhen_ping_ms": 257.1,
-    "shenzhen_probe_city": "Shenzhen",
-    "shenzhen_status": "ok"
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425268+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "702c4cfb2f50e3edcf7f": {
     "first_seen": "2026-10-04",
@@ -30565,6 +30812,14 @@
     "first_seen": "2026-10-04",
     "gemini_pass_count": 0,
     "last_seen": "2026-10-04",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
+  },
+  "70946b57a4a60ef09ec3": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1
@@ -30855,6 +31110,14 @@
     "last_seen": "2026-10-20",
     "pass_count": 1,
     "play_pass_count": 1,
+    "seen_count": 1
+  },
+  "7193316ef2a4e2dcadfe": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
     "seen_count": 1
   },
   "719d3256c00bbd22d895": {
@@ -32226,6 +32489,19 @@
     "shenzhen_ping_ms": 169.9,
     "shenzhen_probe_city": "Shenzhen",
     "shenzhen_status": "ok"
+  },
+  "76262591534612115a63": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425417+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "762d70a608b60b38b27e": {
     "first_seen": "2026-10-02",
@@ -36306,6 +36582,14 @@
     "play_pass_count": 0,
     "seen_count": 1
   },
+  "845ef780eb2cf5074c6b": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1
+  },
   "84705821190657d24adb": {
     "first_seen": "2026-10-11",
     "gemini_pass_count": 0,
@@ -37685,10 +37969,10 @@
   "899e9fe25bd5cc29f9d2": {
     "first_seen": "2026-10-04",
     "gemini_pass_count": 1,
-    "last_seen": "2026-10-23",
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
-    "seen_count": 2,
+    "seen_count": 3,
     "shenzhen_checked_at": "2026-10-23T22:44:54.405159+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
@@ -39407,6 +39691,14 @@
     "play_pass_count": 0,
     "seen_count": 1
   },
+  "90978e70f27f9d93ec31": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
+  },
   "90b8fe5b276d6edd6405": {
     "first_seen": "2026-10-04",
     "gemini_pass_count": 0,
@@ -39749,6 +40041,14 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 2
+  },
+  "9243c4a9299a044a1e82": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
   },
   "92571f99a9e8c4d7fd48": {
     "first_seen": "2026-10-18",
@@ -42783,6 +43083,19 @@
     "play_pass_count": 0,
     "seen_count": 1
   },
+  "9d026c16d0eceaebe22b": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425397+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 192.4,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
+  },
   "9d04354969f62fc7b515": {
     "first_seen": "2026-10-04",
     "gemini_pass_count": 0,
@@ -44486,6 +44799,14 @@
     "play_pass_count": 0,
     "seen_count": 1
   },
+  "a36b8bd7cee5a54a2ea7": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
+  },
   "a37766ce441c731e7761": {
     "first_seen": "2026-10-08",
     "gemini_pass_count": 1,
@@ -45553,10 +45874,10 @@
   "a6f21c72973f392e47ea": {
     "first_seen": "2026-10-06",
     "gemini_pass_count": 0,
-    "last_seen": "2026-10-23",
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
-    "seen_count": 2
+    "seen_count": 3
   },
   "a6fcfc5327ec735093e8": {
     "first_seen": "2026-10-13",
@@ -46465,10 +46786,10 @@
   "a9a045a4bffe5f488bf0": {
     "first_seen": "2026-10-04",
     "gemini_pass_count": 0,
-    "last_seen": "2026-10-23",
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
-    "seen_count": 8
+    "seen_count": 9
   },
   "a9a18f83a34b13dee791": {
     "first_seen": "2026-10-20",
@@ -46678,11 +46999,11 @@
     "pass_count": 2,
     "play_pass_count": 2,
     "seen_count": 2,
-    "shenzhen_checked_at": "2026-10-23T19:43:26.532178+00:00",
-    "shenzhen_loss_pct": 0.0,
-    "shenzhen_ping_ms": 269.2,
-    "shenzhen_probe_city": "Shenzhen",
-    "shenzhen_status": "ok"
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425170+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "aa3bbf609ad183b3144e": {
     "first_seen": "2026-10-23",
@@ -46762,6 +47083,19 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1
+  },
+  "aa6c92b4122b7ae89e0c": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425202+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "aa6cfc23c8059a6ae254": {
     "first_seen": "2026-10-16",
@@ -48299,7 +48633,7 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T14:59:19.984578+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425321+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
@@ -48514,6 +48848,14 @@
     "shenzhen_ping_ms": 204.8,
     "shenzhen_probe_city": "Shenzhen",
     "shenzhen_status": "ok"
+  },
+  "b0cab8e2c7592c73dfb9": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 1,
+    "seen_count": 1
   },
   "b0cf0adcf7ba0046af71": {
     "first_seen": "2026-10-19",
@@ -50352,10 +50694,10 @@
   "b7502a84e7bfe470f273": {
     "first_seen": "2026-10-23",
     "gemini_pass_count": 0,
-    "last_seen": "2026-10-23",
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
-    "seen_count": 1,
+    "seen_count": 2,
     "shenzhen_checked_at": "2026-10-23T19:43:26.532276+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
@@ -50491,6 +50833,14 @@
     "gemini_pass_count": 1,
     "last_seen": "2026-10-13",
     "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1
+  },
+  "b7e7a9ccf09d683ebada": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
     "play_pass_count": 1,
     "seen_count": 1
   },
@@ -51138,7 +51488,12 @@
     "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 1,
-    "seen_count": 1
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425357+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 170.5,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
   },
   "ba13d17ada04c0b85cad": {
     "first_seen": "2026-10-07",
@@ -52609,10 +52964,10 @@
   "c082411b3b1dad9f0ad2": {
     "first_seen": "2026-10-04",
     "gemini_pass_count": 1,
-    "last_seen": "2026-10-23",
+    "last_seen": "2026-10-24",
     "pass_count": 1,
     "play_pass_count": 2,
-    "seen_count": 11,
+    "seen_count": 12,
     "shenzhen_checked_at": "2026-10-23T22:44:54.405164+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
@@ -53190,6 +53545,19 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1
+  },
+  "c24112abfe473510dd43": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425256+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 193.2,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
   },
   "c247754f4f4cbe8ac09f": {
     "first_seen": "2026-10-12",
@@ -54145,11 +54513,11 @@
     "pass_count": 1,
     "play_pass_count": 2,
     "seen_count": 2,
-    "shenzhen_checked_at": "2026-10-23T19:43:26.532264+00:00",
-    "shenzhen_loss_pct": 0.0,
-    "shenzhen_ping_ms": 214.0,
-    "shenzhen_probe_city": "Shenzhen",
-    "shenzhen_status": "ok"
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425384+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "c5b17b42a552cb18c578": {
     "first_seen": "2026-10-14",
@@ -54793,6 +55161,19 @@
     "play_pass_count": 0,
     "seen_count": 1
   },
+  "c803df49f1ddb6747857": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425366+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 535.0,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
+  },
   "c81b8675cab85196f115": {
     "first_seen": "2026-10-04",
     "gemini_pass_count": 1,
@@ -55107,11 +55488,11 @@
     "pass_count": 1,
     "play_pass_count": 2,
     "seen_count": 2,
-    "shenzhen_checked_at": "2026-10-23T19:43:26.532285+00:00",
-    "shenzhen_loss_pct": 0.0,
-    "shenzhen_ping_ms": 233.3,
-    "shenzhen_probe_city": "Shenzhen",
-    "shenzhen_status": "ok"
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425308+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "c925e658fcf91135363b": {
     "first_seen": "2026-10-13",
@@ -58801,6 +59182,14 @@
     "shenzhen_probe_city": null,
     "shenzhen_status": "timeout"
   },
+  "d74488af90448c82e73f": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 1,
+    "seen_count": 1
+  },
   "d75a3a0ef8b4a6415533": {
     "first_seen": "2026-10-19",
     "gemini_pass_count": 0,
@@ -59413,7 +59802,7 @@
     "pass_count": 1,
     "play_pass_count": 1,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T18:27:37.817439+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425413+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
@@ -60060,10 +60449,10 @@
   "dc117e96500eb16289c6": {
     "first_seen": "2026-10-06",
     "gemini_pass_count": 0,
-    "last_seen": "2026-10-23",
+    "last_seen": "2026-10-24",
     "pass_count": 0,
     "play_pass_count": 0,
-    "seen_count": 2,
+    "seen_count": 3,
     "shenzhen_checked_at": "2026-10-23T19:43:26.532218+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
@@ -62674,6 +63063,14 @@
     "play_pass_count": 3,
     "seen_count": 4
   },
+  "e588b3a4ebd6a36d7ae5": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
+  },
   "e58efa54c34957ee98f3": {
     "first_seen": "2026-10-23",
     "gemini_pass_count": 0,
@@ -63836,6 +64233,19 @@
     "pass_count": 0,
     "play_pass_count": 1,
     "seen_count": 2
+  },
+  "e9e293454117e3b03bcc": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425393+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 218.4,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
   },
   "e9e4c07b0633886ad7d7": {
     "first_seen": "2026-10-02",
@@ -65904,6 +66314,14 @@
     "play_pass_count": 0,
     "seen_count": 1
   },
+  "f10feb852abe66a9bc3b": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1
+  },
   "f1212d4bfd8b37261a86": {
     "first_seen": "2026-10-10",
     "gemini_pass_count": 2,
@@ -65983,6 +66401,19 @@
     "play_pass_count": 0,
     "seen_count": 3
   },
+  "f15adb5aa39b349a6d61": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425278+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
+  },
   "f15d93a7970edbb0499a": {
     "first_seen": "2026-10-17",
     "gemini_pass_count": 0,
@@ -66027,6 +66458,14 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 5
+  },
+  "f17b1b3581bd0f869470": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
   },
   "f17d570a613b3bf8cafe": {
     "first_seen": "2026-10-17",
@@ -66135,6 +66574,14 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 2
+  },
+  "f1ba1a3bc62b7f17b469": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 1,
+    "seen_count": 1
   },
   "f1c23c39814dbb58450b": {
     "first_seen": "2026-09-30",
@@ -68040,6 +68487,19 @@
     "shenzhen_probe_city": "Shenzhen",
     "shenzhen_status": "ok"
   },
+  "f881f2f31efcae34d051": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425251+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 205.4,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
+  },
   "f887963155706c474cf5": {
     "first_seen": "2026-10-15",
     "gemini_pass_count": 1,
@@ -68231,11 +68691,11 @@
     "pass_count": 1,
     "play_pass_count": 2,
     "seen_count": 2,
-    "shenzhen_checked_at": "2026-10-23T19:43:26.532099+00:00",
-    "shenzhen_loss_pct": 0.0,
-    "shenzhen_ping_ms": 220.4,
-    "shenzhen_probe_city": "Shenzhen",
-    "shenzhen_status": "ok"
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425351+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
   },
   "f9587d8abc2ff4779af9": {
     "first_seen": "2026-10-04",
@@ -68491,6 +68951,19 @@
     "play_pass_count": 0,
     "seen_count": 2
   },
+  "fa20c32dfc4290e2983e": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425325+00:00",
+    "shenzhen_loss_pct": null,
+    "shenzhen_ping_ms": null,
+    "shenzhen_probe_city": null,
+    "shenzhen_status": "no-stats"
+  },
   "fa31852fdf9800396b09": {
     "first_seen": "2026-10-20",
     "gemini_pass_count": 0,
@@ -68527,6 +69000,14 @@
     "pass_count": 2,
     "play_pass_count": 2,
     "seen_count": 2
+  },
+  "fa44cd9f0e7bbb406cdf": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 0,
+    "last_seen": "2026-10-24",
+    "pass_count": 0,
+    "play_pass_count": 0,
+    "seen_count": 1
   },
   "fa6084c9dc5519ec1556": {
     "first_seen": "2026-10-06",
@@ -68898,11 +69379,11 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 1,
-    "shenzhen_checked_at": "2026-10-24T18:27:37.817692+00:00",
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425282+00:00",
     "shenzhen_loss_pct": null,
     "shenzhen_ping_ms": null,
     "shenzhen_probe_city": null,
-    "shenzhen_status": "timeout"
+    "shenzhen_status": "no-stats"
   },
   "fbadb92b0da12995f09d": {
     "first_seen": "2026-09-30",
@@ -69795,6 +70276,19 @@
     "pass_count": 0,
     "play_pass_count": 0,
     "seen_count": 2
+  },
+  "fe697d30a73bdde5f506": {
+    "first_seen": "2026-10-24",
+    "gemini_pass_count": 1,
+    "last_seen": "2026-10-24",
+    "pass_count": 1,
+    "play_pass_count": 1,
+    "seen_count": 1,
+    "shenzhen_checked_at": "2026-10-24T22:04:29.425362+00:00",
+    "shenzhen_loss_pct": 0.0,
+    "shenzhen_ping_ms": 187.8,
+    "shenzhen_probe_city": "Shenzhen",
+    "shenzhen_status": "ok"
   },
   "fe6a3e2f8ecfd92b6a99": {
     "first_seen": "2026-10-08",
