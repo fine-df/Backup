@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070050 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070051 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,292 +10,190 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- uuid: 35da102e-536b-4103-9632-58c7c4c6303b
-  type: vless
-  client-fingerprint: safari
-  server: gr1.originmesh.online
-  tls: true
+- udp: true
   encryption: none
-  port: 443
-  network: tcp
-  reality-opts:
-    public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
-    short-id: eecfe76af97a6132
-  servername: gr1.originmesh.online
-  flow: xtls-rprx-vision
-  udp: true
   name: 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
-- uuid: 35da102e-536b-4103-9632-58c7c4c6303b
-  type: vless
-  client-fingerprint: ios
-  server: gr1.originmesh.online
-  tls: true
-  encryption: none
+  client-fingerprint: safari
+  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
   port: 443
-  network: tcp
+  flow: xtls-rprx-vision
+  servername: gr1.originmesh.online
+  tls: true
+  type: vless
   reality-opts:
     public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
     short-id: eecfe76af97a6132
-  servername: gr1.originmesh.online
-  flow: xtls-rprx-vision
-  udp: true
+  server: gr1.originmesh.online
+  network: tcp
+- udp: true
+  encryption: none
   name: 🇩🇪 Germany, Frankfurt am Main | [BL] [7a7957ea]
-- uuid: 35da102e-536b-4103-9632-58c7c4c6303b
-  type: vless
-  client-fingerprint: firefox
-  server: gr1.originmesh.online
-  tls: true
-  encryption: none
+  client-fingerprint: ios
+  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
   port: 443
-  network: tcp
+  flow: xtls-rprx-vision
+  servername: gr1.originmesh.online
+  tls: true
+  type: vless
   reality-opts:
     public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
     short-id: eecfe76af97a6132
-  servername: gr1.originmesh.online
-  flow: xtls-rprx-vision
-  udp: true
+  server: gr1.originmesh.online
+  network: tcp
+- udp: true
+  encryption: none
   name: 🇩🇪 Germany, Frankfurt am Main | [BL] [ad3b6f38]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  type: vless
   client-fingerprint: firefox
-  server: 201.51.8.163
-  tls: true
-  encryption: none
+  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
   port: 443
-  network: tcp
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  servername: atk.vkusnews.com
   flow: xtls-rprx-vision
-  udp: true
-  name: 🇩🇪 Germany | [*CIDR] [a45e5ffe]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  type: vless
-  client-fingerprint: qq
-  server: 201.51.8.163
+  servername: gr1.originmesh.online
   tls: true
-  encryption: none
-  port: 443
-  network: tcp
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  servername: atk.vkusnews.com
-  flow: xtls-rprx-vision
-  udp: true
-  name: 🇩🇪 Germany | [*CIDR] [495fac73]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   type: vless
-  client-fingerprint: qq
-  server: 109.73.192.248
-  tls: true
-  encryption: none
-  port: 443
-  network: tcp
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  servername: almata.vkusnews.com
-  flow: xtls-rprx-vision
-  udp: true
-  name: 🇰🇿 Kazakhstan [*CIDR]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  type: vless
-  client-fingerprint: firefox
-  server: 109.73.192.248
-  tls: true
-  encryption: none
-  port: 443
-  network: tcp
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  servername: almata.vkusnews.com
-  flow: xtls-rprx-vision
-  udp: true
-  name: 🇰🇿 Kazakhstan | [*CIDR]
-- uuid: 35da102e-536b-4103-9632-58c7c4c6303b
-  type: vless
-  client-fingerprint: chrome
-  server: gr1.originmesh.online
-  tls: true
-  encryption: none
-  port: 443
-  network: tcp
   reality-opts:
     public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
     short-id: eecfe76af97a6132
-  servername: gr1.originmesh.online
+  server: gr1.originmesh.online
+  network: tcp
+- udp: true
+  encryption: none
+  name: 🇰🇿 Kazakhstan [*CIDR] [0559ec71]
+  client-fingerprint: qq
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  port: 443
   flow: xtls-rprx-vision
-  udp: true
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  servername: almata.vkusnews.com
+  tls: true
   type: vless
-  client-fingerprint: chrome
-  server: 45.144.221.169
-  tls: true
-  encryption: none
-  port: 443
-  network: tcp
   reality-opts:
     public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  servername: arizona.eosapp.net
-  flow: xtls-rprx-vision
-  udp: true
-  name: 🇺🇸 United States [*CIDR]
-- type: vless
-  name: 🇺🇸 United States | [*CIDR]
-  server: 45.144.221.169
-  port: 443
-  udp: true
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  encryption: none
-  tls: true
-  servername: arizona.eosapp.net
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  server: 109.73.192.248
   network: tcp
-- type: vless
-  name: 🇫🇮 Finland, Helsinki | [BL] [032d0e11]
-  server: 78.17.209.100
-  port: 443
-  udp: true
-  uuid: c5cf36f5-50e9-405b-adb4-b40fdf0d4619
+- udp: true
   encryption: none
-  tls: true
-  servername: fin-skl-1.movietop24.site
-  flow: xtls-rprx-vision
-  client-fingerprint: random
-  reality-opts:
-    public-key: 6DLiz4O1GkMzUveVx_6Wr_e99QxAgZZ6BonblaRVPFI
-    short-id: ba80654a85a4634c
-  network: tcp
-- type: vless
-  name: 🇫🇮 Finland, Helsinki | [BL] [6b11bc89]
-  server: 78.17.209.100
-  port: 443
-  udp: true
-  uuid: c5cf36f5-50e9-405b-adb4-b40fdf0d4619
-  encryption: none
-  tls: true
-  servername: fin-skl-1.movietop24.site
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 6DLiz4O1GkMzUveVx_6Wr_e99QxAgZZ6BonblaRVPFI
-    short-id: ba80654a85a4634c
-  network: tcp
-- type: vless
-  name: 🇩🇪 Germany | [*CIDR] [2e3f1247]
-  server: 201.51.8.163
-  port: 443
-  udp: true
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  encryption: none
-  tls: true
-  servername: atk.vkusnews.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  network: tcp
-- type: vless
-  name: 🇩🇪 Germany | [*CIDR] [68b51e2c]
-  server: 5.129.222.115
-  port: 443
-  udp: true
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  encryption: none
-  tls: true
-  servername: ad7.vkusnews.com
-  flow: xtls-rprx-vision
+  name: 🇰🇿 Kazakhstan | [*CIDR]
   client-fingerprint: firefox
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  port: 443
+  flow: xtls-rprx-vision
+  servername: almata.vkusnews.com
+  tls: true
+  type: vless
   reality-opts:
     public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  server: 109.73.192.248
   network: tcp
-- type: vless
+- udp: true
+  encryption: none
   name: 🇬🇧 United Kingdom, London | [BL] [e9e29345]
-  server: 196.247.163.10
-  port: 443
-  udp: true
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  encryption: none
-  tls: true
-  servername: britainmh.eosvpn.com
-  flow: xtls-rprx-vision
   client-fingerprint: edge
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  port: 443
+  flow: xtls-rprx-vision
+  servername: britainmh.eosvpn.com
+  tls: true
+  type: vless
   reality-opts:
     public-key: 5984Ah0pkfSVekU5xafQ1trZZN7MyNCJ-3KfCo-O6A4
+  server: 196.247.163.10
   network: tcp
-- type: vless
+- udp: true
+  encryption: none
   name: 🇬🇧 United Kingdom, London | [BL] [4c214ce7]
+  client-fingerprint: firefox
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  port: 443
+  flow: xtls-rprx-vision
+  servername: britainmh.eosvpn.com
+  tls: true
+  type: vless
+  reality-opts:
+    public-key: 5984Ah0pkfSVekU5xafQ1trZZN7MyNCJ-3KfCo-O6A4
   server: 196.247.163.10
+  network: tcp
+- udp: true
+  encryption: none
+  name: 🇷🇺 Russia | [*CIDR]
+  client-fingerprint: firefox
+  uuid: 75985152-e16e-4a48-87ff-35c2615e0ab5
+  port: 8443
+  flow: xtls-rprx-vision
+  servername: apple.com
+  tls: true
+  type: vless
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 147.45.46.157
+  network: tcp
+- type: vless
+  name: 🇷🇺 Russia [*CIDR]
+  server: 193.160.140.115
+  port: 443
+  udp: true
+  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
+  encryption: none
+  tls: true
+  servername: ozon.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- type: vless
+  name: 🇰🇿 Kazakhstan [*CIDR] [1f12f812]
+  server: 109.73.192.248
   port: 443
   udp: true
   uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   encryption: none
   tls: true
-  servername: britainmh.eosvpn.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 5984Ah0pkfSVekU5xafQ1trZZN7MyNCJ-3KfCo-O6A4
-  network: tcp
-- type: vless
-  name: 🇬🇧 United Kingdom | 🌐 | [*CIDR] [11944064]
-  server: 37.235.249.8
-  port: 443
-  udp: true
-  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
-  encryption: none
-  tls: true
-  servername: gb.ozon.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
-- type: vless
-  name: 🇷🇺 Russia | [*CIDR]
-  server: 147.45.46.157
-  port: 8443
-  udp: true
-  uuid: 75985152-e16e-4a48-87ff-35c2615e0ab5
-  encryption: none
-  tls: true
-  servername: apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
-- type: vless
-  name: 🌐 Anycast-IP | 🇩🇪 🇫🇷 🇷🇺 [*CIDR]
-  server: 193.160.140.109
-  port: 443
-  udp: true
-  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
-  encryption: none
-  tls: true
-  servername: abuse.ozon.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
-- type: vless
-  name: 🇬🇧 United Kingdom | 🌐 | [*CIDR] [feb67e19]
-  server: 193.160.141.23
-  port: 443
-  udp: true
-  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
-  encryption: none
-  tls: true
-  servername: gb.ozon.ru
+  servername: almata.vkusnews.com
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
   network: tcp
+- type: vless
+  name: 🇳🇱 The Netherlands [*CIDR] [62853b82]
+  server: renderer-bridge-1-881.mirra.now
+  port: 443
+  udp: true
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  encryption: none
+  tls: true
+  servername: renderer-bridge-1-881.mirra.now
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+- type: vless
+  name: 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
+  server: renderer-bridge-1-881.mirra.now
+  port: 443
+  udp: true
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  encryption: none
+  tls: true
+  servername: renderer-bridge-1-881.mirra.now
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+- type: vless
+  name: 🇫🇷 France, Paris | 🌐 | [BL]
+  server: 199.232.78.160
+  port: 443
+  udp: true
+  uuid: XpnTeam-48
+  encryption: none
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: android
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
 proxy-groups:
 - name: Fine
   type: select
@@ -305,23 +203,16 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [7a7957ea]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [ad3b6f38]
-  - 🇩🇪 Germany | [*CIDR] [a45e5ffe]
-  - 🇩🇪 Germany | [*CIDR] [495fac73]
-  - 🇰🇿 Kazakhstan [*CIDR]
+  - 🇰🇿 Kazakhstan [*CIDR] [0559ec71]
   - 🇰🇿 Kazakhstan | [*CIDR]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
-  - 🇺🇸 United States [*CIDR]
-  - 🇺🇸 United States | [*CIDR]
-  - 🇫🇮 Finland, Helsinki | [BL] [032d0e11]
-  - 🇫🇮 Finland, Helsinki | [BL] [6b11bc89]
-  - 🇩🇪 Germany | [*CIDR] [2e3f1247]
-  - 🇩🇪 Germany | [*CIDR] [68b51e2c]
   - 🇬🇧 United Kingdom, London | [BL] [e9e29345]
   - 🇬🇧 United Kingdom, London | [BL] [4c214ce7]
-  - 🇬🇧 United Kingdom | 🌐 | [*CIDR] [11944064]
   - 🇷🇺 Russia | [*CIDR]
-  - 🌐 Anycast-IP | 🇩🇪 🇫🇷 🇷🇺 [*CIDR]
-  - 🇬🇧 United Kingdom | 🌐 | [*CIDR] [feb67e19]
+  - 🇷🇺 Russia [*CIDR]
+  - 🇰🇿 Kazakhstan [*CIDR] [1f12f812]
+  - 🇳🇱 The Netherlands [*CIDR] [62853b82]
+  - 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
+  - 🇫🇷 France, Paris | 🌐 | [BL]
   default-selected: 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
 - name: AUTO
   type: url-test
@@ -329,23 +220,16 @@ proxy-groups:
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [7a7957ea]
   - 🇩🇪 Germany, Frankfurt am Main | [BL] [ad3b6f38]
-  - 🇩🇪 Germany | [*CIDR] [a45e5ffe]
-  - 🇩🇪 Germany | [*CIDR] [495fac73]
-  - 🇰🇿 Kazakhstan [*CIDR]
+  - 🇰🇿 Kazakhstan [*CIDR] [0559ec71]
   - 🇰🇿 Kazakhstan | [*CIDR]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
-  - 🇺🇸 United States [*CIDR]
-  - 🇺🇸 United States | [*CIDR]
-  - 🇫🇮 Finland, Helsinki | [BL] [032d0e11]
-  - 🇫🇮 Finland, Helsinki | [BL] [6b11bc89]
-  - 🇩🇪 Germany | [*CIDR] [2e3f1247]
-  - 🇩🇪 Germany | [*CIDR] [68b51e2c]
   - 🇬🇧 United Kingdom, London | [BL] [e9e29345]
   - 🇬🇧 United Kingdom, London | [BL] [4c214ce7]
-  - 🇬🇧 United Kingdom | 🌐 | [*CIDR] [11944064]
   - 🇷🇺 Russia | [*CIDR]
-  - 🌐 Anycast-IP | 🇩🇪 🇫🇷 🇷🇺 [*CIDR]
-  - 🇬🇧 United Kingdom | 🌐 | [*CIDR] [feb67e19]
+  - 🇷🇺 Russia [*CIDR]
+  - 🇰🇿 Kazakhstan [*CIDR] [1f12f812]
+  - 🇳🇱 The Netherlands [*CIDR] [62853b82]
+  - 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
+  - 🇫🇷 France, Paris | 🌐 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
