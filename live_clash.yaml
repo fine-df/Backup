@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070054 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070055 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,280 +10,278 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- uuid: 35da102e-536b-4103-9632-58c7c4c6303b
-  client-fingerprint: safari
-  server: gr1.originmesh.online
-  network: tcp
+- type: vless
   encryption: none
-  udp: true
   flow: xtls-rprx-vision
-  type: vless
-  servername: gr1.originmesh.online
-  reality-opts:
-    public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
-    short-id: eecfe76af97a6132
-  tls: true
-  port: 443
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  client-fingerprint: qq
-  server: 109.73.192.248
-  network: tcp
-  encryption: none
-  udp: true
-  flow: xtls-rprx-vision
-  type: vless
-  servername: almata.vkusnews.com
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  tls: true
-  port: 443
   name: 🇰🇿 Kazakhstan [*CIDR] [0559ec71]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  client-fingerprint: firefox
-  server: 109.73.192.248
-  network: tcp
-  encryption: none
-  udp: true
-  flow: xtls-rprx-vision
-  type: vless
-  servername: almata.vkusnews.com
+  port: 443
   reality-opts:
     public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  client-fingerprint: qq
+  udp: true
+  server: 109.73.192.248
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  servername: almata.vkusnews.com
   tls: true
-  port: 443
+  network: tcp
+- type: vless
+  encryption: none
+  flow: xtls-rprx-vision
   name: 🇰🇿 Kazakhstan | [*CIDR]
-- uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
-  client-fingerprint: firefox
-  server: 193.160.140.115
-  network: tcp
-  encryption: none
-  udp: true
-  flow: xtls-rprx-vision
-  type: vless
-  servername: ozon.ru
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  tls: true
   port: 443
-  name: 🇷🇺 Russia [*CIDR]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  client-fingerprint: firefox
+  udp: true
   server: 109.73.192.248
-  network: tcp
-  encryption: none
-  udp: true
-  flow: xtls-rprx-vision
-  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   servername: almata.vkusnews.com
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
   tls: true
-  port: 443
-  name: 🇰🇿 Kazakhstan [*CIDR] [1f12f812]
-- uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  client-fingerprint: safari
-  server: renderer-bridge-1-881.mirra.now
-  network: grpc
+  network: tcp
+- type: vless
   encryption: none
-  udp: true
-  type: vless
-  servername: renderer-bridge-1-881.mirra.now
-  tls: true
-  grpc-opts:
-    grpc-service-name: VideoRenderer
-  port: 443
   name: 🇳🇱 The Netherlands [*CIDR] [62853b82]
-- uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  client-fingerprint: firefox
-  server: renderer-bridge-1-881.mirra.now
-  network: grpc
-  encryption: none
+  port: 443
+  client-fingerprint: safari
   udp: true
-  type: vless
-  servername: renderer-bridge-1-881.mirra.now
-  tls: true
+  server: renderer-bridge-1-881.mirra.now
   grpc-opts:
     grpc-service-name: VideoRenderer
-  port: 443
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  servername: renderer-bridge-1-881.mirra.now
+  tls: true
+  network: grpc
+- type: vless
+  encryption: none
   name: 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  client-fingerprint: qq
-  server: 201.51.8.163
-  network: tcp
-  encryption: none
-  udp: true
-  flow: xtls-rprx-vision
-  type: vless
-  servername: atk.vkusnews.com
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  tls: true
   port: 443
-  name: 🇩🇪 Germany | [*CIDR] [495fac73]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   client-fingerprint: firefox
-  server: 201.51.8.163
-  network: tcp
-  encryption: none
   udp: true
-  flow: xtls-rprx-vision
-  type: vless
-  servername: atk.vkusnews.com
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  tls: true
-  port: 443
-  name: 🇩🇪 Germany | [*CIDR] [a45e5ffe]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  client-fingerprint: firefox
-  server: 5.129.222.115
-  network: tcp
-  encryption: none
-  udp: true
-  flow: xtls-rprx-vision
-  type: vless
-  servername: ad7.vkusnews.com
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  tls: true
-  port: 443
-  name: 🇩🇪 Germany | [*CIDR] [68b51e2c]
-- uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  client-fingerprint: firefox
-  server: 85.198.83.46
-  network: grpc
-  encryption: none
-  udp: true
-  type: vless
-  servername: renderer-bridge-1-881.mirra.now
-  tls: true
-  grpc-opts:
-    grpc-service-name: VideoRenderer
-  port: 443
-  name: 🇳🇱 The Netherlands | [*CIDR] [b66a1a34]
-- uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  client-fingerprint: chrome
-  server: 85.198.83.46
-  network: grpc
-  encryption: none
-  udp: true
-  type: vless
-  servername: renderer-bridge-1-881.mirra.now
-  tls: true
-  grpc-opts:
-    grpc-service-name: VideoRenderer
-  port: 443
-  name: 🇳🇱 The Netherlands | [*CIDR] [2606f882]
-- uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  client-fingerprint: chrome
   server: renderer-bridge-1-881.mirra.now
-  network: grpc
-  encryption: none
-  udp: true
-  type: vless
-  servername: renderer-bridge-1-881.mirra.now
-  tls: true
   grpc-opts:
     grpc-service-name: VideoRenderer
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  servername: renderer-bridge-1-881.mirra.now
+  tls: true
+  network: grpc
+- type: vless
+  encryption: none
+  name: 🇳🇱 The Netherlands | [*CIDR] [b66a1a34]
   port: 443
-  name: 🇳🇱 The Netherlands | [*CIDR] [c702f794]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   client-fingerprint: firefox
-  server: 45.144.221.169
-  network: tcp
-  encryption: none
   udp: true
-  flow: xtls-rprx-vision
-  type: vless
-  servername: arizona.eosapp.net
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  server: 85.198.83.46
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  servername: renderer-bridge-1-881.mirra.now
   tls: true
-  port: 443
-  name: 🇺🇸 United States [*CIDR] [fe697d30]
-- uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  client-fingerprint: qq
-  server: 45.144.221.169
-  network: tcp
+  network: grpc
+- type: vless
   encryption: none
-  udp: true
-  flow: xtls-rprx-vision
-  type: vless
-  servername: arizona.eosapp.net
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  tls: true
+  name: 🇳🇱 The Netherlands | [*CIDR] [2606f882]
   port: 443
-  name: 🇺🇸 United States [*CIDR] [3eb10f87]
-- uuid: 47050e4e-965d-41ca-976d-73c1f11e6905
-  server: node8.liudonghoe.com
-  network: ws
-  cipher: auto
+  client-fingerprint: chrome
   udp: true
-  type: vmess
-  servername: node8.liudonghoe.com
+  server: 85.198.83.46
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  servername: renderer-bridge-1-881.mirra.now
+  tls: true
+  network: grpc
+- type: vless
+  encryption: none
+  name: 🇳🇱 The Netherlands | [*CIDR] [c702f794]
+  port: 443
+  client-fingerprint: chrome
+  udp: true
+  server: renderer-bridge-1-881.mirra.now
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  servername: renderer-bridge-1-881.mirra.now
+  tls: true
+  network: grpc
+- type: vmess
+  name: 🇺🇸 United States, Los Angeles (Central-Alameda) | [BL] [636d1756]
   ws-opts:
     headers:
       Host: node8.liudonghoe.com
     path: /hoe8
-  tls: true
-  alterId: 0
   port: 443
-  name: 🇺🇸 United States, Los Angeles (Central-Alameda) | [BL] [636d1756]
-- uuid: 47050e4e-965d-41ca-976d-73c1f11e6905
-  server: node8.liudonghoe.com
-  network: ws
   cipher: auto
   udp: true
-  type: vmess
-  ws-opts:
-    path: /hoe8
+  server: node8.liudonghoe.com
+  uuid: 47050e4e-965d-41ca-976d-73c1f11e6905
+  servername: node8.liudonghoe.com
   tls: true
   alterId: 0
-  port: 443
-  name: 🇺🇸 United States, Los Angeles (Central-Alameda) | [BL] [2c05681c]
-- uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  server: 104.16.111.193
   network: ws
-  encryption: none
+- type: vmess
+  name: 🇺🇸 United States, Los Angeles (Central-Alameda) | [BL] [2c05681c]
+  ws-opts:
+    path: /hoe8
+  port: 443
+  cipher: auto
   udp: true
-  type: vless
-  servername: v2ray.simspeedup.com
+  server: node8.liudonghoe.com
+  uuid: 47050e4e-965d-41ca-976d-73c1f11e6905
+  tls: true
+  alterId: 0
+  network: ws
+- type: vless
+  encryption: none
+  name: 🇹🇭 Thailand, Thap Sakae | [BL]
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-  tls: true
   port: 443
-  name: 🇹🇭 Thailand, Thap Sakae | [BL]
+  udp: true
+  server: 104.16.111.193
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  servername: v2ray.simspeedup.com
+  tls: true
+  network: ws
 - type: vless
-  name: 🇺🇸 United States [*CIDR] [9d026c16]
-  server: 45.144.221.169
+  name: 🇩🇪 Germany | 🌐 [*CIDR]
+  server: 129.101.115.181
   port: 443
   udp: true
   uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   encryption: none
   tls: true
-  servername: arizona.eosapp.net
+  servername: a1.eosshop.net
   flow: xtls-rprx-vision
-  client-fingerprint: safari
+  client-fingerprint: firefox
   reality-opts:
     public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
   network: tcp
 - type: vless
-  name: 🇺🇸 United States [*CIDR] [2f8d9eae]
-  server: 45.144.221.169
+  name: 🇷🇺 Russia [*CIDR] [e257b808]
+  server: 212.193.31.221
+  port: 443
+  udp: true
+  uuid: 1506f2e0-ae12-4718-b5ab-c5609161300e
+  encryption: none
+  tls: true
+  servername: eu30.cdn77.icu
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+    short-id: 1ed136481e0ede74
+  network: tcp
+- type: vless
+  name: 🇬🇧 United Kingdom | 🌐 [*CIDR]
+  server: 147.45.46.176
+  port: 443
+  udp: true
+  uuid: bcf07b50-9da7-44dc-a955-43302f12e1e5
+  encryption: none
+  tls: true
+  servername: gb.ozon.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- type: vless
+  name: 🇬🇧 United Kingdom, London (City of London) | 🌐 | [BL] [7baa611b]
+  server: 147.45.46.147
+  port: 443
+  udp: true
+  uuid: bcf07b50-9da7-44dc-a955-43302f12e1e5
+  encryption: none
+  tls: true
+  servername: gb.ozon.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany [*CIDR] [6d3956de]
+  server: 194.87.201.139
   port: 443
   udp: true
   uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   encryption: none
   tls: true
-  servername: arizona.eosapp.net
+  servername: attention.eosapp.net
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
     public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  network: tcp
+- type: vless
+  name: 🇬🇧 United Kingdom, London (City of London) | 🌐 | [BL] [f792df48]
+  server: 193.160.141.32
+  port: 443
+  udp: true
+  uuid: bcf07b50-9da7-44dc-a955-43302f12e1e5
+  encryption: none
+  tls: true
+  servername: gb.ozon.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- type: vless
+  name: 🇧🇬 Bulgaria, Sofia | [BL]
+  server: play.murka.fun
+  port: 443
+  udp: true
+  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+  encryption: none
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: Fg70yRg0YvJyWsM1KWcawTSW670xdhF7hdMeMgUQOl0
+    short-id: 1f82ac
+- type: vless
+  name: 🇩🇪 Germany [*CIDR] [e853d069]
+  server: 5.42.106.169
+  port: 443
+  udp: true
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  encryption: none
+  tls: true
+  servername: salt.fishandmeat.space
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  network: tcp
+- type: vless
+  name: 🇷🇺 Russia [*CIDR] [9c8514b5]
+  server: 37.235.249.25
+  port: 443
+  udp: true
+  uuid: bcf07b50-9da7-44dc-a955-43302f12e1e5
+  encryption: none
+  tls: true
+  servername: ozon.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany [SNI-RU] ozon.ru
+  server: 45.128.78.198
+  port: 443
+  udp: true
+  uuid: bcf07b50-9da7-44dc-a955-43302f12e1e5
+  encryption: none
+  tls: true
+  servername: ozon.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   network: tcp
 proxy-groups:
 - name: Fine
@@ -291,50 +289,50 @@ proxy-groups:
   proxies:
   - AUTO
   - DIRECT
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
   - 🇰🇿 Kazakhstan [*CIDR] [0559ec71]
   - 🇰🇿 Kazakhstan | [*CIDR]
-  - 🇷🇺 Russia [*CIDR]
-  - 🇰🇿 Kazakhstan [*CIDR] [1f12f812]
   - 🇳🇱 The Netherlands [*CIDR] [62853b82]
   - 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
-  - 🇩🇪 Germany | [*CIDR] [495fac73]
-  - 🇩🇪 Germany | [*CIDR] [a45e5ffe]
-  - 🇩🇪 Germany | [*CIDR] [68b51e2c]
   - 🇳🇱 The Netherlands | [*CIDR] [b66a1a34]
   - 🇳🇱 The Netherlands | [*CIDR] [2606f882]
   - 🇳🇱 The Netherlands | [*CIDR] [c702f794]
-  - 🇺🇸 United States [*CIDR] [fe697d30]
-  - 🇺🇸 United States [*CIDR] [3eb10f87]
   - 🇺🇸 United States, Los Angeles (Central-Alameda) | [BL] [636d1756]
   - 🇺🇸 United States, Los Angeles (Central-Alameda) | [BL] [2c05681c]
   - 🇹🇭 Thailand, Thap Sakae | [BL]
-  - 🇺🇸 United States [*CIDR] [9d026c16]
-  - 🇺🇸 United States [*CIDR] [2f8d9eae]
-  default-selected: 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
+  - 🇩🇪 Germany | 🌐 [*CIDR]
+  - 🇷🇺 Russia [*CIDR] [e257b808]
+  - 🇬🇧 United Kingdom | 🌐 [*CIDR]
+  - 🇬🇧 United Kingdom, London (City of London) | 🌐 | [BL] [7baa611b]
+  - 🇩🇪 Germany [*CIDR] [6d3956de]
+  - 🇬🇧 United Kingdom, London (City of London) | 🌐 | [BL] [f792df48]
+  - 🇧🇬 Bulgaria, Sofia | [BL]
+  - 🇩🇪 Germany [*CIDR] [e853d069]
+  - 🇷🇺 Russia [*CIDR] [9c8514b5]
+  - 🇩🇪 Germany [SNI-RU] ozon.ru
+  default-selected: 🇰🇿 Kazakhstan [*CIDR] [0559ec71]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [605dfcf0]
   - 🇰🇿 Kazakhstan [*CIDR] [0559ec71]
   - 🇰🇿 Kazakhstan | [*CIDR]
-  - 🇷🇺 Russia [*CIDR]
-  - 🇰🇿 Kazakhstan [*CIDR] [1f12f812]
   - 🇳🇱 The Netherlands [*CIDR] [62853b82]
   - 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
-  - 🇩🇪 Germany | [*CIDR] [495fac73]
-  - 🇩🇪 Germany | [*CIDR] [a45e5ffe]
-  - 🇩🇪 Germany | [*CIDR] [68b51e2c]
   - 🇳🇱 The Netherlands | [*CIDR] [b66a1a34]
   - 🇳🇱 The Netherlands | [*CIDR] [2606f882]
   - 🇳🇱 The Netherlands | [*CIDR] [c702f794]
-  - 🇺🇸 United States [*CIDR] [fe697d30]
-  - 🇺🇸 United States [*CIDR] [3eb10f87]
   - 🇺🇸 United States, Los Angeles (Central-Alameda) | [BL] [636d1756]
   - 🇺🇸 United States, Los Angeles (Central-Alameda) | [BL] [2c05681c]
   - 🇹🇭 Thailand, Thap Sakae | [BL]
-  - 🇺🇸 United States [*CIDR] [9d026c16]
-  - 🇺🇸 United States [*CIDR] [2f8d9eae]
+  - 🇩🇪 Germany | 🌐 [*CIDR]
+  - 🇷🇺 Russia [*CIDR] [e257b808]
+  - 🇬🇧 United Kingdom | 🌐 [*CIDR]
+  - 🇬🇧 United Kingdom, London (City of London) | 🌐 | [BL] [7baa611b]
+  - 🇩🇪 Germany [*CIDR] [6d3956de]
+  - 🇬🇧 United Kingdom, London (City of London) | 🌐 | [BL] [f792df48]
+  - 🇧🇬 Bulgaria, Sofia | [BL]
+  - 🇩🇪 Germany [*CIDR] [e853d069]
+  - 🇷🇺 Russia [*CIDR] [9c8514b5]
+  - 🇩🇪 Germany [SNI-RU] ozon.ru
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
