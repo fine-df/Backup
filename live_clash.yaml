@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070059 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070060 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,232 +10,286 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- name: 🇳🇱 The Netherlands [*CIDR] [62853b82]
+- network: grpc
   encryption: none
-  tls: true
-  network: grpc
-  client-fingerprint: safari
   port: 443
+  type: vless
+  udp: true
+  name: 🇳🇱 The Netherlands [*CIDR] [62853b82]
+  tls: true
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  client-fingerprint: safari
+  server: renderer-bridge-1-881.mirra.now
   grpc-opts:
     grpc-service-name: VideoRenderer
-  type: vless
-  server: renderer-bridge-1-881.mirra.now
-  udp: true
   servername: renderer-bridge-1-881.mirra.now
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-- name: 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
+- network: grpc
   encryption: none
+  port: 443
+  type: vless
+  udp: true
+  name: 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
   tls: true
-  network: grpc
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
   client-fingerprint: firefox
-  port: 443
+  server: renderer-bridge-1-881.mirra.now
   grpc-opts:
     grpc-service-name: VideoRenderer
-  type: vless
-  server: renderer-bridge-1-881.mirra.now
-  udp: true
   servername: renderer-bridge-1-881.mirra.now
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-- name: 🇳🇱 The Netherlands | [*CIDR] [c702f794]
+- network: grpc
   encryption: none
+  port: 443
+  type: vless
+  udp: true
+  name: 🇳🇱 The Netherlands | [*CIDR] [c702f794]
   tls: true
-  network: grpc
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
   client-fingerprint: chrome
-  port: 443
+  server: renderer-bridge-1-881.mirra.now
   grpc-opts:
     grpc-service-name: VideoRenderer
-  type: vless
-  server: renderer-bridge-1-881.mirra.now
-  udp: true
   servername: renderer-bridge-1-881.mirra.now
+- network: grpc
+  encryption: none
+  port: 443
+  type: vless
+  udp: true
+  name: 🇳🇱 The Netherlands | [*CIDR] [e87bbbcf]
+  tls: true
   uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-- name: 🇹🇭 Thailand, Thap Sakae | [BL]
-  encryption: none
-  tls: true
-  network: ws
-  port: 443
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-  type: vless
-  server: 104.16.111.193
-  udp: true
-  servername: v2ray.simspeedup.com
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-- flow: xtls-rprx-vision
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [f0f4a372]
-  encryption: none
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  tls: true
-  network: tcp
-  client-fingerprint: safari
-  port: 443
-  type: vless
-  server: ge-s-1.pythonmakemigreat.wiki
-  udp: true
-  servername: ge-s-1.pythonmakemigreat.wiki
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-- flow: xtls-rprx-vision
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [833ee9d3]
-  encryption: none
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  tls: true
-  network: tcp
-  client-fingerprint: edge
-  port: 443
-  type: vless
-  server: ge-s-1.pythonmakemigreat.wiki
-  udp: true
-  servername: ge-s-1.pythonmakemigreat.wiki
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-- name: 🇳🇱 The Netherlands | [*CIDR] [e87bbbcf]
-  encryption: none
-  tls: true
-  network: grpc
   client-fingerprint: ios
-  port: 443
-  grpc-opts:
-    grpc-service-name: VideoRenderer
-  type: vless
   server: renderer-bridge-1-881.mirra.now
-  udp: true
-  servername: renderer-bridge-1-881.mirra.now
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-- name: 🇳🇱 The Netherlands | [*CIDR] [ea63e0aa]
-  encryption: none
-  tls: true
-  network: grpc
-  client-fingerprint: firefox
-  port: 443
   grpc-opts:
     grpc-service-name: VideoRenderer
-  type: vless
-  server: 72.56.242.232
-  udp: true
   servername: renderer-bridge-1-881.mirra.now
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-- type: vless
-  name: 🇳🇱 The Netherlands | [*CIDR] [debee362]
-  server: 72.56.38.83
-  port: 443
-  udp: true
-  uuid: Fluffy_VPN-zKZUa4Ie
+- network: grpc
   encryption: none
+  port: 443
+  type: vless
+  udp: true
+  name: 🇳🇱 The Netherlands | [*CIDR] [ea63e0aa]
   tls: true
-  servername: absolute-disaster.org
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  client-fingerprint: firefox
+  server: 72.56.242.232
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+  servername: renderer-bridge-1-881.mirra.now
+- network: tcp
+  encryption: none
   reality-opts:
     public-key: ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8
-  network: tcp
-- type: vless
-  name: 🇳🇱 The Netherlands | [*CIDR] [4a191a22]
-  server: 72.56.4.84
   port: 443
+  type: vless
   udp: true
-  uuid: Fluffy_VPN-zKZUa4Ie
-  encryption: none
+  name: 🇳🇱 The Netherlands | [*CIDR] [debee362]
   tls: true
-  servername: absolute-disaster.org
+  uuid: Fluffy_VPN-zKZUa4Ie
+  client-fingerprint: chrome
+  server: 72.56.38.83
   flow: xtls-rprx-vision
-  client-fingerprint: edge
+  servername: absolute-disaster.org
+- network: tcp
+  encryption: none
   reality-opts:
     public-key: Im1i3eUtm7uDxUOA0rNWef9bILxsBvK_ElfejZTpQW0
+  port: 443
+  type: vless
+  udp: true
+  name: 🇳🇱 The Netherlands | [*CIDR] [4a191a22]
+  tls: true
+  uuid: Fluffy_VPN-zKZUa4Ie
+  client-fingerprint: edge
+  server: 72.56.4.84
+  flow: xtls-rprx-vision
+  servername: absolute-disaster.org
+- network: ws
+  encryption: none
+  port: 443
+  ws-opts:
+    path: /live.stream.v1.Broadcast/
+    headers:
+      Host: broadcast.liveflow.space
+  type: vless
+  udp: true
+  name: NO GEO [*CIDR]
+  tls: true
+  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
+  client-fingerprint: edge
+  server: 194.55.239.89
+  servername: broadcast.liveflow.space
+- network: ws
+  encryption: none
+  port: 443
+  ws-opts:
+    path: /live.stream.v1.Broadcast/
+    headers:
+      Host: broadcast.liveflow.space
+  type: vless
+  udp: true
+  name: 🇪🇪 Estonia [*CIDR]
+  tls: true
+  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
+  client-fingerprint: android
+  server: 194.55.239.89
+  servername: broadcast.liveflow.space
+- network: tcp
+  encryption: none
+  reality-opts:
+    public-key: ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8
+  port: 443
+  type: vless
+  udp: true
+  name: 🇳🇱 The Netherlands [*CIDR]
+  tls: true
+  uuid: Fluffy_VPN-zKZUa4Ie
+  client-fingerprint: qq
+  server: 72.56.38.83
+  flow: xtls-rprx-vision
+  servername: absolute-disaster.org
+- type: vless
+  name: 🇺🇸 United States, Teterboro | [BL] [a2d2f2d0]
+  server: 93.152.214.248
+  port: 443
+  udp: true
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  encryption: none
+  tls: true
+  servername: us5.pc-peervax.top
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk
+    short-id: a9c3f7e2
   network: tcp
 - type: vless
-  name: NO GEO [*CIDR]
-  server: 194.55.239.89
+  name: 🇺🇸 United States, Teterboro | [BL] [79956eaf]
+  server: 93.152.214.248
   port: 443
   udp: true
-  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
   encryption: none
   tls: true
-  servername: broadcast.liveflow.space
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /live.stream.v1.Broadcast/
-    headers:
-      Host: broadcast.liveflow.space
+  servername: us5.pc-peervax.top
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk
+    short-id: a9c3f7e2
+  network: tcp
 - type: vless
-  name: 🇪🇪 Estonia [*CIDR]
-  server: 194.55.239.89
+  name: 🇺🇸 United States, Edison | [BL] [d822e744]
+  server: 151.247.22.58
   port: 443
   udp: true
-  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
   encryption: none
   tls: true
-  servername: broadcast.liveflow.space
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /live.stream.v1.Broadcast/
-    headers:
-      Host: broadcast.liveflow.space
-- type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [7688ee2d]
-  server: 199.232.78.160
-  port: 443
-  udp: true
-  uuid: XpnTeam-55
-  encryption: none
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-- type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [d059730e]
-  server: 199.232.78.170
-  port: 443
-  udp: true
-  uuid: XpnTeam-56
-  encryption: none
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-- type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [c9b2da95]
-  server: 199.232.78.160
-  port: 443
-  udp: true
-  uuid: XpnTeam-55
-  encryption: none
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-- type: vless
-  name: 🇳🇱 The Netherlands [*CIDR]
-  server: 72.56.38.83
-  port: 443
-  udp: true
-  uuid: Fluffy_VPN-zKZUa4Ie
-  encryption: none
-  tls: true
-  servername: absolute-disaster.org
+  servername: usa.letsconnectpoint.com
   flow: xtls-rprx-vision
   client-fingerprint: qq
   reality-opts:
-    public-key: ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8
+    public-key: I45spoFEwSCaxR8FIP1HnrFj5KbR3keSAGMMdgt2AHY
+    short-id: b1c5a5e2
   network: tcp
+- type: vless
+  name: 🇺🇸 United States, Edison | [BL] [5a5a8e4d]
+  server: usa.letsconnectpoint.com
+  port: 443
+  udp: true
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  encryption: none
+  tls: true
+  servername: usa.letsconnectpoint.com
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  reality-opts:
+    public-key: I45spoFEwSCaxR8FIP1HnrFj5KbR3keSAGMMdgt2AHY
+    short-id: b1c5a5e2
+  network: tcp
+- type: vless
+  name: 🇺🇸 United States, Edison | [BL] [f6721363]
+  server: 151.247.22.58
+  port: 443
+  udp: true
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  encryption: none
+  tls: true
+  servername: usa.letsconnectpoint.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: I45spoFEwSCaxR8FIP1HnrFj5KbR3keSAGMMdgt2AHY
+    short-id: b1c5a5e2
+  network: tcp
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [a7e1d9c8]
+  server: sw.golangwikito.cfd
+  port: 443
+  udp: true
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  encryption: none
+  tls: true
+  servername: sw.golangwikito.cfd
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+  network: tcp
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [29bc6110]
+  server: sw.golangwikito.cfd
+  port: 443
+  udp: true
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  encryption: none
+  tls: true
+  servername: sw.golangwikito.cfd
+  flow: xtls-rprx-vision
+  client-fingerprint: random
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany, Kirchberg | [BL]
+  server: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
+  port: 20065
+  udp: true
+  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+  encryption: none
+  tls: true
+  servername: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  network: tcp
+- type: vless
+  name: 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
+  server: 152.175.8.61
+  port: 36155
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  encryption: none
+  tls: true
+  servername: hk014.zestapp778.com
+  client-fingerprint: firefox
+  network: tcp
+- type: vless
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL]
+  server: support.zoom.us
+  port: 443
+  udp: true
+  uuid: 22c2c689-767c-4042-a40a-a4189a6afd04
+  encryption: none
+  tls: true
+  servername: support.zoom.us.sg4.zidstore.net
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /whatever/vless
+    headers:
+      Host: support.zoom.us.sg4.zidstore.net
 proxy-groups:
 - name: Fine
   type: select
@@ -245,19 +299,23 @@ proxy-groups:
   - 🇳🇱 The Netherlands [*CIDR] [62853b82]
   - 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
   - 🇳🇱 The Netherlands | [*CIDR] [c702f794]
-  - 🇹🇭 Thailand, Thap Sakae | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [f0f4a372]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [833ee9d3]
   - 🇳🇱 The Netherlands | [*CIDR] [e87bbbcf]
   - 🇳🇱 The Netherlands | [*CIDR] [ea63e0aa]
   - 🇳🇱 The Netherlands | [*CIDR] [debee362]
   - 🇳🇱 The Netherlands | [*CIDR] [4a191a22]
   - NO GEO [*CIDR]
   - 🇪🇪 Estonia [*CIDR]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [7688ee2d]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [d059730e]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [c9b2da95]
   - 🇳🇱 The Netherlands [*CIDR]
+  - 🇺🇸 United States, Teterboro | [BL] [a2d2f2d0]
+  - 🇺🇸 United States, Teterboro | [BL] [79956eaf]
+  - 🇺🇸 United States, Edison | [BL] [d822e744]
+  - 🇺🇸 United States, Edison | [BL] [5a5a8e4d]
+  - 🇺🇸 United States, Edison | [BL] [f6721363]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [a7e1d9c8]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [29bc6110]
+  - 🇩🇪 Germany, Kirchberg | [BL]
+  - 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
   default-selected: 🇳🇱 The Netherlands [*CIDR] [62853b82]
 - name: AUTO
   type: url-test
@@ -265,19 +323,23 @@ proxy-groups:
   - 🇳🇱 The Netherlands [*CIDR] [62853b82]
   - 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
   - 🇳🇱 The Netherlands | [*CIDR] [c702f794]
-  - 🇹🇭 Thailand, Thap Sakae | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [f0f4a372]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [833ee9d3]
   - 🇳🇱 The Netherlands | [*CIDR] [e87bbbcf]
   - 🇳🇱 The Netherlands | [*CIDR] [ea63e0aa]
   - 🇳🇱 The Netherlands | [*CIDR] [debee362]
   - 🇳🇱 The Netherlands | [*CIDR] [4a191a22]
   - NO GEO [*CIDR]
   - 🇪🇪 Estonia [*CIDR]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [7688ee2d]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [d059730e]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [c9b2da95]
   - 🇳🇱 The Netherlands [*CIDR]
+  - 🇺🇸 United States, Teterboro | [BL] [a2d2f2d0]
+  - 🇺🇸 United States, Teterboro | [BL] [79956eaf]
+  - 🇺🇸 United States, Edison | [BL] [d822e744]
+  - 🇺🇸 United States, Edison | [BL] [5a5a8e4d]
+  - 🇺🇸 United States, Edison | [BL] [f6721363]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [a7e1d9c8]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [29bc6110]
+  - 🇩🇪 Germany, Kirchberg | [BL]
+  - 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
