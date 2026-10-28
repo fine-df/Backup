@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070062 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070063 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,147 +10,86 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- server: renderer-bridge-1-881.mirra.now
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+- udp: true
   type: vless
   grpc-opts:
     grpc-service-name: VideoRenderer
-  servername: renderer-bridge-1-881.mirra.now
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
   port: 443
   encryption: none
+  client-fingerprint: safari
+  server: renderer-bridge-1-881.mirra.now
+  servername: renderer-bridge-1-881.mirra.now
   name: 🇳🇱 The Netherlands [*CIDR] [62853b82]
-  udp: true
-  tls: true
   network: grpc
-  client-fingerprint: safari
-- server: renderer-bridge-1-881.mirra.now
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  tls: true
+- udp: true
   type: vless
   grpc-opts:
     grpc-service-name: VideoRenderer
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  port: 443
+  encryption: none
+  client-fingerprint: firefox
+  server: renderer-bridge-1-881.mirra.now
   servername: renderer-bridge-1-881.mirra.now
-  port: 443
-  encryption: none
   name: 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
-  udp: true
-  tls: true
   network: grpc
-  client-fingerprint: firefox
-- flow: xtls-rprx-vision
-  server: 93.152.214.248
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  type: vless
-  servername: us5.pc-peervax.top
-  port: 443
-  encryption: none
-  name: 🇺🇸 United States, Teterboro | [BL] [a2d2f2d0]
-  udp: true
   tls: true
-  network: tcp
-  reality-opts:
-    public-key: v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk
-    short-id: a9c3f7e2
-  client-fingerprint: firefox
-- flow: xtls-rprx-vision
-  server: 93.152.214.248
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+- udp: true
   type: vless
-  servername: us5.pc-peervax.top
-  port: 443
-  encryption: none
-  name: 🇺🇸 United States, Teterboro | [BL] [79956eaf]
-  udp: true
-  tls: true
-  network: tcp
-  reality-opts:
-    public-key: v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk
-    short-id: a9c3f7e2
-  client-fingerprint: ios
-- flow: xtls-rprx-vision
-  server: 151.247.22.58
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  type: vless
-  servername: usa.letsconnectpoint.com
-  port: 443
-  encryption: none
-  name: 🇺🇸 United States, Edison | [BL] [d822e744]
-  udp: true
-  tls: true
-  network: tcp
-  reality-opts:
-    public-key: I45spoFEwSCaxR8FIP1HnrFj5KbR3keSAGMMdgt2AHY
-    short-id: b1c5a5e2
-  client-fingerprint: qq
-- flow: xtls-rprx-vision
-  server: sw.golangwikito.cfd
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  type: vless
-  servername: sw.golangwikito.cfd
-  port: 443
-  encryption: none
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [a7e1d9c8]
-  udp: true
-  tls: true
-  network: tcp
-  reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  client-fingerprint: safari
-- flow: xtls-rprx-vision
-  server: sw.golangwikito.cfd
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  type: vless
-  servername: sw.golangwikito.cfd
-  port: 443
-  encryption: none
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [29bc6110]
-  udp: true
-  tls: true
-  network: tcp
-  reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  client-fingerprint: random
-- server: 152.175.8.61
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  type: vless
-  servername: hk014.zestapp778.com
-  port: 36155
+  port: 19167
   encryption: none
-  name: 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
-  udp: true
-  tls: true
+  server: mx001.zestapp778.com
+  name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
   network: tcp
-  client-fingerprint: firefox
-- flow: xtls-rprx-vision
-  server: sw.golangwikito.cfd
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  type: vless
-  servername: sw.golangwikito.cfd
+  tls: true
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [2aa75a47]
+  server: ge-s-1.pythonmakemigreat.wiki
   port: 443
-  encryption: none
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
   udp: true
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  encryption: none
   tls: true
-  network: tcp
+  servername: ge-s-1.pythonmakemigreat.wiki
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
   reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [f0f4a372]
+  server: ge-s-1.pythonmakemigreat.wiki
+  port: 443
+  udp: true
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  encryption: none
+  tls: true
+  servername: ge-s-1.pythonmakemigreat.wiki
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  network: tcp
+- type: vless
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [77596094]
+  server: support.zoom.us
+  port: 443
+  udp: true
+  uuid: 22c2c689-767c-4042-a40a-a4189a6afd04
+  encryption: none
+  tls: true
+  servername: support.zoom.us.sg4.zidstore.net
   client-fingerprint: firefox
-- server: se3.h1cloud.net
-  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
-  type: vless
-  servername: www.cloudflare.com
-  port: 25387
-  encryption: none
-  name: 🇸🇪 Sweden [*CIDR]
-  udp: true
-  tls: true
-  network: tcp
-  reality-opts:
-    public-key: _nrnGiJUdyeLv2afSwe6P4j02AMayY34WFMjUJp5Kwc
-    short-id: 9608a9c65d315d52
-  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /whatever/vless
+    headers:
+      Host: support.zoom.us.sg4.zidstore.net
 - type: vless
   name: 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
   server: tau1.freerunet.online
@@ -161,19 +100,157 @@ proxies:
   tls: true
   servername: tau1.freerunet.online
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
     public-key: l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg
     short-id: 4a7b1c8d
   network: tcp
-- type: vless
-  name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-  server: mx001.zestapp778.com
-  port: 19167
+- type: trojan
+  name: 🇰🇷 South Korea, Yongsan-dong | [BL] [e5f0d73a]
+  server: akr187.moldscience.cc
+  port: 20026
   udp: true
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  password: d7fe89bfe4994969
+  tls: true
+  servername: akr187.moldscience.cc
+  client-fingerprint: edge
+- type: trojan
+  name: 🇰🇷 South Korea, Yongsan-dong | [BL] [f8a2669d]
+  server: akr187.moldscience.cc
+  port: 20026
+  udp: true
+  password: d7fe89bfe4994969
+  tls: true
+  servername: akr187.moldscience.cc
+  client-fingerprint: ios
+- type: vless
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [53ea6acf]
+  server: support.zoom.us
+  port: 443
+  udp: true
+  uuid: 22c2c689-767c-4042-a40a-a4189a6afd04
   encryption: none
   tls: true
+  servername: support.zoom.us.sg4.zidstore.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /whatever/vless
+    headers:
+      Host: support.zoom.us.sg4.zidstore.net
+- type: vless
+  name: 🇬🇧 United Kingdom, London | [BL]
+  server: filesender-ultra.com
+  port: 443
+  udp: true
+  uuid: 5f09ffe7-fbff-411f-b68f-2a0677626a44
+  encryption: none
+  tls: true
+  servername: filesender-ultra.com
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: mk-fkkWvUHz2ubIOkr8kfDeglXowdCI3Z4OssjWIIwg
+    short-id: 2b145d99dc39e2cc
+  network: tcp
+- type: vless
+  name: 🇱🇻 Latvia, Riga | [BL] [e1b7d308]
+  server: filetransver-pro.com
+  port: 443
+  udp: true
+  uuid: 5f09ffe7-fbff-411f-b68f-2a0677626a44
+  encryption: none
+  tls: true
+  servername: filetransver-pro.com
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: mk-fkkWvUHz2ubIOkr8kfDeglXowdCI3Z4OssjWIIwg
+    short-id: 2b145d99dc39e2cc
+  network: tcp
+- type: vless
+  name: 🇱🇻 Latvia, Riga | [BL] [9e10ccf4]
+  server: filetransver-pro.com
+  port: 443
+  udp: true
+  uuid: 5f09ffe7-fbff-411f-b68f-2a0677626a44
+  encryption: none
+  tls: true
+  servername: filetransver-pro.com
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: mk-fkkWvUHz2ubIOkr8kfDeglXowdCI3Z4OssjWIIwg
+    short-id: 2b145d99dc39e2cc
+  network: tcp
+- type: vless
+  name: 🇳🇴 Norway, Sandefjord | [BL] [fb565c88]
+  server: 85.11.187.68
+  port: 8443
+  udp: true
+  uuid: f439e4fe-139b-4882-ad8b-a16176d09c88
+  encryption: none
+  tls: true
+  servername: 85.11.187.68
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+- type: vless
+  name: 🇳🇴 Norway, Sandefjord | [BL] [72ee81b9]
+  server: 85.11.187.68
+  port: 8443
+  udp: true
+  uuid: f439e4fe-139b-4882-ad8b-a16176d09c88
+  encryption: none
+  tls: true
+  servername: 85.11.187.68
+  client-fingerprint: edge
+  reality-opts:
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+- type: vless
+  name: 🌐 Anycast-IP | 🇫🇷 | [BL] [bcabc88e]
+  server: 199.232.78.160
+  port: 443
+  udp: true
+  uuid: XpnTeam-59
+  encryption: none
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- type: vless
+  name: 🌐 Anycast-IP | 🇫🇷 | [BL] [2de7f5b0]
+  server: 199.232.78.160
+  port: 443
+  udp: true
+  uuid: XpnTeam-59
+  encryption: none
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [7bfe154b]
+  server: 45.95.96.210
+  port: 443
+  udp: true
+  uuid: d5816c36-6359-5eff-bbfd-14e0cbab087d
+  encryption: none
+  tls: true
+  servername: deepl.com
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 8RfEuI1RxxW1dqq2nbt6ssKwx7UdmgKW1nKL9OuilGs
+    short-id: 0492eabdb9
   network: tcp
 proxy-groups:
 - name: Fine
@@ -183,32 +260,44 @@ proxy-groups:
   - DIRECT
   - 🇳🇱 The Netherlands [*CIDR] [62853b82]
   - 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
-  - 🇺🇸 United States, Teterboro | [BL] [a2d2f2d0]
-  - 🇺🇸 United States, Teterboro | [BL] [79956eaf]
-  - 🇺🇸 United States, Edison | [BL] [d822e744]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL] [a7e1d9c8]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL] [29bc6110]
-  - 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇸🇪 Sweden [*CIDR]
-  - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
   - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [2aa75a47]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [f0f4a372]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [77596094]
+  - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL] [e5f0d73a]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL] [f8a2669d]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [53ea6acf]
+  - 🇬🇧 United Kingdom, London | [BL]
+  - 🇱🇻 Latvia, Riga | [BL] [e1b7d308]
+  - 🇱🇻 Latvia, Riga | [BL] [9e10ccf4]
+  - 🇳🇴 Norway, Sandefjord | [BL] [fb565c88]
+  - 🇳🇴 Norway, Sandefjord | [BL] [72ee81b9]
+  - 🌐 Anycast-IP | 🇫🇷 | [BL] [bcabc88e]
+  - 🌐 Anycast-IP | 🇫🇷 | [BL] [2de7f5b0]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [7bfe154b]
   default-selected: 🇳🇱 The Netherlands [*CIDR] [62853b82]
 - name: AUTO
   type: url-test
   proxies:
   - 🇳🇱 The Netherlands [*CIDR] [62853b82]
   - 🇳🇱 The Netherlands [*CIDR] [cf8d38ed]
-  - 🇺🇸 United States, Teterboro | [BL] [a2d2f2d0]
-  - 🇺🇸 United States, Teterboro | [BL] [79956eaf]
-  - 🇺🇸 United States, Edison | [BL] [d822e744]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL] [a7e1d9c8]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL] [29bc6110]
-  - 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇸🇪 Sweden [*CIDR]
-  - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
   - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [2aa75a47]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [f0f4a372]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [77596094]
+  - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL] [e5f0d73a]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL] [f8a2669d]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [53ea6acf]
+  - 🇬🇧 United Kingdom, London | [BL]
+  - 🇱🇻 Latvia, Riga | [BL] [e1b7d308]
+  - 🇱🇻 Latvia, Riga | [BL] [9e10ccf4]
+  - 🇳🇴 Norway, Sandefjord | [BL] [fb565c88]
+  - 🇳🇴 Norway, Sandefjord | [BL] [72ee81b9]
+  - 🌐 Anycast-IP | 🇫🇷 | [BL] [bcabc88e]
+  - 🌐 Anycast-IP | 🇫🇷 | [BL] [2de7f5b0]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [7bfe154b]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
