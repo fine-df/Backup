@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070066 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070067 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,89 +10,94 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- flow: xtls-rprx-vision
-  type: vless
-  encryption: none
-  network: tcp
-  tls: true
+- encryption: none
+  uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
+  flow: xtls-rprx-vision
+  udp: true
   server: 199.127.153.13
+  port: 43000
   client-fingerprint: safari
-  udp: true
+  network: tcp
+  reality-opts:
+    public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
+    short-id: 1a72a06c
   name: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [10c83aab]
-  uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
-  reality-opts:
-    public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
-    short-id: 1a72a06c
-  port: 43000
-- flow: xtls-rprx-vision
+  tls: true
   type: vless
-  encryption: none
-  network: tcp
-  tls: true
-  server: 199.127.153.13
-  client-fingerprint: chrome
-  udp: true
-  name: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [5c7ce8b4]
+- encryption: none
   uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
+  flow: xtls-rprx-vision
+  udp: true
+  server: 199.127.153.13
+  port: 43000
+  client-fingerprint: chrome
+  network: tcp
   reality-opts:
     public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
     short-id: 1a72a06c
-  port: 43000
-- type: vless
-  encryption: none
-  network: tcp
+  name: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [5c7ce8b4]
   tls: true
-  server: sg1.zestapp778.com
+  type: vless
+- servername: 148-253-210-191.sslip.io
+  encryption: none
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
   udp: true
-  servername: sg1.zestapp778.com
-  name: 🇸🇬 Singapore, Singapore | [BL]
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  port: 56984
-- type: vless
-  encryption: none
-  network: ws
-  tls: true
   server: 148-253-210-191.sslip.io
+  port: 443
   client-fingerprint: chrome
-  udp: true
-  servername: 148-253-210-191.sslip.io
-  name: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
+  network: ws
   ws-opts:
     path: /test-ws
     headers:
       Host: 148-253-210-191.sslip.io
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
-  port: 443
+  name: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
+  tls: true
+  type: vless
 - type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [ef6119b3]
-  server: 155.212.240.10
+  name: 🇺🇸 United States, Chicago | 🌐 | [BL] [4c4a433e]
+  server: 89.46.38.58
   port: 443
   udp: true
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  uuid: 8bab5583-04b1-4b83-96e8-4ed46062eeb7
   encryption: none
   tls: true
-  servername: n.bitpulse.me
+  servername: us-a1.netfix.app
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HNC4xdL0kgaIcgnPtMyc21hxY6dk0zl_vAclmQZHigw
+    short-id: 323da253
+  network: tcp
+- type: vless
+  name: 🇺🇸 United States, Chicago | 🌐 | [BL] [1c8200ee]
+  server: 89.46.38.58
+  port: 443
+  udp: true
+  uuid: 8bab5583-04b1-4b83-96e8-4ed46062eeb7
+  encryption: none
+  tls: true
+  servername: us-a1.netfix.app
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  reality-opts:
+    public-key: HNC4xdL0kgaIcgnPtMyc21hxY6dk0zl_vAclmQZHigw
+    short-id: 323da253
+  network: tcp
+- type: vless
+  name: 🇫🇷 France, Paris | 🌐 | [BL]
+  server: 199.232.78.160
+  port: 443
+  udp: true
+  uuid: XpnTeam-61
+  encryption: none
+  tls: true
+  servername: ssl.fastly.com
   client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128
+    path: /
     headers:
-      Host: n.bitpulse.me
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [2854690f]
-  server: 155.212.240.10
-  port: 443
-  udp: true
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  encryption: none
-  tls: true
-  servername: n.bitpulse.me
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128
-    headers:
-      Host: n.bitpulse.me
+      Host: Appxdn.global.ssl.fastly.net
 proxy-groups:
 - name: Fine
   type: select
@@ -101,20 +106,20 @@ proxy-groups:
   - DIRECT
   - 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [10c83aab]
   - 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [5c7ce8b4]
-  - 🇸🇬 Singapore, Singapore | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [ef6119b3]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [2854690f]
+  - 🇺🇸 United States, Chicago | 🌐 | [BL] [4c4a433e]
+  - 🇺🇸 United States, Chicago | 🌐 | [BL] [1c8200ee]
+  - 🇫🇷 France, Paris | 🌐 | [BL]
   default-selected: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [10c83aab]
 - name: AUTO
   type: url-test
   proxies:
   - 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [10c83aab]
   - 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [5c7ce8b4]
-  - 🇸🇬 Singapore, Singapore | [BL]
   - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [ef6119b3]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [2854690f]
+  - 🇺🇸 United States, Chicago | 🌐 | [BL] [4c4a433e]
+  - 🇺🇸 United States, Chicago | 🌐 | [BL] [1c8200ee]
+  - 🇫🇷 France, Paris | 🌐 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
