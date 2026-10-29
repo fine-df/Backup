@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070064 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070065 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -11,104 +11,164 @@ profile:
   store-selected: true
 proxies:
 - port: 19167
-  name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-  encryption: none
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  udp: true
-  network: tcp
   server: mx001.zestapp778.com
+  name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  network: tcp
+  tls: true
+  encryption: none
+  udp: true
   type: vless
-- client-fingerprint: firefox
-  ws-opts:
-    path: /whatever/vless
-    headers:
-      Host: support.zoom.us.sg4.zidstore.net
-  servername: support.zoom.us.sg4.zidstore.net
+- servername: support.zoom.us.sg4.zidstore.net
   port: 443
+  server: support.zoom.us
   name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [77596094]
-  encryption: none
   uuid: 22c2c689-767c-4042-a40a-a4189a6afd04
-  tls: true
-  udp: true
   network: ws
-  server: support.zoom.us
-  type: vless
-- client-fingerprint: chrome
+  tls: true
+  encryption: none
   ws-opts:
     path: /whatever/vless
     headers:
       Host: support.zoom.us.sg4.zidstore.net
-  servername: support.zoom.us.sg4.zidstore.net
+  udp: true
+  client-fingerprint: firefox
+  type: vless
+- servername: support.zoom.us.sg4.zidstore.net
   port: 443
+  server: support.zoom.us
   name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [53ea6acf]
-  encryption: none
   uuid: 22c2c689-767c-4042-a40a-a4189a6afd04
-  tls: true
-  udp: true
   network: ws
-  server: support.zoom.us
-  type: vless
-- type: vless
-  name: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [10c83aab]
-  server: 199.127.153.13
-  port: 43000
-  udp: true
-  uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
-  encryption: none
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
-    short-id: 1a72a06c
-  network: tcp
-- type: vless
-  name: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [5c7ce8b4]
-  server: 199.127.153.13
-  port: 43000
-  udp: true
-  uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
   encryption: none
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
-    short-id: 1a72a06c
-  network: tcp
-- type: vless
-  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [269f1da0]
-  server: support.zoom.us
-  port: 443
-  udp: true
-  uuid: 22c2c689-767c-4042-a40a-a4189a6afd04
-  encryption: none
-  tls: true
-  servername: support.zoom.us.sg4.zidstore.net
-  client-fingerprint: safari
-  network: ws
   ws-opts:
     path: /whatever/vless
     headers:
       Host: support.zoom.us.sg4.zidstore.net
-- type: vmess
-  name: 🇭🇰 Hong Kong, Hong Kong | [BL]
-  server: euu1yAlfmcqvLJEx.v.3dns.vip
-  port: 443
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  alterId: 0
-  cipher: auto
   udp: true
+  client-fingerprint: chrome
+  type: vless
+- port: 43000
+  server: 199.127.153.13
+  name: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [10c83aab]
+  uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
+  network: tcp
+  tls: true
+  encryption: none
+  udp: true
+  client-fingerprint: safari
+  type: vless
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
+    short-id: 1a72a06c
+- port: 43000
+  server: 199.127.153.13
+  name: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [5c7ce8b4]
+  uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
+  network: tcp
+  tls: true
+  encryption: none
+  udp: true
+  client-fingerprint: chrome
+  type: vless
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
+    short-id: 1a72a06c
+- servername: support.zoom.us.sg4.zidstore.net
+  port: 443
+  server: support.zoom.us
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [269f1da0]
+  uuid: 22c2c689-767c-4042-a40a-a4189a6afd04
   network: ws
   tls: true
-  servername: euu1yAlfmcqvLJEx.v.3dns.vip
+  encryption: none
+  ws-opts:
+    path: /whatever/vless
+    headers:
+      Host: support.zoom.us.sg4.zidstore.net
+  udp: true
+  client-fingerprint: safari
+  type: vless
+- servername: euu1yAlfmcqvLJEx.v.3dns.vip
+  port: 443
+  server: euu1yAlfmcqvLJEx.v.3dns.vip
+  name: 🇭🇰 Hong Kong, Hong Kong | [BL]
+  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
+  network: ws
+  tls: true
+  alterId: 0
   ws-opts:
     headers:
       Host: euu1yAlfmcqvLJEx.v.3dns.vip
     path: /ws-vmess
-- type: vless
+  cipher: auto
+  udp: true
+  type: vmess
+- servername: support.zoom.us.sg4.zidstore.net
+  port: 443
+  server: support.zoom.us
   name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [7b9fab6a]
+  uuid: 22c2c689-767c-4042-a40a-a4189a6afd04
+  network: ws
+  tls: true
+  encryption: none
+  ws-opts:
+    path: /whatever/vless
+    headers:
+      Host: support.zoom.us.sg4.zidstore.net
+  udp: true
+  client-fingerprint: android
+  type: vless
+- servername: ssl.fastly.com
+  port: 443
+  server: 199.232.78.160
+  name: 🇫🇷 France, Paris | 🌐 | [BL] [946a60a9]
+  uuid: XpnTeam-61
+  network: ws
+  tls: true
+  encryption: none
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+  udp: true
+  client-fingerprint: ios
+  type: vless
+- servername: ssl.fastly.com
+  port: 443
+  server: 199.232.78.160
+  name: 🇫🇷 France, Paris | 🌐 | [BL] [ec1a3c95]
+  uuid: XpnTeam-61
+  network: ws
+  tls: true
+  encryption: none
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+  udp: true
+  client-fingerprint: chrome
+  type: vless
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
+  server: ge-s-1.pythonmakemigreat.wiki
+  port: 443
+  udp: true
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  encryption: none
+  tls: true
+  servername: ge-s-1.pythonmakemigreat.wiki
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  network: tcp
+- type: vless
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [4d1c5c23]
   server: support.zoom.us
   port: 443
   udp: true
@@ -116,89 +176,67 @@ proxies:
   encryption: none
   tls: true
   servername: support.zoom.us.sg4.zidstore.net
-  client-fingerprint: android
+  client-fingerprint: edge
   network: ws
   ws-opts:
     path: /whatever/vless
     headers:
       Host: support.zoom.us.sg4.zidstore.net
 - type: vless
-  name: 🇺🇸 United States | [*CIDR] [8f697071]
-  server: b6a968g.fi7.h1clayd.click
+  name: 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
+  server: tau1.freerunet.online
   port: 443
   udp: true
-  uuid: fafc7c16-f890-45ee-a856-02df225172dd
+  uuid: ca14493b-b984-4ffb-bc0e-9cb5da969e15
   encryption: none
   tls: true
-  servername: b6a968g.fi7.h1clayd.click
-  client-fingerprint: ios
-  reality-opts:
-    public-key: cO9GB66W4U7X6WR5LWL-mtwktwr2sOJ_RgTN7vYQojM
-    short-id: 52970fb14e7248e6
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 1d9692c21e23
-- type: vless
-  name: 🇺🇸 United States | [*CIDR] [53dcbb38]
-  server: b6a968g.fi7.h1clayd.click
-  port: 443
-  udp: true
-  uuid: fafc7c16-f890-45ee-a856-02df225172dd
-  encryption: none
-  tls: true
-  servername: b6a968g.fi7.h1clayd.click
+  servername: tau1.freerunet.online
+  flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: cO9GB66W4U7X6WR5LWL-mtwktwr2sOJ_RgTN7vYQojM
-    short-id: 52970fb14e7248e6
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 1d9692c21e23
-- type: vless
-  name: 🇺🇸 United States [*CIDR]
-  server: d0dc94t.fi7.h1clayd.click
-  port: 443
-  udp: true
-  uuid: fafc7c16-f890-45ee-a856-02df225172dd
-  encryption: none
-  tls: true
-  servername: d0dc94t.fi7.h1clayd.click
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: x9MHoriLB8T-vHaoM5LQTbSzaaWlNpZg6rEdM75QgRg
-    short-id: 3688e172d5b59457
+    public-key: l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg
+    short-id: 4a7b1c8d
   network: tcp
 - type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [946a60a9]
-  server: 199.232.78.160
-  port: 443
+  name: 🇸🇬 Singapore, Singapore | [BL]
+  server: sg1.zestapp778.com
+  port: 56984
   udp: true
-  uuid: XpnTeam-61
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   encryption: none
   tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: ios
+  servername: sg1.zestapp778.com
+  network: tcp
+- type: vless
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [342dc55e]
+  server: support.zoom.us
+  port: 443
+  udp: true
+  uuid: 22c2c689-767c-4042-a40a-a4189a6afd04
+  encryption: none
+  tls: true
+  servername: support.zoom.us.sg4.zidstore.net
+  client-fingerprint: qq
   network: ws
   ws-opts:
-    path: /
+    path: /whatever/vless
     headers:
-      Host: Appxdn.global.ssl.fastly.net
+      Host: support.zoom.us.sg4.zidstore.net
 - type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [ec1a3c95]
-  server: 199.232.78.160
+  name: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
+  server: 148-253-210-191.sslip.io
   port: 443
   udp: true
-  uuid: XpnTeam-61
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
   encryption: none
   tls: true
-  servername: ssl.fastly.com
+  servername: 148-253-210-191.sslip.io
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /test-ws
     headers:
-      Host: Appxdn.global.ssl.fastly.net
+      Host: 148-253-210-191.sslip.io
 proxy-groups:
 - name: Fine
   type: select
@@ -213,11 +251,14 @@ proxy-groups:
   - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [269f1da0]
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
   - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [7b9fab6a]
-  - 🇺🇸 United States | [*CIDR] [8f697071]
-  - 🇺🇸 United States | [*CIDR] [53dcbb38]
-  - 🇺🇸 United States [*CIDR]
   - 🇫🇷 France, Paris | 🌐 | [BL] [946a60a9]
   - 🇫🇷 France, Paris | 🌐 | [BL] [ec1a3c95]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [4d1c5c23]
+  - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
+  - 🇸🇬 Singapore, Singapore | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [342dc55e]
+  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
   default-selected: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
 - name: AUTO
   type: url-test
@@ -230,11 +271,14 @@ proxy-groups:
   - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [269f1da0]
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
   - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [7b9fab6a]
-  - 🇺🇸 United States | [*CIDR] [8f697071]
-  - 🇺🇸 United States | [*CIDR] [53dcbb38]
-  - 🇺🇸 United States [*CIDR]
   - 🇫🇷 France, Paris | 🌐 | [BL] [946a60a9]
   - 🇫🇷 France, Paris | 🌐 | [BL] [ec1a3c95]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [4d1c5c23]
+  - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
+  - 🇸🇬 Singapore, Singapore | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [342dc55e]
+  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
