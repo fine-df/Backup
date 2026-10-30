@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070068 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070069 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,65 +10,50 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- flow: xtls-rprx-vision
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
+  server: 5.187.4.75
+  port: 8443
   udp: true
+  uuid: 9c6e83fc-b755-4ad4-9b0a-14b610153d8f
   encryption: none
-  port: 43000
-  client-fingerprint: safari
-  reality-opts:
-    public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
-    short-id: 1a72a06c
-  server: 199.127.153.13
-  uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
-  name: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [10c83aab]
   tls: true
-  type: vless
-  network: tcp
-- flow: xtls-rprx-vision
-  udp: true
-  encryption: none
-  port: 43000
-  client-fingerprint: chrome
+  servername: www.samsung.com
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
   reality-opts:
-    public-key: iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8
-    short-id: 1a72a06c
-  server: 199.127.153.13
-  uuid: cb06778c-91e6-480a-a791-a49dcfa940d5
-  name: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [5c7ce8b4]
-  tls: true
-  type: vless
+    public-key: 0bmhEnhtswgFKbBedH4ez5O4xmgMfXIuEuSdFLy0PmI
+    short-id: 25115fee0590a21e
   network: tcp
 - type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL]
-  server: 151.101.215.97
+  name: 🇩🇪 Germany, Berlin | [BL]
+  server: 104.194.148.125
   port: 443
   udp: true
-  uuid: XpnTeam-63
+  uuid: 167539f8-88ff-46b3-955c-4c8f7bf0f296
   encryption: none
   tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
+  servername: suffolkprimarycare.uk
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 5Xgf3UO6yZb7gCK3R3GULk8jyNIp7Sr-26YXZfSW71c
+    short-id: 13975a8e0bd50e7c
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [10c83aab]
-  - 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [5c7ce8b4]
-  - 🇫🇷 France, Paris | 🌐 | [BL]
-  default-selected: 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [10c83aab]
+  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
+  - 🇩🇪 Germany, Berlin | [BL]
+  default-selected: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [10c83aab]
-  - 🌐 Anycast-IP | 🇳🇱 🇺🇸 | [BL] [5c7ce8b4]
-  - 🇫🇷 France, Paris | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
+  - 🇩🇪 Germany, Berlin | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
