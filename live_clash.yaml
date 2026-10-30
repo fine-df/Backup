@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070071 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070072 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,133 +10,270 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- type: vless
+- client-fingerprint: edge
+  servername: www.amazon.com
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
   name: 🇺🇸 United States, Los Angeles | [BL] [39398f0f]
   server: 156.229.166.66
-  port: 443
-  udp: true
-  uuid: a8945d73-e450-47ea-90cb-10062c8632b7
   encryption: none
-  tls: true
-  servername: www.amazon.com
+  type: vless
+  uuid: a8945d73-e450-47ea-90cb-10062c8632b7
   flow: xtls-rprx-vision
-  client-fingerprint: edge
+  port: 443
+- client-fingerprint: firefox
+  servername: www.amazon.com
+  udp: true
+  tls: true
   reality-opts:
     public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
     short-id: b390142456517acc
-- type: vless
   name: 🇺🇸 United States, Los Angeles | [BL] [a38bcf31]
   server: 156.229.166.66
-  port: 443
-  udp: true
-  uuid: a8945d73-e450-47ea-90cb-10062c8632b7
   encryption: none
-  tls: true
-  servername: www.amazon.com
+  type: vless
+  uuid: a8945d73-e450-47ea-90cb-10062c8632b7
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  port: 443
+- client-fingerprint: safari
+  servername: www.amazon.com
+  udp: true
+  tls: true
   reality-opts:
     public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
     short-id: b390142456517acc
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
-  server: 195.141.65.98
-  port: 443
-  udp: true
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
-  encryption: none
-  tls: true
-  servername: 148-253-210-191.sslip.io
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /test-ws
-    headers:
-      Host: 148-253-210-191.sslip.io
-- type: vless
   name: 🇹🇼 Taiwan, Taipei | 🌐 | [BL]
   server: 141.11.87.77
-  port: 443
-  udp: true
+  encryption: none
+  type: vless
   uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
-  encryption: none
-  tls: true
-  servername: www.amazon.com
   flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-- type: vless
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [5e118548]
-  server: 103.118.209.80
   port: 443
-  udp: true
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  encryption: none
-  tls: true
+- client-fingerprint: ios
   servername: nlsq.giftsbattle.vip
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
+  udp: true
+  tls: true
   reality-opts:
     public-key: d66SelbTIURp_YpyFF83ApzzPEQFxOiEbrO7TFSdDRI
     short-id: ff9881defc3b9cda
-- type: vless
-  name: 🇵🇱 Poland, Warsaw | 🌐 | [BL] [5f225f7a]
-  server: 177.1.192.90
-  port: 443
-  udp: true
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [5e118548]
+  server: 103.118.209.80
   encryption: none
-  tls: true
-  servername: up6.uni-plan.com
+  type: vless
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
   flow: xtls-rprx-vision
-  client-fingerprint: qq
+  port: 443
+- client-fingerprint: qq
+  servername: up6.uni-plan.com
+  udp: true
+  tls: true
   reality-opts:
     public-key: PA7rbht6SKwvUgysJka_ffHvVEzl4s4RPDO3uPeuLxc
     short-id: e12ed4adc5aee929
-- type: vless
-  name: 🇸🇪 Sweden, Vaxjo | [BL]
-  server: 171.25.158.163
-  port: 443
-  udp: true
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  name: 🇵🇱 Poland, Warsaw | 🌐 | [BL] [5f225f7a]
+  server: 177.1.192.90
   encryption: none
-  tls: true
-  servername: s9se1.newagetechnologies.live
+  type: vless
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  port: 443
+- client-fingerprint: chrome
+  servername: s9se1.newagetechnologies.live
+  udp: true
+  tls: true
   reality-opts:
     public-key: Dt6OmhEDOi-Y204u5jWdQsHIgof7g8i52NUnTGc-yjM
     short-id: ecb6f8fb31668176
-- type: vless
-  name: 🇵🇱 Poland, Warsaw | 🌐 | [BL] [9ca56b3e]
-  server: 177.1.192.90
-  port: 443
-  udp: true
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  name: 🇸🇪 Sweden, Vaxjo | [BL]
+  server: 171.25.158.163
   encryption: none
-  tls: true
-  servername: up6.uni-plan.com
+  type: vless
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  port: 443
+- client-fingerprint: firefox
+  servername: up6.uni-plan.com
+  udp: true
+  tls: true
   reality-opts:
     public-key: PA7rbht6SKwvUgysJka_ffHvVEzl4s4RPDO3uPeuLxc
     short-id: e12ed4adc5aee929
-- type: vless
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [7b89be99]
-  server: 103.118.209.80
-  port: 443
-  udp: true
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  name: 🇵🇱 Poland, Warsaw | 🌐 | [BL] [9ca56b3e]
+  server: 177.1.192.90
   encryption: none
-  tls: true
-  servername: nlsq.giftsbattle.vip
+  type: vless
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
   flow: xtls-rprx-vision
-  client-fingerprint: qq
+  port: 443
+- client-fingerprint: qq
+  servername: nlsq.giftsbattle.vip
+  udp: true
+  tls: true
   reality-opts:
     public-key: d66SelbTIURp_YpyFF83ApzzPEQFxOiEbrO7TFSdDRI
     short-id: ff9881defc3b9cda
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [7b89be99]
+  server: 103.118.209.80
+  encryption: none
+  type: vless
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  flow: xtls-rprx-vision
+  port: 443
+- type: vless
+  name: 🇺🇸 United States, Minkler | [BL]
+  server: 141.193.154.234
+  port: 443
+  udp: true
+  uuid: 80fdddb8-3eb8-41ad-9916-fbb42c442e6e
+  encryption: none
+  tls: true
+  servername: cloudflare.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dN2EhTLZsQ1RsO4rCdoIBIi7mFtmqsC2iekPft3MPnY
+    short-id: '1835'
+- type: vless
+  name: 🇺🇸 United States, Santa Clara | [BL]
+  server: 43.173.78.139
+  port: 8443
+  udp: true
+  uuid: 211d03a1-36e9-40e7-8b5e-f9dac6997f05
+  encryption: none
+  tls: true
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ftbEBjykrVrMuhJrZvVVMu7A_YLyIJXXlWEnXDK7VFM
+    short-id: ed7720aa510154f5
+  network: tcp
+- type: vless
+  name: 🇬🇧 United Kingdom, London | [BL]
+  server: 140.225.209.150
+  port: 2083
+  udp: true
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  encryption: none
+  tls: true
+  servername: speedtestmark.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-ws
+- type: vless
+  name: 🇺🇸 United States, Washington D.C. | [BL]
+  server: 5.1.40.6
+  port: 2083
+  udp: true
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  encryption: none
+  tls: true
+  servername: speedtestmark.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-ws
+- type: vless
+  name: 🇬🇧 United Kingdom, London | 🌐 | [BL] [fb65ba60]
+  server: 5.181.158.100
+  port: 8471
+  udp: true
+  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
+  encryption: none
+  tls: true
+  servername: svoboda16.bystriynet.online
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: -Ri2C7Y1tPrP8hQkgXOqVyR1Sqv5MdLZxAAu9M5kfn0
+    short-id: 44add17dbecb11ba
+- type: vless
+  name: 🇸🇪 Sweden, Stockholm | [BL]
+  server: 5.181.158.193
+  port: 8462
+  udp: true
+  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
+  encryption: none
+  tls: true
+  servername: svoboda8.bystriynet.online
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: MrCVk_IX3i58KxjEk-zj6xmh1lZ_WW9SfZ-Bsc6EFnQ
+    short-id: 4c312f2eab89201d
+- type: vless
+  name: 🇩🇪 Germany, Berlin (Bezirk Mitte) | [BL]
+  server: 5.181.158.192
+  port: 8464
+  udp: true
+  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
+  encryption: none
+  tls: true
+  servername: svoboda6.bystriynet.online
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: T0oPW9sxyDZRq1Db4-kvrOG9_h-wL3-UtjD3T8PN3mQ
+    short-id: 7dd5822cfb2e1cd0
+- type: vless
+  name: 🇨🇭 Switzerland, Zurich | [BL]
+  server: 5.181.158.193
+  port: 8461
+  udp: true
+  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
+  encryption: none
+  tls: true
+  servername: svoboda.bystriynet.online
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Yc75IKp6PRsGSw82GhGepMrRpJweW7WXUp9azkGuMAk
+    short-id: 735f09fb3fedb191
+- type: vless
+  name: 🇬🇧 United Kingdom, London | 🌐 | [BL] [ef4f3ce8]
+  server: 5.181.158.100
+  port: 8481
+  udp: true
+  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
+  encryption: none
+  tls: true
+  servername: svoboda16.bystriynet.online
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: -Ri2C7Y1tPrP8hQkgXOqVyR1Sqv5MdLZxAAu9M5kfn0
+    short-id: 44add17dbecb11ba
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
+  server: 5.181.158.192
+  port: 8460
+  udp: true
+  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
+  encryption: none
+  tls: true
+  servername: nl-ams.bystriynet.online
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5FHR9361HdRaycDAmACmok_SvpmM2xnzYRkUBsgZARM
+    short-id: c7d4e6fb729b69c2
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
+  server: 5.181.158.195
+  port: 8466
+  udp: true
+  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
+  encryption: none
+  tls: true
+  servername: svoboda20.bystriynet.online
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: k2jSuvKPXyN0fCJiGpl1NMzzN7kzo64vsbbLD4gdKQ4
+    short-id: f017b721750fd683
 proxy-groups:
 - name: Fine
   type: select
@@ -145,26 +282,46 @@ proxy-groups:
   - DIRECT
   - 🇺🇸 United States, Los Angeles | [BL] [39398f0f]
   - 🇺🇸 United States, Los Angeles | [BL] [a38bcf31]
-  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
   - 🇹🇼 Taiwan, Taipei | 🌐 | [BL]
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [5e118548]
   - 🇵🇱 Poland, Warsaw | 🌐 | [BL] [5f225f7a]
   - 🇸🇪 Sweden, Vaxjo | [BL]
   - 🇵🇱 Poland, Warsaw | 🌐 | [BL] [9ca56b3e]
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [7b89be99]
+  - 🇺🇸 United States, Minkler | [BL]
+  - 🇺🇸 United States, Santa Clara | [BL]
+  - 🇬🇧 United Kingdom, London | [BL]
+  - 🇺🇸 United States, Washington D.C. | [BL]
+  - 🇬🇧 United Kingdom, London | 🌐 | [BL] [fb65ba60]
+  - 🇸🇪 Sweden, Stockholm | [BL]
+  - 🇩🇪 Germany, Berlin (Bezirk Mitte) | [BL]
+  - 🇨🇭 Switzerland, Zurich | [BL]
+  - 🇬🇧 United Kingdom, London | 🌐 | [BL] [ef4f3ce8]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
   default-selected: 🇺🇸 United States, Los Angeles | [BL] [39398f0f]
 - name: AUTO
   type: url-test
   proxies:
   - 🇺🇸 United States, Los Angeles | [BL] [39398f0f]
   - 🇺🇸 United States, Los Angeles | [BL] [a38bcf31]
-  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
   - 🇹🇼 Taiwan, Taipei | 🌐 | [BL]
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [5e118548]
   - 🇵🇱 Poland, Warsaw | 🌐 | [BL] [5f225f7a]
   - 🇸🇪 Sweden, Vaxjo | [BL]
   - 🇵🇱 Poland, Warsaw | 🌐 | [BL] [9ca56b3e]
   - 🇳🇱 The Netherlands, Amsterdam | [BL] [7b89be99]
+  - 🇺🇸 United States, Minkler | [BL]
+  - 🇺🇸 United States, Santa Clara | [BL]
+  - 🇬🇧 United Kingdom, London | [BL]
+  - 🇺🇸 United States, Washington D.C. | [BL]
+  - 🇬🇧 United Kingdom, London | 🌐 | [BL] [fb65ba60]
+  - 🇸🇪 Sweden, Stockholm | [BL]
+  - 🇩🇪 Germany, Berlin (Bezirk Mitte) | [BL]
+  - 🇨🇭 Switzerland, Zurich | [BL]
+  - 🇬🇧 United Kingdom, London | 🌐 | [BL] [ef4f3ce8]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
