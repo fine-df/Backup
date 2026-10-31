@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070074 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070075 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,49 +10,107 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- udp: true
-  servername: cloudflare.com
+- servername: cloudflare.com
+  port: 443
+  client-fingerprint: firefox
   reality-opts:
     public-key: dN2EhTLZsQ1RsO4rCdoIBIi7mFtmqsC2iekPft3MPnY
     short-id: '1835'
-  server: 141.193.154.234
-  client-fingerprint: firefox
-  port: 443
   name: 🇺🇸 United States, Minkler | [BL]
+  encryption: none
   tls: true
   type: vless
   uuid: 80fdddb8-3eb8-41ad-9916-fbb42c442e6e
-  encryption: none
-- flow: xtls-rprx-vision
   udp: true
-  servername: www.apple.com
+  server: 141.193.154.234
+- servername: www.apple.com
+  port: 8443
+  client-fingerprint: chrome
   reality-opts:
     public-key: ftbEBjykrVrMuhJrZvVVMu7A_YLyIJXXlWEnXDK7VFM
     short-id: ed7720aa510154f5
-  server: 43.173.78.139
-  network: tcp
-  client-fingerprint: chrome
-  port: 8443
   name: 🇺🇸 United States, Santa Clara | [BL]
+  encryption: none
   tls: true
   type: vless
+  network: tcp
+  flow: xtls-rprx-vision
   uuid: 211d03a1-36e9-40e7-8b5e-f9dac6997f05
-  encryption: none
+  udp: true
+  server: 43.173.78.139
 - type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
-  server: 195.141.65.98
+  name: 🇺🇸 United States, Detroit | [BL] [0e25121a]
+  server: 130.17.4.76
   port: 443
   udp: true
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  uuid: f44f5cc3-df22-4183-a61b-c653485dd7f9
   encryption: none
   tls: true
-  servername: 148-253-210-191.sslip.io
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /jx-o4e0xzvx0107se
+    headers:
+      Host: jyfrj1cims.dev.onappjet.com
+- type: vless
+  name: 🇺🇸 United States, Detroit | [BL] [0f5b2ef5]
+  server: 130.17.4.76
+  port: 443
+  udp: true
+  uuid: f44f5cc3-df22-4183-a61b-c653485dd7f9
+  encryption: none
+  tls: true
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /test-ws
+    path: /jx-o4e0xzvx0107se
     headers:
-      Host: 148-253-210-191.sslip.io
+      Host: jyfrj1cims.dev.onappjet.com
+- type: vmess
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [9d350a7e]
+  server: dBcaeS0WKJRoAhsQ.v.3dns.vip
+  port: 443
+  uuid: 234a80412b4d44a3a8d8523cbfd58dc4
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: dBcaeS0WKJRoAhsQ.v.3dns.vip
+  ws-opts:
+    headers:
+      Host: dBcaeS0WKJRoAhsQ.v.3dns.vip
+    path: /ws-vmess
+- type: vmess
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [14a4be35]
+  server: LO7ioZK1FPYWR1t1.v.3dns.vip
+  port: 443
+  uuid: 234a80412b4d44a3a8d8523cbfd58dc4
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: LO7ioZK1FPYWR1t1.v.3dns.vip
+  ws-opts:
+    headers:
+      Host: LO7ioZK1FPYWR1t1.v.3dns.vip
+    path: /ws-vmess
+- type: vmess
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [45bf62ba]
+  server: O3ZBhK3HTyKNltsS.v.3dns.vip
+  port: 443
+  uuid: 234a80412b4d44a3a8d8523cbfd58dc4
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: O3ZBhK3HTyKNltsS.v.3dns.vip
+  ws-opts:
+    headers:
+      Host: O3ZBhK3HTyKNltsS.v.3dns.vip
+    path: /ws-vmess
 proxy-groups:
 - name: Fine
   type: select
@@ -61,14 +119,22 @@ proxy-groups:
   - DIRECT
   - 🇺🇸 United States, Minkler | [BL]
   - 🇺🇸 United States, Santa Clara | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
+  - 🇺🇸 United States, Detroit | [BL] [0e25121a]
+  - 🇺🇸 United States, Detroit | [BL] [0f5b2ef5]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [9d350a7e]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [14a4be35]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [45bf62ba]
   default-selected: 🇺🇸 United States, Minkler | [BL]
 - name: AUTO
   type: url-test
   proxies:
   - 🇺🇸 United States, Minkler | [BL]
   - 🇺🇸 United States, Santa Clara | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
+  - 🇺🇸 United States, Detroit | [BL] [0e25121a]
+  - 🇺🇸 United States, Detroit | [BL] [0f5b2ef5]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [9d350a7e]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [14a4be35]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL] [45bf62ba]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
