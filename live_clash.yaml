@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070078 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070079 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -11,30 +11,47 @@ profile:
   store-selected: true
 proxies:
 - type: vless
-  name: 🇬🇧 United Kingdom, London | [BL]
-  server: 45.88.12.168
-  port: 443
+  name: 🇪🇸 Spain, Madrid (Chamartín) | [BL]
+  server: es3.h1cloud.net
+  port: 25150
   udp: true
-  uuid: ccf353ca-fa34-43fc-8ed9-520fb9d74bf6
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   encryption: none
   tls: true
-  servername: va.stream-room.com
+  servername: www.samsung.com
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-ws
+  reality-opts:
+    public-key: Qvn7tV54mdqxJ40LmmoI1PRM1QKXEbfFOZS-omPKhGY
+    short-id: 4301a484cc762aa6
+  network: tcp
+- type: vless
+  name: 🇨🇭 Switzerland [*CIDR]
+  server: ch2.h1cloud.net
+  port: 25879
+  udp: true
+  uuid: 241306b3-9f27-4ed3-9524-6c0792c55856
+  encryption: none
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: XuI492LMe1OPIwQH5TQlIo33JRqMM3kfnto62tbx5FU
+    short-id: f1a7a14461a3f389
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇬🇧 United Kingdom, London | [BL]
-  default-selected: 🇬🇧 United Kingdom, London | [BL]
+  - 🇪🇸 Spain, Madrid (Chamartín) | [BL]
+  - 🇨🇭 Switzerland [*CIDR]
+  default-selected: 🇪🇸 Spain, Madrid (Chamartín) | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇬🇧 United Kingdom, London | [BL]
+  - 🇪🇸 Spain, Madrid (Chamartín) | [BL]
+  - 🇨🇭 Switzerland [*CIDR]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
