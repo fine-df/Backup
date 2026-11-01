@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070075 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070076 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,131 +10,208 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- servername: cloudflare.com
+- tls: true
+  encryption: none
+  network: ws
+  server: 130.17.4.76
+  type: vless
+  client-fingerprint: ios
   port: 443
+  name: 🇺🇸 United States, Detroit | [BL] [0e25121a]
+  udp: true
+  uuid: f44f5cc3-df22-4183-a61b-c653485dd7f9
+  ws-opts:
+    path: /jx-o4e0xzvx0107se
+    headers:
+      Host: jyfrj1cims.dev.onappjet.com
+- tls: true
+  encryption: none
+  network: ws
+  server: 130.17.4.76
+  type: vless
+  client-fingerprint: chrome
+  port: 443
+  name: 🇺🇸 United States, Detroit | [BL] [0f5b2ef5]
+  udp: true
+  uuid: f44f5cc3-df22-4183-a61b-c653485dd7f9
+  ws-opts:
+    path: /jx-o4e0xzvx0107se
+    headers:
+      Host: jyfrj1cims.dev.onappjet.com
+- type: vless
+  name: 🇬🇧 United Kingdom, London | [BL] [7e190c57]
+  server: 140.225.209.170
+  port: 2083
+  udp: true
+  uuid: 1c1ee84d-3409-443c-9723-25dd61a10a89
+  encryption: none
+  tls: true
+  servername: speedtestmark.com
+  network: ws
+  ws-opts:
+    path: /vless-ws
+- type: vless
+  name: 🇬🇧 United Kingdom, London | [BL] [dc6aeca2]
+  server: 140.225.209.170
+  port: 2083
+  udp: true
+  uuid: 1c1ee84d-3409-443c-9723-25dd61a10a89
+  encryption: none
+  tls: true
+  servername: speedtestmark.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-ws
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
+  server: 45.88.12.140
+  port: 443
+  udp: true
+  uuid: b61bd5c6-7f9d-4fa0-8e8e-1eb236c5e4dd
+  encryption: none
+  tls: true
+  servername: crt.molniya.sbs
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: crt.molniya.sbs
+- type: vless
+  name: 🇬🇧 United Kingdom, London | [BL] [c2749429]
+  server: 140.225.209.140
+  port: 2083
+  udp: true
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  encryption: none
+  tls: true
+  servername: speedtestmark.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-ws
+- type: vless
+  name: 🇺🇸 United States, Orem | [BL] [e99f2379]
+  server: 177.202.70.13
+  port: 443
+  udp: true
+  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
+  encryption: none
+  tls: true
+  servername: tradingview.com
+  flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: dN2EhTLZsQ1RsO4rCdoIBIi7mFtmqsC2iekPft3MPnY
-    short-id: '1835'
-  name: 🇺🇸 United States, Minkler | [BL]
-  encryption: none
-  tls: true
-  type: vless
-  uuid: 80fdddb8-3eb8-41ad-9916-fbb42c442e6e
+    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
+    short-id: 8f3c6e2a1b5d4f09
+- type: vless
+  name: 🌐 Anycast-IP | 🇦🇪 🇩🇪 | [BL]
+  server: 130.78.30.25
+  port: 47443
   udp: true
-  server: 141.193.154.234
-- servername: www.apple.com
-  port: 8443
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ftbEBjykrVrMuhJrZvVVMu7A_YLyIJXXlWEnXDK7VFM
-    short-id: ed7720aa510154f5
-  name: 🇺🇸 United States, Santa Clara | [BL]
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
   encryption: none
   tls: true
-  type: vless
-  network: tcp
+  servername: nl4.waspnest.space
   flow: xtls-rprx-vision
-  uuid: 211d03a1-36e9-40e7-8b5e-f9dac6997f05
-  udp: true
-  server: 43.173.78.139
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: g5am2VhZkx_xH2TSKfUU8OYLxAzFrmcszNQg8AbOenE
+    short-id: ae97223a8f799872
+  network: tcp
 - type: vless
-  name: 🇺🇸 United States, Detroit | [BL] [0e25121a]
-  server: 130.17.4.76
+  name: 🇳🇱 The Netherlands, Eygelshoven | [BL]
+  server: 94.183.245.2
   port: 443
   udp: true
-  uuid: f44f5cc3-df22-4183-a61b-c653485dd7f9
+  uuid: e71f3fe4-ccfb-464a-895d-41831efe13a9
   encryption: none
   tls: true
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /jx-o4e0xzvx0107se
-    headers:
-      Host: jyfrj1cims.dev.onappjet.com
+  servername: nl-1-t.124515.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3EuP8uX9rTJ-qw6O1hg2KWgD1fbY73-ZfT1Q8I_Srkw
+    short-id: 693ee677b7bc4ad1
+  network: tcp
 - type: vless
-  name: 🇺🇸 United States, Detroit | [BL] [0f5b2ef5]
-  server: 130.17.4.76
+  name: 🇫🇷 France | 🌐 | [BL]
+  server: 8.6.112.0
   port: 443
   udp: true
-  uuid: f44f5cc3-df22-4183-a61b-c653485dd7f9
+  uuid: fb5aadbc-ad32-4b0f-8b4f-032511cec53a
   encryption: none
   tls: true
+  servername: polshaov.ochmaybrooooo.online
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /jx-o4e0xzvx0107se
+    path: /
     headers:
-      Host: jyfrj1cims.dev.onappjet.com
-- type: vmess
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [9d350a7e]
-  server: dBcaeS0WKJRoAhsQ.v.3dns.vip
-  port: 443
-  uuid: 234a80412b4d44a3a8d8523cbfd58dc4
-  alterId: 0
-  cipher: auto
+      Host: polshaov.ochmaybrooooo.online
+- type: vless
+  name: 🇫🇮 Finland, Helsinki | [BL]
+  server: 92.242.165.20
+  port: 2083
   udp: true
-  network: ws
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  encryption: none
   tls: true
-  servername: dBcaeS0WKJRoAhsQ.v.3dns.vip
+  servername: speedtestmark.com
+  client-fingerprint: firefox
+  network: ws
   ws-opts:
-    headers:
-      Host: dBcaeS0WKJRoAhsQ.v.3dns.vip
-    path: /ws-vmess
-- type: vmess
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [14a4be35]
-  server: LO7ioZK1FPYWR1t1.v.3dns.vip
+    path: /vless-ws
+- type: vless
+  name: 🇺🇸 United States, Orem | [BL] [6fc7cc6c]
+  server: 179.236.133.2
   port: 443
-  uuid: 234a80412b4d44a3a8d8523cbfd58dc4
-  alterId: 0
-  cipher: auto
   udp: true
-  network: ws
+  uuid: e71f3fe4-ccfb-464a-895d-41831efe13a9
+  encryption: none
   tls: true
-  servername: LO7ioZK1FPYWR1t1.v.3dns.vip
-  ws-opts:
-    headers:
-      Host: LO7ioZK1FPYWR1t1.v.3dns.vip
-    path: /ws-vmess
-- type: vmess
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL] [45bf62ba]
-  server: O3ZBhK3HTyKNltsS.v.3dns.vip
-  port: 443
-  uuid: 234a80412b4d44a3a8d8523cbfd58dc4
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  servername: O3ZBhK3HTyKNltsS.v.3dns.vip
-  ws-opts:
-    headers:
-      Host: O3ZBhK3HTyKNltsS.v.3dns.vip
-    path: /ws-vmess
+  servername: de-1-t.124515.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dxsu1yp4dcpuhq32vLIX6fZ3A7uWs_5OzNIlUmLBSzQ
+    short-id: c7c005c49b11d17c
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇺🇸 United States, Minkler | [BL]
-  - 🇺🇸 United States, Santa Clara | [BL]
   - 🇺🇸 United States, Detroit | [BL] [0e25121a]
   - 🇺🇸 United States, Detroit | [BL] [0f5b2ef5]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [9d350a7e]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [14a4be35]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [45bf62ba]
-  default-selected: 🇺🇸 United States, Minkler | [BL]
+  - 🇬🇧 United Kingdom, London | [BL] [7e190c57]
+  - 🇬🇧 United Kingdom, London | [BL] [dc6aeca2]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇬🇧 United Kingdom, London | [BL] [c2749429]
+  - 🇺🇸 United States, Orem | [BL] [e99f2379]
+  - 🌐 Anycast-IP | 🇦🇪 🇩🇪 | [BL]
+  - 🇳🇱 The Netherlands, Eygelshoven | [BL]
+  - 🇫🇷 France | 🌐 | [BL]
+  - 🇫🇮 Finland, Helsinki | [BL]
+  - 🇺🇸 United States, Orem | [BL] [6fc7cc6c]
+  default-selected: 🇺🇸 United States, Detroit | [BL] [0e25121a]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 United States, Minkler | [BL]
-  - 🇺🇸 United States, Santa Clara | [BL]
   - 🇺🇸 United States, Detroit | [BL] [0e25121a]
   - 🇺🇸 United States, Detroit | [BL] [0f5b2ef5]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [9d350a7e]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [14a4be35]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL] [45bf62ba]
+  - 🇬🇧 United Kingdom, London | [BL] [7e190c57]
+  - 🇬🇧 United Kingdom, London | [BL] [dc6aeca2]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇬🇧 United Kingdom, London | [BL] [c2749429]
+  - 🇺🇸 United States, Orem | [BL] [e99f2379]
+  - 🌐 Anycast-IP | 🇦🇪 🇩🇪 | [BL]
+  - 🇳🇱 The Netherlands, Eygelshoven | [BL]
+  - 🇫🇷 France | 🌐 | [BL]
+  - 🇫🇮 Finland, Helsinki | [BL]
+  - 🇺🇸 United States, Orem | [BL] [6fc7cc6c]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
