@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070077 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070078 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,132 +10,31 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- udp: true
-  name: 🇺🇸 United States, Orem | [BL] [e99f2379]
-  type: vless
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
-  server: 177.202.70.13
-  servername: tradingview.com
-  tls: true
-  encryption: none
-  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
-  client-fingerprint: firefox
-  port: 443
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [57249f67]
-  server: 195.141.65.98
-  port: 443
-  udp: true
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
-  encryption: none
-  tls: true
-  servername: 148-253-210-191.sslip.io
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /test-ws
-    headers:
-      Host: 148-253-210-191.sslip.io
 - type: vless
   name: 🇬🇧 United Kingdom, London | [BL]
-  server: 140.225.209.180
-  port: 2083
+  server: 45.88.12.168
+  port: 443
   udp: true
-  uuid: 9ec97e03-5e0b-4feb-b6f2-1c377977e471
+  uuid: ccf353ca-fa34-43fc-8ed9-520fb9d74bf6
   encryption: none
   tls: true
-  servername: speedtestmark.com
+  servername: va.stream-room.com
   client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /vless-ws
-- type: vless
-  name: 🇹🇷 Turkey, Istanbul | [BL]
-  server: 177.202.96.106
-  port: 443
-  udp: true
-  uuid: b24ad12f-f6ce-4f0b-a264-d58a76104026
-  encryption: none
-  tls: true
-  servername: pl1.spidermanshopping.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-    short-id: 8718c58d3d51db59
-  network: tcp
-- type: vless
-  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [d8ff56eb]
-  server: c20s5.portablesubmarines.com
-  port: 443
-  udp: true
-  uuid: 85fe968d-fbb5-40dc-8422-30635eccb149
-  encryption: none
-  tls: true
-  servername: portal.citygrainla.com
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-    short-id: 051f20c2344a2dfd
-  network: tcp
-- type: vless
-  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [20b4ed48]
-  server: c20s5.portablesubmarines.com
-  port: 443
-  udp: true
-  uuid: 85fe968d-fbb5-40dc-8422-30635eccb149
-  encryption: none
-  tls: true
-  servername: portal.citygrainla.com
-  flow: xtls-rprx-vision
-  client-fingerprint: random
-  reality-opts:
-    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-    short-id: 051f20c2344a2dfd
-  network: tcp
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [96c53d06]
-  server: 195.141.65.98
-  port: 443
-  udp: true
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
-  encryption: none
-  tls: true
-  servername: 148-253-210-191.sslip.io
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /test-ws
-    headers:
-      Host: 148-253-210-191.sslip.io
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇺🇸 United States, Orem | [BL] [e99f2379]
-  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [57249f67]
   - 🇬🇧 United Kingdom, London | [BL]
-  - 🇹🇷 Turkey, Istanbul | [BL]
-  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [d8ff56eb]
-  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [20b4ed48]
-  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [96c53d06]
-  default-selected: 🇺🇸 United States, Orem | [BL] [e99f2379]
+  default-selected: 🇬🇧 United Kingdom, London | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 United States, Orem | [BL] [e99f2379]
-  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [57249f67]
   - 🇬🇧 United Kingdom, London | [BL]
-  - 🇹🇷 Turkey, Istanbul | [BL]
-  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [d8ff56eb]
-  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] [20b4ed48]
-  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [96c53d06]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
