@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070079 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070080 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,34 +10,181 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- type: vless
-  name: 🇪🇸 Spain, Madrid (Chamartín) | [BL]
-  server: es3.h1cloud.net
-  port: 25150
-  udp: true
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  encryption: none
-  tls: true
-  servername: www.samsung.com
+- servername: www.samsung.com
   client-fingerprint: firefox
+  encryption: none
+  server: es3.h1cloud.net
+  tls: true
+  name: 🇪🇸 Spain, Madrid (Chamartín) | [BL]
+  udp: true
+  type: vless
+  network: tcp
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  port: 25150
   reality-opts:
     public-key: Qvn7tV54mdqxJ40LmmoI1PRM1QKXEbfFOZS-omPKhGY
     short-id: 4301a484cc762aa6
-  network: tcp
-- type: vless
-  name: 🇨🇭 Switzerland [*CIDR]
-  server: ch2.h1cloud.net
-  port: 25879
-  udp: true
-  uuid: 241306b3-9f27-4ed3-9524-6c0792c55856
-  encryption: none
-  tls: true
-  servername: www.bing.com
+- servername: www.bing.com
   client-fingerprint: qq
+  encryption: none
+  server: ch2.h1cloud.net
+  tls: true
+  name: 🇨🇭 Switzerland [*CIDR]
+  udp: true
+  type: vless
+  network: tcp
+  uuid: 241306b3-9f27-4ed3-9524-6c0792c55856
+  port: 25879
   reality-opts:
     public-key: XuI492LMe1OPIwQH5TQlIo33JRqMM3kfnto62tbx5FU
     short-id: f1a7a14461a3f389
-  network: tcp
+- type: vless
+  name: 🇺🇸 United States, Edison | 🌐 | [BL] [95dfaa02]
+  server: 212.43.152.62
+  port: 8444
+  udp: true
+  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
+  encryption: none
+  tls: true
+  servername: us1.meshbeat.online
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/3ec9e2ef7b/telemetry
+    headers:
+      Host: us1.meshbeat.online
+- type: vless
+  name: 🇺🇸 United States, Edison | 🌐 | [BL] [764a2381]
+  server: 212.43.152.62
+  port: 8444
+  udp: true
+  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
+  encryption: none
+  tls: true
+  servername: us1.meshbeat.online
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/3ec9e2ef7b/telemetry
+    headers:
+      Host: us1.meshbeat.online
+- type: vless
+  name: 🇩🇪 Germany [*CIDR]
+  server: 200.169.184.168
+  port: 443
+  udp: true
+  uuid: 6036c28a-8db2-432e-8118-ff0c16641ad0
+  encryption: none
+  tls: true
+  servername: tm6.24convertflow.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 2IylNqpuTBeUvd333tXWY6i0l8nkH6o5qfRVKZm6FA0
+    short-id: e0aadc6f38ff06a8
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [14ef3f54]
+  server: 94.183.206.226
+  port: 7443
+  udp: true
+  uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
+  encryption: none
+  tls: true
+  servername: optim.tildacdn.pub
+  client-fingerprint: safari
+  reality-opts:
+    public-key: unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ebl
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [bfb4a016]
+  server: 94.183.206.226
+  port: 7443
+  udp: true
+  uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
+  encryption: none
+  tls: true
+  servername: optim.tildacdn.pub
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ebl
+- type: vless
+  name: 🇪🇪 Estonia [SNI-RU] max.ru
+  server: qqmrkr71metydlthes8.dnetsolutions.ru
+  port: 443
+  udp: true
+  uuid: 4b091976-0936-44ac-9a90-6a265d2b619f
+  encryption: none
+  tls: true
+  servername: max.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: uuD0VJNMH1jZKPjiI5qhbiMVabQFkocWy0LUjh-3HEQ
+    short-id: bc35
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-65
+- type: vless
+  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]
+  server: 200.169.184.168
+  port: 443
+  udp: true
+  uuid: 6036c28a-8db2-432e-8118-ff0c16641ad0
+  encryption: none
+  tls: true
+  servername: tm6.24convertflow.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: 2IylNqpuTBeUvd333tXWY6i0l8nkH6o5qfRVKZm6FA0
+    short-id: e0aadc6f38ff06a8
+- type: vless
+  name: 🇫🇷 France [*CIDR] [e98a573e]
+  server: 186.246.9.62
+  port: 443
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  encryption: none
+  tls: true
+  servername: media-27.topp-con.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
+    short-id: b9120cd53ffd7bba
+- type: vless
+  name: 🇳🇱 The Netherlands, Oude Meer | 🌐 | [BL]
+  server: 45.91.202.32
+  port: 8444
+  udp: true
+  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
+  encryption: none
+  tls: true
+  servername: nl15.meshbeat.online
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/02585a2d89/telemetry
+    headers:
+      Host: nl15.meshbeat.online
+- type: vless
+  name: 🇫🇷 France [*CIDR] [c477f855]
+  server: 201.51.5.181
+  port: 443
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  encryption: none
+  tls: true
+  servername: pkg-77.topp-con.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
+    short-id: b9120cd53ffd7bba
 proxy-groups:
 - name: Fine
   type: select
@@ -46,12 +193,32 @@ proxy-groups:
   - DIRECT
   - 🇪🇸 Spain, Madrid (Chamartín) | [BL]
   - 🇨🇭 Switzerland [*CIDR]
+  - 🇺🇸 United States, Edison | 🌐 | [BL] [95dfaa02]
+  - 🇺🇸 United States, Edison | 🌐 | [BL] [764a2381]
+  - 🇩🇪 Germany [*CIDR]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [14ef3f54]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [bfb4a016]
+  - 🇪🇪 Estonia [SNI-RU] max.ru
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]
+  - 🇫🇷 France [*CIDR] [e98a573e]
+  - 🇳🇱 The Netherlands, Oude Meer | 🌐 | [BL]
+  - 🇫🇷 France [*CIDR] [c477f855]
   default-selected: 🇪🇸 Spain, Madrid (Chamartín) | [BL]
 - name: AUTO
   type: url-test
   proxies:
   - 🇪🇸 Spain, Madrid (Chamartín) | [BL]
   - 🇨🇭 Switzerland [*CIDR]
+  - 🇺🇸 United States, Edison | 🌐 | [BL] [95dfaa02]
+  - 🇺🇸 United States, Edison | 🌐 | [BL] [764a2381]
+  - 🇩🇪 Germany [*CIDR]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [14ef3f54]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL] [bfb4a016]
+  - 🇪🇪 Estonia [SNI-RU] max.ru
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]
+  - 🇫🇷 France [*CIDR] [e98a573e]
+  - 🇳🇱 The Netherlands, Oude Meer | 🌐 | [BL]
+  - 🇫🇷 France [*CIDR] [c477f855]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
