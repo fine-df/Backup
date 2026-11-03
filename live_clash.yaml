@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070081 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070082 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,46 +10,148 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- servername: nl15.meshbeat.online
-  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
-  name: 🇳🇱 The Netherlands, Oude Meer | 🌐 | [BL]
-  server: 45.91.202.32
-  udp: true
-  network: ws
-  client-fingerprint: edge
-  ws-opts:
-    path: /api/v1/devices/02585a2d89/telemetry
-    headers:
-      Host: nl15.meshbeat.online
-  port: 8444
-  type: vless
-  encryption: none
-  tls: true
 - type: vless
-  name: 德国+GHOSTnet+GmbH
-  server: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
-  port: 20065
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [d4c5114b]
+  server: news.zoom.us
+  port: 8443
   udp: true
-  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   encryption: none
   tls: true
-  servername: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
-  flow: xtls-rprx-vision
-  network: tcp
+  servername: u.srilankangrill.online
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a146a8fa]
+  server: 141.193.213.21
+  port: 8443
+  udp: true
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  encryption: none
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [aea0db89]
+  server: news.zoom.us
+  port: 8443
+  udp: true
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  encryption: none
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- type: vless
+  name: 🌐 Anycast-IP | 🇳🇱 🇷🇺 | [*CIDR]
+  server: 95.129.236.216
+  port: 443
+  udp: true
+  uuid: 77998cc6-8a4d-4251-b974-ebff48a84c4d
+  encryption: none
+  tls: true
+  servername: crm.hourtley.com
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /stream/video/ffmpeg
+    headers:
+      Host: crm.hourtley.com
+- type: vless
+  name: 🌐 Anycast-IP | 🇩🇪 🇷🇺 | [*CIDR] [285fe288]
+  server: 95.129.236.239
+  port: 443
+  udp: true
+  uuid: 77998cc6-8a4d-4251-b974-ebff48a84c4d
+  encryption: none
+  tls: true
+  servername: content-iv1k.login.opendns.stream
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /sock/relay/007f9c12e265
+    headers:
+      Host: content-iv1k.login.opendns.stream
+- type: vless
+  name: 🌐 Anycast-IP | 🇩🇪 🇷🇺 | [*CIDR] [0865e0ef]
+  server: 95.129.236.239
+  port: 443
+  udp: true
+  uuid: 77998cc6-8a4d-4251-b974-ebff48a84c4d
+  encryption: none
+  tls: true
+  servername: content-iv1k.login.opendns.stream
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sock/relay/007f9c12e265
+    headers:
+      Host: content-iv1k.login.opendns.stream
+- type: vless
+  name: 🇨🇿 Czechia | [*CIDR] [06c04ed4]
+  server: 176.108.243.235
+  port: 9570
+  udp: true
+  uuid: 9a8e6575-0564-4c3a-8b46-8f723828daf6
+  encryption: none
+  tls: true
+  servername: cz.ahuel.net
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: catalog-sync
+- type: vless
+  name: 🇨🇿 Czechia | [*CIDR] [328e10b9]
+  server: 176.108.243.235
+  port: 9570
+  udp: true
+  uuid: 9a8e6575-0564-4c3a-8b46-8f723828daf6
+  encryption: none
+  tls: true
+  servername: cz.ahuel.net
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: catalog-sync
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇳🇱 The Netherlands, Oude Meer | 🌐 | [BL]
-  - 德国+GHOSTnet+GmbH
-  default-selected: 🇳🇱 The Netherlands, Oude Meer | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [d4c5114b]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a146a8fa]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [aea0db89]
+  - 🌐 Anycast-IP | 🇳🇱 🇷🇺 | [*CIDR]
+  - 🌐 Anycast-IP | 🇩🇪 🇷🇺 | [*CIDR] [285fe288]
+  - 🌐 Anycast-IP | 🇩🇪 🇷🇺 | [*CIDR] [0865e0ef]
+  - 🇨🇿 Czechia | [*CIDR] [06c04ed4]
+  - 🇨🇿 Czechia | [*CIDR] [328e10b9]
+  default-selected: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [d4c5114b]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇳🇱 The Netherlands, Oude Meer | 🌐 | [BL]
-  - 德国+GHOSTnet+GmbH
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [d4c5114b]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a146a8fa]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [aea0db89]
+  - 🌐 Anycast-IP | 🇳🇱 🇷🇺 | [*CIDR]
+  - 🌐 Anycast-IP | 🇩🇪 🇷🇺 | [*CIDR] [285fe288]
+  - 🌐 Anycast-IP | 🇩🇪 🇷🇺 | [*CIDR] [0865e0ef]
+  - 🇨🇿 Czechia | [*CIDR] [06c04ed4]
+  - 🇨🇿 Czechia | [*CIDR] [328e10b9]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
