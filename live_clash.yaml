@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070086 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070087 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,98 +10,52 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- server: 103.204.174.80
-  port: 443
-  client-fingerprint: safari
+- encryption: none
   network: tcp
-  encryption: none
-  type: vless
-  tls: true
+  server: 103.204.174.80
+  udp: true
+  name: 🇯🇵 Japan, Chiyoda City | 🌐 | [BL]
+  client-fingerprint: safari
   reality-opts:
     public-key: c8xReeCgCTOZ2snvR7I4sPtSYAJquSC-_pAIuZG3rVQ
     short-id: 9b1813e63f474741
-  flow: xtls-rprx-vision
-  udp: true
-  name: 🇯🇵 Japan, Chiyoda City | 🌐 | [BL]
-  servername: gateway.icloud.com
   uuid: 91a538f2-e8d6-4fd1-b00a-d39522f20c35
-- type: vless
-  name: 🇺🇸 United States | [*CIDR] [2f339d95]
-  server: 201.51.29.153
   port: 443
-  udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  encryption: none
-  tls: true
-  servername: db-23.topp-con.xyz
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Elmq7GhYEGaiujWnLYeK3HidTkZV6JYH-aYJXBG9iwc
-    short-id: 20b37477b1d93f7e
-  network: tcp
-- type: vless
-  name: 🇺🇸 United States | [*CIDR] [59c5bd2c]
-  server: 201.51.29.153
-  port: 443
-  udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  encryption: none
+  type: vless
+  servername: gateway.icloud.com
   tls: true
-  servername: db-23.topp-con.xyz
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Elmq7GhYEGaiujWnLYeK3HidTkZV6JYH-aYJXBG9iwc
-    short-id: 20b37477b1d93f7e
-  network: tcp
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [2537eee6]
+- encryption: none
+  network: ws
   server: news.zoom.us
-  port: 8443
   udp: true
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  encryption: none
-  tls: true
-  servername: u.srilankangrill.online
+  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [e8f144de]
   client-fingerprint: firefox
-  network: ws
+  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  port: 2087
+  type: vless
   ws-opts:
-    path: /
     headers:
-      Host: u.srilankangrill.online
+      Host: free.vkehi.store
+  servername: free.vkehi.store
+  tls: true
 - type: vless
-  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [6be79ad3]
-  server: 141.193.213.20
-  port: 8443
+  name: DE VLESS-17 | free-nodes
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
   udp: true
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   encryption: none
   tls: true
-  servername: u.srilankangrill.online
-  client-fingerprint: safari
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /
+    path: /useraction/events/b892639b7195/
     headers:
-      Host: u.srilankangrill.online
+      Host: z1q3pv4g78.rucdncomp.pro
 - type: vless
-  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [170f580f]
-  server: 141.193.213.21
-  port: 8443
-  udp: true
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  encryption: none
-  tls: true
-  servername: u.srilankangrill.online
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- type: vless
-  name: 🇱🇰 Sri Lanka, Battaramulla | [BL]
+  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [b8f3e9e0]
   server: news.zoom.us
   port: 2087
   udp: true
@@ -109,97 +63,26 @@ proxies:
   encryption: none
   tls: true
   servername: free.vkehi.store
-  client-fingerprint: firefox
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.vkehi.store
+- type: vless
+  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
+  server: news.zoom.us
+  port: 2087
+  udp: true
+  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  encryption: none
+  tls: true
+  servername: free.vkehi.store
+  client-fingerprint: qq
   network: ws
   ws-opts:
     headers:
       Host: free.vkehi.store
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [*CIDR] [27b2bf5a]
-  server: 200.169.184.140
-  port: 443
-  udp: true
-  uuid: 7feec880-56f0-4425-9313-e2e340206284
-  encryption: none
-  tls: true
-  servername: basterdym.asia
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: glush.de1.v1
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [*CIDR] [dcd9bdb1]
-  server: 200.169.184.140
-  port: 443
-  udp: true
-  uuid: 7feec880-56f0-4425-9313-e2e340206284
-  encryption: none
-  tls: true
-  servername: basterdym.asia
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: glush.de1.v1
-- type: vless
-  name: 🇭🇺 Hungary | [SNI-RU] cdn.tbank.ru [a438270d]
-  server: 2.26.139.69
-  port: 443
-  udp: true
-  uuid: 1d7427ab-8a5d-4317-9335-2e48d50be4fc
-  encryption: none
-  tls: true
-  servername: cdn.tbank.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: HmnsKa6Mmm34gALomXBKB7d8UMIM33hhItp2z43VCkQ
-    short-id: a1d8f3b6c2e59407
-  network: tcp
-- type: vless
-  name: 🇭🇺 Hungary | [SNI-RU] cdn.tbank.ru [327e67cd]
-  server: 2.26.139.69
-  port: 443
-  udp: true
-  uuid: 1d7427ab-8a5d-4317-9335-2e48d50be4fc
-  encryption: none
-  tls: true
-  servername: cdn.tbank.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: HmnsKa6Mmm34gALomXBKB7d8UMIM33hhItp2z43VCkQ
-    short-id: a1d8f3b6c2e59407
-  network: tcp
-- type: vless
-  name: 美国+FDCServers数据中心
-  server: 198.16.113.220
-  port: 8443
-  udp: true
-  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
-  encryption: none
-  tls: true
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
-    short-id: 69984b9e02545831
-  network: tcp
-- type: vless
-  name: 🇸🇪 Sweden | [*CIDR]
-  server: connect4.accessgate.link
-  port: 1085
-  udp: true
-  uuid: 2f6c70f3-206a-4bc1-ac1f-6b70153f9c73
-  encryption: none
-  tls: true
-  servername: unpkg.com
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
-    short-id: b0d8c9a285c70f6f
-  network: tcp
 proxy-groups:
 - name: Fine
   type: select
@@ -207,35 +90,19 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 🇯🇵 Japan, Chiyoda City | 🌐 | [BL]
-  - 🇺🇸 United States | [*CIDR] [2f339d95]
-  - 🇺🇸 United States | [*CIDR] [59c5bd2c]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [2537eee6]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [6be79ad3]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [170f580f]
-  - 🇱🇰 Sri Lanka, Battaramulla | [BL]
-  - 🇩🇪 Germany | 🌐 | [*CIDR] [27b2bf5a]
-  - 🇩🇪 Germany | 🌐 | [*CIDR] [dcd9bdb1]
-  - 🇭🇺 Hungary | [SNI-RU] cdn.tbank.ru [a438270d]
-  - 🇭🇺 Hungary | [SNI-RU] cdn.tbank.ru [327e67cd]
-  - 美国+FDCServers数据中心
-  - 🇸🇪 Sweden | [*CIDR]
+  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [e8f144de]
+  - DE VLESS-17 | free-nodes
+  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [b8f3e9e0]
+  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
   default-selected: 🇯🇵 Japan, Chiyoda City | 🌐 | [BL]
 - name: AUTO
   type: url-test
   proxies:
   - 🇯🇵 Japan, Chiyoda City | 🌐 | [BL]
-  - 🇺🇸 United States | [*CIDR] [2f339d95]
-  - 🇺🇸 United States | [*CIDR] [59c5bd2c]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [2537eee6]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [6be79ad3]
-  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [170f580f]
-  - 🇱🇰 Sri Lanka, Battaramulla | [BL]
-  - 🇩🇪 Germany | 🌐 | [*CIDR] [27b2bf5a]
-  - 🇩🇪 Germany | 🌐 | [*CIDR] [dcd9bdb1]
-  - 🇭🇺 Hungary | [SNI-RU] cdn.tbank.ru [a438270d]
-  - 🇭🇺 Hungary | [SNI-RU] cdn.tbank.ru [327e67cd]
-  - 美国+FDCServers数据中心
-  - 🇸🇪 Sweden | [*CIDR]
+  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [e8f144de]
+  - DE VLESS-17 | free-nodes
+  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [b8f3e9e0]
+  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
