@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070087 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070088 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,52 +10,51 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- encryption: none
-  network: tcp
-  server: 103.204.174.80
-  udp: true
-  name: 🇯🇵 Japan, Chiyoda City | 🌐 | [BL]
-  client-fingerprint: safari
-  reality-opts:
-    public-key: c8xReeCgCTOZ2snvR7I4sPtSYAJquSC-_pAIuZG3rVQ
-    short-id: 9b1813e63f474741
-  uuid: 91a538f2-e8d6-4fd1-b00a-d39522f20c35
-  port: 443
-  flow: xtls-rprx-vision
-  type: vless
-  servername: gateway.icloud.com
-  tls: true
-- encryption: none
+- uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
   network: ws
-  server: news.zoom.us
-  udp: true
-  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [e8f144de]
-  client-fingerprint: firefox
-  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  encryption: none
   port: 2087
-  type: vless
   ws-opts:
     headers:
       Host: free.vkehi.store
-  servername: free.vkehi.store
+  client-fingerprint: qq
   tls: true
-- type: vless
-  name: DE VLESS-17 | free-nodes
-  server: z1q3pv4g78.rucdncomp.pro
-  port: 443
   udp: true
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  server: news.zoom.us
+  servername: free.vkehi.store
+  type: vless
+- type: vmess
+  name: 🇭🇰 Hong Kong | 🌐 | [BL]
+  server: vipccc.cc
+  port: 443
+  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-opts:
+    headers:
+      Host: vipccc.cc
+    path: /ray_proxy
+- type: vless
+  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
+  server: news.zoom.us
+  port: 2087
+  udp: true
+  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
   encryption: none
   tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: random
+  servername: free.vkehi.store
+  client-fingerprint: android
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+      Host: free.vkehi.store
 - type: vless
-  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [b8f3e9e0]
+  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [e2aec025]
   server: news.zoom.us
   port: 2087
   udp: true
@@ -66,21 +65,6 @@ proxies:
   client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: free.vkehi.store
-- type: vless
-  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
-  server: news.zoom.us
-  port: 2087
-  udp: true
-  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
-  encryption: none
-  tls: true
-  servername: free.vkehi.store
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
     headers:
       Host: free.vkehi.store
 proxy-groups:
@@ -89,20 +73,18 @@ proxy-groups:
   proxies:
   - AUTO
   - DIRECT
-  - 🇯🇵 Japan, Chiyoda City | 🌐 | [BL]
-  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [e8f144de]
-  - DE VLESS-17 | free-nodes
-  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [b8f3e9e0]
   - 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
-  default-selected: 🇯🇵 Japan, Chiyoda City | 🌐 | [BL]
+  - 🇭🇰 Hong Kong | 🌐 | [BL]
+  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
+  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [e2aec025]
+  default-selected: 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇯🇵 Japan, Chiyoda City | 🌐 | [BL]
-  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [e8f144de]
-  - DE VLESS-17 | free-nodes
-  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [b8f3e9e0]
   - 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
+  - 🇭🇰 Hong Kong | 🌐 | [BL]
+  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
+  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [e2aec025]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
