@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070090 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070091 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,67 +10,37 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- tls: true
+- servername: n04.jinggai.online
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
   type: vless
-  port: 2087
-  server: news.zoom.us
-  network: ws
-  client-fingerprint: android
-  encryption: none
-  ws-opts:
-    path: /
-    headers:
-      Host: free.vkehi.store
-  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
-  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
   udp: true
-  servername: free.vkehi.store
-- tls: true
-  type: vless
-  port: 2087
-  server: news.zoom.us
-  network: ws
-  client-fingerprint: edge
+  port: 8443
   encryption: none
+  client-fingerprint: ios
   ws-opts:
+    path: /nvl-n04-ws/e0577fe8fd7c8823
     headers:
-      Host: free.vkehi.store
-  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
-  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [e2aec025]
-  udp: true
-  servername: free.vkehi.store
-- tls: true
-  type: vless
-  port: 2083
-  server: cdn.crackerbinam.org
+      Host: n04.jinggai.online
   network: ws
-  client-fingerprint: firefox
-  encryption: none
-  ws-opts:
-    path: /connect-a7b2
-    headers:
-      Host: cdn.crackerbinam.org
-  uuid: 47525ee4-b128-444a-bcc6-95917b5e2053
-  name: 🇺🇸 United States, Los Angeles | [BL] [a68331a7]
-  udp: true
-  servername: cdn.crackerbinam.org
-- tls: true
-  type: vless
-  port: 2083
-  server: cdn.crackerbinam.org
-  network: ws
-  client-fingerprint: chrome
-  encryption: none
-  ws-opts:
-    path: /connect-a7b2
-    headers:
-      Host: cdn.crackerbinam.org
-  uuid: 47525ee4-b128-444a-bcc6-95917b5e2053
-  name: 🇺🇸 United States, Los Angeles | [BL] [30b7228d]
-  udp: true
-  servername: cdn.crackerbinam.org
-- type: vless
   name: 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
+  tls: true
+  server: n04.jinggai.online
+- servername: n04.jinggai.online
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  type: vless
+  udp: true
+  port: 8443
+  encryption: none
+  ws-opts:
+    path: /nvl-n04-ws/e0577fe8fd7c8823
+    headers:
+      Host: n04.jinggai.online
+  network: ws
+  name: 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
+  tls: true
+  server: 172.67.165.32
+- type: vless
+  name: 🇹🇼 Taiwan, Taoyuan | [BL]
   server: n04.jinggai.online
   port: 8443
   udp: true
@@ -78,78 +48,25 @@ proxies:
   encryption: none
   tls: true
   servername: n04.jinggai.online
-  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
-- type: vless
-  name: 🇵🇱 Poland | [*CIDR] [9e26dcc0]
-  server: lte-v2-ws.gacvpn.site
-  port: 8443
-  udp: true
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  encryption: none
-  tls: true
-  servername: lte-v2-ws.gacvpn.site
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-- type: vless
-  name: 🇵🇱 Poland | [*CIDR] [8e23204b]
-  server: lte-v2-ws.gacvpn.site
-  port: 8443
-  udp: true
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  encryption: none
-  tls: true
-  servername: lte-v2-ws.gacvpn.site
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-- type: vless
-  name: 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
-  server: 172.67.165.32
-  port: 8443
-  udp: true
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  encryption: none
-  tls: true
-  servername: n04.jinggai.online
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
-  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [e2aec025]
-  - 🇺🇸 United States, Los Angeles | [BL] [a68331a7]
-  - 🇺🇸 United States, Los Angeles | [BL] [30b7228d]
   - 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
-  - 🇵🇱 Poland | [*CIDR] [9e26dcc0]
-  - 🇵🇱 Poland | [*CIDR] [8e23204b]
   - 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
-  default-selected: 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
+  - 🇹🇼 Taiwan, Taoyuan | [BL]
+  default-selected: 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
-  - 🇱🇰 Sri Lanka, Battaramulla | [BL] [e2aec025]
-  - 🇺🇸 United States, Los Angeles | [BL] [a68331a7]
-  - 🇺🇸 United States, Los Angeles | [BL] [30b7228d]
   - 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
-  - 🇵🇱 Poland | [*CIDR] [9e26dcc0]
-  - 🇵🇱 Poland | [*CIDR] [8e23204b]
   - 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
+  - 🇹🇼 Taiwan, Taoyuan | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
