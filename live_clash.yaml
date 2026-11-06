@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070088 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070089 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,22 +10,213 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
-  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
-  network: ws
-  encryption: none
-  port: 2087
+- port: 2087
+  servername: free.vkehi.store
+  udp: true
   ws-opts:
     headers:
       Host: free.vkehi.store
-  client-fingerprint: qq
-  tls: true
-  udp: true
   server: news.zoom.us
-  servername: free.vkehi.store
+  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  tls: true
+  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
+  encryption: none
   type: vless
+  network: ws
+  client-fingerprint: qq
+- port: 443
+  udp: true
+  ws-opts:
+    headers:
+      Host: vipccc.cc
+    path: /ray_proxy
+  server: vipccc.cc
+  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
+  tls: true
+  name: 🇭🇰 Hong Kong | 🌐 | [BL] [405c944d]
+  type: vmess
+  cipher: auto
+  network: ws
+  alterId: 0
+- port: 2087
+  servername: free.vkehi.store
+  udp: true
+  ws-opts:
+    path: /
+    headers:
+      Host: free.vkehi.store
+  server: news.zoom.us
+  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  tls: true
+  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
+  encryption: none
+  type: vless
+  network: ws
+  client-fingerprint: android
+- port: 2087
+  servername: free.vkehi.store
+  udp: true
+  ws-opts:
+    headers:
+      Host: free.vkehi.store
+  server: news.zoom.us
+  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  tls: true
+  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [e2aec025]
+  encryption: none
+  type: vless
+  network: ws
+  client-fingerprint: edge
+- type: vless
+  name: 🇺🇸 United States, Los Angeles | [BL] [a68331a7]
+  server: cdn.crackerbinam.org
+  port: 2083
+  udp: true
+  uuid: 47525ee4-b128-444a-bcc6-95917b5e2053
+  encryption: none
+  tls: true
+  servername: cdn.crackerbinam.org
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /connect-a7b2
+    headers:
+      Host: cdn.crackerbinam.org
+- type: vless
+  name: 🇺🇸 United States, Los Angeles | [BL] [30b7228d]
+  server: cdn.crackerbinam.org
+  port: 2083
+  udp: true
+  uuid: 47525ee4-b128-444a-bcc6-95917b5e2053
+  encryption: none
+  tls: true
+  servername: cdn.crackerbinam.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /connect-a7b2
+    headers:
+      Host: cdn.crackerbinam.org
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [e2b12283]
+  server: news.zoom.us
+  port: 8443
+  udp: true
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  encryption: none
+  tls: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [d4c5114b]
+  server: news.zoom.us
+  port: 8443
+  udp: true
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  encryption: none
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a146a8fa]
+  server: 141.193.213.21
+  port: 8443
+  udp: true
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  encryption: none
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
 - type: vmess
-  name: 🇭🇰 Hong Kong | 🌐 | [BL]
+  name: 🇫🇷 France, Wattrelos | [BL]
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: www.windowssearchtools.com
+  ws-opts:
+    headers:
+      Host: www.windowssearchtools.com
+    path: /truth
+- type: vmess
+  name: 🇨🇦 Canada, Montreal (Ville-Marie) | [BL]
+  server: www.windowsmsidownloads.com
+  port: 443
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: www.windowsmsidownloads.com
+  ws-opts:
+    headers:
+      Host: www.windowsmsidownloads.com
+    path: /truth
+- type: vmess
+  name: 🇩🇪 Germany, Limburg an der Lahn | [BL]
+  server: www.gptcloudai.com
+  port: 443
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: www.gptcloudai.com
+  ws-opts:
+    headers:
+      Host: www.gptcloudai.com
+    path: /truth
+- type: vless
+  name: 🇹🇼 Taiwan, Taoyuan | [BL] [661514d7]
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  encryption: none
+  tls: true
+  servername: n04.jinggai.online
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /nvl-n04-ws/e0577fe8fd7c8823
+    headers:
+      Host: n04.jinggai.online
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [838354e7]
+  server: 104.18.51.110
+  port: 443
+  udp: true
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  encryption: none
+  tls: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128
+    headers:
+      Host: n.bitpulse.me
+- type: vmess
+  name: 🇭🇰 Hong Kong | 🌐 | [BL] [4114a6ed]
   server: vipccc.cc
   port: 443
   uuid: 5bead32f-a987-4f57-b1a8-6698778facda
@@ -34,39 +225,84 @@ proxies:
   udp: true
   network: ws
   tls: true
+  servername: vipccc.cc
   ws-opts:
     headers:
       Host: vipccc.cc
     path: /ray_proxy
 - type: vless
-  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
-  server: news.zoom.us
-  port: 2087
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [ae2539e2]
+  server: 104.19.235.15
+  port: 443
   udp: true
-  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   encryption: none
   tls: true
-  servername: free.vkehi.store
-  client-fingerprint: android
+  servername: n.bitpulse.me
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128
     headers:
-      Host: free.vkehi.store
+      Host: n.bitpulse.me
 - type: vless
-  name: 🇱🇰 Sri Lanka, Battaramulla | [BL] [e2aec025]
-  server: news.zoom.us
-  port: 2087
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [01bdd0dd]
+  server: 104.19.235.15
+  port: 443
   udp: true
-  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   encryption: none
   tls: true
-  servername: free.vkehi.store
-  client-fingerprint: edge
+  servername: n.bitpulse.me
   network: ws
   ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128
     headers:
-      Host: free.vkehi.store
+      Host: n.bitpulse.me
+- type: vless
+  name: 🇲🇾 Malaysia, Shah Alam | [BL]
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  encryption: none
+  tls: true
+  servername: vpn.cintaku.qzz.io
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- type: vless
+  name: 🇹🇼 Taiwan, Taoyuan | [BL] [78e7f7a3]
+  server: n04.jinggai.online
+  port: 8443
+  udp: true
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  encryption: none
+  tls: true
+  servername: n04.jinggai.online
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /nvl-n04-ws/e0577fe8fd7c8823
+    headers:
+      Host: n04.jinggai.online
+- type: vless
+  name: 🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]
+  server: vpn.cintaku.qzz.io
+  port: 443
+  udp: true
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  encryption: none
+  tls: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: Fine
   type: select
@@ -74,17 +310,49 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
-  - 🇭🇰 Hong Kong | 🌐 | [BL]
+  - 🇭🇰 Hong Kong | 🌐 | [BL] [405c944d]
   - 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
   - 🇱🇰 Sri Lanka, Battaramulla | [BL] [e2aec025]
+  - 🇺🇸 United States, Los Angeles | [BL] [a68331a7]
+  - 🇺🇸 United States, Los Angeles | [BL] [30b7228d]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [e2b12283]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [d4c5114b]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a146a8fa]
+  - 🇫🇷 France, Wattrelos | [BL]
+  - 🇨🇦 Canada, Montreal (Ville-Marie) | [BL]
+  - 🇩🇪 Germany, Limburg an der Lahn | [BL]
+  - 🇹🇼 Taiwan, Taoyuan | [BL] [661514d7]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [838354e7]
+  - 🇭🇰 Hong Kong | 🌐 | [BL] [4114a6ed]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [ae2539e2]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [01bdd0dd]
+  - 🇲🇾 Malaysia, Shah Alam | [BL]
+  - 🇹🇼 Taiwan, Taoyuan | [BL] [78e7f7a3]
+  - 🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]
   default-selected: 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
 - name: AUTO
   type: url-test
   proxies:
   - 🇱🇰 Sri Lanka, Battaramulla | [BL] [912044a7]
-  - 🇭🇰 Hong Kong | 🌐 | [BL]
+  - 🇭🇰 Hong Kong | 🌐 | [BL] [405c944d]
   - 🇱🇰 Sri Lanka, Battaramulla | [BL] [13f66f69]
   - 🇱🇰 Sri Lanka, Battaramulla | [BL] [e2aec025]
+  - 🇺🇸 United States, Los Angeles | [BL] [a68331a7]
+  - 🇺🇸 United States, Los Angeles | [BL] [30b7228d]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [e2b12283]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [d4c5114b]
+  - 🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL] [a146a8fa]
+  - 🇫🇷 France, Wattrelos | [BL]
+  - 🇨🇦 Canada, Montreal (Ville-Marie) | [BL]
+  - 🇩🇪 Germany, Limburg an der Lahn | [BL]
+  - 🇹🇼 Taiwan, Taoyuan | [BL] [661514d7]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [838354e7]
+  - 🇭🇰 Hong Kong | 🌐 | [BL] [4114a6ed]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [ae2539e2]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL] [01bdd0dd]
+  - 🇲🇾 Malaysia, Shah Alam | [BL]
+  - 🇹🇼 Taiwan, Taoyuan | [BL] [78e7f7a3]
+  - 🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
