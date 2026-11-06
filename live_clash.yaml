@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070091 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070092 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,63 +10,49 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- servername: n04.jinggai.online
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  type: vless
+- type: vmess
+  name: 🇭🇰 Hong Kong | 🌐 | [BL] [4114a6ed]
+  server: vipccc.cc
+  port: 443
+  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
+  alterId: 0
+  cipher: auto
   udp: true
-  port: 8443
-  encryption: none
-  client-fingerprint: ios
+  network: ws
+  tls: true
+  servername: vipccc.cc
   ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
     headers:
-      Host: n04.jinggai.online
-  network: ws
-  name: 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
-  tls: true
-  server: n04.jinggai.online
-- servername: n04.jinggai.online
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  type: vless
+      Host: vipccc.cc
+    path: /ray_proxy
+- type: vmess
+  name: 🇭🇰 Hong Kong | 🌐 | [BL] [405c944d]
+  server: vipccc.cc
+  port: 443
+  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
+  alterId: 0
+  cipher: auto
   udp: true
-  port: 8443
-  encryption: none
+  network: ws
+  tls: true
   ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
     headers:
-      Host: n04.jinggai.online
-  network: ws
-  name: 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
-  tls: true
-  server: 172.67.165.32
-- type: vless
-  name: 🇹🇼 Taiwan, Taoyuan | [BL]
-  server: n04.jinggai.online
-  port: 8443
-  udp: true
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  encryption: none
-  tls: true
-  servername: n04.jinggai.online
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
+      Host: vipccc.cc
+    path: /ray_proxy
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
-  - 🇹🇼 Taiwan, Taoyuan | [BL]
-  default-selected: 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
+  - 🇭🇰 Hong Kong | 🌐 | [BL] [4114a6ed]
+  - 🇭🇰 Hong Kong | 🌐 | [BL] [405c944d]
+  default-selected: 🇭🇰 Hong Kong | 🌐 | [BL] [4114a6ed]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
-  - 🇹🇼 Taiwan, Taoyuan | [BL]
+  - 🇭🇰 Hong Kong | 🌐 | [BL] [4114a6ed]
+  - 🇭🇰 Hong Kong | 🌐 | [BL] [405c944d]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
