@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070094 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070095 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,32 +10,126 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- port: 8443
-  type: vless
+- type: vless
+  name: 智利+V2CROSS.COM [4fa3af19]
+  server: 152.175.6.229
+  port: 31884
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  encryption: none
+  tls: true
+  servername: hk010.zestapp778.com
+  client-fingerprint: firefox
+  network: tcp
+- type: vless
+  name: 智利+V2CROSS.COM [24dfe18e]
+  server: 152.175.6.229
+  port: 31884
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  encryption: none
+  tls: true
+  servername: hk010.zestapp778.com
+  network: tcp
+- type: vless
+  name: 🇨🇭 Switzerland | [*CIDR]
+  server: 87.242.87.165
+  port: 8445
+  udp: true
+  uuid: fa8c52f8-d800-4ddd-bdc3-4f8a24b073c6
+  encryption: none
+  tls: true
+  servername: codifyr.ru
+  client-fingerprint: ios
+  reality-opts:
+    public-key: WCGVWrqI3t-c5ZIbUEmwjN3wiFFT7xV09PIio-OQGHU
+    short-id: d16860c57700c886
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-reality
+- type: vless
+  name: 🇪🇸 Spain, Madrid (Chamartín) | [BL] [3515c282]
+  server: 230b29t.es8.h1clayd.click
+  port: 443
+  udp: true
+  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+  encryption: none
+  tls: true
+  servername: 230b29t.es8.h1clayd.click
+  client-fingerprint: edge
+  reality-opts:
+    public-key: JvnTbjxkV9nXKoDRA_tmeY6aeOTnJXSBU3yNp9ZUnH0
+    short-id: 91313fc9f7571857
+  network: tcp
+- type: vless
+  name: 🇪🇸 Spain, Madrid (Chamartín) | [BL] [7da96a54]
+  server: 49930ag.es8.h1clayd.click
+  port: 443
+  udp: true
+  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+  encryption: none
+  tls: true
+  servername: 49930ag.es8.h1clayd.click
+  client-fingerprint: ios
+  reality-opts:
+    public-key: H_sPS4IJjHa4Wd7WLAtp_eamROtKBAj-G0UcMBHLHQw
+    short-id: 2437eeeb791b6d80
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 61c20be08f4f
+- type: vless
+  name: 🇪🇸 Spain, Madrid (Chamartín) | [BL] [b5a618ed]
+  server: 230b29t.es8.h1clayd.click
+  port: 443
+  udp: true
+  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+  encryption: none
+  tls: true
+  servername: 230b29t.es8.h1clayd.click
+  client-fingerprint: qq
+  reality-opts:
+    public-key: JvnTbjxkV9nXKoDRA_tmeY6aeOTnJXSBU3yNp9ZUnH0
+    short-id: 91313fc9f7571857
+  network: tcp
+- type: vless
+  name: 🇹🇼 Taiwan, Taoyuan | [BL]
+  server: n04.jinggai.online
+  port: 8443
+  udp: true
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
   encryption: none
   tls: true
   servername: n04.jinggai.online
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /nvl-n04-ws/e0577fe8fd7c8823
     headers:
       Host: n04.jinggai.online
-  server: 172.67.165.32
-  name: 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  udp: true
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
-  default-selected: 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
+  - 智利+V2CROSS.COM [4fa3af19]
+  - 智利+V2CROSS.COM [24dfe18e]
+  - 🇨🇭 Switzerland | [*CIDR]
+  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [3515c282]
+  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [7da96a54]
+  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [b5a618ed]
+  - 🇹🇼 Taiwan, Taoyuan | [BL]
+  default-selected: 智利+V2CROSS.COM [4fa3af19]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
+  - 智利+V2CROSS.COM [4fa3af19]
+  - 智利+V2CROSS.COM [24dfe18e]
+  - 🇨🇭 Switzerland | [*CIDR]
+  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [3515c282]
+  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [7da96a54]
+  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [b5a618ed]
+  - 🇹🇼 Taiwan, Taoyuan | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
