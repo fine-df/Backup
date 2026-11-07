@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070093 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070094 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,146 +10,32 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- server: vipccc.cc
-  type: vmess
+- port: 8443
+  type: vless
+  encryption: none
   tls: true
-  name: 🇭🇰 Hong Kong | 🌐 | [BL] [405c944d]
-  alterId: 0
-  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
-  port: 443
+  servername: n04.jinggai.online
   network: ws
-  cipher: auto
   ws-opts:
+    path: /nvl-n04-ws/e0577fe8fd7c8823
     headers:
-      Host: vipccc.cc
-    path: /ray_proxy
-  udp: true
-- server: vipccc.cc
-  servername: vipccc.cc
-  type: vmess
-  tls: true
-  name: 🇭🇰 Hong Kong | 🌐 | [BL] [4114a6ed]
-  alterId: 0
-  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
-  port: 443
-  network: ws
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: vipccc.cc
-    path: /ray_proxy
-  udp: true
-- type: vless
-  name: 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
+      Host: n04.jinggai.online
   server: 172.67.165.32
-  port: 8443
-  udp: true
+  name: 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
   uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  encryption: none
-  tls: true
-  servername: n04.jinggai.online
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
-- type: vless
-  name: 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
-  server: n04.jinggai.online
-  port: 8443
   udp: true
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  encryption: none
-  tls: true
-  servername: n04.jinggai.online
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
-- type: vless
-  name: 🇹🇼 Taiwan, Taoyuan | [BL] [e2a86b25]
-  server: n04.jinggai.online
-  port: 8443
-  udp: true
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  encryption: none
-  tls: true
-  servername: n04.jinggai.online
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
-  server: 104.18.151.231
-  port: 443
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: jolly-silence-83b2.kidat76098.workers.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: jolly-silence-83b2.kidat76098.workers.dev
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [8ee4456a]
-  server: 104.18.151.231
-  port: 443
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: muddy-star-d195.aboumansour10313.workers.dev
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: muddy-star-d195.aboumansour10313.workers.dev
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
-  server: 45.130.125.151
-  port: 443
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: fancy-mouse-6aff.wixit71180.workers.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fancy-mouse-6aff.wixit71180.workers.dev
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇭🇰 Hong Kong | 🌐 | [BL] [405c944d]
-  - 🇭🇰 Hong Kong | 🌐 | [BL] [4114a6ed]
   - 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [e2a86b25]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [8ee4456a]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
-  default-selected: 🇭🇰 Hong Kong | 🌐 | [BL] [405c944d]
+  default-selected: 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇭🇰 Hong Kong | 🌐 | [BL] [405c944d]
-  - 🇭🇰 Hong Kong | 🌐 | [BL] [4114a6ed]
   - 🇹🇼 Taiwan, Taoyuan | [BL] [e7944851]
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [3fadf267]
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [e2a86b25]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [8ee4456a]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
