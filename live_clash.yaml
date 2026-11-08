@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070097 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070098 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,157 +10,81 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- udp: true
-  tls: true
-  server: 230b29t.es8.h1clayd.click
-  type: vless
-  network: tcp
-  port: 443
-  name: 🇪🇸 Spain, Madrid (Chamartín) | [BL] [3515c282]
-  servername: 230b29t.es8.h1clayd.click
-  reality-opts:
-    public-key: JvnTbjxkV9nXKoDRA_tmeY6aeOTnJXSBU3yNp9ZUnH0
-    short-id: 91313fc9f7571857
-  encryption: none
-  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
-  client-fingerprint: edge
-- udp: true
-  tls: true
-  server: 49930ag.es8.h1clayd.click
-  type: vless
-  network: grpc
-  port: 443
-  name: 🇪🇸 Spain, Madrid (Chamartín) | [BL] [7da96a54]
-  servername: 49930ag.es8.h1clayd.click
-  reality-opts:
-    public-key: H_sPS4IJjHa4Wd7WLAtp_eamROtKBAj-G0UcMBHLHQw
-    short-id: 2437eeeb791b6d80
-  encryption: none
-  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
-  grpc-opts:
-    grpc-service-name: 61c20be08f4f
-  client-fingerprint: ios
-- udp: true
-  tls: true
-  server: 230b29t.es8.h1clayd.click
-  type: vless
-  network: tcp
-  port: 443
-  name: 🇪🇸 Spain, Madrid (Chamartín) | [BL] [b5a618ed]
-  servername: 230b29t.es8.h1clayd.click
-  reality-opts:
-    public-key: JvnTbjxkV9nXKoDRA_tmeY6aeOTnJXSBU3yNp9ZUnH0
-    short-id: 91313fc9f7571857
-  encryption: none
-  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
-  client-fingerprint: qq
-- type: vless
-  name: 🇺🇸 United States | 🌐 | [BL] [0972fa49]
-  server: dddz-1-x.473221.xyz
-  port: 34760
-  udp: true
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  encryption: none
-  tls: true
-  servername: updates.cdn-apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: FKkMWruW5ySd0t091irE_09B9o9AipV8ztZftd4Odwc
-    short-id: ab58b04c4a4407
-  network: tcp
-- type: vless
-  name: 🇺🇸 United States | 🌐 | [BL] [8c69b7a8]
-  server: dddz-1-x.473221.xyz
-  port: 34760
-  udp: true
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  encryption: none
-  tls: true
-  servername: updates.cdn-apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: FKkMWruW5ySd0t091irE_09B9o9AipV8ztZftd4Odwc
-    short-id: ab58b04c4a4407
-  network: tcp
-- type: vless
-  name: 🇺🇸 United States, Buffalo | [BL]
-  server: dddz-2-y.473221.xyz
-  port: 35761
-  udp: true
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  encryption: none
-  tls: true
-  servername: v1-dy.ixigua.com
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: vSubgJVUq5nLAQIAmUoSxRUxY8Vt90w6E7GVbxUYaUI
-    short-id: e38aadffc74edfce
-  network: tcp
-- type: vless
-  name: 🇭🇰 Hong Kong | 🌐 | [BL]
-  server: dddz-3-z.473221.xyz
-  port: 13212
-  udp: true
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  encryption: none
-  tls: true
-  servername: v1-dy.ixigua.com
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: 4VguZbm-S2NkLpi7gLDsQMv2eDXP2LucxsvTiEt98yY
-    short-id: 961f7127a015ba
-  network: tcp
-- type: vless
-  name: 🇨🇦 Canada, Vancouver | [BL] [b592b293]
-  server: 172.67.219.189
-  port: 443
-  udp: true
-  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
-  encryption: none
-  tls: true
-  servername: cdn4.salamfox.ir
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
-    headers:
-      Host: cdn4.salamfox.ir
-- type: vless
-  name: 🇨🇦 Canada, Vancouver | [BL] [4e2ae88a]
-  server: 172.67.219.189
-  port: 443
-  udp: true
-  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
-  encryption: none
-  tls: true
-  servername: cdn4.salamfox.ir
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
-    headers:
-      Host: cdn4.salamfox.ir
-- type: vless
-  name: 🇹🇼 Taiwan, Taoyuan | [BL] [855531b2]
-  server: 172.67.165.32
-  port: 8443
-  udp: true
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  encryption: none
-  tls: true
+- uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
   servername: n04.jinggai.online
-  client-fingerprint: edge
+  udp: true
+  name: 🇹🇼 Taiwan, Taoyuan | [BL] [855531b2]
+  port: 8443
+  tls: true
+  server: 172.67.165.32
+  type: vless
   network: ws
+  encryption: none
   ws-opts:
     path: /nvl-n04-ws/e0577fe8fd7c8823
     headers:
       Host: n04.jinggai.online
+  client-fingerprint: edge
+- uuid: 1beed393-7c4d-4432-beee-f1026b72d0cf
+  servername: free.sahanwickramasinghe.com
+  udp: true
+  name: 🇩🇪 Germany | 🌐 | [BL] [a30f65c0]
+  port: 8443
+  tls: true
+  server: 104.17.70.206
+  type: vless
+  network: ws
+  encryption: none
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+  client-fingerprint: chrome
 - type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL]
+  name: 🇺🇸 United States, Buffalo | [BL]
+  server: dddz-1-x.473221.xyz
+  port: 34759
+  udp: true
+  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
+  encryption: none
+  tls: true
+  servername: v1-dy.ixigua.com
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: H0AETHQQIsu1c7ZHZ5RUgNaLYIVdMI6gJlMaBLBeX3o
+    short-id: 5e0eb283246c6911
+  network: tcp
+- type: vless
+  name: 🇺🇸 United States, Detroit | [BL] [8e421f04]
+  server: 185.242.113.75
+  port: 443
+  udp: true
+  uuid: 18615aac-72e2-451b-b7c8-b492e63cf65a
+  encryption: none
+  tls: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /jx-8c3iiq92bemzqp
+    headers:
+      Host: jyfrj1cims.dev.onappjet.com
+- type: vless
+  name: 🇺🇸 United States, Detroit | [BL] [9eb1c847]
+  server: 185.242.113.75
+  port: 443
+  udp: true
+  uuid: 18615aac-72e2-451b-b7c8-b492e63cf65a
+  encryption: none
+  tls: true
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /jx-8c3iiq92bemzqp
+    headers:
+      Host: jyfrj1cims.dev.onappjet.com
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [fa52c988]
   server: 104.17.70.206
   port: 8443
   udp: true
@@ -171,107 +95,132 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [af261ffd]
+  server: 172.64.229.88
+  port: 8443
+  udp: true
+  uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
+  encryption: none
+  tls: true
+  servername: sg01.cdn00.top
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /shanhai/sg01
+    headers:
+      Host: sg01.cdn00.top
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [1307dd95]
+  server: sg01.cf.sh-cloudflare.sbs
+  port: 8443
+  udp: true
+  uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
+  encryption: none
+  tls: true
+  servername: sg01.cdn00.top
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /shanhai/sg01
+    headers:
+      Host: sg01.cdn00.top
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [8a87ed12]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 1beed393-7c4d-4432-beee-f1026b72d0cf
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
 - type: vless
-  name: 🇹🇼 Taiwan, Taoyuan | [BL] [52b29cc0]
-  server: n04.jinggai.online
+  name: 🇯🇵 Japan | 🌐 | [BL] [24009f6a]
+  server: jp01.cf.sh-cloudflare.sbs
+  port: 2096
+  udp: true
+  uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
+  encryption: none
+  tls: true
+  servername: jp01.cdn00.top
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /shanhai/jp01
+    headers:
+      Host: jp01.cdn00.top
+- type: vless
+  name: 🇯🇵 Japan | 🌐 | [BL] [4ebff612]
+  server: jp01.cf.sh-cloudflare.sbs
+  port: 2096
+  udp: true
+  uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
+  encryption: none
+  tls: true
+  servername: jp01.cdn00.top
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /shanhai/jp01
+    headers:
+      Host: jp01.cdn00.top
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [303925e9]
+  server: sg01.cf.sh-cloudflare.sbs
   port: 8443
   udp: true
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
   encryption: none
   tls: true
-  servername: n04.jinggai.online
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [e89ddbdc]
-  server: 104.18.151.231
-  port: 2053
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: twilight-frost-15b0.yigom67484.workers.dev
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: twilight-frost-15b0.yigom67484.workers.dev
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
-  server: 104.18.151.231
-  port: 443
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: jolly-silence-83b2.kidat76098.workers.dev
+  servername: sg01.cdn00.top
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /shanhai/sg01
     headers:
-      Host: jolly-silence-83b2.kidat76098.workers.dev
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
-  server: 45.130.125.151
-  port: 443
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: fancy-mouse-6aff.wixit71180.workers.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fancy-mouse-6aff.wixit71180.workers.dev
+      Host: sg01.cdn00.top
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [3515c282]
-  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [7da96a54]
-  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [b5a618ed]
-  - 🇺🇸 United States | 🌐 | [BL] [0972fa49]
-  - 🇺🇸 United States | 🌐 | [BL] [8c69b7a8]
-  - 🇺🇸 United States, Buffalo | [BL]
-  - 🇭🇰 Hong Kong | 🌐 | [BL]
-  - 🇨🇦 Canada, Vancouver | [BL] [b592b293]
-  - 🇨🇦 Canada, Vancouver | [BL] [4e2ae88a]
   - 🇹🇼 Taiwan, Taoyuan | [BL] [855531b2]
-  - 🇩🇪 Germany | 🌐 | [BL]
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [52b29cc0]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [e89ddbdc]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
-  default-selected: 🇪🇸 Spain, Madrid (Chamartín) | [BL] [3515c282]
+  - 🇩🇪 Germany | 🌐 | [BL] [a30f65c0]
+  - 🇺🇸 United States, Buffalo | [BL]
+  - 🇺🇸 United States, Detroit | [BL] [8e421f04]
+  - 🇺🇸 United States, Detroit | [BL] [9eb1c847]
+  - 🇩🇪 Germany | 🌐 | [BL] [fa52c988]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [af261ffd]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [1307dd95]
+  - 🇩🇪 Germany | 🌐 | [BL] [8a87ed12]
+  - 🇯🇵 Japan | 🌐 | [BL] [24009f6a]
+  - 🇯🇵 Japan | 🌐 | [BL] [4ebff612]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [303925e9]
+  default-selected: 🇹🇼 Taiwan, Taoyuan | [BL] [855531b2]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [3515c282]
-  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [7da96a54]
-  - 🇪🇸 Spain, Madrid (Chamartín) | [BL] [b5a618ed]
-  - 🇺🇸 United States | 🌐 | [BL] [0972fa49]
-  - 🇺🇸 United States | 🌐 | [BL] [8c69b7a8]
-  - 🇺🇸 United States, Buffalo | [BL]
-  - 🇭🇰 Hong Kong | 🌐 | [BL]
-  - 🇨🇦 Canada, Vancouver | [BL] [b592b293]
-  - 🇨🇦 Canada, Vancouver | [BL] [4e2ae88a]
   - 🇹🇼 Taiwan, Taoyuan | [BL] [855531b2]
-  - 🇩🇪 Germany | 🌐 | [BL]
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [52b29cc0]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [e89ddbdc]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
+  - 🇩🇪 Germany | 🌐 | [BL] [a30f65c0]
+  - 🇺🇸 United States, Buffalo | [BL]
+  - 🇺🇸 United States, Detroit | [BL] [8e421f04]
+  - 🇺🇸 United States, Detroit | [BL] [9eb1c847]
+  - 🇩🇪 Germany | 🌐 | [BL] [fa52c988]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [af261ffd]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [1307dd95]
+  - 🇩🇪 Germany | 🌐 | [BL] [8a87ed12]
+  - 🇯🇵 Japan | 🌐 | [BL] [24009f6a]
+  - 🇯🇵 Japan | 🌐 | [BL] [4ebff612]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [303925e9]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
