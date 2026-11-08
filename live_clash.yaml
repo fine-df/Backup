@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070098 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070099 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,217 +10,288 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  servername: n04.jinggai.online
-  udp: true
-  name: 🇹🇼 Taiwan, Taoyuan | [BL] [855531b2]
-  port: 8443
-  tls: true
-  server: 172.67.165.32
-  type: vless
-  network: ws
+- client-fingerprint: safari
   encryption: none
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
-  client-fingerprint: edge
-- uuid: 1beed393-7c4d-4432-beee-f1026b72d0cf
-  servername: free.sahanwickramasinghe.com
-  udp: true
-  name: 🇩🇪 Germany | 🌐 | [BL] [a30f65c0]
-  port: 8443
-  tls: true
-  server: 104.17.70.206
-  type: vless
-  network: ws
-  encryption: none
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-  client-fingerprint: chrome
-- type: vless
   name: 🇺🇸 United States, Buffalo | [BL]
+  tls: true
   server: dddz-1-x.473221.xyz
   port: 34759
-  udp: true
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  encryption: none
-  tls: true
-  servername: v1-dy.ixigua.com
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
   reality-opts:
     public-key: H0AETHQQIsu1c7ZHZ5RUgNaLYIVdMI6gJlMaBLBeX3o
     short-id: 5e0eb283246c6911
+  servername: v1-dy.ixigua.com
+  type: vless
+  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
+  flow: xtls-rprx-vision
+  udp: true
   network: tcp
-- type: vless
+- client-fingerprint: chrome
+  encryption: none
   name: 🇺🇸 United States, Detroit | [BL] [8e421f04]
+  tls: true
   server: 185.242.113.75
   port: 443
-  udp: true
-  uuid: 18615aac-72e2-451b-b7c8-b492e63cf65a
-  encryption: none
-  tls: true
-  client-fingerprint: chrome
-  network: ws
   ws-opts:
     path: /jx-8c3iiq92bemzqp
     headers:
       Host: jyfrj1cims.dev.onappjet.com
-- type: vless
+  type: vless
+  uuid: 18615aac-72e2-451b-b7c8-b492e63cf65a
+  udp: true
+  network: ws
+- client-fingerprint: ios
+  encryption: none
   name: 🇺🇸 United States, Detroit | [BL] [9eb1c847]
+  tls: true
   server: 185.242.113.75
   port: 443
-  udp: true
-  uuid: 18615aac-72e2-451b-b7c8-b492e63cf65a
-  encryption: none
-  tls: true
-  client-fingerprint: ios
-  network: ws
   ws-opts:
     path: /jx-8c3iiq92bemzqp
     headers:
       Host: jyfrj1cims.dev.onappjet.com
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [fa52c988]
-  server: 104.17.70.206
-  port: 8443
+  type: vless
+  uuid: 18615aac-72e2-451b-b7c8-b492e63cf65a
   udp: true
-  uuid: 1beed393-7c4d-4432-beee-f1026b72d0cf
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: chrome
   network: ws
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
 - type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [af261ffd]
-  server: 172.64.229.88
-  port: 8443
+  name: 🇫🇷 France | 🌐 | [BL] [e51d7bd7]
+  server: 3.169.9.125
+  port: 443
   udp: true
-  uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   encryption: none
   tls: true
-  servername: sg01.cdn00.top
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /shanhai/sg01
-    headers:
-      Host: sg01.cdn00.top
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [1307dd95]
-  server: sg01.cf.sh-cloudflare.sbs
-  port: 8443
-  udp: true
-  uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
-  encryption: none
-  tls: true
-  servername: sg01.cdn00.top
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /shanhai/sg01
-    headers:
-      Host: sg01.cdn00.top
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [8a87ed12]
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  uuid: 1beed393-7c4d-4432-beee-f1026b72d0cf
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: safari
+  servername: djzrntowvoo42.cloudfront.net
+  client-fingerprint: android
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: free.sahanwickramasinghe.com
+      Host: djzrntowvoo42.cloudfront.net
 - type: vless
-  name: 🇯🇵 Japan | 🌐 | [BL] [24009f6a]
-  server: jp01.cf.sh-cloudflare.sbs
-  port: 2096
+  name: 🇫🇷 France | 🌐 | [BL] [0d3718db]
+  server: 3.169.9.125
+  port: 443
   udp: true
-  uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   encryption: none
   tls: true
-  servername: jp01.cdn00.top
+  servername: d1afk2ndm8pox3.cloudfront.net
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /shanhai/jp01
+    path: /
     headers:
-      Host: jp01.cdn00.top
+      Host: d1afk2ndm8pox3.cloudfront.net
 - type: vless
-  name: 🇯🇵 Japan | 🌐 | [BL] [4ebff612]
-  server: jp01.cf.sh-cloudflare.sbs
-  port: 2096
+  name: 🇫🇷 France | 🌐 | [*CIDR]
+  server: sport.herumhas.shop
+  port: 443
   udp: true
-  uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
+  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
   encryption: none
   tls: true
-  servername: jp01.cdn00.top
+  servername: sport.herumhas.shop
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v2/checkout/poll
+- type: vless
+  name: 🇩🇪 Germany | 🌐 [*CIDR]
+  server: msk5.gacvpn.site
+  port: 443
+  udp: true
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  encryption: none
+  tls: true
+  servername: de2.gacvpn.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg
+    short-id: 53d0d0611a
+  network: tcp
+- type: vless
+  name: 🇫🇷 France, Paris | [BL]
+  server: merch.locallynet.org
+  port: 7443
+  udp: true
+  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
+  encryption: none
+  tls: true
+  servername: merch.locallynet.org
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  network: tcp
+- type: vless
+  name: 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [e6f19ad6]
+  server: 94.249.195.155
+  port: 43000
+  udp: true
+  uuid: e6fd9735-069d-478f-a237-05a0571825e3
+  encryption: none
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: QaPoY-5W4Z7NA_LUG37yjYNy3JWg53Ru7eWLTzec-nE
+    short-id: b62ac375
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [*CIDR]
+  server: msk5.gacvpn.site
+  port: 443
+  udp: true
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  encryption: none
+  tls: true
+  servername: de2.gacvpn.site
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /shanhai/jp01
-    headers:
-      Host: jp01.cdn00.top
+  reality-opts:
+    public-key: 8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg
+    short-id: 53d0d0611a
+  network: tcp
 - type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [303925e9]
-  server: sg01.cf.sh-cloudflare.sbs
-  port: 8443
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
+  server: zug-net.locallynet.org
+  port: 6443
   udp: true
-  uuid: a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3
+  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
   encryption: none
   tls: true
-  servername: sg01.cdn00.top
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /shanhai/sg01
-    headers:
-      Host: sg01.cdn00.top
+  servername: zug-net.locallynet.org
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  network: tcp
+- type: vless
+  name: 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [38d0ee38]
+  server: 94.249.195.239
+  port: 43000
+  udp: true
+  uuid: 0809eed6-5204-49b8-8312-b82a10024022
+  encryption: none
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: U_dxFnbfesmgSwL-SlpvGYFbpY5vlJ1kb52knlCXkkI
+    short-id: 8cfe1563
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [0f53ab0e]
+  server: 201.51.20.202
+  port: 80
+  udp: true
+  uuid: 4f17a683-61dc-4267-95f1-26ce9cdf7db7
+  encryption: none
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 01TVUAOh5KwdTUgKgn_wSykY7fCPcQ409wzqjKCw0Vc
+    short-id: 183b98
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [c5680742]
+  server: 201.51.20.202
+  port: 80
+  udp: true
+  uuid: 4f17a683-61dc-4267-95f1-26ce9cdf7db7
+  encryption: none
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: 01TVUAOh5KwdTUgKgn_wSykY7fCPcQ409wzqjKCw0Vc
+    short-id: 183b98
+  network: tcp
+- type: vless
+  name: 🇮🇹 Italy, Milan | [BL]
+  server: msk13.gacvpn.site
+  port: 443
+  udp: true
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  encryption: none
+  tls: true
+  servername: it-edge.gacvpn.site
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 8POqoppCCmjPFqoCsXzaH-kEdYTDXczdTUXxoGfKO0k
+    short-id: 44e85040332f54
+  network: tcp
+- type: vless
+  name: 🇵🇱 Poland [*CIDR]
+  server: msk11.gacvpn.site
+  port: 443
+  udp: true
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  encryption: none
+  tls: true
+  servername: pl2-edge.gacvpn.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: cuONLHT6sUKpRRNna55H_1ofXRSfA_XVOfr9ACE6vHY
+  network: tcp
+- type: vless
+  name: 🇵🇱 Poland | [*CIDR]
+  server: msk11.gacvpn.site
+  port: 443
+  udp: true
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  encryption: none
+  tls: true
+  servername: pl2-edge.gacvpn.site
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  reality-opts:
+    public-key: cuONLHT6sUKpRRNna55H_1ofXRSfA_XVOfr9ACE6vHY
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [855531b2]
-  - 🇩🇪 Germany | 🌐 | [BL] [a30f65c0]
   - 🇺🇸 United States, Buffalo | [BL]
   - 🇺🇸 United States, Detroit | [BL] [8e421f04]
   - 🇺🇸 United States, Detroit | [BL] [9eb1c847]
-  - 🇩🇪 Germany | 🌐 | [BL] [fa52c988]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [af261ffd]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [1307dd95]
-  - 🇩🇪 Germany | 🌐 | [BL] [8a87ed12]
-  - 🇯🇵 Japan | 🌐 | [BL] [24009f6a]
-  - 🇯🇵 Japan | 🌐 | [BL] [4ebff612]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [303925e9]
-  default-selected: 🇹🇼 Taiwan, Taoyuan | [BL] [855531b2]
+  - 🇫🇷 France | 🌐 | [BL] [e51d7bd7]
+  - 🇫🇷 France | 🌐 | [BL] [0d3718db]
+  - 🇫🇷 France | 🌐 | [*CIDR]
+  - 🇩🇪 Germany | 🌐 [*CIDR]
+  - 🇫🇷 France, Paris | [BL]
+  - 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [e6f19ad6]
+  - 🇩🇪 Germany | 🌐 | [*CIDR]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [38d0ee38]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [0f53ab0e]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [c5680742]
+  - 🇮🇹 Italy, Milan | [BL]
+  - 🇵🇱 Poland [*CIDR]
+  - 🇵🇱 Poland | [*CIDR]
+  default-selected: 🇺🇸 United States, Buffalo | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇹🇼 Taiwan, Taoyuan | [BL] [855531b2]
-  - 🇩🇪 Germany | 🌐 | [BL] [a30f65c0]
   - 🇺🇸 United States, Buffalo | [BL]
   - 🇺🇸 United States, Detroit | [BL] [8e421f04]
   - 🇺🇸 United States, Detroit | [BL] [9eb1c847]
-  - 🇩🇪 Germany | 🌐 | [BL] [fa52c988]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [af261ffd]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [1307dd95]
-  - 🇩🇪 Germany | 🌐 | [BL] [8a87ed12]
-  - 🇯🇵 Japan | 🌐 | [BL] [24009f6a]
-  - 🇯🇵 Japan | 🌐 | [BL] [4ebff612]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [303925e9]
+  - 🇫🇷 France | 🌐 | [BL] [e51d7bd7]
+  - 🇫🇷 France | 🌐 | [BL] [0d3718db]
+  - 🇫🇷 France | 🌐 | [*CIDR]
+  - 🇩🇪 Germany | 🌐 [*CIDR]
+  - 🇫🇷 France, Paris | [BL]
+  - 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [e6f19ad6]
+  - 🇩🇪 Germany | 🌐 | [*CIDR]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [38d0ee38]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [0f53ab0e]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [c5680742]
+  - 🇮🇹 Italy, Milan | [BL]
+  - 🇵🇱 Poland [*CIDR]
+  - 🇵🇱 Poland | [*CIDR]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
