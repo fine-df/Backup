@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070101 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070102 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,154 +10,65 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- server: dddz-1-x.473221.xyz
-  type: vless
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  encryption: none
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
+- tls: true
   reality-opts:
     public-key: H0AETHQQIsu1c7ZHZ5RUgNaLYIVdMI6gJlMaBLBeX3o
     short-id: 5e0eb283246c6911
-  client-fingerprint: safari
-  port: 34759
-  servername: v1-dy.ixigua.com
-  name: 🇺🇸 United States, Buffalo | [BL] [9b9cb3da]
-  network: tcp
-- server: 3.169.9.125
-  ws-opts:
-    path: /
-    headers:
-      Host: djzrntowvoo42.cloudfront.net
-  type: vless
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  server: dddz-1-x.473221.xyz
   encryption: none
-  tls: true
+  type: vless
+  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
+  name: 🇺🇸 United States, Buffalo | [BL] [9b9cb3da]
+  flow: xtls-rprx-vision
+  port: 34759
   udp: true
-  client-fingerprint: android
-  port: 443
-  servername: djzrntowvoo42.cloudfront.net
-  name: 🇫🇷 France | 🌐 | [BL] [e51d7bd7]
-  network: ws
-- server: 3.169.9.125
+  network: tcp
+  servername: v1-dy.ixigua.com
+  client-fingerprint: safari
+- tls: true
+  server: 3.169.9.125
   ws-opts:
     path: /
     headers:
       Host: d1afk2ndm8pox3.cloudfront.net
+  encryption: none
   type: vless
   uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  encryption: none
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  port: 443
-  servername: d1afk2ndm8pox3.cloudfront.net
   name: 🇫🇷 France | 🌐 | [BL] [0d3718db]
+  port: 443
+  udp: true
   network: ws
-- server: msk5.gacvpn.site
-  type: vless
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  encryption: none
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg
-    short-id: 53d0d0611a
-  client-fingerprint: firefox
-  port: 443
-  servername: de2.gacvpn.site
-  name: 🇩🇪 Germany | 🌐 [*CIDR]
-  network: tcp
-- server: msk5.gacvpn.site
-  type: vless
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  encryption: none
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg
-    short-id: 53d0d0611a
-  client-fingerprint: edge
-  port: 443
-  servername: de2.gacvpn.site
-  name: 🇩🇪 Germany | 🌐 | [*CIDR]
-  network: tcp
-- server: 3.169.9.125
-  ws-opts:
-    path: /
-    headers:
-      Host: djzrntowvoo42.cloudfront.net
-  type: vless
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  encryption: none
-  tls: true
-  udp: true
+  servername: d1afk2ndm8pox3.cloudfront.net
   client-fingerprint: chrome
-  port: 443
-  servername: djzrntowvoo42.cloudfront.net
-  name: 🇫🇷 France | 🌐 | [BL] [e0bf0232]
-  network: ws
 - type: vless
-  name: 🇵🇱 Poland | 🌐 | [BL]
+  name: 🇫🇷 France, Roubaix | [BL]
   server: 3.169.9.125
   port: 443
   udp: true
   uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   encryption: none
   tls: true
-  servername: djb2br1cgydas.cloudfront.net
+  servername: d1afk2ndm8pox3.cloudfront.net
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
     headers:
-      Host: djb2br1cgydas.cloudfront.net
+      Host: d1afk2ndm8pox3.cloudfront.net
 - type: vless
-  name: 🇫🇷 France | 🌐 | [BL] [47c01fff]
+  name: 🇫🇷 France | 🌐 | [BL]
   server: 3.169.9.125
   port: 443
   udp: true
   uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   encryption: none
   tls: true
-  servername: d14jyezfrcyf60.cloudfront.net
-  client-fingerprint: chrome
+  servername: d1afk2ndm8pox3.cloudfront.net
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d14jyezfrcyf60.cloudfront.net
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL]
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  uuid: 1beed393-7c4d-4432-beee-f1026b72d0cf
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
-- type: vless
-  name: 🇺🇸 United States, Secaucus | [BL]
-  server: 62981et.us11.h1clayd.click
-  port: 443
-  udp: true
-  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
-  encryption: none
-  tls: true
-  servername: 62981et.us11.h1clayd.click
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: UTK3fM9wiII4uIcBYUYJwppN1HezxBPhxPfIxDHZqj4
-    short-id: ce43937e79bc30f0
-  network: tcp
+      Host: d1afk2ndm8pox3.cloudfront.net
 proxy-groups:
 - name: Fine
   type: select
@@ -165,29 +76,17 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 🇺🇸 United States, Buffalo | [BL] [9b9cb3da]
-  - 🇫🇷 France | 🌐 | [BL] [e51d7bd7]
   - 🇫🇷 France | 🌐 | [BL] [0d3718db]
-  - 🇩🇪 Germany | 🌐 [*CIDR]
-  - 🇩🇪 Germany | 🌐 | [*CIDR]
-  - 🇫🇷 France | 🌐 | [BL] [e0bf0232]
-  - 🇵🇱 Poland | 🌐 | [BL]
-  - 🇫🇷 France | 🌐 | [BL] [47c01fff]
-  - 🇩🇪 Germany | 🌐 | [BL]
-  - 🇺🇸 United States, Secaucus | [BL]
+  - 🇫🇷 France, Roubaix | [BL]
+  - 🇫🇷 France | 🌐 | [BL]
   default-selected: 🇺🇸 United States, Buffalo | [BL] [9b9cb3da]
 - name: AUTO
   type: url-test
   proxies:
   - 🇺🇸 United States, Buffalo | [BL] [9b9cb3da]
-  - 🇫🇷 France | 🌐 | [BL] [e51d7bd7]
   - 🇫🇷 France | 🌐 | [BL] [0d3718db]
-  - 🇩🇪 Germany | 🌐 [*CIDR]
-  - 🇩🇪 Germany | 🌐 | [*CIDR]
-  - 🇫🇷 France | 🌐 | [BL] [e0bf0232]
-  - 🇵🇱 Poland | 🌐 | [BL]
-  - 🇫🇷 France | 🌐 | [BL] [47c01fff]
-  - 🇩🇪 Germany | 🌐 | [BL]
-  - 🇺🇸 United States, Secaucus | [BL]
+  - 🇫🇷 France, Roubaix | [BL]
+  - 🇫🇷 France | 🌐 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
