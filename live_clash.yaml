@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070100 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070101 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,289 +10,154 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- tls: true
-  name: 🇺🇸 United States, Buffalo | [BL] [9b9cb3da]
-  udp: true
+- server: dddz-1-x.473221.xyz
   type: vless
+  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
+  encryption: none
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
   reality-opts:
     public-key: H0AETHQQIsu1c7ZHZ5RUgNaLYIVdMI6gJlMaBLBeX3o
     short-id: 5e0eb283246c6911
-  servername: v1-dy.ixigua.com
   client-fingerprint: safari
-  encryption: none
-  network: tcp
   port: 34759
-  server: dddz-1-x.473221.xyz
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  flow: xtls-rprx-vision
-- tls: true
-  name: 🇺🇸 United States, Detroit | [BL] [8e421f04]
-  ws-opts:
-    path: /jx-8c3iiq92bemzqp
-    headers:
-      Host: jyfrj1cims.dev.onappjet.com
-  udp: true
-  type: vless
-  client-fingerprint: chrome
-  encryption: none
-  network: ws
-  port: 443
-  server: 185.242.113.75
-  uuid: 18615aac-72e2-451b-b7c8-b492e63cf65a
-- tls: true
-  name: 🇺🇸 United States, Detroit | [BL] [9eb1c847]
-  ws-opts:
-    path: /jx-8c3iiq92bemzqp
-    headers:
-      Host: jyfrj1cims.dev.onappjet.com
-  udp: true
-  type: vless
-  client-fingerprint: ios
-  encryption: none
-  network: ws
-  port: 443
-  server: 185.242.113.75
-  uuid: 18615aac-72e2-451b-b7c8-b492e63cf65a
-- tls: true
-  name: 🇫🇷 France | 🌐 | [BL] [e51d7bd7]
+  servername: v1-dy.ixigua.com
+  name: 🇺🇸 United States, Buffalo | [BL] [9b9cb3da]
+  network: tcp
+- server: 3.169.9.125
   ws-opts:
     path: /
     headers:
       Host: djzrntowvoo42.cloudfront.net
-  udp: true
   type: vless
-  servername: djzrntowvoo42.cloudfront.net
-  client-fingerprint: android
-  encryption: none
-  network: ws
-  port: 443
-  server: 3.169.9.125
   uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-- tls: true
-  name: 🇫🇷 France | 🌐 | [BL] [0d3718db]
+  encryption: none
+  tls: true
+  udp: true
+  client-fingerprint: android
+  port: 443
+  servername: djzrntowvoo42.cloudfront.net
+  name: 🇫🇷 France | 🌐 | [BL] [e51d7bd7]
+  network: ws
+- server: 3.169.9.125
   ws-opts:
     path: /
     headers:
       Host: d1afk2ndm8pox3.cloudfront.net
-  udp: true
   type: vless
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  encryption: none
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  port: 443
   servername: d1afk2ndm8pox3.cloudfront.net
-  client-fingerprint: chrome
-  encryption: none
+  name: 🇫🇷 France | 🌐 | [BL] [0d3718db]
   network: ws
-  port: 443
-  server: 3.169.9.125
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-- tls: true
-  name: 🇫🇷 France | 🌐 | [*CIDR]
-  ws-opts:
-    path: /api/v2/checkout/poll
-  udp: true
+- server: msk5.gacvpn.site
   type: vless
-  servername: sport.herumhas.shop
-  client-fingerprint: firefox
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
   encryption: none
-  network: ws
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg
+    short-id: 53d0d0611a
+  client-fingerprint: firefox
   port: 443
-  server: sport.herumhas.shop
-  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
-- tls: true
+  servername: de2.gacvpn.site
   name: 🇩🇪 Germany | 🌐 [*CIDR]
-  udp: true
+  network: tcp
+- server: msk5.gacvpn.site
   type: vless
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  encryption: none
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
   reality-opts:
     public-key: 8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg
     short-id: 53d0d0611a
-  servername: de2.gacvpn.site
-  client-fingerprint: firefox
-  encryption: none
-  network: tcp
+  client-fingerprint: edge
   port: 443
-  server: msk5.gacvpn.site
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  flow: xtls-rprx-vision
-- tls: true
-  name: 🇫🇷 France, Paris | [BL]
-  udp: true
-  type: vless
-  servername: merch.locallynet.org
-  client-fingerprint: qq
-  encryption: none
-  network: tcp
-  port: 7443
-  server: merch.locallynet.org
-  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
-  flow: xtls-rprx-vision
-- tls: true
-  name: 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [e6f19ad6]
-  udp: true
-  type: vless
-  reality-opts:
-    public-key: QaPoY-5W4Z7NA_LUG37yjYNy3JWg53Ru7eWLTzec-nE
-    short-id: b62ac375
-  client-fingerprint: chrome
-  encryption: none
-  port: 43000
-  server: 94.249.195.155
-  uuid: e6fd9735-069d-478f-a237-05a0571825e3
-  flow: xtls-rprx-vision
-- tls: true
+  servername: de2.gacvpn.site
   name: 🇩🇪 Germany | 🌐 | [*CIDR]
-  udp: true
-  type: vless
-  reality-opts:
-    public-key: 8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg
-    short-id: 53d0d0611a
-  servername: de2.gacvpn.site
-  client-fingerprint: edge
-  encryption: none
   network: tcp
-  port: 443
-  server: msk5.gacvpn.site
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  flow: xtls-rprx-vision
-- tls: true
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
-  udp: true
+- server: 3.169.9.125
+  ws-opts:
+    path: /
+    headers:
+      Host: djzrntowvoo42.cloudfront.net
   type: vless
-  servername: zug-net.locallynet.org
-  client-fingerprint: firefox
-  encryption: none
-  network: tcp
-  port: 6443
-  server: zug-net.locallynet.org
-  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
-  flow: xtls-rprx-vision
-- tls: true
-  name: 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [38d0ee38]
-  udp: true
-  type: vless
-  reality-opts:
-    public-key: U_dxFnbfesmgSwL-SlpvGYFbpY5vlJ1kb52knlCXkkI
-    short-id: 8cfe1563
-  client-fingerprint: ios
-  encryption: none
-  network: tcp
-  port: 43000
-  server: 94.249.195.239
-  uuid: 0809eed6-5204-49b8-8312-b82a10024022
-  flow: xtls-rprx-vision
-- tls: true
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [0f53ab0e]
-  udp: true
-  type: vless
-  reality-opts:
-    public-key: 01TVUAOh5KwdTUgKgn_wSykY7fCPcQ409wzqjKCw0Vc
-    short-id: 183b98
-  servername: yahoo.com
-  client-fingerprint: safari
-  encryption: none
-  network: tcp
-  port: 80
-  server: 201.51.20.202
-  uuid: 4f17a683-61dc-4267-95f1-26ce9cdf7db7
-- tls: true
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [c5680742]
-  udp: true
-  type: vless
-  reality-opts:
-    public-key: 01TVUAOh5KwdTUgKgn_wSykY7fCPcQ409wzqjKCw0Vc
-    short-id: 183b98
-  servername: yahoo.com
-  client-fingerprint: edge
-  encryption: none
-  network: tcp
-  port: 80
-  server: 201.51.20.202
-  uuid: 4f17a683-61dc-4267-95f1-26ce9cdf7db7
-- tls: true
-  name: 🇮🇹 Italy, Milan | [BL]
-  udp: true
-  type: vless
-  reality-opts:
-    public-key: 8POqoppCCmjPFqoCsXzaH-kEdYTDXczdTUXxoGfKO0k
-    short-id: 44e85040332f54
-  servername: it-edge.gacvpn.site
-  client-fingerprint: safari
-  encryption: none
-  network: tcp
-  port: 443
-  server: msk13.gacvpn.site
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  flow: xtls-rprx-vision
-- tls: true
-  name: 🇵🇱 Poland [*CIDR]
-  udp: true
-  type: vless
-  reality-opts:
-    public-key: cuONLHT6sUKpRRNna55H_1ofXRSfA_XVOfr9ACE6vHY
-  servername: pl2-edge.gacvpn.site
-  client-fingerprint: firefox
-  encryption: none
-  network: tcp
-  port: 443
-  server: msk11.gacvpn.site
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  flow: xtls-rprx-vision
-- tls: true
-  name: 🇵🇱 Poland | [*CIDR]
-  udp: true
-  type: vless
-  reality-opts:
-    public-key: cuONLHT6sUKpRRNna55H_1ofXRSfA_XVOfr9ACE6vHY
-  servername: pl2-edge.gacvpn.site
-  client-fingerprint: edge
-  encryption: none
-  network: tcp
-  port: 443
-  server: msk11.gacvpn.site
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  flow: xtls-rprx-vision
-- type: vless
-  name: 🇺🇸 United States, Buffalo | [BL] [155ebd55]
-  server: mao.kipfelmao.de5.net
-  port: 443
-  udp: true
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   encryption: none
   tls: true
-  servername: mao.kipfelmao.de5.net
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /api/v1/guests/profiles/5de14443985f/
-    headers:
-      Host: mao.kipfelmao.de5.net
-- type: vless
-  name: 🇺🇸 United States, Buffalo | [BL] [f98fc3b0]
-  server: mao.kipfelmao.de5.net
-  port: 443
   udp: true
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  encryption: none
-  tls: true
-  servername: mao.kipfelmao.de5.net
-  client-fingerprint: safari
+  client-fingerprint: chrome
+  port: 443
+  servername: djzrntowvoo42.cloudfront.net
+  name: 🇫🇷 France | 🌐 | [BL] [e0bf0232]
   network: ws
-  ws-opts:
-    path: /api/v1/guests/profiles/5de14443985f/
-    headers:
-      Host: mao.kipfelmao.de5.net
 - type: vless
-  name: 🇫🇷 France | 🌐 | [BL]
+  name: 🇵🇱 Poland | 🌐 | [BL]
   server: 3.169.9.125
   port: 443
   udp: true
   uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   encryption: none
   tls: true
-  servername: djzrntowvoo42.cloudfront.net
+  servername: djb2br1cgydas.cloudfront.net
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: djzrntowvoo42.cloudfront.net
+      Host: djb2br1cgydas.cloudfront.net
+- type: vless
+  name: 🇫🇷 France | 🌐 | [BL] [47c01fff]
+  server: 3.169.9.125
+  port: 443
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  encryption: none
+  tls: true
+  servername: d14jyezfrcyf60.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d14jyezfrcyf60.cloudfront.net
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 1beed393-7c4d-4432-beee-f1026b72d0cf
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇺🇸 United States, Secaucus | [BL]
+  server: 62981et.us11.h1clayd.click
+  port: 443
+  udp: true
+  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
+  encryption: none
+  tls: true
+  servername: 62981et.us11.h1clayd.click
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: UTK3fM9wiII4uIcBYUYJwppN1HezxBPhxPfIxDHZqj4
+    short-id: ce43937e79bc30f0
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
@@ -300,49 +165,29 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 🇺🇸 United States, Buffalo | [BL] [9b9cb3da]
-  - 🇺🇸 United States, Detroit | [BL] [8e421f04]
-  - 🇺🇸 United States, Detroit | [BL] [9eb1c847]
   - 🇫🇷 France | 🌐 | [BL] [e51d7bd7]
   - 🇫🇷 France | 🌐 | [BL] [0d3718db]
-  - 🇫🇷 France | 🌐 | [*CIDR]
   - 🇩🇪 Germany | 🌐 [*CIDR]
-  - 🇫🇷 France, Paris | [BL]
-  - 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [e6f19ad6]
   - 🇩🇪 Germany | 🌐 | [*CIDR]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [38d0ee38]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [0f53ab0e]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [c5680742]
-  - 🇮🇹 Italy, Milan | [BL]
-  - 🇵🇱 Poland [*CIDR]
-  - 🇵🇱 Poland | [*CIDR]
-  - 🇺🇸 United States, Buffalo | [BL] [155ebd55]
-  - 🇺🇸 United States, Buffalo | [BL] [f98fc3b0]
-  - 🇫🇷 France | 🌐 | [BL]
+  - 🇫🇷 France | 🌐 | [BL] [e0bf0232]
+  - 🇵🇱 Poland | 🌐 | [BL]
+  - 🇫🇷 France | 🌐 | [BL] [47c01fff]
+  - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇺🇸 United States, Secaucus | [BL]
   default-selected: 🇺🇸 United States, Buffalo | [BL] [9b9cb3da]
 - name: AUTO
   type: url-test
   proxies:
   - 🇺🇸 United States, Buffalo | [BL] [9b9cb3da]
-  - 🇺🇸 United States, Detroit | [BL] [8e421f04]
-  - 🇺🇸 United States, Detroit | [BL] [9eb1c847]
   - 🇫🇷 France | 🌐 | [BL] [e51d7bd7]
   - 🇫🇷 France | 🌐 | [BL] [0d3718db]
-  - 🇫🇷 France | 🌐 | [*CIDR]
   - 🇩🇪 Germany | 🌐 [*CIDR]
-  - 🇫🇷 France, Paris | [BL]
-  - 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [e6f19ad6]
   - 🇩🇪 Germany | 🌐 | [*CIDR]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🌐 Anycast-IP | 🇩🇪 🇪🇬 | [BL] [38d0ee38]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [0f53ab0e]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [c5680742]
-  - 🇮🇹 Italy, Milan | [BL]
-  - 🇵🇱 Poland [*CIDR]
-  - 🇵🇱 Poland | [*CIDR]
-  - 🇺🇸 United States, Buffalo | [BL] [155ebd55]
-  - 🇺🇸 United States, Buffalo | [BL] [f98fc3b0]
-  - 🇫🇷 France | 🌐 | [BL]
+  - 🇫🇷 France | 🌐 | [BL] [e0bf0232]
+  - 🇵🇱 Poland | 🌐 | [BL]
+  - 🇫🇷 France | 🌐 | [BL] [47c01fff]
+  - 🇩🇪 Germany | 🌐 | [BL]
+  - 🇺🇸 United States, Secaucus | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
