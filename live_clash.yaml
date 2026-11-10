@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070104 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070105 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,140 +10,164 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: d1afk2ndm8pox3.cloudfront.net
+- servername: d1afk2ndm8pox3.cloudfront.net
   name: 🇫🇷 France | 🌐 | [BL] [0d3718db]
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  type: vless
-  port: 443
-  server: 3.169.9.125
-  servername: d1afk2ndm8pox3.cloudfront.net
-  tls: true
-  network: ws
-  encryption: none
-- udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: d1afk2ndm8pox3.cloudfront.net
-  name: 🇫🇷 France, Roubaix | [BL]
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  type: vless
-  port: 443
-  server: 3.169.9.125
-  servername: d1afk2ndm8pox3.cloudfront.net
-  tls: true
-  network: ws
-  encryption: none
-- udp: true
-  client-fingerprint: qq
+  udp: true
   ws-opts:
     path: /
     headers:
       Host: d1afk2ndm8pox3.cloudfront.net
-  name: 🇫🇷 France | 🌐 | [BL] [79977bc1]
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  type: vless
-  port: 443
-  server: 3.169.9.125
-  servername: d1afk2ndm8pox3.cloudfront.net
-  tls: true
-  network: ws
-  encryption: none
-- udp: true
   client-fingerprint: chrome
-  name: 🇰🇿 Kazakhstan, Astana | [BL]
-  uuid: 83cc8226-1087-49ae-aac3-1f157ddc57b4
-  type: vless
+  network: ws
+  tls: true
+  encryption: none
+  server: 3.169.9.125
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   port: 443
-  server: 176.120.21.23
-  servername: yahoo.com
-  flow: xtls-rprx-vision
+  type: vless
+- servername: d1afk2ndm8pox3.cloudfront.net
+  name: 🇫🇷 France, Roubaix | [BL]
+  udp: true
+  ws-opts:
+    headers:
+      Host: d1afk2ndm8pox3.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  tls: true
+  encryption: none
+  server: 3.169.9.125
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  port: 443
+  type: vless
+- servername: d1afk2ndm8pox3.cloudfront.net
+  name: 🇫🇷 France | 🌐 | [BL] [79977bc1]
+  udp: true
+  ws-opts:
+    path: /
+    headers:
+      Host: d1afk2ndm8pox3.cloudfront.net
+  client-fingerprint: qq
+  network: ws
+  tls: true
+  encryption: none
+  server: 3.169.9.125
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  port: 443
+  type: vless
+- servername: yahoo.com
+  name: 🇰🇿 Kazakhstan, Astana | [BL]
+  udp: true
+  client-fingerprint: chrome
+  network: tcp
   reality-opts:
     public-key: OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU
     short-id: c4d4cf50489d51
   tls: true
-  network: tcp
   encryption: none
-- type: vless
-  name: 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL]
-  server: 3.169.9.125
+  server: 176.120.21.23
+  uuid: 83cc8226-1087-49ae-aac3-1f157ddc57b4
+  flow: xtls-rprx-vision
   port: 443
+  type: vless
+- servername: d2ex4nxd2e01ub.cloudfront.net
+  name: 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL]
   udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  encryption: none
-  tls: true
-  servername: d2ex4nxd2e01ub.cloudfront.net
-  client-fingerprint: chrome
-  network: ws
   ws-opts:
     path: /
     headers:
       Host: d2ex4nxd2e01ub.cloudfront.net
-- type: vless
+  client-fingerprint: chrome
+  network: ws
+  tls: true
+  encryption: none
+  server: 3.169.9.125
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  port: 443
+  type: vless
+- servername: dkfsoyk9ju2as.cloudfront.net
   name: 🇫🇷 France | 🌐 | [BL] [ea5a107c]
+  udp: true
+  ws-opts:
+    path: /
+    headers:
+      Host: dkfsoyk9ju2as.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  tls: true
+  encryption: none
+  server: 3.169.9.125
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  port: 443
+  type: vless
+- type: vless
+  name: 🇫🇷 France | 🌐 | [BL] [2a8353ce]
   server: 3.169.9.125
   port: 443
   udp: true
   uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   encryption: none
   tls: true
-  servername: dkfsoyk9ju2as.cloudfront.net
-  client-fingerprint: chrome
+  servername: d1afk2ndm8pox3.cloudfront.net
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: dkfsoyk9ju2as.cloudfront.net
+      Host: d1afk2ndm8pox3.cloudfront.net
 - type: vless
-  name: 🇬🇧 United Kingdom | [*CIDR]
-  server: lt.krevetkabs111.net
-  port: 14443
+  name: 🇫🇷 France | 🌐 | [BL] [bc090f46]
+  server: 3.169.9.125
+  port: 443
   udp: true
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   encryption: none
   tls: true
-  servername: lt.krevetkabs111.net
+  servername: d1afk2ndm8pox3.cloudfront.net
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    headers:
+      Host: d1afk2ndm8pox3.cloudfront.net
+- type: vless
+  name: 🇩🇪 Germany | 🌐 [*CIDR]
+  server: orviko.xyz
+  port: 443
+  udp: true
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  encryption: none
+  tls: true
+  servername: orviko.xyz
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: glush.de3.v1
+- type: vless
+  name: 🇺🇸 United States [SNI-RU] dzen.ru
+  server: 201.58.185.29
+  port: 8443
+  udp: true
+  uuid: 0f81141f-8290-4a47-b1fa-c5761e39f7f0
+  encryption: none
+  tls: true
+  servername: dzen.ru
+  flow: xtls-rprx-vision
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/generate
-    headers:
-      Host: lt.krevetkabs111.net
+  reality-opts:
+    public-key: U4eg2bwFbsthGPg-9Q6beiK25kGpUA6WgmDXTO3D7S8
+    short-id: 6fbe10cb38739aab
+  network: tcp
 - type: vless
-  name: 🇬🇧 United Kingdom [*CIDR] [25943ca2]
-  server: lt.krevetkabs111.net
-  port: 14443
+  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]
+  server: vps3.nemnogogo.com
+  port: 443
   udp: true
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   encryption: none
   tls: true
-  servername: lt.krevetkabs111.net
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /api/generate
-    headers:
-      Host: lt.krevetkabs111.net
-- type: vless
-  name: 🇬🇧 United Kingdom [*CIDR] [59681453]
-  server: 138.16.249.118
-  port: 14443
-  udp: true
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-  encryption: none
-  tls: true
-  servername: lt.krevetkabs111.net
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/generate
-    headers:
-      Host: lt.krevetkabs111.net
+  servername: vps3.nemnogogo.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
 proxy-groups:
 - name: Fine
   type: select
@@ -156,9 +180,11 @@ proxy-groups:
   - 🇰🇿 Kazakhstan, Astana | [BL]
   - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL]
   - 🇫🇷 France | 🌐 | [BL] [ea5a107c]
-  - 🇬🇧 United Kingdom | [*CIDR]
-  - 🇬🇧 United Kingdom [*CIDR] [25943ca2]
-  - 🇬🇧 United Kingdom [*CIDR] [59681453]
+  - 🇫🇷 France | 🌐 | [BL] [2a8353ce]
+  - 🇫🇷 France | 🌐 | [BL] [bc090f46]
+  - 🇩🇪 Germany | 🌐 [*CIDR]
+  - 🇺🇸 United States [SNI-RU] dzen.ru
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]
   default-selected: 🇫🇷 France | 🌐 | [BL] [0d3718db]
 - name: AUTO
   type: url-test
@@ -169,9 +195,11 @@ proxy-groups:
   - 🇰🇿 Kazakhstan, Astana | [BL]
   - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL]
   - 🇫🇷 France | 🌐 | [BL] [ea5a107c]
-  - 🇬🇧 United Kingdom | [*CIDR]
-  - 🇬🇧 United Kingdom [*CIDR] [25943ca2]
-  - 🇬🇧 United Kingdom [*CIDR] [59681453]
+  - 🇫🇷 France | 🌐 | [BL] [2a8353ce]
+  - 🇫🇷 France | 🌐 | [BL] [bc090f46]
+  - 🇩🇪 Germany | 🌐 [*CIDR]
+  - 🇺🇸 United States [SNI-RU] dzen.ru
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
