@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070107 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070108 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,169 +10,153 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: d1afk2ndm8pox3.cloudfront.net
-  udp: true
-  encryption: none
-  servername: d1afk2ndm8pox3.cloudfront.net
-  client-fingerprint: chrome
-  server: 3.169.9.125
-  port: 443
+- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   name: 🇫🇷 France | 🌐 | [BL] [0d3718db]
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  type: vless
-  network: ws
-- tls: true
-  ws-opts:
-    headers:
-      Host: d1afk2ndm8pox3.cloudfront.net
-  udp: true
-  encryption: none
-  servername: d1afk2ndm8pox3.cloudfront.net
-  client-fingerprint: chrome
   server: 3.169.9.125
+  encryption: none
   port: 443
-  name: 🇫🇷 France, Roubaix | [BL]
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  type: vless
-  network: ws
-- tls: true
+  client-fingerprint: chrome
+  tls: true
+  servername: d1afk2ndm8pox3.cloudfront.net
   ws-opts:
     path: /
     headers:
       Host: d1afk2ndm8pox3.cloudfront.net
-  udp: true
-  encryption: none
-  servername: d1afk2ndm8pox3.cloudfront.net
-  client-fingerprint: qq
-  server: 3.169.9.125
-  port: 443
-  name: 🇫🇷 France | 🌐 | [BL] [79977bc1]
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   type: vless
   network: ws
-- tls: true
+  udp: true
+- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  name: 🇫🇷 France, Roubaix | [BL]
+  server: 3.169.9.125
+  encryption: none
+  port: 443
+  client-fingerprint: chrome
+  tls: true
+  servername: d1afk2ndm8pox3.cloudfront.net
+  ws-opts:
+    headers:
+      Host: d1afk2ndm8pox3.cloudfront.net
+  type: vless
+  network: ws
+  udp: true
+- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  name: 🇫🇷 France | 🌐 | [BL] [79977bc1]
+  server: 3.169.9.125
+  encryption: none
+  port: 443
+  client-fingerprint: qq
+  tls: true
+  servername: d1afk2ndm8pox3.cloudfront.net
+  ws-opts:
+    path: /
+    headers:
+      Host: d1afk2ndm8pox3.cloudfront.net
+  type: vless
+  network: ws
+  udp: true
+- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  name: 🇫🇷 France | 🌐 | [BL] [ea5a107c]
+  server: 3.169.9.125
+  encryption: none
+  port: 443
+  client-fingerprint: chrome
+  tls: true
+  servername: dkfsoyk9ju2as.cloudfront.net
   ws-opts:
     path: /
     headers:
       Host: dkfsoyk9ju2as.cloudfront.net
+  type: vless
+  network: ws
   udp: true
+- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  name: 🇫🇷 France | 🌐 | [BL] [2a8353ce]
+  server: 3.169.9.125
   encryption: none
+  port: 443
+  tls: true
+  servername: d1afk2ndm8pox3.cloudfront.net
+  ws-opts:
+    path: /
+    headers:
+      Host: d1afk2ndm8pox3.cloudfront.net
+  type: vless
+  network: ws
+  udp: true
+- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  name: 🇫🇷 France | 🌐 | [BL] [bc090f46]
+  server: 3.169.9.125
+  encryption: none
+  port: 443
+  client-fingerprint: qq
+  tls: true
+  servername: d1afk2ndm8pox3.cloudfront.net
+  ws-opts:
+    headers:
+      Host: d1afk2ndm8pox3.cloudfront.net
+  type: vless
+  network: ws
+  udp: true
+- uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  name: 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [ac7bf13e]
+  server: 170.114.46.6
+  encryption: none
+  port: 2096
+  client-fingerprint: firefox
+  tls: true
+  servername: pcloud.z-tas.com
+  ws-opts:
+    headers:
+      Host: pcloud.z-tas.com
+  type: vless
+  network: ws
+  udp: true
+- type: vless
+  name: 🇺🇸 United States, Buffalo | [BL] [155ebd55]
+  server: mao.kipfelmao.de5.net
+  port: 443
+  udp: true
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  encryption: none
+  tls: true
+  servername: mao.kipfelmao.de5.net
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /api/v1/guests/profiles/5de14443985f/
+    headers:
+      Host: mao.kipfelmao.de5.net
+- type: vless
+  name: 🇺🇸 United States, Buffalo | [BL] [2b1fed86]
+  server: mao.kipfelmao.de5.net
+  port: 443
+  udp: true
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  encryption: none
+  tls: true
+  servername: mao.kipfelmao.de5.net
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /api/v1/guests/profiles/5de14443985f/
+    headers:
+      Host: mao.kipfelmao.de5.net
+- type: vless
+  name: 🇫🇷 France | 🌐 | [BL] [7292fc96]
+  server: 3.169.9.125
+  port: 443
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  encryption: none
+  tls: true
   servername: dkfsoyk9ju2as.cloudfront.net
   client-fingerprint: chrome
-  server: 3.169.9.125
-  port: 443
-  name: 🇫🇷 France | 🌐 | [BL] [ea5a107c]
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  type: vless
   network: ws
-- tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: d1afk2ndm8pox3.cloudfront.net
-  udp: true
-  encryption: none
-  servername: d1afk2ndm8pox3.cloudfront.net
-  server: 3.169.9.125
-  port: 443
-  name: 🇫🇷 France | 🌐 | [BL] [2a8353ce]
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  type: vless
-  network: ws
-- tls: true
   ws-opts:
     headers:
-      Host: d1afk2ndm8pox3.cloudfront.net
-  udp: true
-  encryption: none
-  servername: d1afk2ndm8pox3.cloudfront.net
-  client-fingerprint: qq
-  server: 3.169.9.125
-  port: 443
-  name: 🇫🇷 France | 🌐 | [BL] [bc090f46]
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  type: vless
-  network: ws
-- tls: true
-  ws-opts:
-    path: /api/generate
-    headers:
-      Host: lt.krevetkabs111.net
-  udp: true
-  encryption: none
-  servername: lt.krevetkabs111.net
-  client-fingerprint: firefox
-  server: lt.krevetkabs111.net
-  port: 14443
-  name: 🇬🇧 United Kingdom [*CIDR] [8224ae36]
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-  type: vless
-  network: ws
-- tls: true
-  ws-opts:
-    path: /api/generate
-    headers:
-      Host: lt.krevetkabs111.net
-  udp: true
-  encryption: none
-  servername: lt.krevetkabs111.net
-  client-fingerprint: android
-  server: lt.krevetkabs111.net
-  port: 14443
-  name: 🇬🇧 United Kingdom [*CIDR] [25943ca2]
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-  type: vless
-  network: ws
-- tls: true
-  ws-opts:
-    path: /api/generate
-    headers:
-      Host: lt.krevetkabs111.net
-  udp: true
-  encryption: none
-  servername: lt.krevetkabs111.net
-  client-fingerprint: firefox
-  server: 138.16.249.118
-  port: 14443
-  name: 🇬🇧 United Kingdom [*CIDR] [59681453]
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-  type: vless
-  network: ws
+      Host: dkfsoyk9ju2as.cloudfront.net
 - type: vless
-  name: 未知 VLESS-10 | free-nodes
-  server: 3.169.9.125
-  port: 443
-  udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  encryption: none
-  tls: true
-  servername: d2ex4nxd2e01ub.cloudfront.net
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2ex4nxd2e01ub.cloudfront.net
-- type: vless
-  name: 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL]
-  server: 3.169.9.125
-  port: 443
-  udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  encryption: none
-  tls: true
-  servername: d2ex4nxd2e01ub.cloudfront.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2ex4nxd2e01ub.cloudfront.net
-- type: vless
-  name: 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL]
+  name: 🌐 Anycast-IP | 🇱🇰 | [BL]
   server: 170.114.46.6
   port: 2096
   udp: true
@@ -180,94 +164,66 @@ proxies:
   encryption: none
   tls: true
   servername: pcloud.z-tas.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     headers:
       Host: pcloud.z-tas.com
 - type: vless
-  name: 🇬🇧 United Kingdom [*CIDR] [463cfeee]
-  server: lt.krevetkabs111.net
-  port: 14443
+  name: 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [96e6c3c4]
+  server: 170.114.45.6
+  port: 2096
   udp: true
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
   encryption: none
   tls: true
-  servername: lt.krevetkabs111.net
+  servername: pcloud.z-tas.com
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /api/generate
-- type: vless
-  name: 🇬🇧 United Kingdom [*CIDR] [8f41552e]
-  server: 138.16.249.118
-  port: 14443
-  udp: true
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-  encryption: none
-  tls: true
-  servername: lt.neuroblur.top
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/generate
     headers:
-      Host: lt.neuroblur.top
+      Host: pcloud.z-tas.com
 - type: vless
-  name: 🇬🇧 United Kingdom [*CIDR] [ae055e07]
-  server: lt.krevetkabs111.net
-  port: 14443
+  name: 🌐 Anycast-IP | 🇸🇬 | [BL]
+  server: 170.114.45.6
+  port: 2096
   udp: true
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
   encryption: none
   tls: true
-  servername: lt.krevetkabs111.net
-  client-fingerprint: edge
+  servername: pcloud.z-tas.com
   network: ws
   ws-opts:
-    path: /api/generate
     headers:
-      Host: lt.krevetkabs111.net
+      Host: pcloud.z-tas.com
 - type: vless
-  name: 🇵🇱 Poland, Warsaw | [BL] [5b1c0951]
-  server: 138.124.242.46
-  port: 8443
-  udp: true
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  encryption: none
-  tls: true
-  servername: pl2-edge.gacvpn.site
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: connect-pl
-- type: vless
-  name: 🇮🇱 Israel, Tel Aviv | [BL]
-  server: 961ec0g.nl17.h1clayd.click
+  name: 🌐 Anycast-IP | 🇩🇪 🇳🇱 | [BL]
+  server: luminexorizon.ink
   port: 443
   udp: true
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   encryption: none
   tls: true
-  servername: 961ec0g.nl17.h1clayd.click
+  servername: luminexorizon.ink
   client-fingerprint: firefox
-  reality-opts:
-    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
-    short-id: 6d289ff0f47c0aac
   network: grpc
   grpc-opts:
-    grpc-service-name: 7d5abcd7d8a1
+    grpc-service-name: glush.de3.v1
 - type: vless
-  name: 🇵🇱 Poland, Warsaw | [BL] [47cf3c8b]
-  server: 138.124.242.46
-  port: 8443
+  name: 🇫🇷 France | 🌐 | [BL] [58975c01]
+  server: 3.168.217.190
+  port: 443
   udp: true
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   encryption: none
   tls: true
-  servername: pl2-edge.gacvpn.site
-  network: grpc
-  grpc-opts:
-    grpc-service-name: connect-pl
+  servername: d1afk2ndm8pox3.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d1afk2ndm8pox3.cloudfront.net
 proxy-groups:
 - name: Fine
   type: select
@@ -280,18 +236,15 @@ proxy-groups:
   - 🇫🇷 France | 🌐 | [BL] [ea5a107c]
   - 🇫🇷 France | 🌐 | [BL] [2a8353ce]
   - 🇫🇷 France | 🌐 | [BL] [bc090f46]
-  - 🇬🇧 United Kingdom [*CIDR] [8224ae36]
-  - 🇬🇧 United Kingdom [*CIDR] [25943ca2]
-  - 🇬🇧 United Kingdom [*CIDR] [59681453]
-  - 未知 VLESS-10 | free-nodes
-  - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL]
-  - 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL]
-  - 🇬🇧 United Kingdom [*CIDR] [463cfeee]
-  - 🇬🇧 United Kingdom [*CIDR] [8f41552e]
-  - 🇬🇧 United Kingdom [*CIDR] [ae055e07]
-  - 🇵🇱 Poland, Warsaw | [BL] [5b1c0951]
-  - 🇮🇱 Israel, Tel Aviv | [BL]
-  - 🇵🇱 Poland, Warsaw | [BL] [47cf3c8b]
+  - 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [ac7bf13e]
+  - 🇺🇸 United States, Buffalo | [BL] [155ebd55]
+  - 🇺🇸 United States, Buffalo | [BL] [2b1fed86]
+  - 🇫🇷 France | 🌐 | [BL] [7292fc96]
+  - 🌐 Anycast-IP | 🇱🇰 | [BL]
+  - 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [96e6c3c4]
+  - 🌐 Anycast-IP | 🇸🇬 | [BL]
+  - 🌐 Anycast-IP | 🇩🇪 🇳🇱 | [BL]
+  - 🇫🇷 France | 🌐 | [BL] [58975c01]
   default-selected: 🇫🇷 France | 🌐 | [BL] [0d3718db]
 - name: AUTO
   type: url-test
@@ -302,18 +255,15 @@ proxy-groups:
   - 🇫🇷 France | 🌐 | [BL] [ea5a107c]
   - 🇫🇷 France | 🌐 | [BL] [2a8353ce]
   - 🇫🇷 France | 🌐 | [BL] [bc090f46]
-  - 🇬🇧 United Kingdom [*CIDR] [8224ae36]
-  - 🇬🇧 United Kingdom [*CIDR] [25943ca2]
-  - 🇬🇧 United Kingdom [*CIDR] [59681453]
-  - 未知 VLESS-10 | free-nodes
-  - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL]
-  - 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL]
-  - 🇬🇧 United Kingdom [*CIDR] [463cfeee]
-  - 🇬🇧 United Kingdom [*CIDR] [8f41552e]
-  - 🇬🇧 United Kingdom [*CIDR] [ae055e07]
-  - 🇵🇱 Poland, Warsaw | [BL] [5b1c0951]
-  - 🇮🇱 Israel, Tel Aviv | [BL]
-  - 🇵🇱 Poland, Warsaw | [BL] [47cf3c8b]
+  - 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [ac7bf13e]
+  - 🇺🇸 United States, Buffalo | [BL] [155ebd55]
+  - 🇺🇸 United States, Buffalo | [BL] [2b1fed86]
+  - 🇫🇷 France | 🌐 | [BL] [7292fc96]
+  - 🌐 Anycast-IP | 🇱🇰 | [BL]
+  - 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [96e6c3c4]
+  - 🌐 Anycast-IP | 🇸🇬 | [BL]
+  - 🌐 Anycast-IP | 🇩🇪 🇳🇱 | [BL]
+  - 🇫🇷 France | 🌐 | [BL] [58975c01]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
