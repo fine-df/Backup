@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070108 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070109 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,220 +10,296 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+- server: 3.169.9.125
+  servername: d1afk2ndm8pox3.cloudfront.net
+  encryption: none
+  port: 443
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d1afk2ndm8pox3.cloudfront.net
   name: 🇫🇷 France | 🌐 | [BL] [0d3718db]
-  server: 3.169.9.125
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  tls: true
+  type: vless
+  client-fingerprint: chrome
+- server: 3.169.9.125
+  servername: d1afk2ndm8pox3.cloudfront.net
   encryption: none
   port: 443
-  client-fingerprint: chrome
-  tls: true
-  servername: d1afk2ndm8pox3.cloudfront.net
+  udp: true
+  network: ws
   ws-opts:
-    path: /
     headers:
       Host: d1afk2ndm8pox3.cloudfront.net
-  type: vless
-  network: ws
-  udp: true
-- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   name: 🇫🇷 France, Roubaix | [BL]
-  server: 3.169.9.125
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  tls: true
+  type: vless
+  client-fingerprint: chrome
+- server: 3.169.9.125
+  servername: d1afk2ndm8pox3.cloudfront.net
   encryption: none
   port: 443
-  client-fingerprint: chrome
-  tls: true
-  servername: d1afk2ndm8pox3.cloudfront.net
+  udp: true
+  network: ws
   ws-opts:
+    path: /
     headers:
       Host: d1afk2ndm8pox3.cloudfront.net
-  type: vless
-  network: ws
-  udp: true
-- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   name: 🇫🇷 France | 🌐 | [BL] [79977bc1]
-  server: 3.169.9.125
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  tls: true
+  type: vless
+  client-fingerprint: qq
+- server: 3.169.9.125
+  servername: dkfsoyk9ju2as.cloudfront.net
   encryption: none
   port: 443
-  client-fingerprint: qq
-  tls: true
-  servername: d1afk2ndm8pox3.cloudfront.net
+  udp: true
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: d1afk2ndm8pox3.cloudfront.net
-  type: vless
-  network: ws
-  udp: true
-- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+      Host: dkfsoyk9ju2as.cloudfront.net
   name: 🇫🇷 France | 🌐 | [BL] [ea5a107c]
-  server: 3.169.9.125
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  tls: true
+  type: vless
+  client-fingerprint: chrome
+- server: 3.169.9.125
+  servername: d1afk2ndm8pox3.cloudfront.net
   encryption: none
   port: 443
-  client-fingerprint: chrome
-  tls: true
-  servername: dkfsoyk9ju2as.cloudfront.net
+  udp: true
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: dkfsoyk9ju2as.cloudfront.net
-  type: vless
-  network: ws
-  udp: true
-- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+      Host: d1afk2ndm8pox3.cloudfront.net
   name: 🇫🇷 France | 🌐 | [BL] [2a8353ce]
-  server: 3.169.9.125
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  tls: true
+  type: vless
+- server: 3.169.9.125
+  servername: d1afk2ndm8pox3.cloudfront.net
   encryption: none
   port: 443
-  tls: true
-  servername: d1afk2ndm8pox3.cloudfront.net
+  udp: true
+  network: ws
   ws-opts:
-    path: /
     headers:
       Host: d1afk2ndm8pox3.cloudfront.net
-  type: vless
-  network: ws
-  udp: true
-- uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   name: 🇫🇷 France | 🌐 | [BL] [bc090f46]
-  server: 3.169.9.125
-  encryption: none
-  port: 443
-  client-fingerprint: qq
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   tls: true
-  servername: d1afk2ndm8pox3.cloudfront.net
-  ws-opts:
-    headers:
-      Host: d1afk2ndm8pox3.cloudfront.net
   type: vless
-  network: ws
-  udp: true
-- uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  name: 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [ac7bf13e]
-  server: 170.114.46.6
+  client-fingerprint: qq
+- server: 170.114.46.6
+  servername: pcloud.z-tas.com
   encryption: none
   port: 2096
-  client-fingerprint: firefox
-  tls: true
-  servername: pcloud.z-tas.com
+  udp: true
+  network: ws
   ws-opts:
     headers:
       Host: pcloud.z-tas.com
+  name: 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [ac7bf13e]
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  tls: true
   type: vless
-  network: ws
+  client-fingerprint: firefox
+- server: mao.kipfelmao.de5.net
+  servername: mao.kipfelmao.de5.net
+  encryption: none
+  port: 443
   udp: true
-- type: vless
+  network: ws
+  ws-opts:
+    path: /api/v1/guests/profiles/5de14443985f/
+    headers:
+      Host: mao.kipfelmao.de5.net
   name: 🇺🇸 United States, Buffalo | [BL] [155ebd55]
-  server: mao.kipfelmao.de5.net
-  port: 443
-  udp: true
   uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  encryption: none
   tls: true
-  servername: mao.kipfelmao.de5.net
+  type: vless
   client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /api/v1/guests/profiles/5de14443985f/
-    headers:
-      Host: mao.kipfelmao.de5.net
-- type: vless
-  name: 🇺🇸 United States, Buffalo | [BL] [2b1fed86]
-  server: mao.kipfelmao.de5.net
-  port: 443
-  udp: true
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  encryption: none
-  tls: true
+- server: mao.kipfelmao.de5.net
   servername: mao.kipfelmao.de5.net
-  client-fingerprint: ios
+  encryption: none
+  port: 443
+  udp: true
   network: ws
   ws-opts:
     path: /api/v1/guests/profiles/5de14443985f/
     headers:
       Host: mao.kipfelmao.de5.net
-- type: vless
-  name: 🇫🇷 France | 🌐 | [BL] [7292fc96]
-  server: 3.169.9.125
+  name: 🇺🇸 United States, Buffalo | [BL] [2b1fed86]
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  tls: true
+  type: vless
+  client-fingerprint: ios
+- server: 3.169.9.125
+  servername: dkfsoyk9ju2as.cloudfront.net
+  encryption: none
   port: 443
   udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  encryption: none
-  tls: true
-  servername: dkfsoyk9ju2as.cloudfront.net
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     headers:
       Host: dkfsoyk9ju2as.cloudfront.net
-- type: vless
-  name: 🌐 Anycast-IP | 🇱🇰 | [BL]
-  server: 170.114.46.6
-  port: 2096
-  udp: true
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  encryption: none
-  tls: true
-  servername: pcloud.z-tas.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    headers:
-      Host: pcloud.z-tas.com
-- type: vless
-  name: 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [96e6c3c4]
-  server: 170.114.45.6
-  port: 2096
-  udp: true
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  encryption: none
-  tls: true
-  servername: pcloud.z-tas.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    headers:
-      Host: pcloud.z-tas.com
-- type: vless
-  name: 🌐 Anycast-IP | 🇸🇬 | [BL]
-  server: 170.114.45.6
-  port: 2096
-  udp: true
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  encryption: none
-  tls: true
-  servername: pcloud.z-tas.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: pcloud.z-tas.com
-- type: vless
-  name: 🌐 Anycast-IP | 🇩🇪 🇳🇱 | [BL]
-  server: luminexorizon.ink
-  port: 443
-  udp: true
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-  encryption: none
-  tls: true
-  servername: luminexorizon.ink
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: glush.de3.v1
-- type: vless
-  name: 🇫🇷 France | 🌐 | [BL] [58975c01]
-  server: 3.168.217.190
-  port: 443
-  udp: true
+  name: 🇫🇷 France | 🌐 | [BL] [7292fc96]
   uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  encryption: none
   tls: true
-  servername: d1afk2ndm8pox3.cloudfront.net
+  type: vless
   client-fingerprint: chrome
+- server: 170.114.46.6
+  servername: pcloud.z-tas.com
+  encryption: none
+  port: 2096
+  udp: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: pcloud.z-tas.com
+  name: 🌐 Anycast-IP | 🇱🇰 | [BL]
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  tls: true
+  type: vless
+  client-fingerprint: chrome
+- server: 170.114.45.6
+  servername: pcloud.z-tas.com
+  encryption: none
+  port: 2096
+  udp: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: pcloud.z-tas.com
+  name: 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [96e6c3c4]
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  tls: true
+  type: vless
+  client-fingerprint: chrome
+- server: 170.114.45.6
+  servername: pcloud.z-tas.com
+  encryption: none
+  port: 2096
+  udp: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: pcloud.z-tas.com
+  name: 🌐 Anycast-IP | 🇸🇬 | [BL]
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  tls: true
+  type: vless
+- server: 3.168.217.190
+  servername: d1afk2ndm8pox3.cloudfront.net
+  encryption: none
+  port: 443
+  udp: true
   network: ws
   ws-opts:
     path: /
     headers:
       Host: d1afk2ndm8pox3.cloudfront.net
+  name: 🇫🇷 France | 🌐 | [BL] [58975c01]
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  tls: true
+  type: vless
+  client-fingerprint: chrome
+- type: vless
+  name: 🇺🇸 United States, Buffalo | [BL] [f98fc3b0]
+  server: mao.kipfelmao.de5.net
+  port: 443
+  udp: true
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  encryption: none
+  tls: true
+  servername: mao.kipfelmao.de5.net
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /api/v1/guests/profiles/5de14443985f/
+    headers:
+      Host: mao.kipfelmao.de5.net
+- type: vless
+  name: 🇺🇸 United States, Buffalo | [BL] [102bfa57]
+  server: mao.kipfelmao.de5.net
+  port: 443
+  udp: true
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  encryption: none
+  tls: true
+  servername: mao.kipfelmao.de5.net
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v1/guests/profiles/5de14443985f/
+    headers:
+      Host: mao.kipfelmao.de5.net
+- type: vless
+  name: 🇫🇷 France | 🌐 | [BL] [f1a8e85f]
+  server: 3.169.9.125
+  port: 443
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  encryption: none
+  tls: true
+  servername: d1aedflfr97jes.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d1aedflfr97jes.cloudfront.net
+- type: vless
+  name: 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL]
+  server: 3.169.9.125
+  port: 443
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  encryption: none
+  tls: true
+  servername: d2ex4nxd2e01ub.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
+- type: vless
+  name: 🇫🇷 France | 🌐 | [BL] [2416805c]
+  server: 3.168.218.8
+  port: 443
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  encryption: none
+  tls: true
+  servername: d1aedflfr97jes.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d1aedflfr97jes.cloudfront.net
+- type: vless
+  name: 🇫🇮 Finland, Helsinki | [BL]
+  server: 178.214.125.1
+  port: 443
+  udp: true
+  uuid: 3f3160a0-747d-4fed-bf3d-4d884bfa964d
+  encryption: none
+  tls: true
+  servername: conf.emaar.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  reality-opts:
+    public-key: ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY
+    short-id: 6172ba9cffe9c22f
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
@@ -243,8 +319,13 @@ proxy-groups:
   - 🌐 Anycast-IP | 🇱🇰 | [BL]
   - 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [96e6c3c4]
   - 🌐 Anycast-IP | 🇸🇬 | [BL]
-  - 🌐 Anycast-IP | 🇩🇪 🇳🇱 | [BL]
   - 🇫🇷 France | 🌐 | [BL] [58975c01]
+  - 🇺🇸 United States, Buffalo | [BL] [f98fc3b0]
+  - 🇺🇸 United States, Buffalo | [BL] [102bfa57]
+  - 🇫🇷 France | 🌐 | [BL] [f1a8e85f]
+  - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL]
+  - 🇫🇷 France | 🌐 | [BL] [2416805c]
+  - 🇫🇮 Finland, Helsinki | [BL]
   default-selected: 🇫🇷 France | 🌐 | [BL] [0d3718db]
 - name: AUTO
   type: url-test
@@ -262,8 +343,13 @@ proxy-groups:
   - 🌐 Anycast-IP | 🇱🇰 | [BL]
   - 🌐 Anycast-IP | 🇱🇰 🇸🇬 | [BL] [96e6c3c4]
   - 🌐 Anycast-IP | 🇸🇬 | [BL]
-  - 🌐 Anycast-IP | 🇩🇪 🇳🇱 | [BL]
   - 🇫🇷 France | 🌐 | [BL] [58975c01]
+  - 🇺🇸 United States, Buffalo | [BL] [f98fc3b0]
+  - 🇺🇸 United States, Buffalo | [BL] [102bfa57]
+  - 🇫🇷 France | 🌐 | [BL] [f1a8e85f]
+  - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL]
+  - 🇫🇷 France | 🌐 | [BL] [2416805c]
+  - 🇫🇮 Finland, Helsinki | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
