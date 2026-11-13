@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070113 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070114 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,49 +10,64 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- type: vless
-  name: 🇺🇸 United States, Buffalo | [BL]
-  server: mao.kipfelmao.de5.net
-  port: 443
-  udp: true
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+- servername: tradingview.com
+  type: vless
   encryption: none
-  tls: true
-  servername: mao.kipfelmao.de5.net
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /api/v1/guests/profiles/5de14443985f/
-    headers:
-      Host: mao.kipfelmao.de5.net
-- type: vless
+  reality-opts:
+    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
+    short-id: 8f3c6e2a1b5d4f09
+  port: 8443
+  flow: xtls-rprx-vision
+  uuid: e07a6d05-f665-4811-91f0-9b3dc1094e4d
   name: 🇺🇸 United States, Newark (Central Business District) | [BL] [be208c14]
   server: 48.102.169.194
-  port: 8443
   udp: true
-  uuid: e07a6d05-f665-4811-91f0-9b3dc1094e4d
-  encryption: none
-  tls: true
-  servername: tradingview.com
-  flow: xtls-rprx-vision
   client-fingerprint: firefox
+  tls: true
+- servername: tradingview.com
+  type: vless
+  encryption: none
   reality-opts:
     public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
     short-id: 8f3c6e2a1b5d4f09
-- type: vless
+  port: 8443
+  flow: xtls-rprx-vision
+  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
   name: 🇺🇸 United States, Newark (Central Business District) | [BL] [c107239b]
   server: 48.102.169.194
-  port: 8443
   udp: true
-  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
+  client-fingerprint: firefox
+  tls: true
+  network: tcp
+- type: vless
+  name: 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
+  server: zfapi.zalolink.com
+  port: 43149
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   encryption: none
   tls: true
-  servername: tradingview.com
+  servername: psstatic.cdn.bcebos.com
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  network: tcp
+- type: vless
+  name: 🇯🇵 Japan, Shibuya City | [BL] [8012eb9c]
+  server: zfapi.zalolink.com
+  port: 43149
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  encryption: none
+  tls: true
+  servername: psstatic.cdn.bcebos.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
   network: tcp
 proxy-groups:
 - name: Fine
@@ -60,16 +75,18 @@ proxy-groups:
   proxies:
   - AUTO
   - DIRECT
-  - 🇺🇸 United States, Buffalo | [BL]
   - 🇺🇸 United States, Newark (Central Business District) | [BL] [be208c14]
   - 🇺🇸 United States, Newark (Central Business District) | [BL] [c107239b]
-  default-selected: 🇺🇸 United States, Buffalo | [BL]
+  - 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
+  - 🇯🇵 Japan, Shibuya City | [BL] [8012eb9c]
+  default-selected: 🇺🇸 United States, Newark (Central Business District) | [BL] [be208c14]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 United States, Buffalo | [BL]
   - 🇺🇸 United States, Newark (Central Business District) | [BL] [be208c14]
   - 🇺🇸 United States, Newark (Central Business District) | [BL] [c107239b]
+  - 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
+  - 🇯🇵 Japan, Shibuya City | [BL] [8012eb9c]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
