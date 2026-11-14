@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070115 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070116 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,245 +10,80 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- udp: true
-  encryption: none
-  servername: tradingview.com
-  server: 48.102.169.194
-  client-fingerprint: firefox
-  port: 8443
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
-  uuid: e07a6d05-f665-4811-91f0-9b3dc1094e4d
-  type: vless
-  name: 🇺🇸 United States, Newark (Central Business District) | [BL] [be208c14]
-  tls: true
-- network: tcp
-  udp: true
-  encryption: none
-  servername: tradingview.com
-  server: 48.102.169.194
-  client-fingerprint: firefox
-  port: 8443
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
-  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
-  type: vless
-  name: 🇺🇸 United States, Newark (Central Business District) | [BL] [c107239b]
-  tls: true
-- network: tcp
-  udp: true
-  encryption: none
-  servername: psstatic.cdn.bcebos.com
-  server: zfapi.zalolink.com
-  client-fingerprint: firefox
+- encryption: none
   port: 43149
-  flow: xtls-rprx-vision
+  udp: true
   reality-opts:
     public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
     short-id: 15aa0ad4
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  type: vless
+  client-fingerprint: firefox
   name: 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
-  tls: true
-- network: tcp
-  udp: true
-  encryption: none
-  servername: psstatic.cdn.bcebos.com
   server: zfapi.zalolink.com
-  client-fingerprint: chrome
-  port: 43149
   flow: xtls-rprx-vision
+  type: vless
+  tls: true
+  servername: psstatic.cdn.bcebos.com
+  network: tcp
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- encryption: none
+  port: 43149
+  udp: true
   reality-opts:
     public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
     short-id: 15aa0ad4
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  type: vless
+  client-fingerprint: chrome
   name: 🇯🇵 Japan, Shibuya City | [BL] [8012eb9c]
+  server: zfapi.zalolink.com
+  flow: xtls-rprx-vision
+  type: vless
   tls: true
+  servername: psstatic.cdn.bcebos.com
+  network: tcp
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
 - type: vless
-  name: 🇺🇸 United States, Buffalo | [BL] [155ebd55]
-  server: mao.kipfelmao.de5.net
-  port: 443
+  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  server: 170.114.46.6
+  port: 2096
   udp: true
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
   encryption: none
   tls: true
-  servername: mao.kipfelmao.de5.net
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /api/v1/guests/profiles/5de14443985f/
-    headers:
-      Host: mao.kipfelmao.de5.net
-- type: vless
-  name: 🇺🇸 United States, Buffalo | [BL] [754e12a7]
-  server: mao.kipfelmao.de5.net
-  port: 443
-  udp: true
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  encryption: none
-  tls: true
-  servername: mao.kipfelmao.de5.net
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /api/v1/guests/profiles/5de14443985f/
-    headers:
-      Host: mao.kipfelmao.de5.net
-- type: vless
-  name: 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL] [ea3d8641]
-  server: 3.169.9.125
-  port: 443
-  udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  encryption: none
-  tls: true
-  servername: d2ex4nxd2e01ub.cloudfront.net
+  servername: pcloud.z-tas.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d2ex4nxd2e01ub.cloudfront.net
+      Host: pcloud.z-tas.com
 - type: vless
-  name: 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL] [8e9490e6]
-  server: 3.169.9.125
+  name: 🌐 Anycast-IP | 🇩🇪 🇳🇱 [*CIDR]
+  server: luminexorizon.ink
   port: 443
   udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   encryption: none
   tls: true
-  servername: d2ex4nxd2e01ub.cloudfront.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2ex4nxd2e01ub.cloudfront.net
-- type: vless
-  name: 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL] [ffe39264]
-  server: 3.168.217.188
-  port: 443
-  udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  encryption: none
-  tls: true
-  servername: d2ex4nxd2e01ub.cloudfront.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2ex4nxd2e01ub.cloudfront.net
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
-  server: www.zoom.us
-  port: 443
-  udp: true
-  uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
-  encryption: none
-  tls: true
-  servername: matrix.phonicsindia.mobi
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    headers:
-      Host: matrix.phonicsindia.mobi
-- type: vless
-  name: 🇵🇱 Poland, Warsaw | [BL]
-  server: pl.krabvpn.pro
-  port: 443
-  udp: true
-  uuid: 67864856-8730-40cc-9e1a-a0df697d912b
-  encryption: none
-  tls: true
-  servername: pl.krabvpn.pro
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /krab-stream-pl
-    headers:
-      Host: pl.krabvpn.pro
-- type: vless
-  name: 🌐 Anycast-IP | 🇧🇪 🇺🇸 | [BL]
-  server: hk1t.wawojk.dpdns.org
-  port: 443
-  udp: true
-  uuid: 5d967efa-702c-4cde-9e79-29386c8012e5
-  encryption: none
-  tls: true
-  servername: hk1t.wawojk.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hk1-ws-1f8915c8964a
-    headers:
-      Host: hk1t.wawojk.dpdns.org
-- type: vless
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [8499b6c2]
-  server: connect6.blog-forme.ru
-  port: 443
-  udp: true
-  uuid: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  encryption: none
-  tls: true
-  servername: connect6.blog-forme.ru
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /v2/connect/a9cbd64ca09f8612
-- type: vless
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL] [19dcd325]
-  server: connect6.blog-forme.ru
-  port: 443
-  udp: true
-  uuid: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  encryption: none
-  tls: true
-  servername: connect6.blog-forme.ru
-  network: ws
-  ws-opts:
-    path: /v2/connect/a9cbd64ca09f8612
+  servername: luminexorizon.ink
+  network: grpc
+  grpc-opts:
+    grpc-service-name: glush.de3.v1
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇺🇸 United States, Newark (Central Business District) | [BL] [be208c14]
-  - 🇺🇸 United States, Newark (Central Business District) | [BL] [c107239b]
   - 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
   - 🇯🇵 Japan, Shibuya City | [BL] [8012eb9c]
-  - 🇺🇸 United States, Buffalo | [BL] [155ebd55]
-  - 🇺🇸 United States, Buffalo | [BL] [754e12a7]
-  - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL] [ea3d8641]
-  - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL] [8e9490e6]
-  - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL] [ffe39264]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
-  - 🇵🇱 Poland, Warsaw | [BL]
-  - 🌐 Anycast-IP | 🇧🇪 🇺🇸 | [BL]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL] [8499b6c2]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL] [19dcd325]
-  default-selected: 🇺🇸 United States, Newark (Central Business District) | [BL] [be208c14]
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  - 🌐 Anycast-IP | 🇩🇪 🇳🇱 [*CIDR]
+  default-selected: 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 United States, Newark (Central Business District) | [BL] [be208c14]
-  - 🇺🇸 United States, Newark (Central Business District) | [BL] [c107239b]
   - 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
   - 🇯🇵 Japan, Shibuya City | [BL] [8012eb9c]
-  - 🇺🇸 United States, Buffalo | [BL] [155ebd55]
-  - 🇺🇸 United States, Buffalo | [BL] [754e12a7]
-  - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL] [ea3d8641]
-  - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL] [8e9490e6]
-  - 🇵🇱 Poland, Wroclaw (Krzyki) | 🌐 | [BL] [ffe39264]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
-  - 🇵🇱 Poland, Warsaw | [BL]
-  - 🌐 Anycast-IP | 🇧🇪 🇺🇸 | [BL]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL] [8499b6c2]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL] [19dcd325]
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  - 🌐 Anycast-IP | 🇩🇪 🇳🇱 [*CIDR]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
