@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070117 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070118 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,68 +10,38 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- client-fingerprint: firefox
+- encryption: none
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  server: zfapi.zalolink.com
-  tls: true
-  network: tcp
-  reality-opts:
-    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-    short-id: 15aa0ad4
   servername: psstatic.cdn.bcebos.com
-  encryption: none
-  type: vless
   udp: true
-  port: 43149
-  flow: xtls-rprx-vision
-  name: 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
-- client-fingerprint: chrome
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  server: zfapi.zalolink.com
-  tls: true
-  network: tcp
-  reality-opts:
-    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-    short-id: 15aa0ad4
-  servername: psstatic.cdn.bcebos.com
-  encryption: none
-  type: vless
-  udp: true
-  port: 43149
-  flow: xtls-rprx-vision
-  name: 🇯🇵 Japan, Shibuya City | [BL] [8012eb9c]
-- type: vless
-  name: 🇫🇷 France | 🌐 | [BL]
-  server: 3.168.219.0
-  port: 443
-  udp: true
-  uuid: ad9a885d-93bb-48e3-9937-57f1116b64e3
-  encryption: none
-  tls: true
-  servername: d1aedflfr97jes.cloudfront.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d1aedflfr97jes.cloudfront.net
-- type: vless
   name: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
-  server: zfapi.zalolink.com
-  port: 30322
-  udp: true
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  encryption: none
-  tls: true
-  servername: psstatic.cdn.bcebos.com
+  type: vless
   flow: xtls-rprx-vision
+  port: 30322
   client-fingerprint: ios
+  network: tcp
+  server: zfapi.zalolink.com
+  tls: true
   reality-opts:
     public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
     short-id: 6a60e7e382d6
-  network: tcp
-- type: vless
+- encryption: none
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  servername: psstatic.cdn.bcebos.com
+  udp: true
   name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  type: vless
+  flow: xtls-rprx-vision
+  port: 11802
+  client-fingerprint: chrome
+  network: tcp
+  server: zfapi.zalolink.com
+  tls: true
+  reality-opts:
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+- type: vless
+  name: 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
   server: zfapi.zalolink.com
   port: 11802
   udp: true
@@ -80,10 +50,25 @@ proxies:
   tls: true
   servername: psstatic.cdn.bcebos.com
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: random
   reality-opts:
     public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
     short-id: 6c84fbac2d
+  network: tcp
+- type: vless
+  name: SG - zhuhai.uk
+  server: zfapi.zalolink.com
+  port: 30322
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  encryption: none
+  tls: true
+  servername: psstatic.cdn.bcebos.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
+    short-id: 6a60e7e382d6
   network: tcp
 proxy-groups:
 - name: Fine
@@ -91,20 +76,18 @@ proxy-groups:
   proxies:
   - AUTO
   - DIRECT
-  - 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
-  - 🇯🇵 Japan, Shibuya City | [BL] [8012eb9c]
-  - 🇫🇷 France | 🌐 | [BL]
   - 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  default-selected: 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
+  - 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
+  - SG - zhuhai.uk
+  default-selected: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇯🇵 Japan, Shibuya City | [BL] [11d16343]
-  - 🇯🇵 Japan, Shibuya City | [BL] [8012eb9c]
-  - 🇫🇷 France | 🌐 | [BL]
   - 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  - 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
+  - SG - zhuhai.uk
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
