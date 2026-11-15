@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070120 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070121 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,151 +10,155 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- tls: true
+- servername: psstatic.cdn.bcebos.com
   server: zfapi.zalolink.com
   type: vless
+  port: 30322
   encryption: none
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  reality-opts:
+    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
+    short-id: 6a60e7e382d6
+  network: tcp
+  flow: xtls-rprx-vision
   name: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
-  flow: xtls-rprx-vision
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  servername: psstatic.cdn.bcebos.com
   client-fingerprint: ios
-  reality-opts:
-    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
-    short-id: 6a60e7e382d6
-  network: tcp
-  port: 30322
-- tls: true
+- servername: psstatic.cdn.bcebos.com
   server: zfapi.zalolink.com
   type: vless
+  port: 11802
   encryption: none
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  reality-opts:
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+  network: tcp
+  flow: xtls-rprx-vision
   name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  flow: xtls-rprx-vision
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  servername: psstatic.cdn.bcebos.com
   client-fingerprint: chrome
+- servername: psstatic.cdn.bcebos.com
+  server: zfapi.zalolink.com
+  type: vless
+  port: 11802
+  encryption: none
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
   reality-opts:
     public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
     short-id: 6c84fbac2d
   network: tcp
-  port: 11802
-- tls: true
-  server: zfapi.zalolink.com
-  type: vless
-  encryption: none
+  flow: xtls-rprx-vision
   name: 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
-  flow: xtls-rprx-vision
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  servername: psstatic.cdn.bcebos.com
   client-fingerprint: random
-  reality-opts:
-    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
-    short-id: 6c84fbac2d
-  network: tcp
-  port: 11802
-- tls: true
+- servername: psstatic.cdn.bcebos.com
   server: zfapi.zalolink.com
   type: vless
+  port: 30322
   encryption: none
-  name: SG - zhuhai.uk
-  flow: xtls-rprx-vision
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
-  servername: psstatic.cdn.bcebos.com
-  client-fingerprint: chrome
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
   reality-opts:
     public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
     short-id: 6a60e7e382d6
   network: tcp
-  port: 30322
-- tls: true
-  server: 3.169.218.0
-  type: vless
-  encryption: none
-  name: 🇫🇷 France | 🌐 | [BL] [13e543e8]
-  ws-opts:
-    path: /
-    headers:
-      Host: d1aedflfr97jes.cloudfront.net
-  uuid: ad9a885d-93bb-48e3-9937-57f1116b64e3
-  udp: true
-  servername: d1aedflfr97jes.cloudfront.net
+  flow: xtls-rprx-vision
+  name: SG - zhuhai.uk
   client-fingerprint: chrome
-  network: ws
-  port: 443
 - type: vless
-  name: 🇫🇷 France | 🌐 | [BL] [8da37075]
-  server: 3.168.219.0
-  port: 443
+  name: 🇩🇪 Germany | 🌐 | [BL] [c964c763]
+  server: 104.17.70.206
+  port: 8443
   udp: true
-  uuid: ad9a885d-93bb-48e3-9937-57f1116b64e3
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
   encryption: none
   tls: true
-  servername: d1aedflfr97jes.cloudfront.net
-  client-fingerprint: chrome
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d1aedflfr97jes.cloudfront.net
-- type: vmess
-  name: 🇺🇸 United States, Reston | [BL]
-  server: US122209.ssgreen.org
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇦🇺 Australia, Sydney | [BL]
+  server: ujp.xn--ghqu5fm27b67w.com
   port: 443
-  uuid: 1e96a7fa-94e5-45da-aec6-7c811a846734
-  alterId: 0
-  cipher: auto
   udp: true
-  network: ws
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  encryption: none
   tls: true
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  network: ws
   ws-opts:
+    path: /e0843c8ad581
     headers:
-      Host: US122209.ssgreen.org
-    path: /wes
-- type: vmess
-  name: 🇺🇸 United States, Hillsboro | [BL]
-  server: US032018.ssgreen.org
+      Host: portland-wins-robbie-skirt.trycloudflare.com
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [*CIDR] [9c1668b0]
+  server: clover.filnex.baby
   port: 443
-  uuid: 5aa06e43-d249-462f-a620-7efdb348056e
-  alterId: 0
-  cipher: auto
   udp: true
-  network: ws
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  encryption: none
   tls: true
+  servername: clover.filnex.baby
+  client-fingerprint: android
+  network: ws
   ws-opts:
+    path: /api/de6/stream
     headers:
-      Host: US032018.ssgreen.org
-    path: /wes
-- type: vmess
-  name: 🇯🇵 Japan, Ueda | [BL]
-  server: JP032009.ssgreen.org
+      Host: clover.filnex.baby
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [*CIDR] [0ccdb933]
+  server: 200.165.234.47
   port: 443
-  uuid: 3734800b-3191-470b-ac36-86b18e3a826e
-  alterId: 0
-  cipher: auto
   udp: true
-  network: ws
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  encryption: none
   tls: true
+  servername: clover.filnex.baby
+  client-fingerprint: firefox
+  network: ws
   ws-opts:
+    path: /api/de6/stream
     headers:
-      Host: JP032009.ssgreen.org
-    path: /wes
+      Host: clover.filnex.baby
 - type: vless
   name: 🇩🇪 Germany | 🌐 [*CIDR]
-  server: luminexorizon.ink
+  server: clover.filnex.baby
   port: 443
   udp: true
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
   encryption: none
   tls: true
-  servername: luminexorizon.ink
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: glush.de3.v1
+  servername: clover.filnex.baby
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
 proxy-groups:
 - name: Fine
   type: select
@@ -165,11 +169,11 @@ proxy-groups:
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
   - 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
   - SG - zhuhai.uk
-  - 🇫🇷 France | 🌐 | [BL] [13e543e8]
-  - 🇫🇷 France | 🌐 | [BL] [8da37075]
-  - 🇺🇸 United States, Reston | [BL]
-  - 🇺🇸 United States, Hillsboro | [BL]
-  - 🇯🇵 Japan, Ueda | [BL]
+  - 🇩🇪 Germany | 🌐 | [BL] [c964c763]
+  - 🇦🇺 Australia, Sydney | [BL]
+  - 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
+  - 🇩🇪 Germany | 🌐 | [*CIDR] [9c1668b0]
+  - 🇩🇪 Germany | 🌐 | [*CIDR] [0ccdb933]
   - 🇩🇪 Germany | 🌐 [*CIDR]
   default-selected: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
 - name: AUTO
@@ -179,11 +183,11 @@ proxy-groups:
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
   - 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
   - SG - zhuhai.uk
-  - 🇫🇷 France | 🌐 | [BL] [13e543e8]
-  - 🇫🇷 France | 🌐 | [BL] [8da37075]
-  - 🇺🇸 United States, Reston | [BL]
-  - 🇺🇸 United States, Hillsboro | [BL]
-  - 🇯🇵 Japan, Ueda | [BL]
+  - 🇩🇪 Germany | 🌐 | [BL] [c964c763]
+  - 🇦🇺 Australia, Sydney | [BL]
+  - 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
+  - 🇩🇪 Germany | 🌐 | [*CIDR] [9c1668b0]
+  - 🇩🇪 Germany | 🌐 | [*CIDR] [0ccdb933]
   - 🇩🇪 Germany | 🌐 [*CIDR]
   url: https://play.google.com/store
   interval: 900
