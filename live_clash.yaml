@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070119 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070120 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,151 +10,84 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- type: vless
-  client-fingerprint: ios
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  reality-opts:
-    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
-    short-id: 6a60e7e382d6
+- tls: true
   server: zfapi.zalolink.com
-  tls: true
+  type: vless
+  encryption: none
   name: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
-  port: 30322
   flow: xtls-rprx-vision
-  encryption: none
-  udp: true
-  network: tcp
-  servername: psstatic.cdn.bcebos.com
-- type: vless
-  client-fingerprint: chrome
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  reality-opts:
-    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
-    short-id: 6c84fbac2d
-  server: zfapi.zalolink.com
-  tls: true
-  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  port: 11802
-  flow: xtls-rprx-vision
-  encryption: none
   udp: true
-  network: tcp
   servername: psstatic.cdn.bcebos.com
-- type: vless
-  client-fingerprint: random
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  reality-opts:
-    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
-    short-id: 6c84fbac2d
-  server: zfapi.zalolink.com
-  tls: true
-  name: 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
-  port: 11802
-  flow: xtls-rprx-vision
-  encryption: none
-  udp: true
-  network: tcp
-  servername: psstatic.cdn.bcebos.com
-- type: vless
-  client-fingerprint: chrome
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  client-fingerprint: ios
   reality-opts:
     public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
     short-id: 6a60e7e382d6
-  server: zfapi.zalolink.com
-  tls: true
-  name: SG - zhuhai.uk
-  port: 30322
-  flow: xtls-rprx-vision
-  encryption: none
-  udp: true
   network: tcp
-  servername: psstatic.cdn.bcebos.com
-- type: vless
-  name: 🇺🇸 United States, Buffalo | [BL] [f98fc3b0]
-  server: mao.kipfelmao.de5.net
-  port: 443
-  udp: true
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  port: 30322
+- tls: true
+  server: zfapi.zalolink.com
+  type: vless
   encryption: none
-  tls: true
-  servername: mao.kipfelmao.de5.net
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /api/v1/guests/profiles/5de14443985f/
-    headers:
-      Host: mao.kipfelmao.de5.net
-- type: vless
-  name: 🇲🇽 Mexico, Mexico City | [BL] [fe182330]
-  server: 179.255.125.140
-  port: 443
-  udp: true
-  uuid: 68f014b7-e245-4528-890e-289f91d7c968
-  encryption: none
-  tls: true
-  servername: www.amazon.com
+  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: ReJYDmhM_L7Y-MzRirsSfUF5ohG-uY9qXGvp6T-ySHs
-    short-id: 82bea5d7
-- type: vless
-  name: 🇺🇸 United States, Buffalo | [BL] [518c5f38]
-  server: mao.kipfelmao.de5.net
-  port: 443
-  udp: true
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+  network: tcp
+  port: 11802
+- tls: true
+  server: zfapi.zalolink.com
+  type: vless
   encryption: none
-  tls: true
-  servername: mao.kipfelmao.de5.net
-  network: ws
-  ws-opts:
-    path: /api/v1/guests/profiles/5de14443985f/
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [a2414816]
-  server: www.zoom.us
-  port: 443
+  name: 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
+  flow: xtls-rprx-vision
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
-  uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+  network: tcp
+  port: 11802
+- tls: true
+  server: zfapi.zalolink.com
+  type: vless
   encryption: none
-  tls: true
-  servername: matrix.phonicsindia.mobi
-  client-fingerprint: safari
-  network: ws
+  name: SG - zhuhai.uk
+  flow: xtls-rprx-vision
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
+    short-id: 6a60e7e382d6
+  network: tcp
+  port: 30322
+- tls: true
+  server: 3.169.218.0
+  type: vless
+  encryption: none
+  name: 🇫🇷 France | 🌐 | [BL] [13e543e8]
   ws-opts:
     path: /
     headers:
-      Host: matrix.phonicsindia.mobi
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [011bcd46]
-  server: www.zoom.us
-  port: 443
+      Host: d1aedflfr97jes.cloudfront.net
+  uuid: ad9a885d-93bb-48e3-9937-57f1116b64e3
   udp: true
-  uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
-  encryption: none
-  tls: true
-  servername: matrix.phonicsindia.mobi
+  servername: d1aedflfr97jes.cloudfront.net
   client-fingerprint: chrome
   network: ws
-  ws-opts:
-    headers:
-      Host: matrix.phonicsindia.mobi
+  port: 443
 - type: vless
-  name: 🇳🇱 The Netherlands [*CIDR] [2c638778]
-  server: 196.240.125.250
-  port: 8443
-  udp: true
-  uuid: 97fd7807-7e2b-49da-8a0e-e40197088f97
-  encryption: none
-  tls: true
-  servername: api-v1-6af87527.vmagnum.win
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  network: tcp
-- type: vless
-  name: 🇫🇷 France | 🌐 | [BL]
-  server: 3.169.218.0
+  name: 🇫🇷 France | 🌐 | [BL] [8da37075]
+  server: 3.168.219.0
   port: 443
   udp: true
   uuid: ad9a885d-93bb-48e3-9937-57f1116b64e3
@@ -167,112 +100,61 @@ proxies:
     path: /
     headers:
       Host: d1aedflfr97jes.cloudfront.net
-- type: vless
-  name: 🇳🇱 The Netherlands [*CIDR] [af556279]
-  server: 196.240.125.10
-  port: 8443
-  udp: true
-  uuid: 97fd7807-7e2b-49da-8a0e-e40197088f97
-  encryption: none
-  tls: true
-  servername: api-v1-6af86a96.vmagnum.win
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  network: tcp
-- type: vless
-  name: 🇳🇱 The Netherlands [*CIDR] [b017cf6a]
-  server: 196.240.125.10
-  port: 8443
-  udp: true
-  uuid: 97fd7807-7e2b-49da-8a0e-e40197088f97
-  encryption: none
-  tls: true
-  servername: api-v1-6af86a96.vmagnum.win
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  network: tcp
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [25efafff]
-  server: 104.18.151.231
+- type: vmess
+  name: 🇺🇸 United States, Reston | [BL]
+  server: US122209.ssgreen.org
   port: 443
+  uuid: 1e96a7fa-94e5-45da-aec6-7c811a846734
+  alterId: 0
+  cipher: auto
   udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  client-fingerprint: chrome
   network: ws
+  tls: true
   ws-opts:
     headers:
-      Host: workers.retaxay188.workers.dev
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [56a53842]
-  server: 104.18.151.231
+      Host: US122209.ssgreen.org
+    path: /wes
+- type: vmess
+  name: 🇺🇸 United States, Hillsboro | [BL]
+  server: US032018.ssgreen.org
   port: 443
+  uuid: 5aa06e43-d249-462f-a620-7efdb348056e
+  alterId: 0
+  cipher: auto
   udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: workers.jijew83195.workers.dev
   network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: workers.jijew83195.workers.dev
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [e78576ec]
-  server: 45.130.125.151
-  port: 443
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
   tls: true
-  client-fingerprint: chrome
-  network: ws
   ws-opts:
     headers:
-      Host: fancy-mouse-6aff.wixit71180.workers.dev
-- type: vless
-  name: 🌐 Anycast-IP | 🇧🇪 🇺🇸 | [BL] [0bfc93e7]
-  server: hk1t.wawojk.dpdns.org
+      Host: US032018.ssgreen.org
+    path: /wes
+- type: vmess
+  name: 🇯🇵 Japan, Ueda | [BL]
+  server: JP032009.ssgreen.org
   port: 443
+  uuid: 3734800b-3191-470b-ac36-86b18e3a826e
+  alterId: 0
+  cipher: auto
   udp: true
-  uuid: 5d967efa-702c-4cde-9e79-29386c8012e5
-  encryption: none
-  tls: true
-  servername: hk1t.wawojk.dpdns.org
-  client-fingerprint: chrome
   network: ws
+  tls: true
   ws-opts:
-    path: /hk1-ws-1f8915c8964a
     headers:
-      Host: hk1t.wawojk.dpdns.org
+      Host: JP032009.ssgreen.org
+    path: /wes
 - type: vless
-  name: 🇲🇽 Mexico, Mexico City | [BL] [6c1b4a4c]
-  server: 179.255.125.140
+  name: 🇩🇪 Germany | 🌐 [*CIDR]
+  server: luminexorizon.ink
   port: 443
   udp: true
-  uuid: 5ebb4b41-7908-4d83-904b-8a941ea149e9
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   encryption: none
   tls: true
-  servername: www.amazon.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ReJYDmhM_L7Y-MzRirsSfUF5ohG-uY9qXGvp6T-ySHs
-    short-id: 82bea5d7
-- type: vless
-  name: 🌐 Anycast-IP | 🇧🇪 🇺🇸 | [BL] [7142c5a5]
-  server: hk1t.wawojk.dpdns.org
-  port: 443
-  udp: true
-  uuid: 5d967efa-702c-4cde-9e79-29386c8012e5
-  encryption: none
-  tls: true
-  servername: hk1t.wawojk.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hk1-ws-1f8915c8964a
+  servername: luminexorizon.ink
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: glush.de3.v1
 proxy-groups:
 - name: Fine
   type: select
@@ -283,21 +165,12 @@ proxy-groups:
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
   - 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
   - SG - zhuhai.uk
-  - 🇺🇸 United States, Buffalo | [BL] [f98fc3b0]
-  - 🇲🇽 Mexico, Mexico City | [BL] [fe182330]
-  - 🇺🇸 United States, Buffalo | [BL] [518c5f38]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [a2414816]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [011bcd46]
-  - 🇳🇱 The Netherlands [*CIDR] [2c638778]
-  - 🇫🇷 France | 🌐 | [BL]
-  - 🇳🇱 The Netherlands [*CIDR] [af556279]
-  - 🇳🇱 The Netherlands [*CIDR] [b017cf6a]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [25efafff]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [56a53842]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [e78576ec]
-  - 🌐 Anycast-IP | 🇧🇪 🇺🇸 | [BL] [0bfc93e7]
-  - 🇲🇽 Mexico, Mexico City | [BL] [6c1b4a4c]
-  - 🌐 Anycast-IP | 🇧🇪 🇺🇸 | [BL] [7142c5a5]
+  - 🇫🇷 France | 🌐 | [BL] [13e543e8]
+  - 🇫🇷 France | 🌐 | [BL] [8da37075]
+  - 🇺🇸 United States, Reston | [BL]
+  - 🇺🇸 United States, Hillsboro | [BL]
+  - 🇯🇵 Japan, Ueda | [BL]
+  - 🇩🇪 Germany | 🌐 [*CIDR]
   default-selected: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
 - name: AUTO
   type: url-test
@@ -306,21 +179,12 @@ proxy-groups:
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
   - 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
   - SG - zhuhai.uk
-  - 🇺🇸 United States, Buffalo | [BL] [f98fc3b0]
-  - 🇲🇽 Mexico, Mexico City | [BL] [fe182330]
-  - 🇺🇸 United States, Buffalo | [BL] [518c5f38]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [a2414816]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [011bcd46]
-  - 🇳🇱 The Netherlands [*CIDR] [2c638778]
-  - 🇫🇷 France | 🌐 | [BL]
-  - 🇳🇱 The Netherlands [*CIDR] [af556279]
-  - 🇳🇱 The Netherlands [*CIDR] [b017cf6a]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [25efafff]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [56a53842]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [e78576ec]
-  - 🌐 Anycast-IP | 🇧🇪 🇺🇸 | [BL] [0bfc93e7]
-  - 🇲🇽 Mexico, Mexico City | [BL] [6c1b4a4c]
-  - 🌐 Anycast-IP | 🇧🇪 🇺🇸 | [BL] [7142c5a5]
+  - 🇫🇷 France | 🌐 | [BL] [13e543e8]
+  - 🇫🇷 France | 🌐 | [BL] [8da37075]
+  - 🇺🇸 United States, Reston | [BL]
+  - 🇺🇸 United States, Hillsboro | [BL]
+  - 🇯🇵 Japan, Ueda | [BL]
+  - 🇩🇪 Germany | 🌐 [*CIDR]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
