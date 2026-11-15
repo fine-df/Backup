@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070121 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070122 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,68 +10,95 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- servername: psstatic.cdn.bcebos.com
-  server: zfapi.zalolink.com
-  type: vless
-  port: 30322
+- server: zfapi.zalolink.com
   encryption: none
-  udp: true
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  tls: true
-  reality-opts:
-    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
-    short-id: 6a60e7e382d6
-  network: tcp
-  flow: xtls-rprx-vision
-  name: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
-  client-fingerprint: ios
-- servername: psstatic.cdn.bcebos.com
-  server: zfapi.zalolink.com
-  type: vless
   port: 11802
-  encryption: none
+  servername: psstatic.cdn.bcebos.com
   udp: true
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  tls: true
   reality-opts:
     public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
     short-id: 6c84fbac2d
-  network: tcp
+  type: vless
   flow: xtls-rprx-vision
+  network: tcp
   name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
   client-fingerprint: chrome
-- servername: psstatic.cdn.bcebos.com
-  server: zfapi.zalolink.com
-  type: vless
-  port: 11802
-  encryption: none
-  udp: true
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   tls: true
-  reality-opts:
-    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
-    short-id: 6c84fbac2d
-  network: tcp
-  flow: xtls-rprx-vision
-  name: 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
-  client-fingerprint: random
-- servername: psstatic.cdn.bcebos.com
-  server: zfapi.zalolink.com
-  type: vless
-  port: 30322
+- server: 104.17.70.206
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
   encryption: none
+  port: 8443
+  servername: free.sahanwickramasinghe.com
   udp: true
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  tls: true
-  reality-opts:
-    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
-    short-id: 6a60e7e382d6
-  network: tcp
-  flow: xtls-rprx-vision
-  name: SG - zhuhai.uk
-  client-fingerprint: chrome
-- type: vless
+  type: vless
+  network: ws
   name: 🇩🇪 Germany | 🌐 | [BL] [c964c763]
+  client-fingerprint: ios
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  tls: true
+- server: ujp.xn--ghqu5fm27b67w.com
+  ws-opts:
+    path: /e0843c8ad581
+    headers:
+      Host: portland-wins-robbie-skirt.trycloudflare.com
+  encryption: none
+  port: 443
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  udp: true
+  type: vless
+  network: ws
+  name: 🇦🇺 Australia, Sydney | [BL] [3eddd046]
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  tls: true
+- server: 104.17.70.206
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+  encryption: none
+  port: 8443
+  servername: free.sahanwickramasinghe.com
+  udp: true
+  type: vless
+  network: ws
+  name: 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
+  client-fingerprint: safari
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  tls: true
+- type: vless
+  name: 🇺🇸 United States, Buffalo | [BL] [102bfa57]
+  server: mao.kipfelmao.de5.net
+  port: 443
+  udp: true
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  encryption: none
+  tls: true
+  servername: mao.kipfelmao.de5.net
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v1/guests/profiles/5de14443985f/
+    headers:
+      Host: mao.kipfelmao.de5.net
+- type: vless
+  name: 🇺🇸 United States, Buffalo | [BL] [ded2880a]
+  server: mao.kipfelmao.de5.net
+  port: 443
+  udp: true
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  encryption: none
+  tls: true
+  servername: mao.kipfelmao.de5.net
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /api/v1/guests/profiles/5de14443985f/
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
   server: 104.17.70.206
   port: 8443
   udp: true
@@ -79,14 +106,29 @@ proxies:
   encryption: none
   tls: true
   servername: free.sahanwickramasinghe.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
 - type: vless
-  name: 🇦🇺 Australia, Sydney | [BL]
+  name: 🇩🇪 Germany | 🌐 | [BL] [3c31b30b]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇦🇺 Australia, Sydney | [BL] [6f254804]
   server: ujp.xn--ghqu5fm27b67w.com
   port: 443
   udp: true
@@ -94,101 +136,57 @@ proxies:
   encryption: none
   tls: true
   servername: portland-wins-robbie-skirt.trycloudflare.com
+  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /e0843c8ad581
     headers:
       Host: portland-wins-robbie-skirt.trycloudflare.com
 - type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [*CIDR] [9c1668b0]
-  server: clover.filnex.baby
+  name: 🇦🇺 Australia, Sydney | [BL] [1c719214]
+  server: ujp.xn--ghqu5fm27b67w.com
   port: 443
   udp: true
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   encryption: none
   tls: true
-  servername: clover.filnex.baby
-  client-fingerprint: android
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /api/de6/stream
+    path: /e0843c8ad581
     headers:
-      Host: clover.filnex.baby
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [*CIDR] [0ccdb933]
-  server: 200.165.234.47
-  port: 443
-  udp: true
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  encryption: none
-  tls: true
-  servername: clover.filnex.baby
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: clover.filnex.baby
-- type: vless
-  name: 🇩🇪 Germany | 🌐 [*CIDR]
-  server: clover.filnex.baby
-  port: 443
-  udp: true
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  encryption: none
-  tls: true
-  servername: clover.filnex.baby
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: clover.filnex.baby
+      Host: portland-wins-robbie-skirt.trycloudflare.com
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  - 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
-  - SG - zhuhai.uk
   - 🇩🇪 Germany | 🌐 | [BL] [c964c763]
-  - 🇦🇺 Australia, Sydney | [BL]
+  - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
   - 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
-  - 🇩🇪 Germany | 🌐 | [*CIDR] [9c1668b0]
-  - 🇩🇪 Germany | 🌐 | [*CIDR] [0ccdb933]
-  - 🇩🇪 Germany | 🌐 [*CIDR]
-  default-selected: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
+  - 🇺🇸 United States, Buffalo | [BL] [102bfa57]
+  - 🇺🇸 United States, Buffalo | [BL] [ded2880a]
+  - 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
+  - 🇩🇪 Germany | 🌐 | [BL] [3c31b30b]
+  - 🇦🇺 Australia, Sydney | [BL] [6f254804]
+  - 🇦🇺 Australia, Sydney | [BL] [1c719214]
+  default-selected: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  - 🇹🇭 Thailand, Nakhon Sawan | 🌐 | [BL]
-  - SG - zhuhai.uk
   - 🇩🇪 Germany | 🌐 | [BL] [c964c763]
-  - 🇦🇺 Australia, Sydney | [BL]
+  - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
   - 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
-  - 🇩🇪 Germany | 🌐 | [*CIDR] [9c1668b0]
-  - 🇩🇪 Germany | 🌐 | [*CIDR] [0ccdb933]
-  - 🇩🇪 Germany | 🌐 [*CIDR]
+  - 🇺🇸 United States, Buffalo | [BL] [102bfa57]
+  - 🇺🇸 United States, Buffalo | [BL] [ded2880a]
+  - 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
+  - 🇩🇪 Germany | 🌐 | [BL] [3c31b30b]
+  - 🇦🇺 Australia, Sydney | [BL] [6f254804]
+  - 🇦🇺 Australia, Sydney | [BL] [1c719214]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
