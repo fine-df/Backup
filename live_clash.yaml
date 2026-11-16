@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070123 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070124 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,294 +10,97 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-  server: 104.17.70.206
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  type: vless
-  port: 8443
-  servername: free.sahanwickramasinghe.com
-  name: 🇩🇪 Germany | 🌐 | [BL] [c964c763]
-  tls: true
-  client-fingerprint: ios
-  udp: true
+- uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   encryption: none
   network: ws
-- ws-opts:
+  udp: true
+  type: vless
+  ws-opts:
     path: /e0843c8ad581
     headers:
       Host: portland-wins-robbie-skirt.trycloudflare.com
-  server: ujp.xn--ghqu5fm27b67w.com
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  type: vless
   port: 443
   servername: portland-wins-robbie-skirt.trycloudflare.com
   name: 🇦🇺 Australia, Sydney | [BL] [3eddd046]
   tls: true
-  udp: true
+  server: ujp.xn--ghqu5fm27b67w.com
+- uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   encryption: none
   network: ws
-- ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-  server: 104.17.70.206
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  udp: true
   type: vless
-  port: 8443
-  servername: free.sahanwickramasinghe.com
-  name: 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
-  tls: true
-  client-fingerprint: safari
-  udp: true
-  encryption: none
-  network: ws
-- ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-  server: 104.17.70.206
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  type: vless
-  port: 8443
-  servername: free.sahanwickramasinghe.com
-  name: 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
-  tls: true
-  client-fingerprint: firefox
-  udp: true
-  encryption: none
-  network: ws
-- ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-  server: 104.17.70.206
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  type: vless
-  port: 8443
-  servername: free.sahanwickramasinghe.com
-  name: 🇩🇪 Germany | 🌐 | [BL] [3c31b30b]
-  tls: true
-  client-fingerprint: chrome
-  udp: true
-  encryption: none
-  network: ws
-- ws-opts:
+  ws-opts:
     path: /e0843c8ad581
     headers:
       Host: portland-wins-robbie-skirt.trycloudflare.com
-  server: ujp.xn--ghqu5fm27b67w.com
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  type: vless
+  client-fingerprint: safari
   port: 443
   servername: portland-wins-robbie-skirt.trycloudflare.com
   name: 🇦🇺 Australia, Sydney | [BL] [6f254804]
   tls: true
-  client-fingerprint: safari
-  udp: true
+  server: ujp.xn--ghqu5fm27b67w.com
+- uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   encryption: none
   network: ws
-- ws-opts:
+  udp: true
+  type: vless
+  ws-opts:
     path: /e0843c8ad581
     headers:
       Host: portland-wins-robbie-skirt.trycloudflare.com
-  server: ujp.xn--ghqu5fm27b67w.com
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  type: vless
+  client-fingerprint: edge
   port: 443
   servername: portland-wins-robbie-skirt.trycloudflare.com
   name: 🇦🇺 Australia, Sydney | [BL] [1c719214]
   tls: true
-  client-fingerprint: edge
-  udp: true
-  encryption: none
-  network: ws
+  server: ujp.xn--ghqu5fm27b67w.com
 - type: vless
-  name: 🇺🇸 United States, Los Angeles | [BL]
-  server: ws.liuzedong.ltd
+  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  server: 45.148.30.171
   port: 443
   udp: true
-  uuid: FCEAD694-2E27-4EEB-8836-9D4ACF3E028B
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
   encryption: none
   tls: true
-  servername: ws.liuzedong.ltd
+  servername: clover.filnex.baby
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /ws
+    path: /api/de6/stream
     headers:
-      Host: ws.liuzedong.ltd
+      Host: clover.filnex.baby
 - type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [4391d211]
-  server: www.zoom.us
+  name: 🇪🇪 Estonia, Tallinn | [BL]
+  server: 178.130.46.226
   port: 443
   udp: true
-  uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
+  uuid: 3619ae0e-bd3a-458c-bb0a-c0479019d9ec
   encryption: none
   tls: true
-  servername: matrix.phonicsindia.mobi
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    headers:
-      Host: matrix.phonicsindia.mobi
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL]
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [de96e341]
-  server: www.zoom.us
-  port: 443
-  udp: true
-  uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
-  encryption: none
-  tls: true
-  servername: matrix.phonicsindia.mobi
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    headers:
-      Host: matrix.phonicsindia.mobi
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [48fc0612]
-  server: 104.18.151.231
-  port: 2053
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: twilight-frost-15b0.yigom67484.workers.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: twilight-frost-15b0.yigom67484.workers.dev
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [4a31b361]
-  server: 104.18.151.231
-  port: 2053
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: twilight-frost-15b0.yigom67484.workers.dev
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: twilight-frost-15b0.yigom67484.workers.dev
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
-  server: d58daft.plp1.h1cloud.net
-  port: 443
-  udp: true
-  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
-  encryption: none
-  tls: true
-  servername: d58daft.plp1.h1cloud.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
-    short-id: a91531ad58c8611c
-  network: tcp
-- type: vless
-  name: 🇬🇧 United Kingdom, London | [BL] [5580f860]
-  server: 81.85.1.233
-  port: 443
-  udp: true
-  uuid: e3453410-191b-48b5-b37f-aac745bbfa6b
-  encryption: none
-  tls: true
-  servername: 81.85.1.233
+  servername: serv1.fishtohome.ru
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   network: tcp
-- type: vless
-  name: 🇬🇧 United Kingdom, London | [BL] [7626a0f1]
-  server: 81.85.1.233
-  port: 443
-  udp: true
-  uuid: e3453410-191b-48b5-b37f-aac745bbfa6b
-  encryption: none
-  tls: true
-  servername: 81.85.1.233
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  network: tcp
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [02f8bc9b]
-  server: 45.130.125.151
-  port: 443
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: fancy-mouse-6aff.wixit71180.workers.dev
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fancy-mouse-6aff.wixit71180.workers.dev
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇩🇪 Germany | 🌐 | [BL] [c964c763]
   - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
-  - 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
-  - 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
-  - 🇩🇪 Germany | 🌐 | [BL] [3c31b30b]
   - 🇦🇺 Australia, Sydney | [BL] [6f254804]
   - 🇦🇺 Australia, Sydney | [BL] [1c719214]
-  - 🇺🇸 United States, Los Angeles | [BL]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [4391d211]
-  - 🇩🇪 Germany | 🌐 | [BL]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [de96e341]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [48fc0612]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [4a31b361]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
-  - 🇬🇧 United Kingdom, London | [BL] [5580f860]
-  - 🇬🇧 United Kingdom, London | [BL] [7626a0f1]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [02f8bc9b]
-  default-selected: 🇩🇪 Germany | 🌐 | [BL] [c964c763]
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  - 🇪🇪 Estonia, Tallinn | [BL]
+  default-selected: 🇦🇺 Australia, Sydney | [BL] [3eddd046]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 Germany | 🌐 | [BL] [c964c763]
   - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
-  - 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
-  - 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
-  - 🇩🇪 Germany | 🌐 | [BL] [3c31b30b]
   - 🇦🇺 Australia, Sydney | [BL] [6f254804]
   - 🇦🇺 Australia, Sydney | [BL] [1c719214]
-  - 🇺🇸 United States, Los Angeles | [BL]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [4391d211]
-  - 🇩🇪 Germany | 🌐 | [BL]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [de96e341]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [48fc0612]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [4a31b361]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
-  - 🇬🇧 United Kingdom, London | [BL] [5580f860]
-  - 🇬🇧 United Kingdom, London | [BL] [7626a0f1]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [02f8bc9b]
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  - 🇪🇪 Estonia, Tallinn | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
