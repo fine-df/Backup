@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070125 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070126 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,111 +10,153 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- encryption: none
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  name: 🇦🇺 Australia, Sydney | [BL] [3eddd046]
-  type: vless
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-  tls: true
-  udp: true
-  ws-opts:
-    path: /e0843c8ad581
-    headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
-  port: 443
-  server: ujp.xn--ghqu5fm27b67w.com
-  network: ws
-- encryption: none
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  name: 🇦🇺 Australia, Sydney | [BL] [6f254804]
-  client-fingerprint: safari
-  type: vless
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-  tls: true
-  udp: true
-  ws-opts:
-    path: /e0843c8ad581
-    headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
-  port: 443
-  server: ujp.xn--ghqu5fm27b67w.com
-  network: ws
-- encryption: none
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  name: 🇦🇺 Australia, Sydney | [BL] [1c719214]
-  client-fingerprint: edge
-  type: vless
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-  tls: true
-  udp: true
-  ws-opts:
-    path: /e0843c8ad581
-    headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
-  port: 443
-  server: ujp.xn--ghqu5fm27b67w.com
-  network: ws
-- encryption: none
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+- uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
   name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  client-fingerprint: firefox
-  type: vless
-  servername: clover.filnex.baby
   tls: true
-  udp: true
   ws-opts:
     path: /api/de6/stream
     headers:
       Host: clover.filnex.baby
+  udp: true
+  client-fingerprint: firefox
+  network: ws
   port: 443
   server: 45.148.30.171
-  network: ws
-- type: vmess
-  name: 🇺🇸 United States, Santa Clara | [BL]
-  server: wto.org
-  port: 2087
-  uuid: 82508138-bb0c-4d0c-9ab3-4a83959d19c2
-  alterId: 0
-  cipher: auto
+  servername: clover.filnex.baby
+  type: vless
+  encryption: none
+- uuid: d801d4d9-111a-46e8-91fc-e2fb39ef2d22
+  name: 🇲🇾 Malaysia, Kuala Lumpur | [BL] [e054c25e]
+  tls: true
+  ws-opts:
+    path: /ws
   udp: true
   network: ws
-  tls: true
-  servername: yx.kb1203.indevs.in
-  ws-opts:
-    headers:
-      Host: yx.kb1203.indevs.in
-    path: /banana
-- type: vmess
-  name: 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
-  server: cdns.doon.eu.org
   port: 443
-  uuid: 8614bde7-34cf-4413-8360-e96f1b960528
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
+  server: 382218.xyz
+  servername: 382218.xyz
+  type: vless
+  encryption: none
+- uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
   tls: true
-  ws-opts:
-    headers:
-      Host: consisting-hosted-memphis-tee.trycloudflare.com
-    path: /vmess-argo?ed=2560
+  udp: true
+  client-fingerprint: firefox
+  port: 443
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: 37.49.225.92
+  servername: ns-gw-mgr.galioncc.com
+  type: vless
+  encryption: none
 - type: vless
-  name: 🇦🇺 Australia, Sydney | [BL]
-  server: ujp.xn--ghqu5fm27b67w.com
-  port: 443
+  name: 🇺🇸 United States | 🌐 | [BL]
+  server: zfapi.zalolink.com
+  port: 47691
   udp: true
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   encryption: none
   tls: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
+  servername: m.media-amazon.com
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
+    short-id: 2905326a
+  network: tcp
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
+  server: zfapi.zalolink.com
+  port: 46957
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  encryption: none
+  tls: true
+  servername: psstatic.cdn.bcebos.com
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: 1SefqLQXrqkiUdf7cTMF53hrMZyo684_uneRC8-qTxI
+    short-id: 8f6683a234d3
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇫🇷 France, Saint-Apollinaire | [BL]
+  server: jdxl.cf.090227.xyz
+  port: 443
+  udp: true
+  uuid: 11111111-2222-3333-4444-555555555555
+  encryption: none
+  tls: true
+  servername: q7a223ydvpc5.hostc.app
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /e0843c8ad581
+    path: /tg-jiedianxielou
     headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
+      Host: q7a223ydvpc5.hostc.app
 - type: vless
-  name: 🇲🇾 Malaysia, Kuala Lumpur | [BL]
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]
+  server: 104.17.145.145
+  port: 443
+  udp: true
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  encryption: none
+  tls: true
+  servername: clover.filnex.baby
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
+  server: api.opencode.ai
+  port: 443
+  udp: true
+  uuid: 2874e26b-45e3-4d12-9e01-3f5a1c6a7105
+  encryption: none
+  tls: true
+  servername: dietary-forms-begun-orientation.trycloudflare.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /d9fb7b4f14c1
+    headers:
+      Host: dietary-forms-begun-orientation.trycloudflare.com
+- type: vless
+  name: 🇲🇾 Malaysia, Kuala Lumpur | [BL] [6bc5dc03]
   server: 382218.xyz
   port: 443
   udp: true
@@ -122,50 +164,144 @@ proxies:
   encryption: none
   tls: true
   servername: 382218.xyz
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
+    headers:
+      Host: 382218.xyz
 - type: vless
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
-  server: 37.49.225.92
+  name: 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
+  server: 104.18.151.231
   port: 443
   udp: true
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
   encryption: none
   tls: true
-  servername: ns-gw-mgr.galioncc.com
+  servername: jolly-silence-83b2.kidat76098.workers.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: jolly-silence-83b2.kidat76098.workers.dev
+- type: vless
+  name: 🇳🇱 The Netherlands | 🌐 | [BL] [cff93e08]
+  server: 104.18.151.231
+  port: 443
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  encryption: none
+  tls: true
+  servername: steep-lake-615e.xeremed6978165.workers.dev
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: steep-lake-615e.xeremed6978165.workers.dev
+- type: vless
+  name: 🇦🇺 Australia, Sydney | [BL] [365d2a7f]
+  server: ujp.xn--ghqu5fm27b67w.com
+  port: 443
+  udp: true
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  encryption: none
+  tls: true
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /e0843c8ad581
+    headers:
+      Host: portland-wins-robbie-skirt.trycloudflare.com
+- type: vless
+  name: 🇦🇺 Australia, Sydney | [BL] [874c302a]
+  server: ujp.xn--ghqu5fm27b67w.com
+  port: 443
+  udp: true
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  encryption: none
+  tls: true
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /e0843c8ad581
+    headers:
+      Host: portland-wins-robbie-skirt.trycloudflare.com
+- type: vless
+  name: 🇮🇹 Italy, Pratantico-Indicatore | [BL]
+  server: 48.103.120.21
+  port: 443
+  udp: true
+  uuid: a30903dc-1bf0-0002-8b1b-603a3a56211c
+  encryption: none
+  tls: true
+  servername: net-svc-io.galioncc.com
   client-fingerprint: firefox
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: 868419504747f6de
+  network: tcp
+- type: vless
+  name: 🇪🇬 Egypt, Cairo | [BL]
+  server: 48.103.120.21
+  port: 443
+  udp: true
+  uuid: a30903dc-1bf0-0003-8b1b-603a3a56211c
+  encryption: none
+  tls: true
+  servername: net-svc-io.galioncc.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
-  - 🇦🇺 Australia, Sydney | [BL] [6f254804]
-  - 🇦🇺 Australia, Sydney | [BL] [1c719214]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  - 🇺🇸 United States, Santa Clara | [BL]
-  - 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
-  - 🇦🇺 Australia, Sydney | [BL]
-  - 🇲🇾 Malaysia, Kuala Lumpur | [BL]
+  - 🇲🇾 Malaysia, Kuala Lumpur | [BL] [e054c25e]
   - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  default-selected: 🇦🇺 Australia, Sydney | [BL] [3eddd046]
+  - 🇺🇸 United States | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
+  - 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
+  - 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
+  - 🇫🇷 France, Saint-Apollinaire | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇲🇾 Malaysia, Kuala Lumpur | [BL] [6bc5dc03]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [cff93e08]
+  - 🇦🇺 Australia, Sydney | [BL] [365d2a7f]
+  - 🇦🇺 Australia, Sydney | [BL] [874c302a]
+  - 🇮🇹 Italy, Pratantico-Indicatore | [BL]
+  - 🇪🇬 Egypt, Cairo | [BL]
+  default-selected: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
-  - 🇦🇺 Australia, Sydney | [BL] [6f254804]
-  - 🇦🇺 Australia, Sydney | [BL] [1c719214]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  - 🇺🇸 United States, Santa Clara | [BL]
-  - 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
-  - 🇦🇺 Australia, Sydney | [BL]
-  - 🇲🇾 Malaysia, Kuala Lumpur | [BL]
+  - 🇲🇾 Malaysia, Kuala Lumpur | [BL] [e054c25e]
   - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🇺🇸 United States | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
+  - 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
+  - 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
+  - 🇫🇷 France, Saint-Apollinaire | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇲🇾 Malaysia, Kuala Lumpur | [BL] [6bc5dc03]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [cff93e08]
+  - 🇦🇺 Australia, Sydney | [BL] [365d2a7f]
+  - 🇦🇺 Australia, Sydney | [BL] [874c302a]
+  - 🇮🇹 Italy, Pratantico-Indicatore | [BL]
+  - 🇪🇬 Egypt, Cairo | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
