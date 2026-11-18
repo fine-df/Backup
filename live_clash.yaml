@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070129 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070130 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,150 +10,120 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- name: 🇦🇺 Australia, Sydney | [BL] [3eddd046]
-  network: ws
-  server: ujp.xn--ghqu5fm27b67w.com
-  encryption: none
-  tls: true
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  udp: true
-  type: vless
-  port: 443
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-  ws-opts:
-    path: /e0843c8ad581
-    headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
-- name: 🇺🇸 United States, Atlanta | [BL] [47ed98cf]
-  network: tcp
+- uuid: a346c521-7a7f-452b-9356-a4893feb5982
   server: 147.45.60.136
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  encryption: none
-  tls: true
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  servername: usahk2-r.bankai.party
   udp: true
-  type: vless
-  port: 443
+  flow: xtls-rprx-vision
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: usahk2-r.bankai.party
-- name: 🇺🇸 United States, Atlanta | [BL] [b44ca7c4]
   network: tcp
+  type: vless
+  port: 443
+  name: 🇺🇸 United States, Atlanta | [BL] [47ed98cf]
+  tls: true
+  encryption: none
+  client-fingerprint: firefox
+- uuid: a346c521-7a7f-452b-9356-a4893feb5982
   server: 147.45.60.136
+  servername: usahk2-r.bankai.party
+  udp: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  network: tcp
+  type: vless
+  port: 443
+  name: 🇺🇸 United States, Atlanta | [BL] [b44ca7c4]
+  tls: true
+  encryption: none
   client-fingerprint: qq
-  flow: xtls-rprx-vision
-  encryption: none
-  tls: true
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  udp: true
-  type: vless
-  port: 443
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: usahk2-r.bankai.party
-- name: 🇦🇺 Australia, Sydney | [BL] [030516a0]
-  network: ws
+- uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   server: ujp.xn--ghqu5fm27b67w.com
-  client-fingerprint: ios
-  encryption: none
-  tls: true
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  servername: portland-wins-robbie-skirt.trycloudflare.com
   udp: true
+  network: ws
   type: vless
   port: 443
-  servername: portland-wins-robbie-skirt.trycloudflare.com
+  name: 🇦🇺 Australia, Sydney | [BL] [030516a0]
   ws-opts:
     path: /e0843c8ad581
     headers:
       Host: portland-wins-robbie-skirt.trycloudflare.com
-- name: 🇭🇰 Hong Kong, Hong Kong | [BL] [546308b4]
-  network: tcp
-  server: free.fugui.lol
+  tls: true
+  encryption: none
   client-fingerprint: ios
-  flow: xtls-rprx-vision
-  encryption: none
-  tls: true
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-  udp: true
-  type: vless
-  port: 47396
-  reality-opts:
-    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-    short-id: fa514b83
-  servername: swdist.apple.com
-- name: 🇱🇹 Lithuania, Šiauliai | [BL]
+- uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   server: 84.32.51.135
-  client-fingerprint: firefox
-  encryption: none
-  tls: true
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  servername: svc-io-mgr.galioncc.com
   udp: true
-  type: vless
-  port: 443
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7d309e4c16b825f
-  servername: svc-io-mgr.galioncc.com
-- type: vless
-  name: 🇨🇦 Canada, Vancouver | [BL]
-  server: 172.67.219.189
+  type: vless
   port: 443
-  udp: true
-  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
-  encryption: none
+  name: 🇱🇹 Lithuania, Šiauliai | [BL]
   tls: true
-  servername: cdn4.salamfox.ir
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
-    headers:
-      Host: cdn4.salamfox.ir
-- type: vless
-  name: 🇭🇰 Hong Kong, Hong Kong | [BL] [5b4e6029]
+  encryption: none
+  client-fingerprint: firefox
+- uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
   server: free.fugui.lol
-  port: 47396
-  udp: true
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-  encryption: none
-  tls: true
   servername: swdist.apple.com
+  udp: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
   reality-opts:
     public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
     short-id: fa514b83
   network: tcp
+  type: vless
+  port: 19482
+  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  tls: true
+  encryption: none
+  client-fingerprint: ios
 - type: vless
-  name: 🇦🇺 Australia, Sydney | [BL]
-  server: ujp.xn--ghqu5fm27b67w.com
+  name: 🇻🇳 Vietnam, Hà Đông | [BL]
+  server: zfapi.zalolink.com
+  port: 42120
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  encryption: none
+  tls: true
+  servername: www.tesla.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  network: tcp
+- type: vless
+  name: 🇫🇷 France, Paris | 🌐 | [BL]
+  server: fr-free.fastestrelay.com
   port: 443
   udp: true
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   encryption: none
   tls: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-  client-fingerprint: edge
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /e0843c8ad581
+    path: /700gvl
     headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
+      Host: fr-free.fastestrelay.com
 - type: vless
-  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  server: free.fugui.lol
-  port: 19482
+  name: 🇺🇸 United States | [*CIDR]
+  server: 71b840t.de7.h1clayd.click
+  port: 443
   udp: true
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+  uuid: 26843758-24de-4f76-b5d0-624038e353c4
   encryption: none
   tls: true
-  servername: swdist.apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: firefox
   reality-opts:
-    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-    short-id: fa514b83
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+    short-id: e572b6579ea525d4
   network: tcp
 proxy-groups:
 - name: Fine
@@ -161,30 +131,26 @@ proxy-groups:
   proxies:
   - AUTO
   - DIRECT
-  - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
   - 🇺🇸 United States, Atlanta | [BL] [47ed98cf]
   - 🇺🇸 United States, Atlanta | [BL] [b44ca7c4]
   - 🇦🇺 Australia, Sydney | [BL] [030516a0]
-  - 🇭🇰 Hong Kong, Hong Kong | [BL] [546308b4]
   - 🇱🇹 Lithuania, Šiauliai | [BL]
-  - 🇨🇦 Canada, Vancouver | [BL]
-  - 🇭🇰 Hong Kong, Hong Kong | [BL] [5b4e6029]
-  - 🇦🇺 Australia, Sydney | [BL]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  default-selected: 🇦🇺 Australia, Sydney | [BL] [3eddd046]
+  - 🇻🇳 Vietnam, Hà Đông | [BL]
+  - 🇫🇷 France, Paris | 🌐 | [BL]
+  - 🇺🇸 United States | [*CIDR]
+  default-selected: 🇺🇸 United States, Atlanta | [BL] [47ed98cf]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
   - 🇺🇸 United States, Atlanta | [BL] [47ed98cf]
   - 🇺🇸 United States, Atlanta | [BL] [b44ca7c4]
   - 🇦🇺 Australia, Sydney | [BL] [030516a0]
-  - 🇭🇰 Hong Kong, Hong Kong | [BL] [546308b4]
   - 🇱🇹 Lithuania, Šiauliai | [BL]
-  - 🇨🇦 Canada, Vancouver | [BL]
-  - 🇭🇰 Hong Kong, Hong Kong | [BL] [5b4e6029]
-  - 🇦🇺 Australia, Sydney | [BL]
   - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  - 🇻🇳 Vietnam, Hà Đông | [BL]
+  - 🇫🇷 France, Paris | 🌐 | [BL]
+  - 🇺🇸 United States | [*CIDR]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
