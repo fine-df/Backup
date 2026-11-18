@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070127 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070128 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,179 +10,340 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- flow: xtls-rprx-vision
-  client-fingerprint: ios
-  udp: true
-  reality-opts:
-    public-key: 1SefqLQXrqkiUdf7cTMF53hrMZyo684_uneRC8-qTxI
-    short-id: 8f6683a234d3
-  port: 46957
-  server: zfapi.zalolink.com
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  encryption: none
-  type: vless
-  network: tcp
-  tls: true
-  name: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
-  servername: psstatic.cdn.bcebos.com
-- ws-opts:
-    path: /tg-jiedianxielou
-    headers:
-      Host: q7a223ydvpc5.hostc.app
-  client-fingerprint: chrome
-  udp: true
-  port: 443
-  server: jdxl.cf.090227.xyz
-  uuid: 11111111-2222-3333-4444-555555555555
-  encryption: none
-  type: vless
-  network: ws
-  tls: true
-  name: 🇫🇷 France, Saint-Apollinaire | [BL]
-  servername: q7a223ydvpc5.hostc.app
 - ws-opts:
     path: /e0843c8ad581
     headers:
       Host: portland-wins-robbie-skirt.trycloudflare.com
-  client-fingerprint: firefox
-  udp: true
-  port: 443
-  server: ujp.xn--ghqu5fm27b67w.com
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   encryption: none
-  type: vless
+  server: ujp.xn--ghqu5fm27b67w.com
   network: ws
-  tls: true
+  udp: true
   name: 🇦🇺 Australia, Sydney | [BL] [365d2a7f]
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  client-fingerprint: firefox
+  tls: true
+  type: vless
+  port: 443
   servername: portland-wins-robbie-skirt.trycloudflare.com
 - ws-opts:
     path: /e0843c8ad581
     headers:
       Host: portland-wins-robbie-skirt.trycloudflare.com
-  client-fingerprint: qq
-  udp: true
-  port: 443
-  server: ujp.xn--ghqu5fm27b67w.com
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   encryption: none
-  type: vless
+  server: ujp.xn--ghqu5fm27b67w.com
   network: ws
-  tls: true
+  udp: true
   name: 🇦🇺 Australia, Sydney | [BL] [874c302a]
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-- type: vless
-  name: 🇦🇺 Australia, Sydney | [BL]
-  server: ujp.xn--ghqu5fm27b67w.com
-  port: 443
-  udp: true
   uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  encryption: none
+  client-fingerprint: qq
   tls: true
+  type: vless
+  port: 443
   servername: portland-wins-robbie-skirt.trycloudflare.com
-  network: ws
-  ws-opts:
+- ws-opts:
     path: /e0843c8ad581
     headers:
       Host: portland-wins-robbie-skirt.trycloudflare.com
-- type: vless
+  encryption: none
+  server: ujp.xn--ghqu5fm27b67w.com
+  network: ws
+  udp: true
+  name: 🇦🇺 Australia, Sydney | [BL] [3eddd046]
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  tls: true
+  type: vless
+  port: 443
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+- encryption: none
+  server: pebble.gerqix.online
+  network: grpc
+  udp: true
   name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [87bed01b]
-  server: pebble.gerqix.online
-  port: 443
-  udp: true
   uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  encryption: none
-  tls: true
-  servername: pebble.gerqix.online
+  grpc-opts:
+    grpc-service-name: glush.de2.v1
   client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: glush.de2.v1
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [986c4ace]
-  server: pebble.gerqix.online
-  port: 443
-  udp: true
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  encryption: none
   tls: true
+  type: vless
+  port: 443
   servername: pebble.gerqix.online
-  client-fingerprint: random
+- encryption: none
+  server: pebble.gerqix.online
   network: grpc
+  udp: true
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [986c4ace]
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
   grpc-opts:
     grpc-service-name: glush.de2.v1
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [cb6ceee9]
-  server: linen.gerqix.online
-  port: 443
-  udp: true
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  encryption: none
+  client-fingerprint: random
   tls: true
-  servername: linen.gerqix.online
-  client-fingerprint: ios
+  type: vless
+  port: 443
+  servername: pebble.gerqix.online
+- encryption: none
+  server: linen.gerqix.online
   network: grpc
+  udp: true
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [cb6ceee9]
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
   grpc-opts:
     grpc-service-name: glush.de1.v1
+  client-fingerprint: ios
+  tls: true
+  type: vless
+  port: 443
+  servername: linen.gerqix.online
 - type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL]
-  server: fr-free.fastestrelay.com
+  name: 🇺🇸 United States, Atlanta | [BL] [47ed98cf]
+  server: 147.45.60.136
   port: 443
   udp: true
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
   encryption: none
   tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: chrome
+  servername: usahk2-r.bankai.party
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  network: tcp
+- type: vless
+  name: 🇺🇸 United States, Atlanta | [BL] [b44ca7c4]
+  server: 147.45.60.136
+  port: 443
+  udp: true
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  encryption: none
+  tls: true
+  servername: usahk2-r.bankai.party
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  network: tcp
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /700gvl
+    path: /
     headers:
-      Host: fr-free.fastestrelay.com
+      Host: free.sahanwickramasinghe.com
 - type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
-  server: api.opencode.ai
-  port: 443
+  name: 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
+  server: 104.17.70.206
+  port: 8443
   udp: true
-  uuid: 2874e26b-45e3-4d12-9e01-3f5a1c6a7105
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
   encryption: none
   tls: true
-  servername: dietary-forms-begun-orientation.trycloudflare.com
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [a2414816]
+  server: www.zoom.us
+  port: 443
+  udp: true
+  uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
+  encryption: none
+  tls: true
+  servername: matrix.phonicsindia.mobi
   client-fingerprint: safari
   network: ws
   ws-opts:
-    path: /d9fb7b4f14c1
+    path: /
     headers:
-      Host: dietary-forms-begun-orientation.trycloudflare.com
+      Host: matrix.phonicsindia.mobi
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [4391d211]
+  server: www.zoom.us
+  port: 443
+  udp: true
+  uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
+  encryption: none
+  tls: true
+  servername: matrix.phonicsindia.mobi
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    headers:
+      Host: matrix.phonicsindia.mobi
+- type: vless
+  name: 🇦🇺 Australia, Sydney | [BL] [6f254804]
+  server: ujp.xn--ghqu5fm27b67w.com
+  port: 443
+  udp: true
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  encryption: none
+  tls: true
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /e0843c8ad581
+    headers:
+      Host: portland-wins-robbie-skirt.trycloudflare.com
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [00cfd4c7]
+  server: 104.17.145.145
+  port: 443
+  udp: true
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  encryption: none
+  tls: true
+  servername: clover.filnex.baby
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [9a724b51]
+  server: pebble.gerqix.online
+  port: 443
+  udp: true
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  encryption: none
+  tls: true
+  servername: pebble.gerqix.online
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: glush.de2.v1
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [dec2d43e]
+  server: pebble.gerqix.online
+  port: 443
+  udp: true
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  encryption: none
+  tls: true
+  servername: pebble.gerqix.online
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: glush.de2.v1
+- type: vless
+  name: 🇦🇺 Australia, Sydney | [BL] [030516a0]
+  server: ujp.xn--ghqu5fm27b67w.com
+  port: 443
+  udp: true
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  encryption: none
+  tls: true
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /e0843c8ad581
+    headers:
+      Host: portland-wins-robbie-skirt.trycloudflare.com
+- type: vless
+  name: 🇩🇰 Denmark, Rødding | [BL]
+  server: 193.233.253.208
+  port: 443
+  udp: true
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  encryption: none
+  tls: true
+  servername: dk1-r.bankai.party
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  network: tcp
+- type: vless
+  name: 🇭🇰 Hong Kong, Hong Kong | [BL]
+  server: free.fugui.lol
+  port: 47396
+  udp: true
+  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+  encryption: none
+  tls: true
+  servername: swdist.apple.com
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
+    short-id: fa514b83
+  network: tcp
+- type: vless
+  name: 🇱🇹 Lithuania, Šiauliai | [BL]
+  server: 84.32.51.135
+  port: 443
+  udp: true
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  encryption: none
+  tls: true
+  servername: svc-io-mgr.galioncc.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7d309e4c16b825f
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
-  - 🇫🇷 France, Saint-Apollinaire | [BL]
   - 🇦🇺 Australia, Sydney | [BL] [365d2a7f]
   - 🇦🇺 Australia, Sydney | [BL] [874c302a]
-  - 🇦🇺 Australia, Sydney | [BL]
+  - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
   - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [87bed01b]
   - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [986c4ace]
   - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [cb6ceee9]
-  - 🇫🇷 France, Paris | 🌐 | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
-  default-selected: 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
+  - 🇺🇸 United States, Atlanta | [BL] [47ed98cf]
+  - 🇺🇸 United States, Atlanta | [BL] [b44ca7c4]
+  - 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
+  - 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [a2414816]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [4391d211]
+  - 🇦🇺 Australia, Sydney | [BL] [6f254804]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [00cfd4c7]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [9a724b51]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [dec2d43e]
+  - 🇦🇺 Australia, Sydney | [BL] [030516a0]
+  - 🇩🇰 Denmark, Rødding | [BL]
+  - 🇭🇰 Hong Kong, Hong Kong | [BL]
+  - 🇱🇹 Lithuania, Šiauliai | [BL]
+  default-selected: 🇦🇺 Australia, Sydney | [BL] [365d2a7f]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇸🇬 Singapore, Singapore (Changi Village) | 🌐 | [BL]
-  - 🇫🇷 France, Saint-Apollinaire | [BL]
   - 🇦🇺 Australia, Sydney | [BL] [365d2a7f]
   - 🇦🇺 Australia, Sydney | [BL] [874c302a]
-  - 🇦🇺 Australia, Sydney | [BL]
+  - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
   - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [87bed01b]
   - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [986c4ace]
   - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [cb6ceee9]
-  - 🇫🇷 France, Paris | 🌐 | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - 🇺🇸 United States, Atlanta | [BL] [47ed98cf]
+  - 🇺🇸 United States, Atlanta | [BL] [b44ca7c4]
+  - 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
+  - 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [a2414816]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [4391d211]
+  - 🇦🇺 Australia, Sydney | [BL] [6f254804]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [00cfd4c7]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [9a724b51]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL] [dec2d43e]
+  - 🇦🇺 Australia, Sydney | [BL] [030516a0]
+  - 🇩🇰 Denmark, Rødding | [BL]
+  - 🇭🇰 Hong Kong, Hong Kong | [BL]
+  - 🇱🇹 Lithuania, Šiauliai | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
