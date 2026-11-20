@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070133 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070134 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,195 +10,63 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- tls: true
-  servername: natan.srpcom.cloud
+- name: 🇫🇷 France, Paris | 🌐 | [BL] [27772c9a]
+  tls: true
   port: 443
-  network: ws
-  name: 🇮🇩 Indonesia, Cicurug | [BL]
-  encryption: none
-  udp: true
-  server: 104.17.3.81
-  type: vless
   ws-opts:
-    path: /vlessws
-    headers:
-      Host: natan.srpcom.cloud
-  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
-- tls: true
-  servername: fr-free.fastestrelay.com
-  port: 443
-  network: ws
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [39163199]
-  encryption: none
-  client-fingerprint: chrome
-  udp: true
+    path: /700gvl
   server: fr-free.fastestrelay.com
+  network: ws
+  encryption: none
+  udp: true
+  client-fingerprint: chrome
   type: vless
+  servername: fr-free.fastestrelay.com
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+- type: vless
+  name: 🇫🇷 France, Paris | 🌐 | [BL] [f56ccd4c]
+  server: fr-free.fastestrelay.com
+  port: 443
+  udp: true
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  encryption: none
+  tls: true
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /700gvl
+- type: vless
+  name: 🇫🇷 France, Paris | 🌐 | [BL] [532edbbb]
+  server: fr-free.fastestrelay.com
+  port: 443
+  udp: true
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  encryption: none
+  tls: true
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: qq
+  network: ws
   ws-opts:
     path: /700gvl
     headers:
       Host: fr-free.fastestrelay.com
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [6bf185d7]
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [4391d211]
-  server: www.zoom.us
-  port: 443
-  udp: true
-  uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
-  encryption: none
-  tls: true
-  servername: matrix.phonicsindia.mobi
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    headers:
-      Host: matrix.phonicsindia.mobi
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [063f22d2]
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [a2414816]
-  server: www.zoom.us
-  port: 443
-  udp: true
-  uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
-  encryption: none
-  tls: true
-  servername: matrix.phonicsindia.mobi
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: matrix.phonicsindia.mobi
-- type: vmess
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [1bf8253a]
-  server: news.zoom.us
-  port: 8443
-  uuid: bd67fcd2-ec34-40a6-aac6-67731f2d7011
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  servername: matrix.phonicsindia.mobi
-  ws-opts:
-    headers:
-      Host: matrix.phonicsindia.mobi
-    path: /
-- type: vless
-  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  server: ujp.xn--ghqu5fm27b67w.com
-  port: 443
-  udp: true
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  encryption: none
-  tls: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /e0843c8ad581
-    headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
-- type: vless
-  name: 🇦🇺 Australia, Sydney | [BL]
-  server: ujp.xn--ghqu5fm27b67w.com
-  port: 443
-  udp: true
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  encryption: none
-  tls: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /e0843c8ad581
-    headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
-- type: vmess
-  name: 🇬🇧 United Kingdom, London | [BL]
-  server: 83.147.19.242
-  port: 8448
-  uuid: ec23abba-e6ae-395a-8986-2bd39a377a78
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: google.com
-    path: /xray/vmess
-- type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [27772c9a]
-  server: fr-free.fastestrelay.com
-  port: 443
-  udp: true
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-  encryption: none
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /700gvl
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇮🇩 Indonesia, Cicurug | [BL]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [39163199]
-  - 🇩🇪 Germany | 🌐 | [BL] [6bf185d7]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [4391d211]
-  - 🇩🇪 Germany | 🌐 | [BL] [063f22d2]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [a2414816]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [1bf8253a]
-  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  - 🇦🇺 Australia, Sydney | [BL]
-  - 🇬🇧 United Kingdom, London | [BL]
   - 🇫🇷 France, Paris | 🌐 | [BL] [27772c9a]
-  default-selected: 🇮🇩 Indonesia, Cicurug | [BL]
+  - 🇫🇷 France, Paris | 🌐 | [BL] [f56ccd4c]
+  - 🇫🇷 France, Paris | 🌐 | [BL] [532edbbb]
+  default-selected: 🇫🇷 France, Paris | 🌐 | [BL] [27772c9a]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇮🇩 Indonesia, Cicurug | [BL]
-  - 🇫🇷 France, Paris | 🌐 | [BL] [39163199]
-  - 🇩🇪 Germany | 🌐 | [BL] [6bf185d7]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [4391d211]
-  - 🇩🇪 Germany | 🌐 | [BL] [063f22d2]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [a2414816]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [1bf8253a]
-  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  - 🇦🇺 Australia, Sydney | [BL]
-  - 🇬🇧 United Kingdom, London | [BL]
   - 🇫🇷 France, Paris | 🌐 | [BL] [27772c9a]
+  - 🇫🇷 France, Paris | 🌐 | [BL] [f56ccd4c]
+  - 🇫🇷 France, Paris | 🌐 | [BL] [532edbbb]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
