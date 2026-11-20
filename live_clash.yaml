@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070134 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070135 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,34 +10,78 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- name: 🇫🇷 France, Paris | 🌐 | [BL] [27772c9a]
-  tls: true
-  port: 443
+- udp: true
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   ws-opts:
     path: /700gvl
-  server: fr-free.fastestrelay.com
   network: ws
-  encryption: none
-  udp: true
-  client-fingerprint: chrome
+  port: 443
   type: vless
-  servername: fr-free.fastestrelay.com
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-- type: vless
-  name: 🇫🇷 France, Paris | 🌐 | [BL] [f56ccd4c]
-  server: fr-free.fastestrelay.com
-  port: 443
-  udp: true
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-  encryption: none
   tls: true
   servername: fr-free.fastestrelay.com
-  client-fingerprint: edge
-  network: ws
+  encryption: none
+  server: fr-free.fastestrelay.com
+  client-fingerprint: chrome
+  name: 🇫🇷 France, Paris | 🌐 | [BL] [27772c9a]
+- udp: true
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   ws-opts:
     path: /700gvl
-- type: vless
+  network: ws
+  port: 443
+  type: vless
+  tls: true
+  servername: fr-free.fastestrelay.com
+  encryption: none
+  server: fr-free.fastestrelay.com
+  client-fingerprint: edge
+  name: 🇫🇷 France, Paris | 🌐 | [BL] [f56ccd4c]
+- udp: true
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  ws-opts:
+    path: /700gvl
+    headers:
+      Host: fr-free.fastestrelay.com
+  network: ws
+  port: 443
+  type: vless
+  tls: true
+  servername: fr-free.fastestrelay.com
+  encryption: none
+  server: fr-free.fastestrelay.com
+  client-fingerprint: qq
   name: 🇫🇷 France, Paris | 🌐 | [BL] [532edbbb]
+- type: vless
+  name: 🇦🇺 Australia, Sydney | [BL] [365d2a7f]
+  server: ujp.xn--ghqu5fm27b67w.com
+  port: 443
+  udp: true
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  encryption: none
+  tls: true
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /e0843c8ad581
+    headers:
+      Host: portland-wins-robbie-skirt.trycloudflare.com
+- type: vless
+  name: 🇦🇺 Australia, Sydney | [BL] [3eddd046]
+  server: ujp.xn--ghqu5fm27b67w.com
+  port: 443
+  udp: true
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  encryption: none
+  tls: true
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /e0843c8ad581
+    headers:
+      Host: portland-wins-robbie-skirt.trycloudflare.com
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
   server: fr-free.fastestrelay.com
   port: 443
   udp: true
@@ -45,12 +89,72 @@ proxies:
   encryption: none
   tls: true
   servername: fr-free.fastestrelay.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /700gvl
     headers:
       Host: fr-free.fastestrelay.com
+- type: vless
+  name: 🇫🇷 France, Saint-Apollinaire | [BL] [8ce8f745]
+  server: jdxl.cf.090227.xyz
+  port: 443
+  udp: true
+  uuid: 11111111-2222-3333-4444-555555555555
+  encryption: none
+  tls: true
+  servername: yngrfnubcecn.hostc.app
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tg-jiedianxielou
+    headers:
+      Host: yngrfnubcecn.hostc.app
+- type: vless
+  name: 🇫🇷 France, Saint-Apollinaire | [BL] [995339b9]
+  server: jdxl.cf.090227.xyz
+  port: 443
+  udp: true
+  uuid: 11111111-2222-3333-4444-555555555555
+  encryption: none
+  tls: true
+  servername: notified-rendered-moore-consideration.trycloudflare.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tg-jiedianxielou
+    headers:
+      Host: notified-rendered-moore-consideration.trycloudflare.com
+- type: vless
+  name: 🇫🇷 France, Saint-Apollinaire | [BL] [c6115250]
+  server: notified-rendered-moore-consideration.trycloudflare.com
+  port: 443
+  udp: true
+  uuid: 11111111-2222-3333-4444-555555555555
+  encryption: none
+  tls: true
+  servername: notified-rendered-moore-consideration.trycloudflare.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tg-jiedianxielou
+    headers:
+      Host: notified-rendered-moore-consideration.trycloudflare.com
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
+  server: 95.163.2.47
+  port: 443
+  udp: true
+  uuid: c8c17d77-cc46-4c81-a2bf-779e75532bdc
+  encryption: none
+  tls: true
+  servername: zisvpn.tech
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-nl
+    headers:
+      Host: zisvpn.tech
 proxy-groups:
 - name: Fine
   type: select
@@ -60,6 +164,13 @@ proxy-groups:
   - 🇫🇷 France, Paris | 🌐 | [BL] [27772c9a]
   - 🇫🇷 France, Paris | 🌐 | [BL] [f56ccd4c]
   - 🇫🇷 France, Paris | 🌐 | [BL] [532edbbb]
+  - 🇦🇺 Australia, Sydney | [BL] [365d2a7f]
+  - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🇫🇷 France, Saint-Apollinaire | [BL] [8ce8f745]
+  - 🇫🇷 France, Saint-Apollinaire | [BL] [995339b9]
+  - 🇫🇷 France, Saint-Apollinaire | [BL] [c6115250]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
   default-selected: 🇫🇷 France, Paris | 🌐 | [BL] [27772c9a]
 - name: AUTO
   type: url-test
@@ -67,6 +178,13 @@ proxy-groups:
   - 🇫🇷 France, Paris | 🌐 | [BL] [27772c9a]
   - 🇫🇷 France, Paris | 🌐 | [BL] [f56ccd4c]
   - 🇫🇷 France, Paris | 🌐 | [BL] [532edbbb]
+  - 🇦🇺 Australia, Sydney | [BL] [365d2a7f]
+  - 🇦🇺 Australia, Sydney | [BL] [3eddd046]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🇫🇷 France, Saint-Apollinaire | [BL] [8ce8f745]
+  - 🇫🇷 France, Saint-Apollinaire | [BL] [995339b9]
+  - 🇫🇷 France, Saint-Apollinaire | [BL] [c6115250]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
