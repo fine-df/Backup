@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070138 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070139 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,139 +10,252 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- type: vmess
-  port: 443
-  name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [a5a4dfab]
-  cipher: auto
-  alterId: 0
+- name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [a5a4dfab]
   network: ws
+  tls: true
+  udp: true
+  port: 443
+  type: vmess
+  alterId: 0
+  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
+  server: 3.clarity168.com
+  cipher: auto
   ws-opts:
     headers:
       Host: 3.clarity168.com
     path: /tk
-  udp: true
-  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
-  tls: true
-  server: 3.clarity168.com
-- type: vmess
-  port: 443
-  name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [76d491e3]
-  cipher: auto
-  alterId: 0
+- name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [76d491e3]
   network: ws
+  tls: true
+  udp: true
+  port: 443
+  type: vmess
+  alterId: 0
+  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
+  server: 3.clarity168.com
+  cipher: auto
   ws-opts:
     path: /tk
-  udp: true
-  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
-  tls: true
-  server: 3.clarity168.com
-- type: vless
-  name: 🇺🇸 United States, Los Angeles | [BL]
-  server: tachu37.top
-  port: 443
-  udp: true
-  uuid: 65c21703-ae89-4eed-ae87-8bec8a4c000c
-  encryption: none
-  tls: true
-  servername: tachu37.top
+- name: 🇺🇸 United States, Los Angeles | [BL]
   client-fingerprint: chrome
   network: ws
+  tls: true
+  udp: true
+  port: 443
+  servername: tachu37.top
+  type: vless
+  uuid: 65c21703-ae89-4eed-ae87-8bec8a4c000c
+  encryption: none
+  server: tachu37.top
   ws-opts:
     path: /js
     headers:
       Host: tachu37.top
-- type: vmess
-  name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]
-  server: 3.clarity168.com
-  port: 443
-  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
-  alterId: 0
-  cipher: auto
-  udp: true
+- name: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]
   network: ws
   tls: true
+  udp: true
+  port: 443
   servername: 3.clarity168.com
+  type: vmess
+  alterId: 0
+  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
+  server: 3.clarity168.com
+  cipher: auto
   ws-opts:
     path: /tk
-- type: vless
-  name: 🇺🇸 United States, Ashburn | [BL]
-  server: fr-free.fastestrelay.com
-  port: 443
-  udp: true
-  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
-  encryption: none
-  tls: true
-  servername: fr-free.fastestrelay.com
+- name: 🇺🇸 United States, Ashburn | [BL]
   client-fingerprint: random
   network: ws
+  tls: true
+  udp: true
+  port: 443
+  servername: fr-free.fastestrelay.com
+  type: vless
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
+  encryption: none
+  server: fr-free.fastestrelay.com
   ws-opts:
     path: /700gvl-us-free
     headers:
       Host: fr-free.fastestrelay.com
-- type: vless
-  name: 🌐 Anycast-IP | 🇨🇦 [*CIDR]
-  server: 168.113.253.178
-  port: 443
-  udp: true
-  uuid: d6d40100-9442-0001-b5b9-6d259318c421
-  encryption: none
-  tls: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
-- type: vless
-  name: 🌐 Anycast-IP | 🇨🇦 🇨🇿 | [BL]
-  server: 168.113.253.178
-  port: 443
-  udp: true
-  uuid: d6d40100-9442-0001-b5b9-6d259318c421
-  encryption: none
-  tls: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
-  client-fingerprint: chrome
-- type: vless
+- reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
   name: 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [b02b10ea]
-  server: 195.133.93.227
-  port: 9543
-  udp: true
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  encryption: none
-  tls: true
-  servername: storage.yandexcloud.net
-  flow: xtls-rprx-vision
   client-fingerprint: safari
-  reality-opts:
+  network: tcp
+  tls: true
+  udp: true
+  port: 9543
+  servername: storage.yandexcloud.net
+  type: vless
+  flow: xtls-rprx-vision
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  encryption: none
+  server: 195.133.93.227
+- reality-opts:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
-  network: tcp
-- type: vless
   name: 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [6a38ca03]
-  server: 195.133.93.179
-  port: 9543
-  udp: true
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  encryption: none
-  tls: true
-  servername: storage.yandexcloud.net
-  flow: xtls-rprx-vision
   client-fingerprint: ios
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
   network: tcp
-- type: vless
-  name: 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [0cf21aca]
-  server: 195.133.93.179
-  port: 9543
+  tls: true
   udp: true
+  port: 9543
+  servername: storage.yandexcloud.net
+  type: vless
+  flow: xtls-rprx-vision
   uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
   encryption: none
-  tls: true
-  servername: storage.yandexcloud.net
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
+  server: 195.133.93.179
+- reality-opts:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
+  name: 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [0cf21aca]
+  client-fingerprint: qq
   network: tcp
+  tls: true
+  udp: true
+  port: 9543
+  servername: storage.yandexcloud.net
+  type: vless
+  flow: xtls-rprx-vision
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  encryption: none
+  server: 195.133.93.179
+- type: vless
+  name: 🇨🇦 Canada, Vancouver | [BL] [b592b293]
+  server: 172.67.219.189
+  port: 443
+  udp: true
+  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
+  encryption: none
+  tls: true
+  servername: cdn4.salamfox.ir
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
+    headers:
+      Host: cdn4.salamfox.ir
+- type: vless
+  name: 🇨🇦 Canada, Vancouver | [BL] [4e2ae88a]
+  server: 172.67.219.189
+  port: 443
+  udp: true
+  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
+  encryption: none
+  tls: true
+  servername: cdn4.salamfox.ir
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
+    headers:
+      Host: cdn4.salamfox.ir
+- type: vless
+  name: 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
+  server: 104.18.151.231
+  port: 443
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  encryption: none
+  tls: true
+  servername: jolly-silence-83b2.kidat76098.workers.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: jolly-silence-83b2.kidat76098.workers.dev
+- type: vless
+  name: 🇳🇱 The Netherlands | 🌐 | [BL] [2f49c9d9]
+  server: 104.18.151.231
+  port: 443
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  encryption: none
+  tls: true
+  servername: steep-lake-615e.xeremed6978165.workers.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: steep-lake-615e.xeremed6978165.workers.dev
+- type: vless
+  name: 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
+  server: 45.130.125.151
+  port: 443
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  encryption: none
+  tls: true
+  servername: fancy-mouse-6aff.wixit71180.workers.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fancy-mouse-6aff.wixit71180.workers.dev
+- type: vless
+  name: 🇳🇱 The Netherlands | 🌐 | [BL] [f61dda7f]
+  server: vpn.parsvisit.org
+  port: 2083
+  udp: true
+  uuid: fea1ba01-5601-4f44-896b-c3e73efb02e0
+  encryption: none
+  tls: true
+  servername: vpn.parsvisit.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    headers:
+      Host: vpn.parsvisit.org
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [da3a8581]
+  server: news.zoom.us
+  port: 8443
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  encryption: none
+  tls: true
+  servername: matrix.learnpodedu.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    headers:
+      Host: matrix.learnpodedu.com
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [f91601ca]
+  server: 141.193.213.20
+  port: 8443
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  encryption: none
+  tls: true
+  servername: matrix.learnpodedu.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    headers:
+      Host: matrix.learnpodedu.com
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6ed79337]
+  server: 141.193.213.20
+  port: 8443
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  encryption: none
+  tls: true
+  servername: matrix.learnpodedu.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: matrix.learnpodedu.com
 proxy-groups:
 - name: Fine
   type: select
@@ -154,11 +267,18 @@ proxy-groups:
   - 🇺🇸 United States, Los Angeles | [BL]
   - 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]
   - 🇺🇸 United States, Ashburn | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 [*CIDR]
-  - 🌐 Anycast-IP | 🇨🇦 🇨🇿 | [BL]
   - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [b02b10ea]
   - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [6a38ca03]
   - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [0cf21aca]
+  - 🇨🇦 Canada, Vancouver | [BL] [b592b293]
+  - 🇨🇦 Canada, Vancouver | [BL] [4e2ae88a]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [2f49c9d9]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [f61dda7f]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [da3a8581]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [f91601ca]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6ed79337]
   default-selected: 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL] [a5a4dfab]
 - name: AUTO
   type: url-test
@@ -168,11 +288,18 @@ proxy-groups:
   - 🇺🇸 United States, Los Angeles | [BL]
   - 🇺🇸 United States, Los Angeles (Downtown Los Angeles) | [BL]
   - 🇺🇸 United States, Ashburn | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 [*CIDR]
-  - 🌐 Anycast-IP | 🇨🇦 🇨🇿 | [BL]
   - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [b02b10ea]
   - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [6a38ca03]
   - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [0cf21aca]
+  - 🇨🇦 Canada, Vancouver | [BL] [b592b293]
+  - 🇨🇦 Canada, Vancouver | [BL] [4e2ae88a]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [8f656089]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [2f49c9d9]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [f61dda7f]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [da3a8581]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [f91601ca]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6ed79337]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
