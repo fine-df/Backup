@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070140 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070141 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,167 +10,121 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- port: 443
-  ws-opts:
-    path: /700gvl-us-free
-    headers:
-      Host: fr-free.fastestrelay.com
-  udp: true
-  name: 🇺🇸 United States, Ashburn | [BL]
+- network: tcp
   tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: random
-  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
-  network: ws
-  encryption: none
-  type: vless
-  server: fr-free.fastestrelay.com
-- port: 9543
-  udp: true
-  name: 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [b02b10ea]
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  tls: true
-  servername: storage.yandexcloud.net
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  network: tcp
-  encryption: none
-  type: vless
-  server: 195.133.93.227
-- port: 9543
-  udp: true
-  name: 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [6a38ca03]
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  tls: true
-  servername: storage.yandexcloud.net
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  network: tcp
-  encryption: none
-  type: vless
-  server: 195.133.93.179
-- port: 9543
-  udp: true
-  name: 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [0cf21aca]
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  tls: true
-  servername: storage.yandexcloud.net
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  network: tcp
-  encryption: none
-  type: vless
-  server: 195.133.93.179
-- type: vless
-  name: 🇺🇸 United States, Newark (Central Business District) | [BL]
-  server: 48.102.204.67
-  port: 8443
-  udp: true
   uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
-  encryption: none
-  tls: true
   servername: tradingview.com
-  flow: xtls-rprx-vision
+  server: 48.102.204.67
   client-fingerprint: firefox
+  port: 8443
+  encryption: none
   reality-opts:
     public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
     short-id: 8f3c6e2a1b5d4f09
-  network: tcp
-- type: vless
-  name: 🇺🇸 United States, Salt Lake City | [BL]
-  server: 206.245.132.182
-  port: 443
+  name: 🇺🇸 United States, Newark (Central Business District) | [BL]
+  type: vless
   udp: true
-  uuid: 85b8b4a4-d9c6-4357-a016-3a3ee04bf984
-  encryption: none
-  tls: true
-  servername: us.superspidy.com
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 4mu0D7iJitheVteSBXEPt72-FH8G_TUoJ18sXLG5GDk
-    short-id: 332457cec312a4ab
 - type: vless
-  name: 🇺🇸 United States, Los Angeles | [BL]
-  server: vless.cloudxzw2027.ccwu.cc
+  name: 🇺🇸 United States, Ashburn | [BL]
+  server: fr-free.fastestrelay.com
   port: 443
   udp: true
-  uuid: 2f12e5b5-6ce7-47ab-88b9-6110c1a3fc60
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   encryption: none
   tls: true
-  servername: vless.cloudxzw2027.ccwu.cc
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /700gvl-us-free
+- type: vless
+  name: 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [c964c763]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [3c31b30b]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /xzw
+    path: /
     headers:
-      Host: vless.cloudxzw2027.ccwu.cc
+      Host: free.sahanwickramasinghe.com
 - type: vless
-  name: 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
-  server: 116.213.43.43
-  port: 11107
+  name: 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [54c566eb]
+  server: 104.27.97.42
+  port: 8443
   udp: true
-  uuid: 08a37d1f-7bf1-4b5d-a2ec-5ced6a633d7f
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
   encryption: none
   tls: true
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6GRzkPbs12fKBdBBFzs5dmtmbSHCXMngUCBKLrXYm3U
-    short-id: e2ccd8eedcbee2ce
-  network: tcp
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.com
 - type: vless
-  name: 🇩🇪 Germany [*CIDR]
-  server: 188.225.74.6
-  port: 443
+  name: 🇪🇬 Egypt | [*CIDR]
+  server: 82.148.14.100
+  port: 52006
   udp: true
-  uuid: 6dd17e9f-5b7c-466d-a53a-7c30f5dc8338
+  uuid: cde5d3ef-7d14-0d48-a74d-ac98e39bf9ec
   encryption: none
   tls: true
-  servername: nvidia.com
+  servername: mvp.dont-block-please.dad
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
+  client-fingerprint: qq
+- type: vmess
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
+  server: 161.120.223.62
+  port: 8443
+  uuid: 17136e7d-6678-403f-af08-29ca2438031f
+  alterId: 0
+  cipher: auto
+  udp: true
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇺🇸 United States, Ashburn | [BL]
-  - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [b02b10ea]
-  - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [6a38ca03]
-  - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [0cf21aca]
   - 🇺🇸 United States, Newark (Central Business District) | [BL]
-  - 🇺🇸 United States, Salt Lake City | [BL]
-  - 🇺🇸 United States, Los Angeles | [BL]
-  - 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
-  - 🇩🇪 Germany [*CIDR]
-  default-selected: 🇺🇸 United States, Ashburn | [BL]
+  - 🇺🇸 United States, Ashburn | [BL]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [c964c763]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [3c31b30b]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [54c566eb]
+  - 🇪🇬 Egypt | [*CIDR]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  default-selected: 🇺🇸 United States, Newark (Central Business District) | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 United States, Ashburn | [BL]
-  - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [b02b10ea]
-  - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [6a38ca03]
-  - 🇨🇾 Cyprus [SNI-RU] storage.yandexcloud.net [0cf21aca]
   - 🇺🇸 United States, Newark (Central Business District) | [BL]
-  - 🇺🇸 United States, Salt Lake City | [BL]
-  - 🇺🇸 United States, Los Angeles | [BL]
-  - 🇭🇰 Hong Kong, Hong Kong | 🌐 | [BL]
-  - 🇩🇪 Germany [*CIDR]
+  - 🇺🇸 United States, Ashburn | [BL]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [c964c763]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [3c31b30b]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [54c566eb]
+  - 🇪🇬 Egypt | [*CIDR]
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
