@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070142 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070143 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,80 +10,36 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- servername: tradingview.com
-  tls: true
-  server: 48.102.204.67
-  name: 🇺🇸 United States, Newark (Central Business District) | [BL]
-  port: 8443
-  reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
-  encryption: none
-  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-  type: vless
-  flow: xtls-rprx-vision
 - ws-opts:
     path: /700gvl-us-free
-  servername: fr-free.fastestrelay.com
-  tls: true
   server: fr-free.fastestrelay.com
+  servername: fr-free.fastestrelay.com
+  network: ws
+  encryption: none
+  type: vless
+  client-fingerprint: random
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   name: 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+  tls: true
   port: 443
+  udp: true
+- ws-opts:
+    path: /700gvl-us-free
+    headers:
+      Host: fr-free.fastestrelay.com
+  server: fr-free.fastestrelay.com
+  servername: fr-free.fastestrelay.com
+  network: ws
   encryption: none
-  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
+  type: vless
   client-fingerprint: random
-  network: ws
-  udp: true
-  type: vless
-- ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-  servername: free.sahanwickramasinghe.com
-  tls: true
-  server: 104.17.70.206
-  name: 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [c964c763]
-  port: 8443
-  encryption: none
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  client-fingerprint: ios
-  network: ws
-  udp: true
-  type: vless
-- ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-  servername: free.sahanwickramasinghe.com
-  tls: true
-  server: 104.17.70.206
-  name: 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [3c31b30b]
-  port: 8443
-  encryption: none
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  client-fingerprint: chrome
-  network: ws
-  udp: true
-  type: vless
-- ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
-  servername: free.sahanwickramasinghe.com
-  tls: true
-  server: 104.27.97.42
-  name: 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [54c566eb]
-  port: 8443
-  encryption: none
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  client-fingerprint: edge
-  network: ws
-  udp: true
-  type: vless
-- type: vless
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   name: 🇺🇸 United States, Ashburn | [BL] [9d53cfa7]
+  tls: true
+  port: 443
+  udp: true
+- type: vless
+  name: 🇺🇸 United States, Ashburn | [BL]
   server: fr-free.fastestrelay.com
   port: 443
   udp: true
@@ -91,214 +47,94 @@ proxies:
   encryption: none
   tls: true
   servername: fr-free.fastestrelay.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /700gvl-us-free
     headers:
       Host: fr-free.fastestrelay.com
 - type: vless
-  name: 🇺🇸 United States, Ashburn | [BL] [153a160e]
-  server: fr-free.fastestrelay.com
+  name: 🇺🇸 United States, Los Angeles | [BL] [866687b8]
+  server: ws.liuzedong.ltd
   port: 443
   udp: true
-  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
+  uuid: FCEAD694-2E27-4EEB-8836-9D4ACF3E028B
   encryption: none
   tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: chrome
+  servername: ws.liuzedong.ltd
+  client-fingerprint: android
   network: ws
   ws-opts:
-    path: /700gvl-us-free
+    path: /ws
 - type: vless
-  name: 🇨🇦 Canada, Vancouver | [BL]
-  server: 172.67.219.189
+  name: 🇺🇸 United States, Los Angeles | [BL] [4d75df30]
+  server: ws.liuzedong.ltd
   port: 443
   udp: true
-  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
+  uuid: FCEAD694-2E27-4EEB-8836-9D4ACF3E028B
   encryption: none
   tls: true
-  servername: cdn4.salamfox.ir
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
-    headers:
-      Host: cdn4.salamfox.ir
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [25efafff]
-  server: 104.18.151.231
-  port: 443
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    headers:
-      Host: workers.retaxay188.workers.dev
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [4a31b361]
-  server: 104.18.151.231
-  port: 2053
-  udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  encryption: none
-  tls: true
-  servername: twilight-frost-15b0.yigom67484.workers.dev
+  servername: ws.liuzedong.ltd
   client-fingerprint: safari
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: twilight-frost-15b0.yigom67484.workers.dev
+      Host: ws.liuzedong.ltd
 - type: vless
-  name: 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
-  server: 45.130.125.151
+  name: 🇰🇿 Kazakhstan | [*CIDR]
+  server: 176.123.162.82
   port: 443
   udp: true
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  uuid: ef5a57c7-84d5-4f86-b99c-875a16da485f
   encryption: none
   tls: true
-  servername: fancy-mouse-6aff.wixit71180.workers.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fancy-mouse-6aff.wixit71180.workers.dev
+  servername: rukzmicro1.gangplatform.com
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 3xhvTr_v46NYSlw1yF6nWUjX6ZVHGfI0a0Wuao6lGVs
+    short-id: a8b3db4bfe222a8c
+  network: tcp
 - type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6e2edfc7]
-  server: 141.193.213.21
-  port: 8443
+  name: 🇪🇸 Spain, Madrid | [BL]
+  server: 03e488t.es12.h1clayd.shop
+  port: 443
   udp: true
-  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  uuid: c5470a56-1b9b-451c-b075-02c82ee4aa6c
   encryption: none
   tls: true
-  servername: matrix.learnpodedu.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    headers:
-      Host: matrix.learnpodedu.com
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [da3a8581]
-  server: news.zoom.us
-  port: 8443
-  udp: true
-  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
-  encryption: none
-  tls: true
-  servername: matrix.learnpodedu.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    headers:
-      Host: matrix.learnpodedu.com
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6ed79337]
-  server: 141.193.213.20
-  port: 8443
-  udp: true
-  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
-  encryption: none
-  tls: true
-  servername: matrix.learnpodedu.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: matrix.learnpodedu.com
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [5619dcd6]
-  server: 104.27.97.42
-  port: 8443
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
+  servername: 03e488t.es12.h1clayd.shop
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  reality-opts:
+    public-key: F-QRCTOgAul242ISSobCpwO8G6JGN0qeIdJdv60HIRo
+    short-id: bd35558b17a4930b
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇺🇸 United States, Newark (Central Business District) | [BL]
   - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
-  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [c964c763]
-  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [3c31b30b]
-  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [54c566eb]
   - 🇺🇸 United States, Ashburn | [BL] [9d53cfa7]
-  - 🇺🇸 United States, Ashburn | [BL] [153a160e]
-  - 🇨🇦 Canada, Vancouver | [BL]
-  - 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
-  - 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [25efafff]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [4a31b361]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6e2edfc7]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [da3a8581]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6ed79337]
-  - 🇩🇪 Germany | 🌐 | [BL] [5619dcd6]
-  default-selected: 🇺🇸 United States, Newark (Central Business District) | [BL]
+  - 🇺🇸 United States, Ashburn | [BL]
+  - 🇺🇸 United States, Los Angeles | [BL] [866687b8]
+  - 🇺🇸 United States, Los Angeles | [BL] [4d75df30]
+  - 🇰🇿 Kazakhstan | [*CIDR]
+  - 🇪🇸 Spain, Madrid | [BL]
+  default-selected: 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 United States, Newark (Central Business District) | [BL]
   - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
-  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [c964c763]
-  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [3c31b30b]
-  - 🇩🇪 Germany, Saarbrücken (Mitte) | [BL] [54c566eb]
   - 🇺🇸 United States, Ashburn | [BL] [9d53cfa7]
-  - 🇺🇸 United States, Ashburn | [BL] [153a160e]
-  - 🇨🇦 Canada, Vancouver | [BL]
-  - 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
-  - 🇩🇪 Germany | 🌐 | [BL] [ffb3e0f1]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [25efafff]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [4a31b361]
-  - 🇳🇱 The Netherlands | 🌐 | [BL] [dd1ff9ed]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6e2edfc7]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [da3a8581]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6ed79337]
-  - 🇩🇪 Germany | 🌐 | [BL] [5619dcd6]
+  - 🇺🇸 United States, Ashburn | [BL]
+  - 🇺🇸 United States, Los Angeles | [BL] [866687b8]
+  - 🇺🇸 United States, Los Angeles | [BL] [4d75df30]
+  - 🇰🇿 Kazakhstan | [*CIDR]
+  - 🇪🇸 Spain, Madrid | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
