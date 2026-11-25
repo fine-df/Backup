@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070147 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070148 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,36 +10,62 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- server: fr-free.fastestrelay.com
-  port: 443
-  client-fingerprint: chrome
+- client-fingerprint: chrome
+  encryption: none
   name: 🇺🇸 United States, Ashburn | [BL] [123859e4]
+  port: 443
+  server: fr-free.fastestrelay.com
+  network: ws
+  type: vless
+  tls: true
+  servername: fr-free.fastestrelay.com
   uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   ws-opts:
     path: /700gvl-us-free
     headers:
       Host: fr-free.fastestrelay.com
-  encryption: none
-  type: vless
-  servername: fr-free.fastestrelay.com
-  tls: true
   udp: true
-  network: ws
 - type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]
-  server: ev.zoom.us
-  port: 8443
+  name: 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+  server: fr-free.fastestrelay.com
+  port: 443
   udp: true
-  uuid: c9b4fb55-1634-436f-beb7-3b1db5b0131d
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   encryption: none
   tls: true
-  servername: free-server.techsonic.dev
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /700gvl-us-free
+- type: vless
+  name: 🇺🇸 United States, Ashburn | [BL] [153a160e]
+  server: fr-free.fastestrelay.com
+  port: 443
+  udp: true
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
+  encryption: none
+  tls: true
+  servername: fr-free.fastestrelay.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /free-server.techsonic.dev
+    path: /700gvl-us-free
+- type: vless
+  name: 🇰🇷 South Korea, Yongsan-dong | [BL]
+  server: 104.25.128.15
+  port: 443
+  udp: true
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  encryption: none
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /kw7x2mq9
     headers:
-      Host: free-server.techsonic.dev
+      Host: krc.80782636.xyz
 proxy-groups:
 - name: Fine
   type: select
@@ -47,13 +73,17 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 🇺🇸 United States, Ashburn | [BL] [123859e4]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]
+  - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+  - 🇺🇸 United States, Ashburn | [BL] [153a160e]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL]
   default-selected: 🇺🇸 United States, Ashburn | [BL] [123859e4]
 - name: AUTO
   type: url-test
   proxies:
   - 🇺🇸 United States, Ashburn | [BL] [123859e4]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]
+  - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+  - 🇺🇸 United States, Ashburn | [BL] [153a160e]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
