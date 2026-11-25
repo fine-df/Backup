@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070146 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070147 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,309 +10,50 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- network: ws
-  encryption: none
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
-  server: 172.64.155.209
-  tls: true
-  type: vless
+- server: fr-free.fastestrelay.com
   port: 443
-  name: 🌐 Anycast-IP | 🇹🇷 | [BL] [b57dd89c]
-  servername: sinavm3.soft10.ir
-  udp: true
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
-- network: ws
   client-fingerprint: chrome
-  encryption: none
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
-  server: 172.64.155.209
-  tls: true
-  type: vless
-  port: 443
-  name: 🌐 Anycast-IP | 🇹🇷 | [BL] [b5b4d8e9]
-  servername: sinavm3.soft10.ir
-  udp: true
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
-- type: vless
-  name: 🇺🇸 United States, Los Angeles | [BL] [0be5d594]
-  server: ws.liuzedong.ltd
-  port: 443
-  udp: true
-  uuid: FCEAD694-2E27-4EEB-8836-9D4ACF3E028B
-  encryption: none
-  tls: true
-  servername: ws.liuzedong.ltd
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ws.liuzedong.ltd
-- type: vless
   name: 🇺🇸 United States, Ashburn | [BL] [123859e4]
-  server: fr-free.fastestrelay.com
-  port: 443
-  udp: true
   uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
-  encryption: none
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: chrome
-  network: ws
   ws-opts:
     path: /700gvl-us-free
     headers:
       Host: fr-free.fastestrelay.com
-- type: vless
-  name: 🇺🇸 United States, Los Angeles | [BL] [9b0d16ad]
-  server: ws.liuzedong.ltd
-  port: 443
-  udp: true
-  uuid: FCEAD694-2E27-4EEB-8836-9D4ACF3E028B
   encryption: none
-  tls: true
-  servername: ws.liuzedong.ltd
-  network: ws
-  ws-opts:
-    path: /ws
-- type: vless
-  name: 🇺🇸 United States, Ashburn | [BL] [153a160e]
-  server: fr-free.fastestrelay.com
-  port: 443
-  udp: true
-  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
-  encryption: none
-  tls: true
+  type: vless
   servername: fr-free.fastestrelay.com
+  tls: true
+  udp: true
+  network: ws
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]
+  server: ev.zoom.us
+  port: 8443
+  udp: true
+  uuid: c9b4fb55-1634-436f-beb7-3b1db5b0131d
+  encryption: none
+  tls: true
+  servername: free-server.techsonic.dev
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /700gvl-us-free
-- type: vless
-  name: 🇨🇦 Canada, Vancouver | [BL] [5c26a320]
-  server: 172.67.219.189
-  port: 443
-  udp: true
-  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
-  encryption: none
-  tls: true
-  servername: cdn4.salamfox.ir
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
+    path: /free-server.techsonic.dev
     headers:
-      Host: cdn4.salamfox.ir
-- type: vless
-  name: 🇨🇦 Canada, Vancouver | [BL] [b592b293]
-  server: 172.67.219.189
-  port: 443
-  udp: true
-  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
-  encryption: none
-  tls: true
-  servername: cdn4.salamfox.ir
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
-    headers:
-      Host: cdn4.salamfox.ir
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [c8e5ee4c]
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [063f22d2]
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.com
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6749a93c]
-  server: 141.193.213.21
-  port: 8443
-  udp: true
-  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
-  encryption: none
-  tls: true
-  servername: matrix.learnpodedu.com
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    headers:
-      Host: matrix.learnpodedu.com
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [b21e9290]
-  server: news.zoom.us
-  port: 8443
-  udp: true
-  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
-  encryption: none
-  tls: true
-  servername: matrix.learnpodedu.com
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    headers:
-      Host: matrix.learnpodedu.com
-- type: vless
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [e93104fe]
-  server: 141.193.213.21
-  port: 8443
-  udp: true
-  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
-  encryption: none
-  tls: true
-  servername: matrix.learnpodedu.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: matrix.learnpodedu.com
-- type: vless
-  name: 🇩🇪 Germany | 🌐 | [BL] [84f9bfa9]
-  server: 104.27.97.42
-  port: 8443
-  udp: true
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  encryption: none
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- type: vless
-  name: 🇦🇪 United Arab Emirates, Abu Dhabi | [BL]
-  server: dubai-cdn-reverse-prsxv.keno.su
-  port: 443
-  udp: true
-  uuid: a9d963bc-81a1-42b5-b62d-104af19a0f5c
-  encryption: none
-  tls: true
-  servername: dubai-cdn-reverse-prsxv.keno.su
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 1h_quEcn8-33TXVqNwePJbl5f4xBQF8-b1jV4WUz73c
-    short-id: ff133c583853246f
-  network: tcp
-- type: vless
-  name: 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
-  server: 195.208.125.204
-  port: 8443
-  udp: true
-  uuid: 8f092ef0-a7e6-03e9-b989-836aebc00ff7
-  encryption: none
-  tls: true
-  servername: ya.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: DulhUFMYzxIsucjtPONJQMszzyi9V6bqQ9WI3GjGFAY
-    short-id: abc123
-  network: tcp
-- type: vless
-  name: 🇬🇧 United Kingdom, London | [BL] [1b5e3ce5]
-  server: perdelka.belka.tv
-  port: 443
-  udp: true
-  uuid: 7316d881-eeec-429b-94f1-07585747f7c8
-  encryption: none
-  tls: true
-  servername: perdelka.belka.tv
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
-    short-id: a9dc98a7dc87a7dc
-  network: tcp
-- type: vless
-  name: 🇬🇧 United Kingdom, London | [BL] [bac96356]
-  server: perdelka.belka.tv
-  port: 443
-  udp: true
-  uuid: 7316d881-eeec-429b-94f1-07585747f7c8
-  encryption: none
-  tls: true
-  servername: perdelka.belka.tv
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
-    short-id: a9dc98a7dc87a7dc
-  network: tcp
+      Host: free-server.techsonic.dev
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🌐 Anycast-IP | 🇹🇷 | [BL] [b57dd89c]
-  - 🌐 Anycast-IP | 🇹🇷 | [BL] [b5b4d8e9]
-  - 🇺🇸 United States, Los Angeles | [BL] [0be5d594]
   - 🇺🇸 United States, Ashburn | [BL] [123859e4]
-  - 🇺🇸 United States, Los Angeles | [BL] [9b0d16ad]
-  - 🇺🇸 United States, Ashburn | [BL] [153a160e]
-  - 🇨🇦 Canada, Vancouver | [BL] [5c26a320]
-  - 🇨🇦 Canada, Vancouver | [BL] [b592b293]
-  - 🇩🇪 Germany | 🌐 | [BL] [c8e5ee4c]
-  - 🇩🇪 Germany | 🌐 | [BL] [063f22d2]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6749a93c]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [b21e9290]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [e93104fe]
-  - 🇩🇪 Germany | 🌐 | [BL] [84f9bfa9]
-  - 🇦🇪 United Arab Emirates, Abu Dhabi | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
-  - 🇬🇧 United Kingdom, London | [BL] [1b5e3ce5]
-  - 🇬🇧 United Kingdom, London | [BL] [bac96356]
-  default-selected: 🌐 Anycast-IP | 🇹🇷 | [BL] [b57dd89c]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]
+  default-selected: 🇺🇸 United States, Ashburn | [BL] [123859e4]
 - name: AUTO
   type: url-test
   proxies:
-  - 🌐 Anycast-IP | 🇹🇷 | [BL] [b57dd89c]
-  - 🌐 Anycast-IP | 🇹🇷 | [BL] [b5b4d8e9]
-  - 🇺🇸 United States, Los Angeles | [BL] [0be5d594]
   - 🇺🇸 United States, Ashburn | [BL] [123859e4]
-  - 🇺🇸 United States, Los Angeles | [BL] [9b0d16ad]
-  - 🇺🇸 United States, Ashburn | [BL] [153a160e]
-  - 🇨🇦 Canada, Vancouver | [BL] [5c26a320]
-  - 🇨🇦 Canada, Vancouver | [BL] [b592b293]
-  - 🇩🇪 Germany | 🌐 | [BL] [c8e5ee4c]
-  - 🇩🇪 Germany | 🌐 | [BL] [063f22d2]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6749a93c]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [b21e9290]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [e93104fe]
-  - 🇩🇪 Germany | 🌐 | [BL] [84f9bfa9]
-  - 🇦🇪 United Arab Emirates, Abu Dhabi | [BL]
-  - 🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]
-  - 🇬🇧 United Kingdom, London | [BL] [1b5e3ce5]
-  - 🇬🇧 United Kingdom, London | [BL] [bac96356]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
