@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070148 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070149 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,23 +10,66 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- client-fingerprint: chrome
+- port: 443
   encryption: none
-  name: 🇺🇸 United States, Ashburn | [BL] [123859e4]
-  port: 443
-  server: fr-free.fastestrelay.com
   network: ws
+  udp: true
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: chrome
   type: vless
   tls: true
-  servername: fr-free.fastestrelay.com
-  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   ws-opts:
     path: /700gvl-us-free
     headers:
       Host: fr-free.fastestrelay.com
+  server: fr-free.fastestrelay.com
+  name: 🇺🇸 United States, Ashburn | [BL] [123859e4]
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
+- port: 443
+  encryption: none
+  network: ws
   udp: true
-- type: vless
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: random
+  type: vless
+  tls: true
+  ws-opts:
+    path: /700gvl-us-free
+  server: fr-free.fastestrelay.com
   name: 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
+- port: 443
+  encryption: none
+  network: ws
+  udp: true
+  servername: krc.80782636.xyz
+  client-fingerprint: chrome
+  type: vless
+  tls: true
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+  server: 104.25.128.15
+  name: 🇰🇷 South Korea, Yongsan-dong | [BL]
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+- type: vless
+  name: 🇺🇸 United States, Los Angeles | [BL] [d132a5c1]
+  server: ws.liuzedong.ltd
+  port: 443
+  udp: true
+  uuid: FCEAD694-2E27-4EEB-8836-9D4ACF3E028B
+  encryption: none
+  tls: true
+  servername: ws.liuzedong.ltd
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ws.liuzedong.ltd
+- type: vless
+  name: 🇺🇸 United States, Ashburn | [BL] [9d53cfa7]
   server: fr-free.fastestrelay.com
   port: 443
   udp: true
@@ -38,34 +81,221 @@ proxies:
   network: ws
   ws-opts:
     path: /700gvl-us-free
+    headers:
+      Host: fr-free.fastestrelay.com
 - type: vless
-  name: 🇺🇸 United States, Ashburn | [BL] [153a160e]
-  server: fr-free.fastestrelay.com
+  name: 🇺🇸 United States, Ashburn | [BL] [865fed1a]
+  server: 172.67.139.189
   port: 443
   udp: true
   uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   encryption: none
   tls: true
   servername: fr-free.fastestrelay.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   network: ws
   ws-opts:
     path: /700gvl-us-free
+    headers:
+      Host: fr-free.fastestrelay.com
 - type: vless
-  name: 🇰🇷 South Korea, Yongsan-dong | [BL]
-  server: 104.25.128.15
+  name: 🇺🇸 United States, Los Angeles | [BL] [156ebec3]
+  server: ws.liuzedong.ltd
   port: 443
   udp: true
-  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  uuid: FCEAD694-2E27-4EEB-8836-9D4ACF3E028B
   encryption: none
   tls: true
-  servername: krc.80782636.xyz
+  servername: ws.liuzedong.ltd
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /kw7x2mq9
+    path: /ws
+- type: vless
+  name: 🇺🇸 United States, Ashburn | [BL] [e3aaf27a]
+  server: 104.21.94.203
+  port: 443
+  udp: true
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
+  encryption: none
+  tls: true
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /700gvl-us-free
     headers:
-      Host: krc.80782636.xyz
+      Host: fr-free.fastestrelay.com
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [c8e5ee4c]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: android
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇳🇱 The Netherlands | 🌐 | [BL] [0459e82b]
+  server: 104.18.151.231
+  port: 443
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  encryption: none
+  tls: true
+  servername: workers.jijew83195.workers.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: workers.jijew83195.workers.dev
+- type: vless
+  name: 🇳🇱 The Netherlands | 🌐 | [BL] [56a53842]
+  server: 104.18.151.231
+  port: 443
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  encryption: none
+  tls: true
+  servername: workers.jijew83195.workers.dev
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: workers.jijew83195.workers.dev
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [f94982c5]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6749a93c]
+  server: 141.193.213.21
+  port: 8443
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  encryption: none
+  tls: true
+  servername: matrix.learnpodedu.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    headers:
+      Host: matrix.learnpodedu.com
+- type: vless
+  name: 🇹🇷 Turkey, Bahçelievler | [BL] [b57dd89c]
+  server: 172.64.155.209
+  port: 443
+  udp: true
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  encryption: none
+  tls: true
+  servername: sinavm3.soft10.ir
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [f91601ca]
+  server: 141.193.213.20
+  port: 8443
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  encryption: none
+  tls: true
+  servername: matrix.learnpodedu.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    headers:
+      Host: matrix.learnpodedu.com
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [84f9bfa9]
+  server: 104.27.97.42
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🌐 Anycast-IP | 🇦🇿 | [BL] [3b2701f6]
+  server: 95.129.234.108
+  port: 8443
+  udp: true
+  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
+  encryption: none
+  tls: true
+  servername: rowan-quay.cdn.cachefleet.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 01ef4cdceb3b3439
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6ed79337]
+  server: 141.193.213.20
+  port: 8443
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  encryption: none
+  tls: true
+  servername: matrix.learnpodedu.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: matrix.learnpodedu.com
+- type: vless
+  name: 🇹🇷 Turkey, Bahçelievler | [BL] [b5b4d8e9]
+  server: 172.64.155.209
+  port: 443
+  udp: true
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  encryption: none
+  tls: true
+  servername: sinavm3.soft10.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
+- type: vless
+  name: 🌐 Anycast-IP | 🇦🇿 | [BL] [5a397c3a]
+  server: 95.129.234.108
+  port: 8443
+  udp: true
+  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
+  encryption: none
+  tls: true
+  servername: rowan-quay.cdn.cachefleet.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 01ef4cdceb3b3439
 proxy-groups:
 - name: Fine
   type: select
@@ -74,16 +304,48 @@ proxy-groups:
   - DIRECT
   - 🇺🇸 United States, Ashburn | [BL] [123859e4]
   - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
-  - 🇺🇸 United States, Ashburn | [BL] [153a160e]
   - 🇰🇷 South Korea, Yongsan-dong | [BL]
+  - 🇺🇸 United States, Los Angeles | [BL] [d132a5c1]
+  - 🇺🇸 United States, Ashburn | [BL] [9d53cfa7]
+  - 🇺🇸 United States, Ashburn | [BL] [865fed1a]
+  - 🇺🇸 United States, Los Angeles | [BL] [156ebec3]
+  - 🇺🇸 United States, Ashburn | [BL] [e3aaf27a]
+  - 🇩🇪 Germany | 🌐 | [BL] [c8e5ee4c]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [0459e82b]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [56a53842]
+  - 🇩🇪 Germany | 🌐 | [BL] [f94982c5]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6749a93c]
+  - 🇹🇷 Turkey, Bahçelievler | [BL] [b57dd89c]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [f91601ca]
+  - 🇩🇪 Germany | 🌐 | [BL] [84f9bfa9]
+  - 🌐 Anycast-IP | 🇦🇿 | [BL] [3b2701f6]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6ed79337]
+  - 🇹🇷 Turkey, Bahçelievler | [BL] [b5b4d8e9]
+  - 🌐 Anycast-IP | 🇦🇿 | [BL] [5a397c3a]
   default-selected: 🇺🇸 United States, Ashburn | [BL] [123859e4]
 - name: AUTO
   type: url-test
   proxies:
   - 🇺🇸 United States, Ashburn | [BL] [123859e4]
   - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
-  - 🇺🇸 United States, Ashburn | [BL] [153a160e]
   - 🇰🇷 South Korea, Yongsan-dong | [BL]
+  - 🇺🇸 United States, Los Angeles | [BL] [d132a5c1]
+  - 🇺🇸 United States, Ashburn | [BL] [9d53cfa7]
+  - 🇺🇸 United States, Ashburn | [BL] [865fed1a]
+  - 🇺🇸 United States, Los Angeles | [BL] [156ebec3]
+  - 🇺🇸 United States, Ashburn | [BL] [e3aaf27a]
+  - 🇩🇪 Germany | 🌐 | [BL] [c8e5ee4c]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [0459e82b]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [56a53842]
+  - 🇩🇪 Germany | 🌐 | [BL] [f94982c5]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6749a93c]
+  - 🇹🇷 Turkey, Bahçelievler | [BL] [b57dd89c]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [f91601ca]
+  - 🇩🇪 Germany | 🌐 | [BL] [84f9bfa9]
+  - 🌐 Anycast-IP | 🇦🇿 | [BL] [3b2701f6]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6ed79337]
+  - 🇹🇷 Turkey, Bahçelievler | [BL] [b5b4d8e9]
+  - 🌐 Anycast-IP | 🇦🇿 | [BL] [5a397c3a]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
