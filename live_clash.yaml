@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070152 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070153 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,49 +10,105 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
-  encryption: none
+- encryption: none
   ws-opts:
     path: /700gvl-us-free
-  server: fr-free.fastestrelay.com
-  tls: true
-  port: 443
-  network: ws
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   client-fingerprint: random
-  udp: true
-  name: 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+  server: fr-free.fastestrelay.com
+  type: vless
   servername: fr-free.fastestrelay.com
-  type: vless
-- uuid: 61c9aca3-c23b-4410-a85d-85fda46a76cc
-  encryption: none
-  reality-opts:
-    public-key: HOcF5cfoTxZdRezSs2oSr0y9Zt9xFfS8oIsIplh5_hk
-    short-id: 14bc9cf52a8fd11c
-  server: 147.45.63.72
-  tls: true
-  port: 443
-  network: tcp
-  client-fingerprint: firefox
+  network: ws
   udp: true
-  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt III) | [BL]
-  flow: xtls-rprx-vision
-  servername: dhgpp.kramiliantha.sbs
-  type: vless
-- uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  encryption: none
+  port: 443
+  tls: true
+  name: 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+- encryption: none
   ws-opts:
     path: /wsnl
     headers:
       Host: xinnusvpn.duckdns.org
-  server: xinnusvpn.duckdns.org
-  tls: true
-  port: 8443
-  network: ws
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   client-fingerprint: chrome
-  udp: true
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
-  servername: xinnusvpn.duckdns.org
+  server: xinnusvpn.duckdns.org
   type: vless
+  servername: xinnusvpn.duckdns.org
+  network: ws
+  udp: true
+  port: 8443
+  tls: true
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
+- type: vless
+  name: 🇺🇸 United States, Dallas | [BL]
+  server: 3x-sub.linzhonghong.com
+  port: 443
+  udp: true
+  uuid: 0a4f1c90-a632-4c69-a8f1-9ebf9acaae71
+  encryption: none
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws7f3k9x2q8m
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
+  server: ev.zoom.us
+  port: 8443
+  udp: true
+  uuid: c9b4fb55-1634-436f-beb7-3b1db5b0131d
+  encryption: none
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- type: vless
+  name: 🇺🇸 United States, Newark (Central Business District) | [BL]
+  server: 48.102.201.124
+  port: 443
+  udp: true
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  encryption: none
+  tls: true
+  servername: lesson11.schoolpizorbz.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: bkgMxOi6NnagiY8Cc8PzW9skQSk9LDKmFtjGfqrlXHE
+    short-id: a16c828fc2b70207
+  network: tcp
+- type: vless
+  name: 🇺🇸 United States, Orem | [BL] [f2c35cd3]
+  server: 177.202.76.30
+  port: 443
+  udp: true
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  encryption: none
+  tls: true
+  servername: lesson14.schoolpizorbz.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: G465rpA3czwxSTrjkcl0KK6HohO5G8do2MxjcRbULSA
+    short-id: d52f9a703c9bf2d9
+  network: tcp
+- type: vless
+  name: 🇺🇸 United States, Orem | [BL] [78de88fa]
+  server: lesson14.schoolpizorbz.xyz
+  port: 443
+  udp: true
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  encryption: none
+  tls: true
+  servername: lesson14.schoolpizorbz.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: G465rpA3czwxSTrjkcl0KK6HohO5G8do2MxjcRbULSA
+    short-id: d52f9a703c9bf2d9
+  network: tcp
 proxy-groups:
 - name: Fine
   type: select
@@ -60,15 +116,23 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt III) | [BL]
   - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🇺🇸 United States, Dallas | [BL]
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
+  - 🇺🇸 United States, Newark (Central Business District) | [BL]
+  - 🇺🇸 United States, Orem | [BL] [f2c35cd3]
+  - 🇺🇸 United States, Orem | [BL] [78de88fa]
   default-selected: 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
 - name: AUTO
   type: url-test
   proxies:
   - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
-  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt III) | [BL]
   - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🇺🇸 United States, Dallas | [BL]
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
+  - 🇺🇸 United States, Newark (Central Business District) | [BL]
+  - 🇺🇸 United States, Orem | [BL] [f2c35cd3]
+  - 🇺🇸 United States, Orem | [BL] [78de88fa]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
