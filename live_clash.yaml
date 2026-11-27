@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070150 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070151 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,23 +10,179 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- type: vless
-  name: 🇭🇰 Hong Kong, Hong Kong | [BL]
-  server: vl-x2.qz10086.top
-  port: 38101
+- port: 8443
   udp: true
-  uuid: d235ad20-8f30-441e-871e-ee2695e4c430
+  type: vless
+  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+  network: tcp
+  server: one.alpheratzz.org
+  tls: true
+  servername: api-6b04608f.adhil.uk
+  encryption: none
+  client-fingerprint: safari
+  name: 🇪🇪 Estonia, Tallinn | [BL]
+  flow: xtls-rprx-vision
+- type: vless
+  name: 🇺🇸 United States, Ashburn | [BL] [123859e4]
+  server: fr-free.fastestrelay.com
+  port: 443
+  udp: true
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   encryption: none
   tls: true
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: j7lihAdLvNKWg67WMGQsRSM8WFbaUK5dAi7D2R7iXHM
-    short-id: d5a01375
-  network: tcp
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /700gvl-us-free
+    headers:
+      Host: fr-free.fastestrelay.com
 - type: vless
-  name: 🇪🇪 Estonia, Tallinn | [BL]
+  name: 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+  server: fr-free.fastestrelay.com
+  port: 443
+  udp: true
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
+  encryption: none
+  tls: true
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /700gvl-us-free
+- type: vless
+  name: 🇺🇸 United States, Ashburn | [BL] [865fed1a]
+  server: 172.67.139.189
+  port: 443
+  udp: true
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
+  encryption: none
+  tls: true
+  servername: fr-free.fastestrelay.com
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /700gvl-us-free
+    headers:
+      Host: fr-free.fastestrelay.com
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇩🇪 Germany | 🌐 | [BL] [84f9bfa9]
+  server: 104.27.97.42
+  port: 8443
+  udp: true
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  encryption: none
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [b21e9290]
+  server: news.zoom.us
+  port: 8443
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  encryption: none
+  tls: true
+  servername: matrix.learnpodedu.com
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    headers:
+      Host: matrix.learnpodedu.com
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6749a93c]
+  server: 141.193.213.21
+  port: 8443
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  encryption: none
+  tls: true
+  servername: matrix.learnpodedu.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    headers:
+      Host: matrix.learnpodedu.com
+- type: vless
+  name: 🇰🇷 South Korea, Yongsan-dong | [BL] [9404e3f0]
+  server: 104.25.128.15
+  port: 443
+  udp: true
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  encryption: none
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [da3a8581]
+  server: news.zoom.us
+  port: 8443
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  encryption: none
+  tls: true
+  servername: matrix.learnpodedu.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    headers:
+      Host: matrix.learnpodedu.com
+- type: vless
+  name: 🇰🇷 South Korea, Yongsan-dong | [BL] [92980311]
+  server: 162.159.160.73
+  port: 443
+  udp: true
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  encryption: none
+  tls: true
+  servername: krc.80782636.xyz
+  network: ws
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- type: vless
+  name: 🇫🇮 Finland, Helsinki | [BL] [3ac67e7f]
   server: one.alpheratzz.org
   port: 8443
   udp: true
@@ -35,22 +191,126 @@ proxies:
   tls: true
   servername: api-6b04608f.adhil.uk
   flow: xtls-rprx-vision
-  client-fingerprint: safari
+  client-fingerprint: ios
   network: tcp
+- type: vless
+  name: 🇫🇮 Finland, Helsinki | [BL] [3801f5ec]
+  server: one.alpheratzz.org
+  port: 8443
+  udp: true
+  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+  encryption: none
+  tls: true
+  servername: api-6b04608f.adhil.uk
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  network: tcp
+- type: vless
+  name: 🇰🇷 South Korea, Yongsan-dong | [BL] [7b0afb24]
+  server: 104.20.28.74
+  port: 443
+  udp: true
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  encryption: none
+  tls: true
+  servername: krc.80782636.xyz
+  network: ws
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main (Innenstadt III) | [BL]
+  server: 147.45.63.72
+  port: 443
+  udp: true
+  uuid: 61c9aca3-c23b-4410-a85d-85fda46a76cc
+  encryption: none
+  tls: true
+  servername: dhgpp.kramiliantha.sbs
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: HOcF5cfoTxZdRezSs2oSr0y9Zt9xFfS8oIsIplh5_hk
+    short-id: 14bc9cf52a8fd11c
+  network: tcp
+- type: vless
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
+  server: xinnusvpn.duckdns.org
+  port: 8443
+  udp: true
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  encryption: none
+  tls: true
+  servername: xinnusvpn.duckdns.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /wsnl
+    headers:
+      Host: xinnusvpn.duckdns.org
+- type: vless
+  name: 🌐 Anycast-IP | 🇧🇾 🇫🇮 | [BL]
+  server: 200.96.109.197
+  port: 14443
+  udp: true
+  uuid: 7af8c5d0-ede6-40ab-9b9e-d7924f79d109
+  encryption: none
+  tls: true
+  servername: kiwi-logistic.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: DFBCTsJbKYbaZGWGi_bKgIjrkoUmDaAha7iEe9fKWgo
+    short-id: d9662905
+  network: grpc
+  grpc-opts:
+    grpc-service-name: AlGrpC.Name
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇭🇰 Hong Kong, Hong Kong | [BL]
   - 🇪🇪 Estonia, Tallinn | [BL]
-  default-selected: 🇭🇰 Hong Kong, Hong Kong | [BL]
+  - 🇺🇸 United States, Ashburn | [BL] [123859e4]
+  - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+  - 🇺🇸 United States, Ashburn | [BL] [865fed1a]
+  - 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
+  - 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
+  - 🇩🇪 Germany | 🌐 | [BL] [84f9bfa9]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [b21e9290]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6749a93c]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL] [9404e3f0]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [da3a8581]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL] [92980311]
+  - 🇫🇮 Finland, Helsinki | [BL] [3ac67e7f]
+  - 🇫🇮 Finland, Helsinki | [BL] [3801f5ec]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL] [7b0afb24]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt III) | [BL]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🌐 Anycast-IP | 🇧🇾 🇫🇮 | [BL]
+  default-selected: 🇪🇪 Estonia, Tallinn | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇭🇰 Hong Kong, Hong Kong | [BL]
   - 🇪🇪 Estonia, Tallinn | [BL]
+  - 🇺🇸 United States, Ashburn | [BL] [123859e4]
+  - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+  - 🇺🇸 United States, Ashburn | [BL] [865fed1a]
+  - 🇩🇪 Germany | 🌐 | [BL] [0090efd1]
+  - 🇩🇪 Germany | 🌐 | [BL] [bf12d898]
+  - 🇩🇪 Germany | 🌐 | [BL] [84f9bfa9]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [b21e9290]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [6749a93c]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL] [9404e3f0]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [da3a8581]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL] [92980311]
+  - 🇫🇮 Finland, Helsinki | [BL] [3ac67e7f]
+  - 🇫🇮 Finland, Helsinki | [BL] [3801f5ec]
+  - 🇰🇷 South Korea, Yongsan-dong | [BL] [7b0afb24]
+  - 🇩🇪 Germany, Frankfurt am Main (Innenstadt III) | [BL]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🌐 Anycast-IP | 🇧🇾 🇫🇮 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
