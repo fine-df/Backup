@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261015070153 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261015070154 | Fine=validated-pool | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,129 +10,215 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- encryption: none
-  ws-opts:
-    path: /700gvl-us-free
-  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
-  client-fingerprint: random
-  server: fr-free.fastestrelay.com
-  type: vless
-  servername: fr-free.fastestrelay.com
-  network: ws
-  udp: true
-  port: 443
-  tls: true
-  name: 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
-- encryption: none
-  ws-opts:
-    path: /wsnl
-    headers:
-      Host: xinnusvpn.duckdns.org
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  client-fingerprint: chrome
-  server: xinnusvpn.duckdns.org
-  type: vless
-  servername: xinnusvpn.duckdns.org
-  network: ws
-  udp: true
-  port: 8443
-  tls: true
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
 - type: vless
-  name: 🇺🇸 United States, Dallas | [BL]
-  server: 3x-sub.linzhonghong.com
-  port: 443
-  udp: true
-  uuid: 0a4f1c90-a632-4c69-a8f1-9ebf9acaae71
   encryption: none
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws7f3k9x2q8m
-- type: vless
+  udp: true
   name: 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   server: ev.zoom.us
-  port: 8443
-  udp: true
-  uuid: c9b4fb55-1634-436f-beb7-3b1db5b0131d
-  encryption: none
-  tls: true
-  servername: free-server.techsonic.dev
   client-fingerprint: chrome
+  uuid: c9b4fb55-1634-436f-beb7-3b1db5b0131d
   network: ws
+  port: 8443
   ws-opts:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
+  servername: free-server.techsonic.dev
+  tls: true
 - type: vless
+  encryption: none
+  udp: true
   name: 🇺🇸 United States, Newark (Central Business District) | [BL]
   server: 48.102.201.124
-  port: 443
-  udp: true
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  encryption: none
-  tls: true
-  servername: lesson11.schoolpizorbz.xyz
-  flow: xtls-rprx-vision
   client-fingerprint: firefox
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
   reality-opts:
     public-key: bkgMxOi6NnagiY8Cc8PzW9skQSk9LDKmFtjGfqrlXHE
     short-id: a16c828fc2b70207
   network: tcp
+  port: 443
+  flow: xtls-rprx-vision
+  servername: lesson11.schoolpizorbz.xyz
+  tls: true
 - type: vless
+  encryption: none
+  udp: true
   name: 🇺🇸 United States, Orem | [BL] [f2c35cd3]
   server: 177.202.76.30
-  port: 443
-  udp: true
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  encryption: none
-  tls: true
-  servername: lesson14.schoolpizorbz.xyz
-  flow: xtls-rprx-vision
   client-fingerprint: firefox
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
   reality-opts:
     public-key: G465rpA3czwxSTrjkcl0KK6HohO5G8do2MxjcRbULSA
     short-id: d52f9a703c9bf2d9
   network: tcp
+  port: 443
+  flow: xtls-rprx-vision
+  servername: lesson14.schoolpizorbz.xyz
+  tls: true
 - type: vless
+  encryption: none
+  udp: true
   name: 🇺🇸 United States, Orem | [BL] [78de88fa]
   server: lesson14.schoolpizorbz.xyz
-  port: 443
-  udp: true
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  encryption: none
-  tls: true
-  servername: lesson14.schoolpizorbz.xyz
-  flow: xtls-rprx-vision
   client-fingerprint: firefox
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
   reality-opts:
     public-key: G465rpA3czwxSTrjkcl0KK6HohO5G8do2MxjcRbULSA
     short-id: d52f9a703c9bf2d9
   network: tcp
+  port: 443
+  flow: xtls-rprx-vision
+  servername: lesson14.schoolpizorbz.xyz
+  tls: true
+- type: vless
+  name: 🇨🇦 Canada, Vancouver | [BL] [b592b293]
+  server: 172.67.219.189
+  port: 443
+  udp: true
+  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
+  encryption: none
+  tls: true
+  servername: cdn4.salamfox.ir
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
+    headers:
+      Host: cdn4.salamfox.ir
+- type: vless
+  name: 🇨🇦 Canada, Vancouver | [BL] [5c26a320]
+  server: 172.67.219.189
+  port: 443
+  udp: true
+  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
+  encryption: none
+  tls: true
+  servername: cdn4.salamfox.ir
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
+    headers:
+      Host: cdn4.salamfox.ir
+- type: vless
+  name: 🇳🇱 The Netherlands | 🌐 | [BL] [d716adc6]
+  server: 104.18.151.231
+  port: 443
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  encryption: none
+  tls: true
+  servername: workers.retaxay188.workers.dev
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: workers.retaxay188.workers.dev
+- type: vless
+  name: 🇳🇱 The Netherlands | 🌐 | [BL] [933ea1d9]
+  server: 104.18.151.231
+  port: 443
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  encryption: none
+  tls: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    headers:
+      Host: shiny-base-4d9a.mifolan4697928.workers.dev
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [8fdbf26e]
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  uuid: 1acec266-04ee-4769-b96b-402358531dcb
+  encryption: none
+  tls: true
+  servername: highspeed.sahanwickramasinghe.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    headers:
+      Host: highspeed.sahanwickramasinghe.com
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [2d665ab9]
+  server: 172.66.40.229
+  port: 8443
+  udp: true
+  uuid: 1acec266-04ee-4769-b96b-402358531dcb
+  encryption: none
+  tls: true
+  servername: highspeed.sahanwickramasinghe.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    headers:
+      Host: highspeed.sahanwickramasinghe.com
+- type: vless
+  name: 🇫🇷 France | 🌐 | [BL] [36b82c85]
+  server: 108.159.247.2
+  port: 443
+  udp: true
+  uuid: 7a42d986-f0b8-46e7-82cf-9516e168a613
+  encryption: none
+  tls: true
+  servername: d1aedflfr97jes.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d1aedflfr97jes.cloudfront.net
+- type: vless
+  name: 🇫🇷 France | 🌐 | [BL] [fe637a8e]
+  server: 108.158.198.2
+  port: 443
+  udp: true
+  uuid: 7a42d986-f0b8-46e7-82cf-9516e168a613
+  encryption: none
+  tls: true
+  servername: dkfsoyk9ju2as.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dkfsoyk9ju2as.cloudfront.net
 proxy-groups:
 - name: Fine
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇺🇸 United States, Dallas | [BL]
   - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇺🇸 United States, Newark (Central Business District) | [BL]
   - 🇺🇸 United States, Orem | [BL] [f2c35cd3]
   - 🇺🇸 United States, Orem | [BL] [78de88fa]
-  default-selected: 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
+  - 🇨🇦 Canada, Vancouver | [BL] [b592b293]
+  - 🇨🇦 Canada, Vancouver | [BL] [5c26a320]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [d716adc6]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [933ea1d9]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [8fdbf26e]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [2d665ab9]
+  - 🇫🇷 France | 🌐 | [BL] [36b82c85]
+  - 🇫🇷 France | 🌐 | [BL] [fe637a8e]
+  default-selected: 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 United States, Ashburn | [BL] [5dd3cb33]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇺🇸 United States, Dallas | [BL]
   - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
   - 🇺🇸 United States, Newark (Central Business District) | [BL]
   - 🇺🇸 United States, Orem | [BL] [f2c35cd3]
   - 🇺🇸 United States, Orem | [BL] [78de88fa]
+  - 🇨🇦 Canada, Vancouver | [BL] [b592b293]
+  - 🇨🇦 Canada, Vancouver | [BL] [5c26a320]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [d716adc6]
+  - 🇳🇱 The Netherlands | 🌐 | [BL] [933ea1d9]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [8fdbf26e]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL] [2d665ab9]
+  - 🇫🇷 France | 🌐 | [BL] [36b82c85]
+  - 🇫🇷 France | 🌐 | [BL] [fe637a8e]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
